@@ -80,5 +80,47 @@ Start with the soft rain bed, wet pavement steps, a slow car pass, café murmur 
 
 Record the creator, original source URL, license, and any edits with each collected file. Use original recordings or CC0 material so the pack can be shared with the project.
 
+## Download catalogue takes
+
+Use Node.js LTS and run these commands from the repository root.
+
+```sh
+npm run audio:download -- --catalog sound-catalog.json --dry-run
+npm run audio:download -- --catalog sound-catalog.json
+```
+
+`sound-catalog.json` is the default catalogue. Its `cues` array contains groups with a `category`, a cue `id`, and a `takes` array. Use the Fog cue ID where one exists. Set `verified` to `true` after confirming the recording's CC0 dedication, and record the confirmation in `licenseEvidence`. Use `downloadUrl` for an authorized direct HTTPS link and set `downloadAuthorized` to `false` if a listed link needs permission. Record the original page in `sourceUrl` and the recording credit in `creator`. The manifest uses `null` for either field when it is missing from the catalogue.
+
+```json
+{
+  "cues": [
+    {
+      "category": "street",
+      "id": "wet_pavement_footsteps",
+      "takes": [
+        {
+          "id": "01",
+          "sourceUrl": "https://example.org/recordings/wet-pavement",
+          "downloadUrl": "https://example.org/audio/wet-pavement.mp3",
+          "creator": "Recording creator",
+          "license": "CC0-1.0",
+          "licenseEvidence": "CC0 dedication on the recording page",
+          "verified": true,
+          "durationSeconds": 4.2,
+          "channels": 1,
+          "loop": false
+        }
+      ]
+    }
+  ]
+}
+```
+
+Use letters, digits, hyphens, and underscores in categories and IDs, starting with a letter or digit. Filenames use lowercase and hyphens, for example `assets/audio/street/wet-pavement-footsteps-01.mp3`. Numeric take IDs are padded to at least two digits. Supply `format` when the direct URL has no audio extension. Supported formats are `mp3`, `wav`, `ogg` (Vorbis or Opus), `opus`, and `flac`. Supply a `sha256` hex digest when the catalogue has one.
+
+The dry run previews downloads and checks existing files read-only. A download processes every eligible take, including cues with just one or two recordings. The downloader writes verified files to `assets/audio/` and records their provenance by cue in `assets/audio/manifest.json`. Reruns use the catalogue checksum or the recorded manifest checksum for the same download URL. A destination with different content is reported as a conflict. Missing or unusable download URLs and uncertain or ineligible licenses are listed separately. Each take failure is reported and the downloader exits with a nonzero status after processing the other takes.
+
+Run the local HTTPS tests with `node --test scripts/download-sounds.test.mjs`. The tests use OpenSSL to generate a temporary certificate.
+
 - [Soundscape and sound engine](soundscape-and-sound-engine.md)
 - [Asset generation guide](asset-generation-guide.md)

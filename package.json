@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "audio:download": "node scripts/download-sounds.mjs",
     "typecheck": "tsc"
   },
   "devDependencies": {
