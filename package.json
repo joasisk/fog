@@ -1,0 +1,11 @@
+{
+  "name": "fog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}
