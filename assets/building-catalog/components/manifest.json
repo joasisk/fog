@@ -1,0 +1,481 @@
+{
+  "materials": {
+    "pale-plaster": "components/walls/pale-plaster.png",
+    "ochre": "components/walls/ochre.png",
+    "red-brick": "components/walls/red-brick.png",
+    "gray-stone": "components/walls/gray-stone.png",
+    "timber": "components/walls/timber.png",
+    "cream": "components/walls/cream.png",
+    "white-render": "components/walls/white-render.png",
+    "buff-brick": "components/walls/buff-brick.png",
+    "sandstone": "components/walls/sandstone.png",
+    "dark-brick": "components/walls/dark-brick.png",
+    "earth": "components/walls/earth.png",
+    "fieldstone": "components/walls/fieldstone.png",
+    "slate": "components/roofs/slate.png",
+    "clay": "components/roofs/clay.png",
+    "dark-slate": "components/roofs/dark-slate.png",
+    "wood-shingle": "components/roofs/wood-shingle.png",
+    "lead": "components/roofs/lead.png",
+    "rust-tile": "components/roofs/rust-tile.png",
+    "limestone": "components/walls/limestone.png",
+    "stone": "components/walls/stone.png",
+    "painted-timber": "components/walls/painted-timber.png",
+    "limewash": "components/walls/limewash.png"
+  },
+  "doors": {
+    "timber-panel": {
+      "id": "timber-panel",
+      "image": "components/doors/timber-panel/original.png",
+      "framePx": [
+        135,
+        260
+      ]
+    },
+    "blue-panel": {
+      "id": "blue-panel",
+      "image": "components/doors/blue-panel/original.png",
+      "framePx": [
+        151,
+        260
+      ],
+      "frame": "components/doors/blue-panel/frame.png",
+      "mask": "components/doors/blue-panel/mask.png",
+      "unlit": "components/doors/blue-panel/unlit.png",
+      "lit": "components/doors/blue-panel/lit.png",
+      "glass": "components/doors/blue-panel/glass.png"
+    },
+    "civic-double": {
+      "id": "civic-double",
+      "image": "components/doors/civic-double/original.png",
+      "framePx": [
+        220,
+        260
+      ]
+    },
+    "arched-oak": {
+      "id": "arched-oak",
+      "image": "components/doors/arched-oak/original.png",
+      "framePx": [
+        188,
+        260
+      ]
+    },
+    "workshop-double": {
+      "id": "workshop-double",
+      "image": "components/doors/workshop-double/original.png",
+      "framePx": [
+        241,
+        260
+      ],
+      "frame": "components/doors/workshop-double/frame.png",
+      "mask": "components/doors/workshop-double/mask.png",
+      "unlit": "components/doors/workshop-double/unlit.png",
+      "lit": "components/doors/workshop-double/lit.png",
+      "glass": "components/doors/workshop-double/glass.png"
+    },
+    "shop-glazed": {
+      "id": "shop-glazed",
+      "image": "components/doors/shop-glazed/original.png",
+      "framePx": [
+        217,
+        260
+      ],
+      "frame": "components/doors/shop-glazed/frame.png",
+      "mask": "components/doors/shop-glazed/mask.png",
+      "unlit": "components/doors/shop-glazed/unlit.png",
+      "lit": "components/doors/shop-glazed/lit.png",
+      "glass": "components/doors/shop-glazed/glass.png"
+    },
+    "garden-glazed": {
+      "id": "garden-glazed",
+      "image": "components/doors/garden-glazed/original.png",
+      "framePx": [
+        163,
+        260
+      ],
+      "frame": "components/doors/garden-glazed/frame.png",
+      "mask": "components/doors/garden-glazed/mask.png",
+      "unlit": "components/doors/garden-glazed/unlit.png",
+      "lit": "components/doors/garden-glazed/lit.png",
+      "glass": "components/doors/garden-glazed/glass.png"
+    },
+    "clinic-double": {
+      "id": "clinic-double",
+      "image": "components/doors/clinic-double/original.png",
+      "framePx": [
+        246,
+        260
+      ],
+      "frame": "components/doors/clinic-double/frame.png",
+      "mask": "components/doors/clinic-double/mask.png",
+      "unlit": "components/doors/clinic-double/unlit.png",
+      "lit": "components/doors/clinic-double/lit.png",
+      "glass": "components/doors/clinic-double/glass.png"
+    }
+  },
+  "roofTrim": {
+    "stone-chimney": {
+      "id": "stone-chimney",
+      "image": "components/roofTrim/stone-chimney/original.png",
+      "framePx": [
+        156,
+        260
+      ]
+    },
+    "brick-chimney": {
+      "id": "brick-chimney",
+      "image": "components/roofTrim/brick-chimney/original.png",
+      "framePx": [
+        124,
+        260
+      ]
+    },
+    "gable-dormer": {
+      "id": "gable-dormer",
+      "image": "components/roofTrim/gable-dormer/original.png",
+      "framePx": [
+        249,
+        260
+      ],
+      "frame": "components/roofTrim/gable-dormer/frame.png",
+      "mask": "components/roofTrim/gable-dormer/mask.png",
+      "unlit": "components/roofTrim/gable-dormer/unlit.png",
+      "lit": "components/roofTrim/gable-dormer/lit.png",
+      "glass": "components/roofTrim/gable-dormer/glass.png"
+    },
+    "slate-canopy": {
+      "id": "slate-canopy",
+      "image": "components/roofTrim/slate-canopy/original.png",
+      "framePx": [
+        260,
+        175
+      ]
+    },
+    "civic-clock": {
+      "id": "civic-clock",
+      "image": "components/roofTrim/civic-clock/original.png",
+      "framePx": [
+        254,
+        260
+      ]
+    },
+    "church-bell": {
+      "id": "church-bell",
+      "image": "components/roofTrim/church-bell/original.png",
+      "framePx": [
+        222,
+        260
+      ]
+    },
+    "stone-quoin": {
+      "id": "stone-quoin",
+      "image": "components/roofTrim/stone-quoin/original.png",
+      "framePx": [
+        77,
+        260
+      ]
+    },
+    "timber-porch": {
+      "id": "timber-porch",
+      "image": "components/roofTrim/timber-porch/original.png",
+      "framePx": [
+        233,
+        260
+      ]
+    }
+  },
+  "windows": {
+    "wide-shopfront": {
+      "id": "wide-shopfront",
+      "framePx": [
+        210,
+        121
+      ],
+      "frame": "components/windows/wide-shopfront/frame.png",
+      "mask": "components/windows/wide-shopfront/mask.png",
+      "unlit": "components/windows/wide-shopfront/unlit.png",
+      "lit": "components/windows/wide-shopfront/lit.png",
+      "glass": "components/windows/wide-shopfront/glass.png",
+      "image": "components/windows/wide-shopfront/original.png"
+    },
+    "small-dormer": {
+      "id": "small-dormer",
+      "framePx": [
+        110,
+        105
+      ],
+      "frame": "components/windows/small-dormer/frame.png",
+      "mask": "components/windows/small-dormer/mask.png",
+      "unlit": "components/windows/small-dormer/unlit.png",
+      "lit": "components/windows/small-dormer/lit.png",
+      "glass": "components/windows/small-dormer/glass.png",
+      "image": "components/windows/small-dormer/original.png"
+    },
+    "narrow-sash": {
+      "id": "narrow-sash",
+      "framePx": [
+        105,
+        146
+      ],
+      "frame": "components/windows/narrow-sash/frame.png",
+      "mask": "components/windows/narrow-sash/mask.png",
+      "unlit": "components/windows/narrow-sash/unlit.png",
+      "lit": "components/windows/narrow-sash/lit.png",
+      "glass": "components/windows/narrow-sash/glass.png",
+      "image": "components/windows/narrow-sash/original.png"
+    },
+    "paired-casement": {
+      "id": "paired-casement",
+      "framePx": [
+        210,
+        200
+      ],
+      "frame": "components/windows/paired-casement/frame.png",
+      "mask": "components/windows/paired-casement/mask.png",
+      "unlit": "components/windows/paired-casement/unlit.png",
+      "lit": "components/windows/paired-casement/lit.png",
+      "glass": "components/windows/paired-casement/glass.png",
+      "image": "components/windows/paired-casement/original.png"
+    },
+    "arched-pane": {
+      "id": "arched-pane",
+      "framePx": [
+        135,
+        210
+      ],
+      "frame": "components/windows/arched-pane/frame.png",
+      "mask": "components/windows/arched-pane/mask.png",
+      "unlit": "components/windows/arched-pane/unlit.png",
+      "lit": "components/windows/arched-pane/lit.png",
+      "glass": "components/windows/arched-pane/glass.png",
+      "image": "components/windows/arched-pane/original.png"
+    },
+    "tall-stairwell": {
+      "id": "tall-stairwell",
+      "framePx": [
+        163,
+        210
+      ],
+      "frame": "components/windows/tall-stairwell/frame.png",
+      "mask": "components/windows/tall-stairwell/mask.png",
+      "unlit": "components/windows/tall-stairwell/unlit.png",
+      "lit": "components/windows/tall-stairwell/lit.png",
+      "glass": "components/windows/tall-stairwell/glass.png",
+      "image": "components/windows/tall-stairwell/original.png"
+    }
+  },
+  "roomBackings": {
+    "cafe": "components/roomBackings/cafe.png",
+    "restaurant": "components/roomBackings/restaurant.png",
+    "bookshop": "components/roomBackings/bookshop.png",
+    "bakery": "components/roomBackings/bakery.png",
+    "grocer": "components/roomBackings/grocer.png",
+    "shop": "components/roomBackings/shop.png"
+  },
+  "decorations": {
+    "awning": {
+      "id": "decorations/awning/v01",
+      "family": "awning",
+      "label": "Striped awning",
+      "variant": "v01",
+      "framePx": [
+        440,
+        166
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        220,
+        4
+      ],
+      "referenceWidthUnits": 3.8,
+      "image": "components/decorations/awning/sprite.png"
+    },
+    "hanging-sign": {
+      "id": "decorations/hanging-sign/v01",
+      "family": "hanging-sign",
+      "label": "Hanging sign",
+      "variant": "v01",
+      "framePx": [
+        342,
+        287
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        14,
+        52
+      ],
+      "referenceWidthUnits": 1.7,
+      "image": "components/decorations/hanging-sign/sprite.png"
+    },
+    "fascia": {
+      "id": "decorations/fascia/v01",
+      "family": "fascia",
+      "label": "Fascia board",
+      "variant": "v01",
+      "framePx": [
+        429,
+        158
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        214,
+        79
+      ],
+      "referenceWidthUnits": 3.1,
+      "image": "components/decorations/fascia/sprite.png"
+    },
+    "chalkboard": {
+      "id": "decorations/chalkboard/v01",
+      "family": "chalkboard",
+      "label": "Chalkboard",
+      "variant": "v01",
+      "framePx": [
+        298,
+        327
+      ],
+      "placement": "ground",
+      "mountAnchorPx": [
+        149,
+        320
+      ],
+      "referenceWidthUnits": 0.85,
+      "image": "components/decorations/chalkboard/sprite.png"
+    },
+    "window-box": {
+      "id": "decorations/window-box/v01",
+      "family": "window-box",
+      "label": "Window box",
+      "variant": "v01",
+      "framePx": [
+        422,
+        251
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        211,
+        226
+      ],
+      "referenceWidthUnits": 1.6,
+      "image": "components/decorations/window-box/sprite.png"
+    },
+    "shutter": {
+      "id": "decorations/shutter/v01",
+      "family": "shutter",
+      "label": "Shutter",
+      "variant": "v01",
+      "framePx": [
+        228,
+        368
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        114,
+        184
+      ],
+      "referenceWidthUnits": 0.56,
+      "image": "components/decorations/shutter/sprite.png"
+    },
+    "wall-lantern": {
+      "id": "decorations/wall-lantern/v01",
+      "family": "wall-lantern",
+      "label": "Wall lantern",
+      "variant": "v01",
+      "framePx": [
+        243,
+        339
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        32,
+        119
+      ],
+      "referenceWidthUnits": 0.53,
+      "image": "components/decorations/wall-lantern/sprite.png"
+    },
+    "ivy": {
+      "id": "decorations/ivy/v01",
+      "family": "ivy",
+      "label": "Climbing ivy",
+      "variant": "v01",
+      "framePx": [
+        347,
+        381
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        174,
+        27
+      ],
+      "referenceWidthUnits": 1.45,
+      "image": "components/decorations/ivy/sprite.png"
+    }
+  },
+  "roomMotion": {
+    "walking": {
+      "id": "room-motion/walking/v01",
+      "framePx": [
+        268,
+        461
+      ],
+      "anchorPx": [
+        134,
+        456
+      ],
+      "image": "components/roomMotion/walking/sprite.png",
+      "opacityMask": "components/roomMotion/walking/opacity-mask.png"
+    },
+    "pausing": {
+      "id": "room-motion/pausing/v01",
+      "framePx": [
+        126,
+        470
+      ],
+      "anchorPx": [
+        63,
+        465
+      ],
+      "image": "components/roomMotion/pausing/sprite.png",
+      "opacityMask": "components/roomMotion/pausing/opacity-mask.png"
+    },
+    "sitting": {
+      "id": "room-motion/sitting/v01",
+      "framePx": [
+        233,
+        374
+      ],
+      "anchorPx": [
+        116,
+        369
+      ],
+      "image": "components/roomMotion/sitting/sprite.png",
+      "opacityMask": "components/roomMotion/sitting/opacity-mask.png"
+    },
+    "curtain": {
+      "id": "room-motion/curtain/v01",
+      "framePx": [
+        253,
+        436
+      ],
+      "anchorPx": [
+        126,
+        5
+      ],
+      "image": "components/roomMotion/curtain/sprite.png",
+      "opacityMask": "components/roomMotion/curtain/opacity-mask.png"
+    },
+    "blind": {
+      "id": "room-motion/blind/v01",
+      "framePx": [
+        345,
+        353
+      ],
+      "anchorPx": [
+        172,
+        5
+      ],
+      "image": "components/roomMotion/blind/sprite.png",
+      "opacityMask": "components/roomMotion/blind/opacity-mask.png"
+    }
+  }
+}
