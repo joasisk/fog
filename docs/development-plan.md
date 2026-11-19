@@ -5,7 +5,7 @@ Start with one playable café scene and prove the interaction with real fog moti
 ## 1. Set up the browser app
 
 - Add Vite to the existing TypeScript package. Choose a Node.js LTS version and update the npm lockfile. Add `npm run dev`, `npm run build`, and `npm run preview`. Run the existing `npm run typecheck` as part of the production build.
-- Set up Canvas 2D with a 16:9 logical scene scaled to the window. Use the same transform for drawing and for converting pointer events into scene coordinates.
+- Set up Canvas 2D with a 3840 × 2160 logical scene scaled to fit the window. Use the same transform for drawing and for converting pointer events into scene coordinates.
 - Keep generation, rendering, input, and Web Audio separate around the shared scene model. Assemble the café scene with the town, street, lot, site, building, and use records in `src/model/`.
 
 **Done when** a clean checkout can install with `npm ci`, open the development page, and serve the production build over local HTTP. [Technology](technology.md) · [Data model](data-model.md)
