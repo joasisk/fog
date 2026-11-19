@@ -4,9 +4,13 @@ Fog is a procedural environmental experience set in a European village or town o
 
 A complete town takes shape as the scene loads. From a fixed, side-on 2D view, you can watch the weather and listen your way along the street by moving the cursor. A single click asks the generator for a new building, street, or town. Fog rolls in to cover the change, then slowly clears as the sounds of the place return. Soft rain plays throughout.
 
-## Design documents
+## Development
 
 - [Development plan](docs/development-plan.md)
+- [Agent development guidelines](AGENTS.md)
+
+## Design documents
+
 - [Procedural generation](docs/procedural-generation.md)
 - [Data model](docs/data-model.md)
 - [Visual styling](docs/visual-styling.md)
