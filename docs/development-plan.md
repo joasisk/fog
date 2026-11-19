@@ -17,7 +17,7 @@ Start with one playable café scene and prove the interaction with real fog moti
 - Add a continuous stereo rain bed on its own mix group. Place café murmur and the milk-steamer cue at the café door. Adjust their pan, level, and filtering as the pointer or touch drag moves the listener. Enable playback on the first supported gesture.
 - Make a click or tap on the café prepare a bookshop that fits the same site and wall contacts. Over roughly five to six seconds, cover the affected area with fog, fade the town sounds down, swap geometry and emitters under cover, and reveal with the bookshop sounds. Keep the rain playing.
 
-**Done when** the built scene opens on a laptop and a phone, the café pans as the listener passes it, and a click or tap triggers a clean reveal. Check that a touch drag moves the listener and a tap selects the building. [User interaction](user-interaction.md) · [Soundscape and sound engine](soundscape-and-sound-engine.md)
+**Done when** the built scene opens on a laptop and a phone, the café pans as the listener passes it, and a click or tap triggers a clean reveal. Check that a touch drag moves the listener and a tap selects the building. [User interaction](user-interaction.md) · [Sound engine development plan](sound-engine-plan.md)
 
 ## 3. Complete the two-street prototype
 

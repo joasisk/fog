@@ -33,5 +33,6 @@ Route the continuous soft rain and the rest of the town ambience through separat
 Update the affected emitters while the fog hides the replacement and the town group is silent. Fade the resulting ambience back in as the fog clears, using the cursor's current listening position for every source.
 
 - [Building properties](building-properties.md)
+- [Sound engine development plan](sound-engine-plan.md)
 - [Sound inventory](sound-inventory.md)
 - [User interaction](user-interaction.md)
