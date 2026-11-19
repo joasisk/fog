@@ -17,3 +17,8 @@ A complete town takes shape as the scene loads. From a fixed, side-on 2D view, y
 - [Building properties](docs/building-properties.md)
 - [User interaction](docs/user-interaction.md)
 - [Technology](docs/technology.md)
+
+## Asset kits
+
+- Weather textures, editable sources, and an animated street preview. [Environmental asset pilot](assets/environment/README.md)
+- Street materials, wear overlays, and compositing examples. [Surface asset kit](assets/surfaces/README.md)
