@@ -11,6 +11,9 @@ import { isDeepStrictEqual, parseArgs } from "node:util";
 const root = fileURLToPath(new URL("../", import.meta.url));
 const audioDirectory = join(root, "assets", "audio");
 const manifestPath = "assets/audio/manifest.json";
+const freesoundOrigin = "https://freesound.org";
+const freesoundRequestInterval = 2_100; // Original downloads are limited to 30 requests per minute.
+const freesoundUnauthorized = "Freesound rejected the OAuth access token (HTTP 401). Get a fresh token and rerun";
 const sha256Pattern = /^[a-f0-9]{64}$/i;
 const redirectStatuses = new Set([301, 302, 303, 307, 308]);
 const retryStatuses = new Set([408, 429, 500, 502, 503, 504]);
@@ -68,6 +71,25 @@ function httpsUrl(value, base) {
     throw new Error("Direct download URL must use HTTPS without embedded credentials");
   }
   return url;
+}
+
+function resolveDownload(record, enableFreesound) {
+  const useFreesoundApi = enableFreesound && record?.source === "Freesound" &&
+    record.downloadRequiresLogin === true && record.downloadAuthorized === false;
+  if (record?.downloadAuthorized !== undefined && record.downloadAuthorized !== true && !useFreesoundApi) {
+    throw new Error("Catalogue does not authorize this download URL");
+  }
+
+  const listedUrl = httpsUrl(record?.downloadUrl);
+  const formatFromUrl = extname(listedUrl.pathname).slice(1);
+  if (!useFreesoundApi) return { url: listedUrl, formatFromUrl, useFreesoundApi };
+
+  const takeId = typeof record.id === "string" && /^freesound-([1-9]\d*)$/.exec(record.id)?.[1];
+  const listedId = /^\/people\/[^/]+\/sounds\/([1-9]\d*)\/download\/[^/]+$/.exec(listedUrl.pathname)?.[1];
+  if (listedUrl.origin !== freesoundOrigin || !takeId || listedId !== takeId) {
+    throw new Error("Freesound download URL must match the catalogue's Freesound take ID");
+  }
+  return { url: new URL(`/apiv2/sounds/${takeId}/download/`, freesoundOrigin), formatFromUrl, useFreesoundApi };
 }
 
 function filenamePart(value, field) {
@@ -221,8 +243,86 @@ async function isFlac(file, size) {
   return false;
 }
 
+async function isAiff(file, size) {
+  const header = await readAt(file, 12);
+  const kind = header.toString("latin1", 8, 12);
+  if (header.length < 12 || header.toString("latin1", 0, 4) !== "FORM" ||
+      (kind !== "AIFF" && kind !== "AIFC")) return false;
+  const end = header.readUInt32BE(4) + 8;
+  if (end > size) return false;
+
+  let hasFormat = false;
+  let hasSamples = false;
+  for (let offset = 12; offset + 8 <= end;) {
+    const chunk = await readAt(file, 8, offset);
+    if (chunk.length !== 8) return false;
+    const type = chunk.toString("latin1", 0, 4);
+    const length = chunk.readUInt32BE(4);
+    const payload = offset + 8;
+    if (payload + length > end) return false;
+    if (type === "COMM" && length >= (kind === "AIFC" ? 22 : 18)) {
+      const format = await readAt(file, 6, payload);
+      hasFormat = format.length === 6 && format.readUInt16BE(0) > 0 && format.readUInt32BE(2) > 0;
+    }
+    if (type === "SSND" && length > 8) {
+      const sound = await readAt(file, 8, payload);
+      hasSamples = sound.length === 8 && sound.readUInt32BE(0) < length - 8;
+    }
+    if (hasFormat && hasSamples) return true;
+    offset = payload + length + (length % 2);
+  }
+  return false;
+}
+
+async function* mp4Boxes(file, { start, end }) {
+  for (let offset = start; offset + 8 <= end;) {
+    const header = await readAt(file, 8, offset);
+    if (header.length !== 8) return;
+    const type = header.toString("latin1", 4, 8);
+    let length = header.readUInt32BE(0);
+    let headerLength = 8;
+    if (length === 1) {
+      const extended = await readAt(file, 8, offset + 8);
+      if (extended.length !== 8) return;
+      length = Number(extended.readBigUInt64BE());
+      headerLength = 16;
+    } else if (length === 0) {
+      length = end - offset;
+    }
+    if (length < headerLength || length > end - offset) return;
+    yield { type, start: offset + headerLength, end: offset + length };
+    offset += length;
+  }
+}
+
+async function findMp4Box(file, container, type) {
+  for await (const box of mp4Boxes(file, container)) {
+    if (box.type === type) return box;
+  }
+}
+
+async function isM4a(file, size) {
+  const container = { start: 0, end: size };
+  const fileType = await findMp4Box(file, container, "ftyp");
+  const movie = await findMp4Box(file, container, "moov");
+  const data = await findMp4Box(file, container, "mdat");
+  if (!fileType || fileType.end - fileType.start < 8 || !movie || !data || data.end === data.start) return false;
+
+  for await (const track of mp4Boxes(file, movie)) {
+    if (track.type !== "trak") continue;
+    const media = await findMp4Box(file, track, "mdia");
+    const handler = media && await findMp4Box(file, media, "hdlr");
+    if (handler && handler.end - handler.start >= 12) {
+      const type = await readAt(file, 4, handler.start + 8);
+      if (type.toString("latin1") === "soun") return true;
+    }
+  }
+  return false;
+}
+
 const audioChecks = new Map([
   ["mp3", isMp3], ["wav", isWave], ["ogg", isOggAudio], ["opus", isOggAudio], ["flac", isFlac],
+  ["aiff", isAiff], ["m4a", isM4a],
 ]);
 
 async function verifyFile(path, format, expected) {
@@ -259,10 +359,29 @@ async function verifyExisting(path, format, expected) {
   }
 }
 
-async function fetchDirect(url) {
-  const signal = AbortSignal.timeout(30_000);
+async function fetchDirect(take, freesound) {
+  let { url } = take;
+  let headers;
+  if (take.useFreesoundApi) {
+    if (freesound.rejected) throw new Error(freesoundUnauthorized);
+    if (!freesound.token || !/^[a-z0-9._~+/-]+=*$/i.test(freesound.token)) {
+      throw new Error("Set FREESOUND_ACCESS_TOKEN to a Freesound OAuth access token");
+    }
+    const wait = freesound.nextRequest - performance.now();
+    if (wait > 0) await delay(wait);
+    freesound.nextRequest = performance.now() + freesoundRequestInterval;
+    headers = { Authorization: `Bearer ${freesound.token}` };
+  }
+  const signal = AbortSignal.timeout(take.useFreesoundApi ? 300_000 : 30_000);
   for (let redirects = 0; ; redirects++) {
-    const response = await fetch(url, { redirect: "manual", signal });
+    const response = await fetch(url, { headers, redirect: "manual", signal });
+    if (headers && response.status === 401) {
+      freesound.rejected = true;
+      await response.body?.cancel();
+      throw new Error(freesoundUnauthorized);
+    }
+    // The OAuth header applies only to the official API request. Redirects may point to a CDN.
+    headers = undefined;
     if (!redirectStatuses.has(response.status)) return response;
     await response.body?.cancel();
     const location = response.headers.get("location");
@@ -272,16 +391,20 @@ async function fetchDirect(url) {
 }
 
 class HttpError extends Error {
-  constructor(status) {
+  constructor(status, retryAfter) {
     super(`HTTP ${status}`);
     this.status = status;
+    if (retryAfter) {
+      const milliseconds = /^\d+$/.test(retryAfter) ? Number(retryAfter) * 1000 : Date.parse(retryAfter) - Date.now();
+      this.retryAfter = Math.min(60_000, Math.max(0, milliseconds || 0));
+    }
   }
 }
 
-async function receiveFile(url, path) {
-  const response = await fetchDirect(url);
+async function receiveFile(take, path, freesound) {
+  const response = await fetchDirect(take, freesound);
   try {
-    if (response.status !== 200) throw new HttpError(response.status);
+    if (response.status !== 200) throw new HttpError(response.status, response.headers.get("retry-after"));
     const type = response.headers.get("content-type")?.split(";", 1)[0].trim().toLowerCase();
     if (type === "text/html" || type === "application/xhtml+xml") {
       throw new Error(`Unexpected Content-Type ${type}`);
@@ -294,17 +417,17 @@ async function receiveFile(url, path) {
   await pipeline(Readable.fromWeb(response.body), createWriteStream(path));
 }
 
-async function download(take, path) {
+async function download(take, path, freesound) {
   for (let attempt = 1; ; attempt++) {
     try {
-      await receiveFile(take.url, path);
+      await receiveFile(take, path, freesound);
       return;
     } catch (error) {
       const retryable = retryStatuses.has(error.status) || error.name === "TimeoutError" ||
         retryCodes.has(error.cause?.code ?? error.code);
       if (attempt === 3 || !retryable) throw error;
       console.log(`Retrying ${take.label} (${errorMessage(error)})`);
-      await delay(500 * 2 ** (attempt - 1));
+      await delay(Math.max(error.retryAfter ?? 0, 500 * 2 ** (attempt - 1)));
     }
   }
 }
@@ -316,7 +439,7 @@ function planTake(take, recorded) {
   const cue = filenamePart(take.cueId, "cue ID");
   const id = Number.isSafeInteger(take.takeId) && take.takeId >= 0
     ? String(take.takeId).padStart(2, "0") : filenamePart(take.takeId, "take ID");
-  const declaredFormat = record.format ?? extname(take.url.pathname).slice(1);
+  const declaredFormat = record.format ?? take.formatFromUrl;
   const format = typeof declaredFormat === "string" ? declaredFormat.toLowerCase() : "";
   if (!audioChecks.has(format)) throw new Error(`Unsupported or missing audio format ${JSON.stringify(format)}`);
   if (record.sha256 != null && (typeof record.sha256 !== "string" || !sha256Pattern.test(record.sha256))) {
@@ -335,7 +458,7 @@ function licenseIssue(record) {
   if (!nonempty(record.licenseEvidence)) return "Missing CC0 license evidence";
 }
 
-async function installTake(take, dryRun) {
+async function installTake(take, dryRun, freesound) {
   const path = join(root, take.path);
   await checkDirectory(dirname(path), !dryRun);
   const existing = await statIfPresent(path);
@@ -348,7 +471,7 @@ async function installTake(take, dryRun) {
   const temporaryDirectory = await mkdtemp(join(dirname(path), ".download-"));
   try {
     const temporaryFile = join(temporaryDirectory, "audio");
-    await download(take, temporaryFile);
+    await download(take, temporaryFile, freesound);
     const verified = await verifyFile(temporaryFile, take.format, take.checksum);
     try {
       // Publish the complete file atomically and leave any existing destination in place.
@@ -378,8 +501,10 @@ async function main() {
   const { values } = parseArgs({ options: {
     catalog: { type: "string", default: join(root, "sound-catalog.json") },
     "dry-run": { type: "boolean" },
+    freesound: { type: "boolean" },
   } });
   const dryRun = values["dry-run"];
+  const freesound = { token: process.env.FREESOUND_ACCESS_TOKEN?.trim(), nextRequest: 0, rejected: false };
   const cataloguePath = await realpath(resolve(values.catalog));
   const { cues, takes } = readCues(await readJson(cataloguePath));
   await checkDirectory(join(root, "assets"), !dryRun);
@@ -398,10 +523,7 @@ async function main() {
       continue;
     }
     try {
-      if (record?.downloadAuthorized !== undefined && record.downloadAuthorized !== true) {
-        throw new Error("Catalogue does not authorize this download URL");
-      }
-      take.url = httpsUrl(record?.downloadUrl);
+      Object.assign(take, resolveDownload(record, values.freesound));
     } catch (error) {
       skipped.missingDownloadUrls.push({ take: label, reason: errorMessage(error) });
     }
@@ -424,7 +546,7 @@ async function main() {
     const { record, label, path } = take;
     try {
       if (destinations.get(path) > 1) throw new Error(`Catalogue takes share the destination ${path}`);
-      const { status, bytes, sha256 } = await installTake(take, dryRun);
+      const { status, bytes, sha256 } = await installTake(take, dryRun, freesound);
       counts[status]++;
       if (status === "planned") {
         console.log(`Would download or verify ${label} → ${path}`);

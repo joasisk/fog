@@ -116,9 +116,20 @@ npm run audio:download -- --catalog sound-catalog.json
 }
 ```
 
-Use letters, digits, hyphens, and underscores in categories and IDs, starting with a letter or digit. Filenames use lowercase and hyphens, for example `assets/audio/street/wet-pavement-footsteps-01.mp3`. Numeric take IDs are padded to at least two digits. Supply `format` when the direct URL has no audio extension. Supported formats are `mp3`, `wav`, `ogg` (Vorbis or Opus), `opus`, and `flac`. Supply a `sha256` hex digest when the catalogue has one.
+Use letters, digits, hyphens, and underscores in categories and IDs, starting with a letter or digit. Filenames use lowercase and hyphens, for example `assets/audio/street/wet-pavement-footsteps-01.mp3`. Numeric take IDs are padded to at least two digits. Supply `format` when the direct URL has no audio extension. Supported formats are `mp3`, `wav`, `ogg` (Vorbis or Opus), `opus`, `flac`, `aiff`, and `m4a`. Supply a `sha256` hex digest when the catalogue has one.
 
 The dry run previews downloads and checks existing files read-only. A download processes every eligible take, including cues with just one or two recordings. The downloader writes verified files to `assets/audio/` and records their provenance by cue in `assets/audio/manifest.json`. Reruns use the catalogue checksum or the recorded manifest checksum for the same download URL. A destination with different content is reported as a conflict. Missing or unusable download URLs and uncertain or ineligible licenses are listed separately. Each take failure is reported and the downloader exits with a nonzero status after processing the other takes.
+
+### Download Freesound originals
+
+Use `--freesound` to include verified CC0 takes marked as requiring Freesound login. Obtain an OAuth access token and set `FREESOUND_ACCESS_TOKEN` in your local process environment. The downloader sends the token only to Freesound’s API download endpoint and paces requests to its download rate limit. The dry run needs only the flag. [Freesound authentication guide](https://freesound.org/docs/api/authentication.html#oauth2-authentication) · [Rate limits](https://freesound.org/docs/api/overview.html#throttling)
+
+```sh
+npm run audio:download -- --freesound --dry-run
+npm run audio:download -- --freesound
+```
+
+Rerun with `--freesound` to reuse verified files and retry any failed takes. If Freesound returns HTTP 401, obtain a fresh access token before rerunning.
 
 Run the local HTTPS tests with `node --test scripts/download-sounds.test.mjs`. The tests use OpenSSL to generate a temporary certificate.
 
