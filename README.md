@@ -11,3 +11,4 @@ A complete town takes shape as the scene loads. From a fixed, side-on 2D view, y
 - [Soundscape and sound engine](docs/soundscape-and-sound-engine.md)
 - [Building properties](docs/building-properties.md)
 - [User interaction](docs/user-interaction.md)
+- [Technology](docs/technology.md)
