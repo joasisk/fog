@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fog · Building catalog</title>
+<style>
+  :root { color-scheme: light; background: #f0eee5; color: #293f36; font: 16px system-ui,sans-serif }
+  * { box-sizing: border-box }
+  body { width: min(100% - 2.5rem, 1280px); margin: 0 auto; padding: 2rem 0 3rem }
+  h1,h2 { font-family: Georgia,serif; font-weight: 400; margin: 0 0 .82rem; line-height: 1.12 }
+  h1 { font-size: clamp(2.2rem,5vw,3.6rem) }
+  h2 { font-size: clamp(1.5rem,3vw,2.2rem) }
+  button,select,input { font: inherit; color: inherit; accent-color: #547169 }
+  label { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap }
+  select,button { background: #f7f6ed; border: 1px solid #b7c0b1; border-radius: 4px }
+  select { max-width: 100%; padding: .45rem }
+  a { color: #405f55 }
+  .filters { display: flex; gap: .85rem 1.4rem; flex-wrap: wrap; margin: 1rem 0 }
+  .variants { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: .65rem }
+  .variants button { display: grid; text-align: left; gap: .4rem; padding: .65rem; cursor: pointer; min-width: 0 }
+  .variants button[aria-pressed="true"] { outline: 2px solid #547169 }
+  .variants img { display: block; width: 100%; height: 132px; object-fit: contain; object-position: center bottom }
+  .finish, #status { font-size: .88rem; color: #50665c }
+  section { margin-top: 1.8rem; padding-top: 1.3rem; border-top: 1px solid #c7cec2 }
+  .detail { display: grid; grid-template-columns: minmax(220px, 275px) minmax(0,1fr); gap: 1rem; align-items: start }
+  .controls { display: grid; gap: .8rem }
+  fieldset { border: 1px solid #c9cfc2; border-radius: 4px; padding: .5rem .7rem; margin: 0 }
+  #layer-keys { display: grid; gap: .25rem; grid-template-columns: 1fr 1fr; font-size: .88rem }
+  canvas, .town { display: block; width: 100%; height: auto; border: 1px solid #c3cbbe; border-radius: 4px }
+  canvas { background: #e0e6dc }
+  [role=alert] { color: #7e4b38 }
+  @media (max-width: 720px) {
+    body { width: calc(100% - 1.25rem); padding-top: 1.1rem }
+    .variants { grid-template-columns: repeat(2,minmax(0,1fr)) }
+    .detail { grid-template-columns: 1fr }
+  }
+</style>
+</head>
+<body>
+<h1>Fog · Building catalog</h1>
+<div class="filters">
+ <label>Building type <select id="type"></select></label>
+ <label>Street profile <select id="profile"></select></label>
+ <a id="sheet" href="./overview.png">Contact sheet</a>
+</div>
+<p id="status">Loading the building catalog…</p>
+<p id="error" role="alert" hidden></p>
+<div class="variants" id="variants"></div>
+<section>
+ <h2 id="selected">Building components</h2>
+ <div class="detail">
+  <div class="controls">
+   <fieldset><legend>Exterior layers</legend><div id="layer-keys"></div></fieldset>
+   <label><input id="tint" type="checkbox"> Recolor façade <input id="color" type="color" value="#aab7a4" aria-label="Façade color"></label>
+   <label><input id="decor" type="checkbox"> Show decorations</label>
+   <label>Room <select id="room"><option value="all">All rooms</option></select></label>
+   <label>Lighting <select id="light"><option value="unlit">Unlit</option><option value="lit">Lit</option><option value="fade">Fade</option></select></label>
+   <label>Activity <select id="motion"><option value="">Still</option><option value="walking">Walking</option><option value="pausing">Pausing</option><option value="sitting">Sitting</option><option value="curtain">Curtain</option><option value="blind">Blind</option></select></label>
+   <label><input id="dark" type="checkbox"> Dark background</label>
+  </div>
+  <canvas id="art" width="960" height="510" aria-label="Building with selected exterior and room layers"></canvas>
+ </div>
+</section>
+<section>
+ <h2>Town scale</h2>
+ <img class="town" src="./town-scale.png" alt="Different buildings placed on three hillside streets at the game’s viewing scale">
+</section>
+<script type="module" src="./review.js"></script>
+</body>
+</html>

@@ -10,15 +10,25 @@ Use Node.js 24 LTS. Run `npm ci` and `npm run dev`, then open the address Vite p
 
 Run `npm test` for the seeded generation and regeneration checks. Run `npm run build` to type-check and produce `dist/`, and `npm run preview` to serve the built prototype locally. The prototype uses original provisional canvas artwork and synthesized cues. Regenerate the WAV files with `python3 scripts/generate-pilot-audio.py`.
 
-## Design documents
+## Development
 
 - [Development plan](docs/development-plan.md)
+- [Agent development guidelines](AGENTS.md)
+
+## Design documents
+
 - [Procedural generation](docs/procedural-generation.md)
 - [Data model](docs/data-model.md)
 - [Visual styling](docs/visual-styling.md)
 - [Asset generation guide](docs/asset-generation-guide.md)
 - [Soundscape and sound engine](docs/soundscape-and-sound-engine.md)
+- [Sound engine development plan](docs/sound-engine-plan.md)
 - [Sound inventory](docs/sound-inventory.md)
 - [Building properties](docs/building-properties.md)
 - [User interaction](docs/user-interaction.md)
 - [Technology](docs/technology.md)
+
+## Asset kits
+
+- Weather textures, editable sources, and an animated street preview. [Environmental asset pilot](assets/environment/README.md)
+- Street materials, wear overlays, and compositing examples. [Surface asset kit](assets/surfaces/README.md)

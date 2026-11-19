@@ -1,0 +1,1113 @@
+{
+  "referenceSceneUnits": [
+    1280,
+    720
+  ],
+  "baseTextures": [
+    {
+      "id": "surfaces/road/wet-asphalt",
+      "family": "road",
+      "name": "Wet asphalt",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        242,
+        95
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/road/wet-asphalt.png"
+      },
+      "source": "source/base/road/wet-asphalt.ora"
+    },
+    {
+      "id": "surfaces/road/rounded-cobbles",
+      "family": "road",
+      "name": "Rounded cobbles",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        178,
+        53
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/road/rounded-cobbles.png"
+      },
+      "source": "source/base/road/rounded-cobbles.ora"
+    },
+    {
+      "id": "surfaces/road/granite-setts",
+      "family": "road",
+      "name": "Granite setts",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        179,
+        55
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/road/granite-setts.png"
+      },
+      "source": "source/base/road/granite-setts.ora"
+    },
+    {
+      "id": "surfaces/road/compacted-gravel",
+      "family": "road",
+      "name": "Compacted gravel",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        242,
+        95
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/road/compacted-gravel.png"
+      },
+      "source": "source/base/road/compacted-gravel.ora"
+    },
+    {
+      "id": "surfaces/road/packed-earth",
+      "family": "road",
+      "name": "Packed earth",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        242,
+        95
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/road/packed-earth.png"
+      },
+      "source": "source/base/road/packed-earth.ora"
+    },
+    {
+      "id": "surfaces/sidewalk/limestone-flags",
+      "family": "sidewalk",
+      "name": "Limestone flags",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        226,
+        89
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/sidewalk/limestone-flags.png"
+      },
+      "source": "source/base/sidewalk/limestone-flags.ora"
+    },
+    {
+      "id": "surfaces/sidewalk/brick-pavers",
+      "family": "sidewalk",
+      "name": "Brick pavers",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        226,
+        89
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/sidewalk/brick-pavers.png"
+      },
+      "source": "source/base/sidewalk/brick-pavers.ora"
+    },
+    {
+      "id": "surfaces/sidewalk/slate-slabs",
+      "family": "sidewalk",
+      "name": "Slate slabs",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        226,
+        89
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/sidewalk/slate-slabs.png"
+      },
+      "source": "source/base/sidewalk/slate-slabs.ora"
+    },
+    {
+      "id": "surfaces/sidewalk/concrete-slabs",
+      "family": "sidewalk",
+      "name": "Concrete slabs",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        226,
+        89
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/sidewalk/concrete-slabs.png"
+      },
+      "source": "source/base/sidewalk/concrete-slabs.ora"
+    },
+    {
+      "id": "surfaces/sidewalk/fine-gravel",
+      "family": "sidewalk",
+      "name": "Fine gravel path",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        226,
+        89
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/sidewalk/fine-gravel.png"
+      },
+      "source": "source/base/sidewalk/fine-gravel.ora"
+    },
+    {
+      "id": "surfaces/curb/chiseled-granite",
+      "family": "curb",
+      "name": "Chiseled granite",
+      "framePx": [
+        448,
+        54
+      ],
+      "sizeUnits": [
+        242,
+        18
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": false,
+      "image": {
+        "url": "base/curb/chiseled-granite.png"
+      },
+      "source": "source/base/curb/chiseled-granite.ora",
+      "joinPointsPx": [
+        [
+          0,
+          39
+        ],
+        [
+          448,
+          39
+        ]
+      ]
+    },
+    {
+      "id": "surfaces/curb/limestone-edge",
+      "family": "curb",
+      "name": "Limestone edging",
+      "framePx": [
+        448,
+        54
+      ],
+      "sizeUnits": [
+        242,
+        18
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": false,
+      "image": {
+        "url": "base/curb/limestone-edge.png"
+      },
+      "source": "source/base/curb/limestone-edge.ora",
+      "joinPointsPx": [
+        [
+          0,
+          39
+        ],
+        [
+          448,
+          39
+        ]
+      ]
+    },
+    {
+      "id": "surfaces/curb/brick-edge",
+      "family": "curb",
+      "name": "Brick edging",
+      "framePx": [
+        448,
+        54
+      ],
+      "sizeUnits": [
+        242,
+        18
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": false,
+      "image": {
+        "url": "base/curb/brick-edge.png"
+      },
+      "source": "source/base/curb/brick-edge.ora",
+      "joinPointsPx": [
+        [
+          0,
+          39
+        ],
+        [
+          448,
+          39
+        ]
+      ]
+    },
+    {
+      "id": "surfaces/curb/cast-concrete",
+      "family": "curb",
+      "name": "Cast concrete",
+      "framePx": [
+        448,
+        54
+      ],
+      "sizeUnits": [
+        242,
+        18
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": false,
+      "image": {
+        "url": "base/curb/cast-concrete.png"
+      },
+      "source": "source/base/curb/cast-concrete.ora",
+      "joinPointsPx": [
+        [
+          0,
+          39
+        ],
+        [
+          448,
+          39
+        ]
+      ]
+    },
+    {
+      "id": "surfaces/curb/low-setts",
+      "family": "curb",
+      "name": "Low stone setts",
+      "framePx": [
+        448,
+        54
+      ],
+      "sizeUnits": [
+        242,
+        18
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": false,
+      "image": {
+        "url": "base/curb/low-setts.png"
+      },
+      "source": "source/base/curb/low-setts.ora",
+      "joinPointsPx": [
+        [
+          0,
+          39
+        ],
+        [
+          448,
+          39
+        ]
+      ]
+    },
+    {
+      "id": "surfaces/grass/clipped-lawn",
+      "family": "grass",
+      "name": "Clipped lawn",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        260,
+        102
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/grass/clipped-lawn.png"
+      },
+      "source": "source/base/grass/clipped-lawn.ora"
+    },
+    {
+      "id": "surfaces/grass/rough-verge",
+      "family": "grass",
+      "name": "Rough verge",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        260,
+        102
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/grass/rough-verge.png"
+      },
+      "source": "source/base/grass/rough-verge.ora"
+    },
+    {
+      "id": "surfaces/grass/damp-meadow",
+      "family": "grass",
+      "name": "Damp meadow",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        260,
+        102
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/grass/damp-meadow.png"
+      },
+      "source": "source/base/grass/damp-meadow.ora"
+    },
+    {
+      "id": "surfaces/grass/sparse-grass",
+      "family": "grass",
+      "name": "Sparse grass",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        260,
+        102
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/grass/sparse-grass.png"
+      },
+      "source": "source/base/grass/sparse-grass.ora"
+    },
+    {
+      "id": "surfaces/grass/autumn-stubble",
+      "family": "grass",
+      "name": "Autumn stubble",
+      "framePx": [
+        448,
+        176
+      ],
+      "sizeUnits": [
+        260,
+        102
+      ],
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "image": {
+        "url": "base/grass/autumn-stubble.png"
+      },
+      "source": "source/base/grass/autumn-stubble.ora"
+    }
+  ],
+  "overlays": [
+    {
+      "id": "surfaces/overlay/crack/branching-hairline",
+      "family": "crack",
+      "name": "Branching hairline",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        93,
+        36
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/crack/branching-hairline.png"
+      },
+      "source": "source/overlays/crack/branching-hairline.ora",
+      "opacityRange": [
+        0.66,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/crack/long-seam",
+      "family": "crack",
+      "name": "Long seam split",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        124,
+        28
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/crack/long-seam.png"
+      },
+      "source": "source/overlays/crack/long-seam.ora",
+      "opacityRange": [
+        0.66,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/crack/corner-break",
+      "family": "crack",
+      "name": "Corner break",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        62,
+        40
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/crack/corner-break.png"
+      },
+      "source": "source/overlays/crack/corner-break.ora",
+      "opacityRange": [
+        0.66,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/crack/fatigue-mesh",
+      "family": "crack",
+      "name": "Fatigue mesh",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        108,
+        46
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/crack/fatigue-mesh.png"
+      },
+      "source": "source/overlays/crack/fatigue-mesh.ora",
+      "opacityRange": [
+        0.66,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/crack/frost-splits",
+      "family": "crack",
+      "name": "Frost splits",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        108,
+        35
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/crack/frost-splits.png"
+      },
+      "source": "source/overlays/crack/frost-splits.ora",
+      "opacityRange": [
+        0.66,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/pothole/small-chip",
+      "family": "pothole",
+      "name": "Small chipped hole",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        42,
+        21
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/pothole/small-chip.png"
+      },
+      "source": "source/overlays/pothole/small-chip.ora",
+      "opacityRange": [
+        0.72,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/pothole/shallow-spall",
+      "family": "pothole",
+      "name": "Shallow spall",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        91,
+        42
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/pothole/shallow-spall.png"
+      },
+      "source": "source/overlays/pothole/shallow-spall.ora",
+      "opacityRange": [
+        0.72,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/pothole/ragged-oval",
+      "family": "pothole",
+      "name": "Ragged oval",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        105,
+        44
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/pothole/ragged-oval.png"
+      },
+      "source": "source/overlays/pothole/ragged-oval.ora",
+      "opacityRange": [
+        0.72,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/pothole/edge-cut",
+      "family": "pothole",
+      "name": "Elongated edge cut",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        117,
+        31
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/pothole/edge-cut.png"
+      },
+      "source": "source/overlays/pothole/edge-cut.ora",
+      "opacityRange": [
+        0.72,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/pothole/twin-divots",
+      "family": "pothole",
+      "name": "Twin divots",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        89,
+        39
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/pothole/twin-divots.png"
+      },
+      "source": "source/overlays/pothole/twin-divots.ora",
+      "opacityRange": [
+        0.72,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/dirt/silty-track",
+      "family": "dirt",
+      "name": "Silty track",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        162,
+        40
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/dirt/silty-track.png"
+      },
+      "source": "source/overlays/dirt/silty-track.ora",
+      "opacityRange": [
+        0.48,
+        0.88
+      ]
+    },
+    {
+      "id": "surfaces/overlay/dirt/grit-fan",
+      "family": "dirt",
+      "name": "Scattered grit fan",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        94,
+        45
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/dirt/grit-fan.png"
+      },
+      "source": "source/overlays/dirt/grit-fan.ora",
+      "opacityRange": [
+        0.48,
+        0.88
+      ]
+    },
+    {
+      "id": "surfaces/overlay/dirt/mud-smear",
+      "family": "dirt",
+      "name": "Mud smear",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        124,
+        43
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/dirt/mud-smear.png"
+      },
+      "source": "source/overlays/dirt/mud-smear.ora",
+      "opacityRange": [
+        0.48,
+        0.88
+      ]
+    },
+    {
+      "id": "surfaces/overlay/dirt/wet-soil",
+      "family": "dirt",
+      "name": "Wet soil clumps",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        74,
+        41
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/dirt/wet-soil.png"
+      },
+      "source": "source/overlays/dirt/wet-soil.ora",
+      "opacityRange": [
+        0.48,
+        0.88
+      ]
+    },
+    {
+      "id": "surfaces/overlay/dirt/gutter-silt",
+      "family": "dirt",
+      "name": "Gutter silt",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        182,
+        30
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/dirt/gutter-silt.png"
+      },
+      "source": "source/overlays/dirt/gutter-silt.ora",
+      "opacityRange": [
+        0.48,
+        0.88
+      ]
+    },
+    {
+      "id": "surfaces/overlay/grime/gutter-streak",
+      "family": "grime",
+      "name": "Gutter streak",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        190,
+        25
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/grime/gutter-streak.png"
+      },
+      "source": "source/overlays/grime/gutter-streak.ora",
+      "opacityRange": [
+        0.45,
+        0.88
+      ]
+    },
+    {
+      "id": "surfaces/overlay/grime/moss-patina",
+      "family": "grime",
+      "name": "Moss patina",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        88,
+        36
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/grime/moss-patina.png"
+      },
+      "source": "source/overlays/grime/moss-patina.ora",
+      "opacityRange": [
+        0.45,
+        0.88
+      ]
+    },
+    {
+      "id": "surfaces/overlay/grime/oil-haze",
+      "family": "grime",
+      "name": "Oil haze",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        102,
+        48
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/grime/oil-haze.png"
+      },
+      "source": "source/overlays/grime/oil-haze.ora",
+      "opacityRange": [
+        0.45,
+        0.88
+      ]
+    },
+    {
+      "id": "surfaces/overlay/grime/mineral-runoff",
+      "family": "grime",
+      "name": "Mineral runoff",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        70,
+        34
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/grime/mineral-runoff.png"
+      },
+      "source": "source/overlays/grime/mineral-runoff.ora",
+      "opacityRange": [
+        0.45,
+        0.88
+      ]
+    },
+    {
+      "id": "surfaces/overlay/grime/damp-blotches",
+      "family": "grime",
+      "name": "Damp blotches",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        147,
+        47
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/grime/damp-blotches.png"
+      },
+      "source": "source/overlays/grime/damp-blotches.ora",
+      "opacityRange": [
+        0.45,
+        0.88
+      ]
+    },
+    {
+      "id": "surfaces/overlay/puddle/small-pool",
+      "family": "puddle",
+      "name": "Small pool",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        61,
+        29
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/puddle/small-pool.png"
+      },
+      "source": "source/overlays/puddle/small-pool.ora",
+      "clipMask": {
+        "url": "overlays/puddle/small-pool-mask.png"
+      },
+      "opacityRange": [
+        0.7,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/puddle/shallow-sheet",
+      "family": "puddle",
+      "name": "Shallow sheet",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        143,
+        49
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/puddle/shallow-sheet.png"
+      },
+      "source": "source/overlays/puddle/shallow-sheet.ora",
+      "clipMask": {
+        "url": "overlays/puddle/shallow-sheet-mask.png"
+      },
+      "opacityRange": [
+        0.7,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/puddle/split-pool",
+      "family": "puddle",
+      "name": "Split pool",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        120,
+        39
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/puddle/split-pool.png"
+      },
+      "source": "source/overlays/puddle/split-pool.ora",
+      "clipMask": {
+        "url": "overlays/puddle/split-pool-mask.png"
+      },
+      "opacityRange": [
+        0.7,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/puddle/gutter-ribbon",
+      "family": "puddle",
+      "name": "Gutter ribbon",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        170,
+        23
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/puddle/gutter-ribbon.png"
+      },
+      "source": "source/overlays/puddle/gutter-ribbon.ora",
+      "clipMask": {
+        "url": "overlays/puddle/gutter-ribbon-mask.png"
+      },
+      "opacityRange": [
+        0.7,
+        1
+      ]
+    },
+    {
+      "id": "surfaces/overlay/puddle/pocket-pool",
+      "family": "puddle",
+      "name": "Pocket pool",
+      "framePx": [
+        320,
+        140
+      ],
+      "sizeUnits": [
+        56,
+        25
+      ],
+      "pivotPx": [
+        160,
+        70
+      ],
+      "image": {
+        "url": "overlays/puddle/pocket-pool.png"
+      },
+      "source": "source/overlays/puddle/pocket-pool.ora",
+      "clipMask": {
+        "url": "overlays/puddle/pocket-pool-mask.png"
+      },
+      "opacityRange": [
+        0.7,
+        1
+      ]
+    }
+  ],
+  "overlayDrawOrder": [
+    "crack",
+    "pothole",
+    "dirt",
+    "grime",
+    "puddle"
+  ],
+  "compatibleSurfaces": {
+    "crack": [
+      "road",
+      "sidewalk",
+      "curb"
+    ],
+    "pothole": [
+      "road",
+      "sidewalk"
+    ],
+    "dirt": [
+      "road",
+      "sidewalk",
+      "curb",
+      "grass"
+    ],
+    "grime": [
+      "road",
+      "sidewalk",
+      "curb"
+    ],
+    "puddle": [
+      "road",
+      "sidewalk"
+    ]
+  }
+}

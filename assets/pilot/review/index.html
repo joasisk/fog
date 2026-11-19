@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fog · Pilot assets</title>
+<style>
+  * { box-sizing: border-box }
+  :root { color-scheme: light; color: #2e3935; background: #eeeee6; font: 16px system-ui, sans-serif }
+  body { max-width: 1380px; width: calc(100% - 2.5rem); margin: 0 auto; padding: 2rem 0 3rem }
+  h1,h2 { font: 400 clamp(1.5rem,3vw,2.35rem) Georgia,serif; margin: 0 0 .9rem }
+  h1 { font-size: clamp(2rem,4.75vw,3.7rem); letter-spacing: -.035em }
+  section { margin-top: 1.95rem; border-top: 1px solid #c7cec4; padding-top: 1.4rem }
+  canvas { width: 100%; height: auto; max-width: 100%; display: block; border: 1px solid #bec6bc; border-radius: 4px; background: #e5e6dc }
+  .bar { margin-top: .7rem; display: flex; gap: .75rem; align-items: center; justify-content: space-between; flex-wrap: wrap }
+  .bar label { display: flex; align-items: center; gap: .45rem }
+  .split { display: grid; grid-template-columns: minmax(218px, 1fr) 3fr; gap: 1.25rem; align-items: start }
+  .controls { display: grid; align-content: start; gap: 1rem }
+  .controls label { display: flex; align-items: center; gap: .4rem; flex-wrap: wrap }
+  .controls select { width: 100%; padding: .4rem; background: #f6f5ee; border: 1px solid #abb8ae; border-radius: 4px; color: inherit }
+  input,select,button { accent-color: #59736a; font: inherit }
+  a { color: #385d4c }
+  #status { font-size: .88rem; color: #51635c }
+  #review-error { color: #704a3d }
+  @media(max-width: 680px) { body { width: calc(100% - 1.25rem) } .split { grid-template-columns: 1fr } }
+</style>
+</head>
+<body>
+<h1>Fog · Pilot assets</h1>
+<canvas id="town" width="1440" height="810" aria-label="A distant town with three visible streets"></canvas>
+<div class="bar">
+  <span id="status">Loading the pilot artwork…</span>
+  <label>Fog <input id="fog" type="range" min="0" max="100" value="60"><output id="fog-value">60%</output></label>
+</div>
+<p id="review-error" role="alert" hidden></p>
+<section>
+  <h2>Café and bookshop on the same lot</h2>
+  <canvas id="comparison" width="1280" height="462" aria-label="Café and bookshop each placed against the same attached neighbor"></canvas>
+</section>
+<section>
+  <h2>Façades, decorations, and rooms</h2>
+  <div class="split">
+    <div class="controls">
+      <label>Building <select id="building"></select></label>
+      <label>Façade <select id="palette"></select></label>
+      <label><input type="color" id="paint" value="#c6ab7e"> Custom façade color</label>
+      <label><input type="checkbox" id="decor"> Decorations</label>
+      <label>Room light <select id="light"><option value="off">Unlit</option><option value="on">Lit</option><option value="auto">Fade on and off</option></select></label>
+      <label>Activity <select id="motion"><option value="off">Still</option><option value="walking">Person crossing</option><option value="pausing">Person pausing</option><option value="sitting">Person sitting</option><option value="curtain">Curtain</option><option value="blind">Blind</option></select></label>
+    </div>
+    <canvas id="inspection" width="800" height="500" aria-label="Selected building with independent façade, room light, and decoration layers"></canvas>
+  </div>
+</section>
+<section>
+  <h2>Beech foliage colors</h2>
+  <canvas id="foliage" width="1280" height="302" aria-label="The same beech in its original and four recolored foliage palettes"></canvas>
+</section>
+<script type="module" src="./review.js"></script>
+</body>
+</html>

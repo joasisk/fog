@@ -39,5 +39,6 @@ Update the affected emitters while the fog hides the replacement and the town gr
 Preload a replacement while preparing its geometry. At the start of cover, call `fadeTown(0, coverMs)`. Once the cover and fade have finished, install the replacement soundscape with the geometry, then call `fadeTown(1, revealMs)` as reveal begins. The timing arguments are milliseconds. Reuse the engine throughout regeneration to keep the same rain source running. Call `dispose()` when removing the scene and close the context when its owner no longer needs it.
 
 - [Building properties](building-properties.md)
+- [Sound engine development plan](sound-engine-plan.md)
 - [Sound inventory](sound-inventory.md)
 - [User interaction](user-interaction.md)

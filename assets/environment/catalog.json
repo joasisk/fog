@@ -1,0 +1,262 @@
+{
+  "referenceSceneUnits": [
+    1280,
+    720
+  ],
+  "rain": {
+    "dropsPerSecond": 124,
+    "velocity": {
+      "x": 55,
+      "y": 390
+    }
+  },
+  "assets": [
+    {
+      "id": "environment/sky/overcast-sky",
+      "kind": "sky",
+      "framePx": [
+        1024,
+        576
+      ],
+      "image": {
+        "url": "overcast-sky.png"
+      },
+      "source": "source/overcast-sky.ora",
+      "placement": "scene",
+      "sizeUnits": [
+        1280,
+        720
+      ],
+      "opacity": 1
+    },
+    {
+      "id": "environment/cloud/stratus-wash",
+      "kind": "cloud",
+      "framePx": [
+        1280,
+        360
+      ],
+      "image": {
+        "url": "stratus-wash.png"
+      },
+      "source": "source/stratus-wash.ora",
+      "placement": "sky",
+      "pivotPx": [
+        640,
+        180
+      ],
+      "sizeUnits": [
+        1570,
+        407
+      ],
+      "opacity": 0.82,
+      "driftPerSecond": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "id": "environment/fog/distance-veil",
+      "kind": "fog",
+      "framePx": [
+        1024,
+        280
+      ],
+      "image": {
+        "url": "distance-veil.png"
+      },
+      "source": "source/distance-veil.ora",
+      "layer": "distance",
+      "depth": 0.76,
+      "pivotPx": [
+        512,
+        140
+      ],
+      "sizeUnits": [
+        1790,
+        340
+      ],
+      "opacity": 0.82,
+      "driftPerSecond": {
+        "x": 8,
+        "y": 0
+      }
+    },
+    {
+      "id": "environment/fog/street-bank",
+      "kind": "fog",
+      "framePx": [
+        1024,
+        280
+      ],
+      "image": {
+        "url": "street-bank.png"
+      },
+      "source": "source/street-bank.ora",
+      "layer": "middle_distance",
+      "depth": 0.38,
+      "pivotPx": [
+        512,
+        140
+      ],
+      "sizeUnits": [
+        920,
+        222
+      ],
+      "opacity": 0.96,
+      "driftPerSecond": {
+        "x": 15,
+        "y": -0.35
+      }
+    },
+    {
+      "id": "environment/fog/ground-wisp",
+      "kind": "fog",
+      "framePx": [
+        896,
+        192
+      ],
+      "image": {
+        "url": "ground-wisp.png"
+      },
+      "source": "source/ground-wisp.ora",
+      "layer": "foreground",
+      "depth": 0.08,
+      "pivotPx": [
+        448,
+        96
+      ],
+      "sizeUnits": [
+        780,
+        111
+      ],
+      "opacity": 0.61,
+      "driftPerSecond": {
+        "x": 23,
+        "y": 0.15
+      }
+    },
+    {
+      "id": "environment/reveal/cover-bank",
+      "kind": "reveal",
+      "framePx": [
+        1024,
+        448
+      ],
+      "image": {
+        "url": "cover-bank.png"
+      },
+      "source": "source/cover-bank.ora",
+      "pivotPx": [
+        512,
+        224
+      ],
+      "opaqueRectPx": [
+        250,
+        123,
+        524,
+        202
+      ],
+      "opacity": 1
+    },
+    {
+      "id": "environment/rain/fine-rain",
+      "kind": "rain",
+      "framePx": [
+        16,
+        80
+      ],
+      "image": {
+        "url": "fine-rain.png"
+      },
+      "source": "source/fine-rain.ora",
+      "pivotPx": [
+        8,
+        64
+      ],
+      "sizeUnits": [
+        1.25,
+        14
+      ]
+    },
+    {
+      "id": "environment/rain/near-rain",
+      "kind": "rain",
+      "framePx": [
+        24,
+        112
+      ],
+      "image": {
+        "url": "near-rain.png"
+      },
+      "source": "source/near-rain.ora",
+      "pivotPx": [
+        12,
+        90
+      ],
+      "sizeUnits": [
+        1.9,
+        22
+      ]
+    },
+    {
+      "id": "environment/eave-drip/eave-drip",
+      "kind": "eave-drip",
+      "framePx": [
+        26,
+        52
+      ],
+      "image": {
+        "url": "eave-drip.png"
+      },
+      "source": "source/eave-drip.ora",
+      "pivotPx": [
+        13,
+        5
+      ],
+      "sizeUnits": [
+        3,
+        6
+      ],
+      "opacity": 0.68
+    },
+    {
+      "id": "environment/puddle-ripple/puddle-ripple",
+      "kind": "puddle-ripple",
+      "framePx": [
+        176,
+        64
+      ],
+      "image": {
+        "url": "puddle-ripple.png"
+      },
+      "source": "source/puddle-ripple.ora",
+      "pivotPx": [
+        88,
+        32
+      ],
+      "sizeUnits": [
+        45,
+        16
+      ],
+      "opacity": 0.65,
+      "lifetimeSeconds": 1.6
+    },
+    {
+      "id": "environment/paper/paper-grain",
+      "kind": "paper",
+      "framePx": [
+        256,
+        256
+      ],
+      "image": {
+        "url": "paper-grain.png"
+      },
+      "source": "source/paper-grain.ora",
+      "placement": "fixed",
+      "horizontalRepeat": true,
+      "verticalRepeat": true,
+      "opacity": 0.57
+    }
+  ]
+}
