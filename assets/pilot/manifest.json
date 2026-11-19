@@ -1,0 +1,1872 @@
+{
+  "version": 1,
+  "units": "scene units",
+  "artSource": "Original watercolor artwork generated for Fog. The approved cottage and beech paintings supply their source layers.",
+  "facadePalette": [
+    [
+      "limewash",
+      "#d9cdb9"
+    ],
+    [
+      "ochre",
+      "#c6ab7e"
+    ],
+    [
+      "clay",
+      "#ba8d7f"
+    ],
+    [
+      "sage",
+      "#adb6a1"
+    ],
+    [
+      "slate",
+      "#a9b6c0"
+    ],
+    [
+      "cream",
+      "#e1d5bb"
+    ]
+  ],
+  "foliagePalettes": {
+    "rust": [
+      "#482d24",
+      "#9a5439",
+      "#d89362"
+    ],
+    "burnt-orange": [
+      "#553425",
+      "#b56c38",
+      "#edb375"
+    ],
+    "brown": [
+      "#47372d",
+      "#88664c",
+      "#c1a580"
+    ],
+    "autumn-green": [
+      "#3e4534",
+      "#738059",
+      "#b1af73"
+    ],
+    "pine-green": [
+      "#243c3b",
+      "#47645c",
+      "#8a9975"
+    ],
+    "blue-green": [
+      "#263c44",
+      "#48666b",
+      "#929f92"
+    ]
+  },
+  "buildings": {
+    "cafe": {
+      "id": "buildings/cafe/old-town/v01",
+      "label": "Café with flats",
+      "type": "cafe",
+      "profile": "old-town",
+      "variant": "v01",
+      "typicalLots": 1,
+      "framePx": [
+        648,
+        1056
+      ],
+      "referenceFrontageUnits": 12,
+      "frontageRangeUnits": [
+        10,
+        14
+      ],
+      "referenceHeightUnits": 18.86,
+      "groundAnchorPx": [
+        324,
+        1024
+      ],
+      "groundSpanXPx": [
+        24,
+        624
+      ],
+      "wallContacts": [
+        "left",
+        "right"
+      ],
+      "wallContactXPx": {
+        "left": 24,
+        "right": 624
+      },
+      "shell": "buildings/cafe/old-town/v01/shell.png",
+      "facadeMask": "buildings/cafe/old-town/v01/facade-mask.png",
+      "facadeValue": "buildings/cafe/old-town/v01/facade-value.png",
+      "facadeMidtone": 205.0,
+      "windows": [
+        {
+          "id": "shop-window",
+          "roomId": "cafe",
+          "floorUseId": "cafe",
+          "family": "wide-shopfront",
+          "activity": [
+            "walking",
+            "pausing",
+            "sitting"
+          ],
+          "rectPx": [
+            73,
+            778,
+            288,
+            170
+          ],
+          "mask": "buildings/cafe/old-town/v01/windows/shop-window/mask.png",
+          "unlit": "buildings/cafe/old-town/v01/windows/shop-window/unlit.png",
+          "lit": "buildings/cafe/old-town/v01/windows/shop-window/lit.png",
+          "glass": "buildings/cafe/old-town/v01/windows/shop-window/glass.png"
+        },
+        {
+          "id": "shop-door",
+          "roomId": "cafe",
+          "floorUseId": "cafe",
+          "family": "tall-hall",
+          "activity": [
+            "walking"
+          ],
+          "rectPx": [
+            395,
+            832,
+            58,
+            95
+          ],
+          "mask": "buildings/cafe/old-town/v01/windows/shop-door/mask.png",
+          "unlit": "buildings/cafe/old-town/v01/windows/shop-door/unlit.png",
+          "lit": "buildings/cafe/old-town/v01/windows/shop-door/lit.png",
+          "glass": "buildings/cafe/old-town/v01/windows/shop-door/glass.png"
+        },
+        {
+          "id": "shop-transom",
+          "roomId": "cafe",
+          "floorUseId": "cafe",
+          "family": "narrow-sash",
+          "activity": [],
+          "rectPx": [
+            388,
+            779,
+            71,
+            30
+          ],
+          "mask": "buildings/cafe/old-town/v01/windows/shop-transom/mask.png",
+          "unlit": "buildings/cafe/old-town/v01/windows/shop-transom/unlit.png",
+          "lit": "buildings/cafe/old-town/v01/windows/shop-transom/lit.png",
+          "glass": "buildings/cafe/old-town/v01/windows/shop-transom/glass.png"
+        },
+        {
+          "id": "flats-transom",
+          "roomId": "stair",
+          "floorUseId": "flats-1",
+          "family": "tall-hall",
+          "activity": [],
+          "rectPx": [
+            514,
+            778,
+            65,
+            31
+          ],
+          "mask": "buildings/cafe/old-town/v01/windows/flats-transom/mask.png",
+          "unlit": "buildings/cafe/old-town/v01/windows/flats-transom/unlit.png",
+          "lit": "buildings/cafe/old-town/v01/windows/flats-transom/lit.png",
+          "glass": "buildings/cafe/old-town/v01/windows/flats-transom/glass.png"
+        },
+        {
+          "id": "dormer",
+          "roomId": "attic",
+          "floorUseId": "flats-2",
+          "family": "small-attic",
+          "activity": [],
+          "rectPx": [
+            291,
+            214,
+            64,
+            75
+          ],
+          "mask": "buildings/cafe/old-town/v01/windows/dormer/mask.png",
+          "unlit": "buildings/cafe/old-town/v01/windows/dormer/unlit.png",
+          "lit": "buildings/cafe/old-town/v01/windows/dormer/lit.png",
+          "glass": "buildings/cafe/old-town/v01/windows/dormer/glass.png"
+        },
+        {
+          "id": "upper-1-1",
+          "roomId": "flats-2-living",
+          "floorUseId": "flats-2",
+          "family": "narrow-sash",
+          "activity": [],
+          "rectPx": [
+            125,
+            382,
+            68,
+            96
+          ],
+          "mask": "buildings/cafe/old-town/v01/windows/upper-1-1/mask.png",
+          "unlit": "buildings/cafe/old-town/v01/windows/upper-1-1/unlit.png",
+          "lit": "buildings/cafe/old-town/v01/windows/upper-1-1/lit.png",
+          "glass": "buildings/cafe/old-town/v01/windows/upper-1-1/glass.png"
+        },
+        {
+          "id": "upper-1-2",
+          "roomId": "flats-2-living",
+          "floorUseId": "flats-2",
+          "family": "narrow-sash",
+          "activity": [],
+          "rectPx": [
+            295,
+            382,
+            67,
+            96
+          ],
+          "mask": "buildings/cafe/old-town/v01/windows/upper-1-2/mask.png",
+          "unlit": "buildings/cafe/old-town/v01/windows/upper-1-2/unlit.png",
+          "lit": "buildings/cafe/old-town/v01/windows/upper-1-2/lit.png",
+          "glass": "buildings/cafe/old-town/v01/windows/upper-1-2/glass.png"
+        },
+        {
+          "id": "upper-1-3",
+          "roomId": "flats-2-back",
+          "floorUseId": "flats-2",
+          "family": "narrow-sash",
+          "activity": [],
+          "rectPx": [
+            466,
+            382,
+            67,
+            96
+          ],
+          "mask": "buildings/cafe/old-town/v01/windows/upper-1-3/mask.png",
+          "unlit": "buildings/cafe/old-town/v01/windows/upper-1-3/unlit.png",
+          "lit": "buildings/cafe/old-town/v01/windows/upper-1-3/lit.png",
+          "glass": "buildings/cafe/old-town/v01/windows/upper-1-3/glass.png"
+        },
+        {
+          "id": "upper-2-1",
+          "roomId": "flats-1-living",
+          "floorUseId": "flats-1",
+          "family": "narrow-sash",
+          "activity": [
+            "curtain",
+            "blind"
+          ],
+          "rectPx": [
+            125,
+            566,
+            68,
+            105
+          ],
+          "mask": "buildings/cafe/old-town/v01/windows/upper-2-1/mask.png",
+          "unlit": "buildings/cafe/old-town/v01/windows/upper-2-1/unlit.png",
+          "lit": "buildings/cafe/old-town/v01/windows/upper-2-1/lit.png",
+          "glass": "buildings/cafe/old-town/v01/windows/upper-2-1/glass.png"
+        },
+        {
+          "id": "upper-2-2",
+          "roomId": "flats-1-living",
+          "floorUseId": "flats-1",
+          "family": "narrow-sash",
+          "activity": [],
+          "rectPx": [
+            295,
+            566,
+            67,
+            105
+          ],
+          "mask": "buildings/cafe/old-town/v01/windows/upper-2-2/mask.png",
+          "unlit": "buildings/cafe/old-town/v01/windows/upper-2-2/unlit.png",
+          "lit": "buildings/cafe/old-town/v01/windows/upper-2-2/lit.png",
+          "glass": "buildings/cafe/old-town/v01/windows/upper-2-2/glass.png"
+        },
+        {
+          "id": "upper-2-3",
+          "roomId": "flats-1-back",
+          "floorUseId": "flats-1",
+          "family": "narrow-sash",
+          "activity": [],
+          "rectPx": [
+            466,
+            566,
+            67,
+            105
+          ],
+          "mask": "buildings/cafe/old-town/v01/windows/upper-2-3/mask.png",
+          "unlit": "buildings/cafe/old-town/v01/windows/upper-2-3/unlit.png",
+          "lit": "buildings/cafe/old-town/v01/windows/upper-2-3/lit.png",
+          "glass": "buildings/cafe/old-town/v01/windows/upper-2-3/glass.png"
+        }
+      ],
+      "rooms": [
+        {
+          "id": "attic",
+          "windows": [
+            "dormer"
+          ]
+        },
+        {
+          "id": "cafe",
+          "windows": [
+            "shop-window",
+            "shop-door",
+            "shop-transom"
+          ]
+        },
+        {
+          "id": "flats-1-back",
+          "windows": [
+            "upper-2-3"
+          ]
+        },
+        {
+          "id": "flats-1-living",
+          "windows": [
+            "upper-2-1",
+            "upper-2-2"
+          ]
+        },
+        {
+          "id": "flats-2-back",
+          "windows": [
+            "upper-1-3"
+          ]
+        },
+        {
+          "id": "flats-2-living",
+          "windows": [
+            "upper-1-1",
+            "upper-1-2"
+          ]
+        },
+        {
+          "id": "stair",
+          "windows": [
+            "flats-transom"
+          ]
+        }
+      ],
+      "floorUses": [
+        {
+          "id": "cafe",
+          "level": 0,
+          "category": "cafe",
+          "dwellingCount": 0
+        },
+        {
+          "id": "flats-1",
+          "level": 1,
+          "category": "residential",
+          "dwellingCount": 1
+        },
+        {
+          "id": "flats-2",
+          "level": 2,
+          "category": "residential",
+          "dwellingCount": 1
+        }
+      ],
+      "entrances": [
+        {
+          "id": "cafe",
+          "floorUseId": "cafe",
+          "anchorPx": [
+            423,
+            1013
+          ]
+        },
+        {
+          "id": "flats",
+          "floorUseId": "flats-1",
+          "anchorPx": [
+            549,
+            1013
+          ]
+        }
+      ],
+      "soundAnchors": [
+        {
+          "id": "cafe-room",
+          "floorUseId": "cafe",
+          "anchorPx": [
+            221,
+            864
+          ],
+          "placement": "indoor"
+        },
+        {
+          "id": "door",
+          "floorUseId": "cafe",
+          "anchorPx": [
+            423,
+            1010
+          ],
+          "placement": "outdoor"
+        },
+        {
+          "id": "flat",
+          "floorUseId": "flats-1",
+          "anchorPx": [
+            325,
+            611
+          ],
+          "placement": "indoor"
+        }
+      ],
+      "decorationMounts": [
+        {
+          "decoration": "awning",
+          "anchorPx": [
+            215,
+            768
+          ],
+          "widthPx": 333,
+          "heightPx": 60
+        },
+        {
+          "decoration": "fascia",
+          "anchorPx": [
+            217,
+            744
+          ],
+          "widthPx": 228,
+          "heightPx": 33
+        },
+        {
+          "decoration": "hanging-sign",
+          "anchorPx": [
+            475,
+            736
+          ],
+          "widthPx": 101,
+          "heightPx": null
+        },
+        {
+          "decoration": "chalkboard",
+          "anchorPx": [
+            345,
+            1024
+          ],
+          "widthPx": 51,
+          "heightPx": null
+        },
+        {
+          "decoration": "window-box",
+          "anchorPx": [
+            159,
+            491
+          ],
+          "widthPx": 83,
+          "heightPx": 31
+        },
+        {
+          "decoration": "wall-lantern",
+          "anchorPx": [
+            493,
+            824
+          ],
+          "widthPx": 35,
+          "heightPx": null
+        }
+      ],
+      "source": "sources/buildings/cafe.ora",
+      "endWalls": {
+        "left": {
+          "image": "buildings/cafe/old-town/v01/end-wall-left.png",
+          "rectPx": [
+            14,
+            340,
+            12,
+            684
+          ]
+        },
+        "right": {
+          "image": "buildings/cafe/old-town/v01/end-wall-right.png",
+          "rectPx": [
+            623,
+            340,
+            12,
+            684
+          ]
+        }
+      },
+      "lotCompatibilityGroup": "old-town-shop"
+    },
+    "bookshop": {
+      "id": "buildings/bookshop/old-town/v01",
+      "label": "Bookshop with flats",
+      "type": "bookshop",
+      "profile": "old-town",
+      "variant": "v01",
+      "typicalLots": 1,
+      "framePx": [
+        648,
+        1056
+      ],
+      "referenceFrontageUnits": 12,
+      "frontageRangeUnits": [
+        10,
+        14
+      ],
+      "referenceHeightUnits": 18.6,
+      "groundAnchorPx": [
+        324,
+        1024
+      ],
+      "groundSpanXPx": [
+        24,
+        624
+      ],
+      "wallContacts": [
+        "left",
+        "right"
+      ],
+      "wallContactXPx": {
+        "left": 24,
+        "right": 624
+      },
+      "shell": "buildings/bookshop/old-town/v01/shell.png",
+      "facadeMask": "buildings/bookshop/old-town/v01/facade-mask.png",
+      "facadeValue": "buildings/bookshop/old-town/v01/facade-value.png",
+      "facadeMidtone": 207.0,
+      "windows": [
+        {
+          "id": "display-left",
+          "roomId": "bookshop",
+          "floorUseId": "bookshop",
+          "family": "wide-shopfront",
+          "activity": [],
+          "rectPx": [
+            77,
+            785,
+            159,
+            161
+          ],
+          "mask": "buildings/bookshop/old-town/v01/windows/display-left/mask.png",
+          "unlit": "buildings/bookshop/old-town/v01/windows/display-left/unlit.png",
+          "lit": "buildings/bookshop/old-town/v01/windows/display-left/lit.png",
+          "glass": "buildings/bookshop/old-town/v01/windows/display-left/glass.png"
+        },
+        {
+          "id": "display-right",
+          "roomId": "bookshop",
+          "floorUseId": "bookshop",
+          "family": "wide-shopfront",
+          "activity": [],
+          "rectPx": [
+            414,
+            785,
+            157,
+            161
+          ],
+          "mask": "buildings/bookshop/old-town/v01/windows/display-right/mask.png",
+          "unlit": "buildings/bookshop/old-town/v01/windows/display-right/unlit.png",
+          "lit": "buildings/bookshop/old-town/v01/windows/display-right/lit.png",
+          "glass": "buildings/bookshop/old-town/v01/windows/display-right/glass.png"
+        },
+        {
+          "id": "bookshop-door",
+          "roomId": "bookshop",
+          "floorUseId": "bookshop",
+          "family": "tall-hall",
+          "activity": [],
+          "rectPx": [
+            293,
+            823,
+            60,
+            117
+          ],
+          "mask": "buildings/bookshop/old-town/v01/windows/bookshop-door/mask.png",
+          "unlit": "buildings/bookshop/old-town/v01/windows/bookshop-door/unlit.png",
+          "lit": "buildings/bookshop/old-town/v01/windows/bookshop-door/lit.png",
+          "glass": "buildings/bookshop/old-town/v01/windows/bookshop-door/glass.png"
+        },
+        {
+          "id": "bookshop-transom",
+          "roomId": "bookshop",
+          "floorUseId": "bookshop",
+          "family": "narrow-sash",
+          "activity": [],
+          "rectPx": [
+            286,
+            760,
+            75,
+            40
+          ],
+          "mask": "buildings/bookshop/old-town/v01/windows/bookshop-transom/mask.png",
+          "unlit": "buildings/bookshop/old-town/v01/windows/bookshop-transom/unlit.png",
+          "lit": "buildings/bookshop/old-town/v01/windows/bookshop-transom/lit.png",
+          "glass": "buildings/bookshop/old-town/v01/windows/bookshop-transom/glass.png"
+        },
+        {
+          "id": "upper-1-1",
+          "roomId": "flats-2-living",
+          "floorUseId": "flats-2",
+          "family": "paired-casement",
+          "activity": [],
+          "rectPx": [
+            126,
+            398,
+            125,
+            97
+          ],
+          "mask": "buildings/bookshop/old-town/v01/windows/upper-1-1/mask.png",
+          "unlit": "buildings/bookshop/old-town/v01/windows/upper-1-1/unlit.png",
+          "lit": "buildings/bookshop/old-town/v01/windows/upper-1-1/lit.png",
+          "glass": "buildings/bookshop/old-town/v01/windows/upper-1-1/glass.png"
+        },
+        {
+          "id": "upper-1-2",
+          "roomId": "flats-2-living",
+          "floorUseId": "flats-2",
+          "family": "paired-casement",
+          "activity": [],
+          "rectPx": [
+            395,
+            398,
+            127,
+            97
+          ],
+          "mask": "buildings/bookshop/old-town/v01/windows/upper-1-2/mask.png",
+          "unlit": "buildings/bookshop/old-town/v01/windows/upper-1-2/unlit.png",
+          "lit": "buildings/bookshop/old-town/v01/windows/upper-1-2/lit.png",
+          "glass": "buildings/bookshop/old-town/v01/windows/upper-1-2/glass.png"
+        },
+        {
+          "id": "upper-2-1",
+          "roomId": "flats-1-living",
+          "floorUseId": "flats-1",
+          "family": "paired-casement",
+          "activity": [
+            "curtain",
+            "blind"
+          ],
+          "rectPx": [
+            126,
+            596,
+            125,
+            92
+          ],
+          "mask": "buildings/bookshop/old-town/v01/windows/upper-2-1/mask.png",
+          "unlit": "buildings/bookshop/old-town/v01/windows/upper-2-1/unlit.png",
+          "lit": "buildings/bookshop/old-town/v01/windows/upper-2-1/lit.png",
+          "glass": "buildings/bookshop/old-town/v01/windows/upper-2-1/glass.png"
+        },
+        {
+          "id": "upper-2-2",
+          "roomId": "flats-1-living",
+          "floorUseId": "flats-1",
+          "family": "paired-casement",
+          "activity": [
+            "curtain",
+            "blind"
+          ],
+          "rectPx": [
+            395,
+            596,
+            127,
+            92
+          ],
+          "mask": "buildings/bookshop/old-town/v01/windows/upper-2-2/mask.png",
+          "unlit": "buildings/bookshop/old-town/v01/windows/upper-2-2/unlit.png",
+          "lit": "buildings/bookshop/old-town/v01/windows/upper-2-2/lit.png",
+          "glass": "buildings/bookshop/old-town/v01/windows/upper-2-2/glass.png"
+        }
+      ],
+      "rooms": [
+        {
+          "id": "bookshop",
+          "windows": [
+            "display-left",
+            "display-right",
+            "bookshop-door",
+            "bookshop-transom"
+          ]
+        },
+        {
+          "id": "flats-1-living",
+          "windows": [
+            "upper-2-1",
+            "upper-2-2"
+          ]
+        },
+        {
+          "id": "flats-2-living",
+          "windows": [
+            "upper-1-1",
+            "upper-1-2"
+          ]
+        }
+      ],
+      "floorUses": [
+        {
+          "id": "bookshop",
+          "level": 0,
+          "category": "bookshop",
+          "dwellingCount": 0
+        },
+        {
+          "id": "flats-1",
+          "level": 1,
+          "category": "residential",
+          "dwellingCount": 1
+        },
+        {
+          "id": "flats-2",
+          "level": 2,
+          "category": "residential",
+          "dwellingCount": 1
+        }
+      ],
+      "entrances": [
+        {
+          "id": "bookshop",
+          "floorUseId": "bookshop",
+          "anchorPx": [
+            324,
+            1012
+          ]
+        }
+      ],
+      "soundAnchors": [
+        {
+          "id": "reading",
+          "floorUseId": "bookshop",
+          "anchorPx": [
+            162,
+            860
+          ],
+          "placement": "indoor"
+        },
+        {
+          "id": "door",
+          "floorUseId": "bookshop",
+          "anchorPx": [
+            324,
+            1011
+          ],
+          "placement": "outdoor"
+        },
+        {
+          "id": "flat",
+          "floorUseId": "flats-1",
+          "anchorPx": [
+            190,
+            641
+          ],
+          "placement": "indoor"
+        }
+      ],
+      "decorationMounts": [
+        {
+          "decoration": "awning",
+          "anchorPx": [
+            155,
+            776
+          ],
+          "widthPx": 181,
+          "heightPx": 44
+        },
+        {
+          "decoration": "awning",
+          "anchorPx": [
+            490,
+            776
+          ],
+          "widthPx": 180,
+          "heightPx": 44
+        },
+        {
+          "decoration": "fascia",
+          "anchorPx": [
+            322,
+            748
+          ],
+          "widthPx": 227,
+          "heightPx": 34
+        },
+        {
+          "decoration": "hanging-sign",
+          "anchorPx": [
+            549,
+            717
+          ],
+          "widthPx": 89,
+          "heightPx": null
+        },
+        {
+          "decoration": "chalkboard",
+          "anchorPx": [
+            256,
+            1024
+          ],
+          "widthPx": 46,
+          "heightPx": null
+        },
+        {
+          "decoration": "window-box",
+          "anchorPx": [
+            190,
+            507
+          ],
+          "widthPx": 134,
+          "heightPx": 36
+        },
+        {
+          "decoration": "wall-lantern",
+          "anchorPx": [
+            376,
+            820
+          ],
+          "widthPx": 34,
+          "heightPx": null
+        }
+      ],
+      "source": "sources/buildings/bookshop.ora",
+      "endWalls": {
+        "left": {
+          "image": "buildings/bookshop/old-town/v01/end-wall-left.png",
+          "rectPx": [
+            14,
+            357,
+            12,
+            667
+          ]
+        },
+        "right": {
+          "image": "buildings/bookshop/old-town/v01/end-wall-right.png",
+          "rectPx": [
+            623,
+            357,
+            12,
+            667
+          ]
+        }
+      },
+      "lotCompatibilityGroup": "old-town-shop"
+    },
+    "terrace": {
+      "id": "buildings/terraced-house/old-town/v01",
+      "label": "Terrace house",
+      "type": "terraced-house",
+      "profile": "old-town",
+      "variant": "v01",
+      "typicalLots": 1,
+      "framePx": [
+        525,
+        1010
+      ],
+      "referenceFrontageUnits": 9,
+      "frontageRangeUnits": [
+        8,
+        11
+      ],
+      "referenceHeightUnits": 18.69,
+      "groundAnchorPx": [
+        261,
+        993
+      ],
+      "groundSpanXPx": [
+        26,
+        496
+      ],
+      "wallContacts": [
+        "left",
+        "right"
+      ],
+      "wallContactXPx": {
+        "left": 26,
+        "right": 496
+      },
+      "shell": "buildings/terraced-house/old-town/v01/shell.png",
+      "facadeMask": "buildings/terraced-house/old-town/v01/facade-mask.png",
+      "facadeValue": "buildings/terraced-house/old-town/v01/facade-value.png",
+      "facadeMidtone": 148.0,
+      "windows": [
+        {
+          "id": "dormer",
+          "roomId": "attic",
+          "floorUseId": "house-2",
+          "family": "small-attic",
+          "activity": [],
+          "rectPx": [
+            272,
+            204,
+            69,
+            71
+          ],
+          "mask": "buildings/terraced-house/old-town/v01/windows/dormer/mask.png",
+          "unlit": "buildings/terraced-house/old-town/v01/windows/dormer/unlit.png",
+          "lit": "buildings/terraced-house/old-town/v01/windows/dormer/lit.png",
+          "glass": "buildings/terraced-house/old-town/v01/windows/dormer/glass.png"
+        },
+        {
+          "id": "parlor",
+          "roomId": "parlor",
+          "floorUseId": "house-0",
+          "family": "narrow-sash",
+          "activity": [
+            "curtain"
+          ],
+          "rectPx": [
+            308,
+            766,
+            98,
+            118
+          ],
+          "mask": "buildings/terraced-house/old-town/v01/windows/parlor/mask.png",
+          "unlit": "buildings/terraced-house/old-town/v01/windows/parlor/unlit.png",
+          "lit": "buildings/terraced-house/old-town/v01/windows/parlor/lit.png",
+          "glass": "buildings/terraced-house/old-town/v01/windows/parlor/glass.png"
+        },
+        {
+          "id": "sash-1-1",
+          "roomId": "house-2",
+          "floorUseId": "house-2",
+          "family": "narrow-sash",
+          "activity": [],
+          "rectPx": [
+            123,
+            381,
+            82,
+            91
+          ],
+          "mask": "buildings/terraced-house/old-town/v01/windows/sash-1-1/mask.png",
+          "unlit": "buildings/terraced-house/old-town/v01/windows/sash-1-1/unlit.png",
+          "lit": "buildings/terraced-house/old-town/v01/windows/sash-1-1/lit.png",
+          "glass": "buildings/terraced-house/old-town/v01/windows/sash-1-1/glass.png"
+        },
+        {
+          "id": "sash-1-2",
+          "roomId": "house-2",
+          "floorUseId": "house-2",
+          "family": "narrow-sash",
+          "activity": [],
+          "rectPx": [
+            324,
+            381,
+            82,
+            91
+          ],
+          "mask": "buildings/terraced-house/old-town/v01/windows/sash-1-2/mask.png",
+          "unlit": "buildings/terraced-house/old-town/v01/windows/sash-1-2/unlit.png",
+          "lit": "buildings/terraced-house/old-town/v01/windows/sash-1-2/lit.png",
+          "glass": "buildings/terraced-house/old-town/v01/windows/sash-1-2/glass.png"
+        },
+        {
+          "id": "sash-2-1",
+          "roomId": "house-1",
+          "floorUseId": "house-1",
+          "family": "narrow-sash",
+          "activity": [],
+          "rectPx": [
+            123,
+            568,
+            82,
+            94
+          ],
+          "mask": "buildings/terraced-house/old-town/v01/windows/sash-2-1/mask.png",
+          "unlit": "buildings/terraced-house/old-town/v01/windows/sash-2-1/unlit.png",
+          "lit": "buildings/terraced-house/old-town/v01/windows/sash-2-1/lit.png",
+          "glass": "buildings/terraced-house/old-town/v01/windows/sash-2-1/glass.png"
+        },
+        {
+          "id": "sash-2-2",
+          "roomId": "house-1",
+          "floorUseId": "house-1",
+          "family": "narrow-sash",
+          "activity": [],
+          "rectPx": [
+            324,
+            568,
+            82,
+            94
+          ],
+          "mask": "buildings/terraced-house/old-town/v01/windows/sash-2-2/mask.png",
+          "unlit": "buildings/terraced-house/old-town/v01/windows/sash-2-2/unlit.png",
+          "lit": "buildings/terraced-house/old-town/v01/windows/sash-2-2/lit.png",
+          "glass": "buildings/terraced-house/old-town/v01/windows/sash-2-2/glass.png"
+        }
+      ],
+      "rooms": [
+        {
+          "id": "attic",
+          "windows": [
+            "dormer"
+          ]
+        },
+        {
+          "id": "house-1",
+          "windows": [
+            "sash-2-1",
+            "sash-2-2"
+          ]
+        },
+        {
+          "id": "house-2",
+          "windows": [
+            "sash-1-1",
+            "sash-1-2"
+          ]
+        },
+        {
+          "id": "parlor",
+          "windows": [
+            "parlor"
+          ]
+        }
+      ],
+      "floorUses": [
+        {
+          "id": "house-0",
+          "level": 0,
+          "category": "residential",
+          "dwellingCount": 1
+        },
+        {
+          "id": "house-1",
+          "level": 1,
+          "category": "residential",
+          "dwellingCount": 0
+        },
+        {
+          "id": "house-2",
+          "level": 2,
+          "category": "residential",
+          "dwellingCount": 0
+        }
+      ],
+      "entrances": [
+        {
+          "id": "house",
+          "floorUseId": "house-0",
+          "anchorPx": [
+            143,
+            982
+          ]
+        }
+      ],
+      "soundAnchors": [
+        {
+          "id": "parlor",
+          "floorUseId": "house-0",
+          "anchorPx": [
+            355,
+            822
+          ],
+          "placement": "indoor"
+        }
+      ],
+      "decorationMounts": [
+        {
+          "decoration": "shutter",
+          "anchorPx": [
+            93,
+            427
+          ],
+          "widthPx": 33,
+          "heightPx": 101
+        },
+        {
+          "decoration": "shutter",
+          "anchorPx": [
+            232,
+            427
+          ],
+          "widthPx": 33,
+          "heightPx": 101
+        },
+        {
+          "decoration": "shutter",
+          "anchorPx": [
+            298,
+            427
+          ],
+          "widthPx": 33,
+          "heightPx": 101
+        },
+        {
+          "decoration": "shutter",
+          "anchorPx": [
+            433,
+            427
+          ],
+          "widthPx": 33,
+          "heightPx": 101
+        },
+        {
+          "decoration": "window-box",
+          "anchorPx": [
+            162,
+            488
+          ],
+          "widthPx": 90,
+          "heightPx": 37
+        },
+        {
+          "decoration": "wall-lantern",
+          "anchorPx": [
+            218,
+            786
+          ],
+          "widthPx": 36,
+          "heightPx": null
+        },
+        {
+          "decoration": "ivy",
+          "anchorPx": [
+            456,
+            767
+          ],
+          "widthPx": 87,
+          "heightPx": null
+        }
+      ],
+      "source": "sources/buildings/terrace.ora",
+      "endWalls": {
+        "left": {
+          "image": "buildings/terraced-house/old-town/v01/end-wall-left.png",
+          "rectPx": [
+            16,
+            329,
+            12,
+            664
+          ]
+        },
+        "right": {
+          "image": "buildings/terraced-house/old-town/v01/end-wall-right.png",
+          "rectPx": [
+            495,
+            329,
+            12,
+            664
+          ]
+        }
+      }
+    },
+    "cottage": {
+      "id": "buildings/detached-house/garden/v01",
+      "label": "Garden cottage",
+      "type": "detached-house",
+      "profile": "garden",
+      "variant": "v01",
+      "typicalLots": 1,
+      "framePx": [
+        1072,
+        866
+      ],
+      "referenceFrontageUnits": 14,
+      "frontageRangeUnits": [
+        13,
+        17
+      ],
+      "referenceHeightUnits": 11.72,
+      "groundAnchorPx": [
+        540,
+        849
+      ],
+      "groundSpanXPx": [
+        43,
+        1037
+      ],
+      "wallContacts": [],
+      "wallContactXPx": {},
+      "shell": "buildings/detached-house/garden/v01/shell.png",
+      "facadeMask": "buildings/detached-house/garden/v01/facade-mask.png",
+      "facadeValue": "buildings/detached-house/garden/v01/facade-value.png",
+      "facadeMidtone": 193.0,
+      "windows": [
+        {
+          "id": "attic",
+          "roomId": "attic",
+          "floorUseId": "house-1",
+          "family": "small-attic",
+          "activity": [
+            "blind"
+          ],
+          "rectPx": [
+            334,
+            265,
+            110,
+            127
+          ],
+          "mask": "buildings/detached-house/garden/v01/windows/attic/mask.png",
+          "unlit": "buildings/detached-house/garden/v01/windows/attic/unlit.png",
+          "lit": "buildings/detached-house/garden/v01/windows/attic/lit.png",
+          "glass": "buildings/detached-house/garden/v01/windows/attic/glass.png"
+        },
+        {
+          "id": "living",
+          "roomId": "living",
+          "floorUseId": "house-0",
+          "family": "paired-casement",
+          "activity": [
+            "curtain",
+            "sitting"
+          ],
+          "rectPx": [
+            179,
+            535,
+            145,
+            155
+          ],
+          "mask": "buildings/detached-house/garden/v01/windows/living/mask.png",
+          "unlit": "buildings/detached-house/garden/v01/windows/living/unlit.png",
+          "lit": "buildings/detached-house/garden/v01/windows/living/lit.png",
+          "glass": "buildings/detached-house/garden/v01/windows/living/glass.png"
+        },
+        {
+          "id": "side",
+          "roomId": "side",
+          "floorUseId": "house-0",
+          "family": "paired-casement",
+          "activity": [],
+          "rectPx": [
+            809,
+            569,
+            100,
+            103
+          ],
+          "mask": "buildings/detached-house/garden/v01/windows/side/mask.png",
+          "unlit": "buildings/detached-house/garden/v01/windows/side/unlit.png",
+          "lit": "buildings/detached-house/garden/v01/windows/side/lit.png",
+          "glass": "buildings/detached-house/garden/v01/windows/side/glass.png"
+        }
+      ],
+      "rooms": [
+        {
+          "id": "attic",
+          "windows": [
+            "attic"
+          ]
+        },
+        {
+          "id": "living",
+          "windows": [
+            "living"
+          ]
+        },
+        {
+          "id": "side",
+          "windows": [
+            "side"
+          ]
+        }
+      ],
+      "floorUses": [
+        {
+          "id": "house-0",
+          "level": 0,
+          "category": "residential",
+          "dwellingCount": 1
+        },
+        {
+          "id": "house-1",
+          "level": 1,
+          "category": "residential",
+          "dwellingCount": 0
+        }
+      ],
+      "entrances": [
+        {
+          "id": "house",
+          "floorUseId": "house-0",
+          "anchorPx": [
+            534,
+            834
+          ]
+        }
+      ],
+      "soundAnchors": [
+        {
+          "id": "living",
+          "floorUseId": "house-0",
+          "anchorPx": [
+            250,
+            618
+          ],
+          "placement": "indoor"
+        }
+      ],
+      "decorationMounts": [
+        {
+          "decoration": "shutter",
+          "anchorPx": [
+            294,
+            327
+          ],
+          "widthPx": 38,
+          "heightPx": 125
+        },
+        {
+          "decoration": "shutter",
+          "anchorPx": [
+            479,
+            327
+          ],
+          "widthPx": 38,
+          "heightPx": 125
+        },
+        {
+          "decoration": "window-box",
+          "anchorPx": [
+            249,
+            710
+          ],
+          "widthPx": 176,
+          "heightPx": 52
+        },
+        {
+          "decoration": "window-box",
+          "anchorPx": [
+            858,
+            681
+          ],
+          "widthPx": 116,
+          "heightPx": 44
+        },
+        {
+          "decoration": "wall-lantern",
+          "anchorPx": [
+            615,
+            589
+          ],
+          "widthPx": 50,
+          "heightPx": null
+        },
+        {
+          "decoration": "ivy",
+          "anchorPx": [
+            694,
+            704
+          ],
+          "widthPx": 141,
+          "heightPx": null
+        }
+      ],
+      "source": "sources/buildings/cottage.ora"
+    }
+  },
+  "trees": {
+    "beech": {
+      "id": "trees/beech/mature/v01",
+      "species": "beech",
+      "growthStage": "mature",
+      "variant": "v01",
+      "referenceHeightUnits": 19,
+      "crownSpreadUnits": 20,
+      "framePx": [
+        1140,
+        1103
+      ],
+      "groundAnchorPx": [
+        524,
+        1097
+      ],
+      "trunk": "trees/beech/mature/v01/trunk.png",
+      "foliage": "trees/beech/mature/v01/foliage-value.png",
+      "originalFoliage": "trees/beech/mature/v01/foliage-original.png",
+      "compatiblePalettes": [
+        "rust",
+        "burnt-orange",
+        "brown",
+        "autumn-green"
+      ],
+      "source": "sources/trees/beech.ora"
+    },
+    "spruce": {
+      "id": "trees/spruce/mature/v01",
+      "species": "spruce",
+      "growthStage": "mature",
+      "variant": "v01",
+      "referenceHeightUnits": 23,
+      "crownSpreadUnits": 11.5,
+      "framePx": [
+        565,
+        1140
+      ],
+      "groundAnchorPx": [
+        282,
+        1135
+      ],
+      "trunk": "trees/spruce/mature/v01/trunk.png",
+      "foliage": "trees/spruce/mature/v01/foliage-value.png",
+      "originalFoliage": "trees/spruce/mature/v01/foliage-original.png",
+      "compatiblePalettes": [
+        "pine-green",
+        "blue-green"
+      ],
+      "source": "sources/trees/spruce.ora"
+    }
+  },
+  "plants": {
+    "hawthorn": {
+      "id": "plants/hawthorn/v01",
+      "family": "hawthorn",
+      "label": "Hawthorn",
+      "variant": "v01",
+      "framePx": [
+        489,
+        250
+      ],
+      "groundAnchorPx": [
+        244,
+        244
+      ],
+      "referenceHeightUnits": 1.7,
+      "image": "plants/hawthorn/v01/sprite.png",
+      "source": "sources/street-details.ora"
+    },
+    "heather": {
+      "id": "plants/heather/v01",
+      "family": "heather",
+      "label": "Heather",
+      "variant": "v01",
+      "framePx": [
+        407,
+        246
+      ],
+      "groundAnchorPx": [
+        204,
+        240
+      ],
+      "referenceHeightUnits": 0.75,
+      "image": "plants/heather/v01/sprite.png",
+      "source": "sources/street-details.ora"
+    },
+    "fern": {
+      "id": "plants/fern/v01",
+      "family": "fern",
+      "label": "Autumn fern",
+      "variant": "v01",
+      "framePx": [
+        435,
+        242
+      ],
+      "groundAnchorPx": [
+        218,
+        235
+      ],
+      "referenceHeightUnits": 0.83,
+      "image": "plants/fern/v01/sprite.png",
+      "source": "sources/street-details.ora"
+    }
+  },
+  "props": {
+    "streetlamp": {
+      "id": "props/streetlamp/v01",
+      "family": "streetlamp",
+      "label": "Streetlamp",
+      "variant": "v01",
+      "framePx": [
+        112,
+        493
+      ],
+      "groundAnchorPx": [
+        56,
+        487
+      ],
+      "referenceHeightUnits": 3.9,
+      "image": "props/streetlamp/v01/sprite.png",
+      "source": "sources/street-details.ora"
+    },
+    "stone-wall": {
+      "id": "props/stone-wall/v01",
+      "family": "stone-wall",
+      "label": "Stone wall",
+      "variant": "v01",
+      "framePx": [
+        439,
+        164
+      ],
+      "groundAnchorPx": [
+        220,
+        158
+      ],
+      "referenceHeightUnits": 1.15,
+      "image": "props/stone-wall/v01/sprite.png",
+      "joinPointsPx": {
+        "left": [
+          0,
+          158
+        ],
+        "right": [
+          439,
+          158
+        ]
+      },
+      "source": "sources/street-details.ora"
+    },
+    "picket-fence": {
+      "id": "props/picket-fence/v01",
+      "family": "picket-fence",
+      "label": "Picket fence",
+      "variant": "v01",
+      "framePx": [
+        480,
+        204
+      ],
+      "groundAnchorPx": [
+        240,
+        198
+      ],
+      "referenceHeightUnits": 1.35,
+      "image": "props/picket-fence/v01/sprite.png",
+      "joinPointsPx": {
+        "left": [
+          6,
+          198
+        ],
+        "right": [
+          474,
+          198
+        ]
+      },
+      "source": "sources/street-details.ora"
+    }
+  },
+  "decorations": {
+    "awning": {
+      "id": "decorations/awning/v01",
+      "family": "awning",
+      "label": "Striped awning",
+      "variant": "v01",
+      "framePx": [
+        440,
+        166
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        220,
+        4
+      ],
+      "referenceWidthUnits": 3.8,
+      "image": "decorations/awning/v01/sprite.png",
+      "source": "sources/building-decorations.ora"
+    },
+    "hanging-sign": {
+      "id": "decorations/hanging-sign/v01",
+      "family": "hanging-sign",
+      "label": "Hanging sign",
+      "variant": "v01",
+      "framePx": [
+        342,
+        287
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        14,
+        52
+      ],
+      "referenceWidthUnits": 1.7,
+      "image": "decorations/hanging-sign/v01/sprite.png",
+      "source": "sources/building-decorations.ora"
+    },
+    "fascia": {
+      "id": "decorations/fascia/v01",
+      "family": "fascia",
+      "label": "Fascia board",
+      "variant": "v01",
+      "framePx": [
+        429,
+        158
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        214,
+        79
+      ],
+      "referenceWidthUnits": 3.1,
+      "image": "decorations/fascia/v01/sprite.png",
+      "source": "sources/building-decorations.ora"
+    },
+    "chalkboard": {
+      "id": "decorations/chalkboard/v01",
+      "family": "chalkboard",
+      "label": "Chalkboard",
+      "variant": "v01",
+      "framePx": [
+        298,
+        327
+      ],
+      "placement": "ground",
+      "mountAnchorPx": [
+        149,
+        320
+      ],
+      "referenceWidthUnits": 0.85,
+      "image": "decorations/chalkboard/v01/sprite.png",
+      "source": "sources/building-decorations.ora"
+    },
+    "window-box": {
+      "id": "decorations/window-box/v01",
+      "family": "window-box",
+      "label": "Window box",
+      "variant": "v01",
+      "framePx": [
+        422,
+        251
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        211,
+        226
+      ],
+      "referenceWidthUnits": 1.6,
+      "image": "decorations/window-box/v01/sprite.png",
+      "source": "sources/building-decorations.ora"
+    },
+    "shutter": {
+      "id": "decorations/shutter/v01",
+      "family": "shutter",
+      "label": "Shutter",
+      "variant": "v01",
+      "framePx": [
+        228,
+        368
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        114,
+        184
+      ],
+      "referenceWidthUnits": 0.56,
+      "image": "decorations/shutter/v01/sprite.png",
+      "source": "sources/building-decorations.ora"
+    },
+    "wall-lantern": {
+      "id": "decorations/wall-lantern/v01",
+      "family": "wall-lantern",
+      "label": "Wall lantern",
+      "variant": "v01",
+      "framePx": [
+        243,
+        339
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        32,
+        119
+      ],
+      "referenceWidthUnits": 0.53,
+      "image": "decorations/wall-lantern/v01/sprite.png",
+      "source": "sources/building-decorations.ora"
+    },
+    "ivy": {
+      "id": "decorations/ivy/v01",
+      "family": "ivy",
+      "label": "Climbing ivy",
+      "variant": "v01",
+      "framePx": [
+        347,
+        381
+      ],
+      "placement": "wall",
+      "mountAnchorPx": [
+        174,
+        27
+      ],
+      "referenceWidthUnits": 1.45,
+      "image": "decorations/ivy/v01/sprite.png",
+      "source": "sources/building-decorations.ora"
+    }
+  },
+  "windowFamilies": {
+    "wide-shopfront": {
+      "id": "windows/wide-shopfront/v01",
+      "family": "wide-shopfront",
+      "variant": "v01",
+      "framePx": [
+        338,
+        194
+      ],
+      "frame": "windows/wide-shopfront/v01/frame.png",
+      "rectPx": [
+        27,
+        10,
+        288,
+        170
+      ],
+      "source": "sources/windows/wide-shopfront.ora",
+      "mask": "windows/wide-shopfront/v01/mask.png",
+      "unlit": "windows/wide-shopfront/v01/unlit.png",
+      "lit": "windows/wide-shopfront/v01/lit.png",
+      "glass": "windows/wide-shopfront/v01/glass.png"
+    },
+    "small-attic": {
+      "id": "windows/small-attic/v01",
+      "family": "small-attic",
+      "variant": "v01",
+      "framePx": [
+        110,
+        105
+      ],
+      "frame": "windows/small-attic/v01/frame.png",
+      "rectPx": [
+        24,
+        13,
+        64,
+        75
+      ],
+      "source": "sources/windows/small-attic.ora",
+      "mask": "windows/small-attic/v01/mask.png",
+      "unlit": "windows/small-attic/v01/unlit.png",
+      "lit": "windows/small-attic/v01/lit.png",
+      "glass": "windows/small-attic/v01/glass.png"
+    },
+    "narrow-sash": {
+      "id": "windows/narrow-sash/v01",
+      "family": "narrow-sash",
+      "variant": "v01",
+      "framePx": [
+        105,
+        146
+      ],
+      "frame": "windows/narrow-sash/v01/frame.png",
+      "rectPx": [
+        20,
+        27,
+        68,
+        96
+      ],
+      "source": "sources/windows/narrow-sash.ora",
+      "mask": "windows/narrow-sash/v01/mask.png",
+      "unlit": "windows/narrow-sash/v01/unlit.png",
+      "lit": "windows/narrow-sash/v01/lit.png",
+      "glass": "windows/narrow-sash/v01/glass.png"
+    },
+    "paired-casement": {
+      "id": "windows/paired-casement/v01",
+      "family": "paired-casement",
+      "variant": "v01",
+      "framePx": [
+        170,
+        161
+      ],
+      "frame": "windows/paired-casement/v01/frame.png",
+      "rectPx": [
+        23,
+        42,
+        125,
+        97
+      ],
+      "source": "sources/windows/paired-casement.ora",
+      "mask": "windows/paired-casement/v01/mask.png",
+      "unlit": "windows/paired-casement/v01/unlit.png",
+      "lit": "windows/paired-casement/v01/lit.png",
+      "glass": "windows/paired-casement/v01/glass.png"
+    },
+    "arched-civic": {
+      "id": "windows/arched-civic/v01",
+      "family": "arched-civic",
+      "variant": "v01",
+      "framePx": [
+        349,
+        542
+      ],
+      "frame": "windows/arched-civic/v01/frame.png",
+      "rectPx": [
+        60,
+        59,
+        227,
+        427
+      ],
+      "source": "sources/windows/arched-civic.ora",
+      "mask": "windows/arched-civic/v01/mask.png",
+      "unlit": "windows/arched-civic/v01/unlit.png",
+      "lit": "windows/arched-civic/v01/lit.png",
+      "glass": "windows/arched-civic/v01/glass.png"
+    },
+    "tall-hall": {
+      "id": "windows/tall-hall/v01",
+      "family": "tall-hall",
+      "variant": "v01",
+      "framePx": [
+        421,
+        542
+      ],
+      "frame": "windows/tall-hall/v01/frame.png",
+      "rectPx": [
+        65,
+        69,
+        292,
+        404
+      ],
+      "source": "sources/windows/tall-hall.ora",
+      "mask": "windows/tall-hall/v01/mask.png",
+      "unlit": "windows/tall-hall/v01/unlit.png",
+      "lit": "windows/tall-hall/v01/lit.png",
+      "glass": "windows/tall-hall/v01/glass.png"
+    }
+  },
+  "roomMotion": {
+    "walking": {
+      "id": "room-motion/walking/v01",
+      "framePx": [
+        268,
+        461
+      ],
+      "anchorPx": [
+        134,
+        456
+      ],
+      "image": "room-motion/walking/v01/sprite.png",
+      "opacityMask": "room-motion/walking/v01/opacity-mask.png",
+      "source": "sources/room-activity.ora"
+    },
+    "pausing": {
+      "id": "room-motion/pausing/v01",
+      "framePx": [
+        126,
+        470
+      ],
+      "anchorPx": [
+        63,
+        465
+      ],
+      "image": "room-motion/pausing/v01/sprite.png",
+      "opacityMask": "room-motion/pausing/v01/opacity-mask.png",
+      "source": "sources/room-activity.ora"
+    },
+    "sitting": {
+      "id": "room-motion/sitting/v01",
+      "framePx": [
+        233,
+        374
+      ],
+      "anchorPx": [
+        116,
+        369
+      ],
+      "image": "room-motion/sitting/v01/sprite.png",
+      "opacityMask": "room-motion/sitting/v01/opacity-mask.png",
+      "source": "sources/room-activity.ora"
+    },
+    "curtain": {
+      "id": "room-motion/curtain/v01",
+      "framePx": [
+        253,
+        436
+      ],
+      "anchorPx": [
+        126,
+        5
+      ],
+      "image": "room-motion/curtain/v01/sprite.png",
+      "opacityMask": "room-motion/curtain/v01/opacity-mask.png",
+      "source": "sources/room-activity.ora"
+    },
+    "blind": {
+      "id": "room-motion/blind/v01",
+      "framePx": [
+        345,
+        353
+      ],
+      "anchorPx": [
+        172,
+        5
+      ],
+      "image": "room-motion/blind/v01/sprite.png",
+      "opacityMask": "room-motion/blind/v01/opacity-mask.png",
+      "source": "sources/room-activity.ora"
+    }
+  }
+}
