@@ -8,7 +8,7 @@ The scene itself provides the controls. A click chooses the scale of a change, a
 
 | Click target | Result |
 | --- | --- |
-| Building | Regenerate the building on that lot, including its uses and sound emitters. |
+| Building | Regenerate the building, its uses, and its sound emitters within the site. A site can span several lots. |
 | Road | Regenerate the street and all buildings that front it, connecting the new street to its existing junctions. |
 | Sky | Generate a new town and landscape. |
 
@@ -24,11 +24,11 @@ Start with roughly five to six seconds for a building reveal. Give street and to
 
 ## First prototype
 
-Use two short, connected streets with homes, a café with flats above, and a small park. Include a compatible bookshop building for a café lot. The prototype should make these moments easy to verify.
+Use two short, connected streets with homes, a café with flats above, and a small park. Include a compatible bookshop building for the café site. The prototype should make these moments easy to verify.
 
 - The scene opens on an inhabited autumn town, with fog visibly moving between near trees, buildings, and farther hills.
 - Moving the cursor past the café carries its chatter across the stereo field, while the park's sounds become more audible near the park.
-- Clicking the café reveals another building on its lot and fades in the corresponding sounds.
+- Clicking the café reveals another building on its site and fades in the corresponding sounds.
 - Clicking the road redraws its frontage, while clicking the sky produces a different town and landscape.
 - Each click yields a slow fog reveal with uninterrupted soft rain through cover, replacement, and return of the local ambience.
 

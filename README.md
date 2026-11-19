@@ -7,6 +7,7 @@ A complete town takes shape as the scene loads. From a fixed, side-on 2D view, y
 ## Design documents
 
 - [Procedural generation](docs/procedural-generation.md)
+- [Data model](docs/data-model.md)
 - [Visual styling](docs/visual-styling.md)
 - [Soundscape and sound engine](docs/soundscape-and-sound-engine.md)
 - [Building properties](docs/building-properties.md)

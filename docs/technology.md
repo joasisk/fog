@@ -17,12 +17,13 @@ Once the scaffold is in place, run these commands from the repository root.
 
 ## Scene model and rendering
 
-Keep the seeded generator in plain TypeScript so a layout can be reproduced and checked without opening a browser. It produces a shared scene model with terrain, streets, lots, buildings, and their uses. A building's geometry gives the renderer a silhouette and the input handler a click target. Its uses supply the sound engine with emitter positions and profiles.
+Keep the seeded generator in plain TypeScript so a layout can be reproduced and checked without opening a browser. It produces a shared scene model with terrain, streets, lots, sites, and buildings with their uses. A building's geometry gives the renderer a silhouette and the input handler a click target. Its uses supply the sound engine with emitter positions and profiles.
 
 Use Canvas 2D to composite the painted layers. Cache hills, buildings, and trees in reusable canvases. Animate translucent fog between the cached layers and draw rain over the scene. Drive movement and reveal timing by elapsed time so the animation keeps its pace at different frame rates. Size the drawing buffers to suit the display and cap their resolution if profiling on phones shows a need.
 
 Prepare the replacement within the selected scope. Once fog covers the affected area and the town audio is silent, swap in the generated geometry, click targets, and sound emitters together. Refresh the affected drawing caches before the reveal.
 
+- [Data model](data-model.md)
 - [Procedural generation](procedural-generation.md)
 - [Visual styling](visual-styling.md)
 

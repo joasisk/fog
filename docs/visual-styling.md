@@ -24,6 +24,6 @@ Keep banks of fog at several depths and let them drift at slightly different spe
 
 Use fine rain, quiet puddle ripples, and the occasional drip from an eave. Keep the motion gentle enough to watch for a while.
 
-For regeneration, send a denser bank over the affected area. It can wrap around one lot, flow along a street, or spread across the view. The bank needs to cover the full extent of the change, including where a new roofline might extend beyond the old one. Roll it out gradually to reveal the new shapes and colors.
+For regeneration, send a denser bank over the affected area. It can wrap around a building site, flow along a street, or spread across the view. The bank needs to cover the full extent of the change, including where a new roofline might extend beyond the old one. Roll it out gradually to reveal the new shapes and colors.
 
 - [User interaction](user-interaction.md)
