@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#202622">
+    <title>Fog · Market Lane</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Fog <span>Market Lane</span></h1>
+        <button id="sound" type="button">Enable sound</button>
+      </header>
+      <canvas id="scene" tabindex="0" role="group" aria-label="Rainy town with a café, houses and a park" aria-describedby="instructions"></canvas>
+      <footer>
+        <p id="instructions">Move or drag to listen. Select a building, road, or open sky to change it.</p>
+        <p id="status" role="status"></p>
+      </footer>
+    </main>
+    <script type="module" src="/src/pilot/main.ts"></script>
+  </body>
+</html>

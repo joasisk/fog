@@ -32,6 +32,12 @@ Route the continuous soft rain and the rest of the town ambience through separat
 
 Update the affected emitters while the fog hides the replacement and the town group is silent. Fade the resulting ambience back in as the fog clears, using the cursor's current listening position for every source.
 
+## Browser integration
+
+`SoundEngine` in `src/audio/sound-engine.ts` takes an `AudioContext`, a CORS-accessible sound asset catalog, the logical scene width, and the initial listening position. Call `preload(soundscape)` to decode its catalog takes, then `setSoundscape(soundscape)` to install the emitters. Call `unlock()` directly from the first click or tap handler. Map horizontal pointer movement to the street in scene coordinates and pass it to `setListenerTarget(position)`. Call `update()` each animation frame.
+
+Preload a replacement while preparing its geometry. At the start of cover, call `fadeTown(0, coverMs)`. Once the cover and fade have finished, install the replacement soundscape with the geometry, then call `fadeTown(1, revealMs)` as reveal begins. The timing arguments are milliseconds. Reuse the engine throughout regeneration to keep the same rain source running. Call `dispose()` when removing the scene and close the context when its owner no longer needs it.
+
 - [Building properties](building-properties.md)
 - [Sound inventory](sound-inventory.md)
 - [User interaction](user-interaction.md)
