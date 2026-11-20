@@ -20,20 +20,6 @@
           "channels": 2
         },
         {
-          "id": "freesound-399072",
-          "path": "assets/audio/environment/soft-rain-freesound-399072.wav",
-          "sourceUrl": "https://freesound.org/people/Snoopy20111/sounds/399072/",
-          "downloadUrl": "https://freesound.org/apiv2/sounds/399072/download/",
-          "creator": "Snoopy20111",
-          "license": "CC0-1.0",
-          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
-          "bytes": 121344736,
-          "sha256": "be597df487680fb88efb137702b549a09ad017bcb2a350d483f0e8c10ce25575",
-          "duration": "5:16.000",
-          "durationSeconds": 316,
-          "channels": 2
-        },
-        {
           "id": "freesound-595717",
           "path": "assets/audio/environment/soft-rain-freesound-595717.ogg",
           "sourceUrl": "https://freesound.org/people/_lynks/sounds/595717/",
@@ -1192,20 +1178,6 @@
       "id": "library_murmur",
       "takes": [
         {
-          "id": "freesound-742477",
-          "path": "assets/audio/building/library-murmur-freesound-742477.wav",
-          "sourceUrl": "https://freesound.org/people/alberto_cendra_woodman/sounds/742477/",
-          "downloadUrl": "https://freesound.org/apiv2/sounds/742477/download/",
-          "creator": "alberto_cendra_woodman",
-          "license": "CC0-1.0",
-          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
-          "bytes": 122428260,
-          "sha256": "22b0e6da4dcbdfebdbc16fbb2013cc5bec9172f2bac5800a80813e59856eeff4",
-          "duration": "7:04.507",
-          "durationSeconds": 424.507,
-          "channels": 2
-        },
-        {
           "id": "freesound-767305",
           "path": "assets/audio/building/library-murmur-freesound-767305.wav",
           "sourceUrl": "https://freesound.org/people/Hano_van_Dalen/sounds/767305/",
@@ -1924,20 +1896,6 @@
           "duration": "2:32.819",
           "durationSeconds": 152.81900000000002,
           "channels": 2
-        },
-        {
-          "id": "freesound-843143",
-          "path": "assets/audio/building/household-murmur-freesound-843143.wav",
-          "sourceUrl": "https://freesound.org/people/barking_cloud/sounds/843143/",
-          "downloadUrl": "https://freesound.org/apiv2/sounds/843143/download/",
-          "creator": "barking_cloud",
-          "license": "CC0-1.0",
-          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
-          "bytes": 167080866,
-          "sha256": "17f4385135b90e79a48be8dbb6e4096d66985ace48465cdcece6e04dde11bc64",
-          "duration": "7:15.103",
-          "durationSeconds": 435.103,
-          "channels": 2
         }
       ]
     },
@@ -2396,7 +2354,21 @@
   ],
   "skipped": {
     "missingDownloadUrls": [],
-    "uncertainLicenses": []
+    "uncertainLicenses": [],
+    "needsReplacement": [
+      {
+        "take": "environment/soft_rain/freesound-399072",
+        "reason": "GitHub rejected the 115.72 MB WAV because it exceeds the 100 MB per-file limit."
+      },
+      {
+        "take": "building/library_murmur/freesound-742477",
+        "reason": "GitHub rejected the 116.76 MB WAV because it exceeds the 100 MB per-file limit."
+      },
+      {
+        "take": "building/household_murmur/freesound-843143",
+        "reason": "GitHub rejected the 159.34 MB WAV because it exceeds the 100 MB per-file limit."
+      }
+    ]
   },
   "failed": [
     {

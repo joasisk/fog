@@ -10,7 +10,7 @@ Use Node.js 24 LTS. Run `npm ci` and `npm run dev`, then open the address Vite p
 
 Run `npm test` for the seeded generation and regeneration checks. Run `npm run build` to type-check and produce `dist/`, and `npm run preview` to serve the built prototype locally. Press **Alt+S** to open **Sound settings** to adjust ambient sound and individual building types. Levels are saved in your browser.
 
-When present, `assets/audio/manifest.json` and its local recordings are included by Vite. The app uses original synthesized cues where the local manifest has no matching take. Regenerate the provisional WAV files with `python3 scripts/generate-pilot-audio.py`.
+Vite ships the compact prototype recordings in `assets/audio/playback/`. To regenerate them from the source audio and download manifest, run `python3 scripts/prepare-playback-audio.py` with FFmpeg installed. The engine uses synthesized fallbacks for prototype cues without a prepared recording.
 
 ## Development
 

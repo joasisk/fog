@@ -1,0 +1,348 @@
+{
+  "version": 1,
+  "cues": [
+    {
+      "id": "soft_rain",
+      "takes": [
+        {
+          "id": "freesound-849800",
+          "path": "assets/audio/playback/soft-rain-freesound-849800.mp3",
+          "originalPath": "assets/audio/environment/soft-rain-freesound-849800.wav",
+          "creator": "myLoop",
+          "sourceUrl": "https://freesound.org/people/myLoop/sounds/849800/",
+          "license": "CC0-1.0",
+          "edits": "20-second stereo excerpt with a quarter-second loop crossfade. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-595717",
+          "path": "assets/audio/playback/soft-rain-freesound-595717.mp3",
+          "originalPath": "assets/audio/environment/soft-rain-freesound-595717.ogg",
+          "creator": "_lynks",
+          "sourceUrl": "https://freesound.org/people/_lynks/sounds/595717/",
+          "license": "CC0-1.0",
+          "edits": "20-second stereo excerpt with a quarter-second loop crossfade. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-167034",
+          "path": "assets/audio/playback/soft-rain-freesound-167034.mp3",
+          "originalPath": "assets/audio/environment/soft-rain-freesound-167034.wav",
+          "creator": "soundrecorder7",
+          "sourceUrl": "https://freesound.org/people/soundrecorder7/sounds/167034/",
+          "license": "CC0-1.0",
+          "edits": "20-second stereo excerpt with a quarter-second loop crossfade. Encoded as MP3 at 32 kHz."
+        }
+      ]
+    },
+    {
+      "id": "wet_pavement_footsteps",
+      "takes": [
+        {
+          "id": "freesound-539556",
+          "path": "assets/audio/playback/wet-pavement-footsteps-freesound-539556.mp3",
+          "originalPath": "assets/audio/street/wet-pavement-footsteps-freesound-539556.wav",
+          "creator": "Federico_Casazza",
+          "sourceUrl": "https://freesound.org/people/Federico_Casazza/sounds/539556/",
+          "license": "CC0-1.0",
+          "edits": "First 6 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-215990",
+          "path": "assets/audio/playback/wet-pavement-footsteps-freesound-215990.mp3",
+          "originalPath": "assets/audio/street/wet-pavement-footsteps-freesound-215990.wav",
+          "creator": "bushi3593",
+          "sourceUrl": "https://freesound.org/people/bushi3593/sounds/215990/",
+          "license": "CC0-1.0",
+          "edits": "First 6 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-835102",
+          "path": "assets/audio/playback/wet-pavement-footsteps-freesound-835102.mp3",
+          "originalPath": "assets/audio/street/wet-pavement-footsteps-freesound-835102.wav",
+          "creator": "SpinOpel",
+          "sourceUrl": "https://freesound.org/people/SpinOpel/sounds/835102/",
+          "license": "CC0-1.0",
+          "edits": "First 6 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-334457",
+          "path": "assets/audio/playback/wet-pavement-footsteps-freesound-334457.mp3",
+          "originalPath": "assets/audio/street/wet-pavement-footsteps-freesound-334457.mp3",
+          "creator": "evsecrets",
+          "sourceUrl": "https://freesound.org/people/evsecrets/sounds/334457/",
+          "license": "CC0-1.0",
+          "edits": "First 6 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        }
+      ]
+    },
+    {
+      "id": "passing_car",
+      "takes": [
+        {
+          "id": "freesound-839184",
+          "path": "assets/audio/playback/passing-car-freesound-839184.mp3",
+          "originalPath": "assets/audio/street/passing-car-freesound-839184.wav",
+          "creator": "LuukasR",
+          "sourceUrl": "https://freesound.org/people/LuukasR/sounds/839184/",
+          "license": "CC0-1.0",
+          "edits": "First 5.006 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-710671",
+          "path": "assets/audio/playback/passing-car-freesound-710671.mp3",
+          "originalPath": "assets/audio/street/passing-car-freesound-710671.wav",
+          "creator": "Polystyreeni",
+          "sourceUrl": "https://freesound.org/people/Polystyreeni/sounds/710671/",
+          "license": "CC0-1.0",
+          "edits": "First 6.379 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        }
+      ]
+    },
+    {
+      "id": "cafe_chatter",
+      "takes": [
+        {
+          "id": "freesound-46310",
+          "path": "assets/audio/playback/cafe-chatter-freesound-46310.mp3",
+          "originalPath": "assets/audio/building/cafe-chatter-freesound-46310.wav",
+          "creator": "moxobna",
+          "sourceUrl": "https://freesound.org/people/moxobna/sounds/46310/",
+          "license": "CC0-1.0",
+          "edits": "First 5 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-437461",
+          "path": "assets/audio/playback/cafe-chatter-freesound-437461.mp3",
+          "originalPath": "assets/audio/building/cafe-chatter-freesound-437461.mp3",
+          "creator": "Anya_Media",
+          "sourceUrl": "https://freesound.org/people/Anya_Media/sounds/437461/",
+          "license": "CC0-1.0",
+          "edits": "First 5 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "bigsoundbank-0480",
+          "path": "assets/audio/playback/cafe-chatter-bigsoundbank-0480.mp3",
+          "originalPath": "assets/audio/building/cafe-chatter-bigsoundbank-0480.wav",
+          "creator": "DavidGreck",
+          "sourceUrl": "https://bigsoundbank.com/atmosphere-bar-2-s0480.html",
+          "license": "CC0-1.0",
+          "edits": "First 5 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        }
+      ]
+    },
+    {
+      "id": "milk_steamer",
+      "takes": [
+        {
+          "id": "freesound-868480",
+          "path": "assets/audio/playback/milk-steamer-freesound-868480.mp3",
+          "originalPath": "assets/audio/building/milk-steamer-freesound-868480.wav",
+          "creator": "sokworks",
+          "sourceUrl": "https://freesound.org/people/sokworks/sounds/868480/",
+          "license": "CC0-1.0",
+          "edits": "First 3.291 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-539317",
+          "path": "assets/audio/playback/milk-steamer-freesound-539317.mp3",
+          "originalPath": "assets/audio/building/milk-steamer-freesound-539317.wav",
+          "creator": "RobinMetzler",
+          "sourceUrl": "https://freesound.org/people/RobinMetzler/sounds/539317/",
+          "license": "CC0-1.0",
+          "edits": "First 4 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-79034",
+          "path": "assets/audio/playback/milk-steamer-freesound-79034.mp3",
+          "originalPath": "assets/audio/building/milk-steamer-freesound-79034.wav",
+          "creator": "labailey",
+          "sourceUrl": "https://freesound.org/people/labailey/sounds/79034/",
+          "license": "CC0-1.0",
+          "edits": "First 4 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        }
+      ]
+    },
+    {
+      "id": "door_opening",
+      "takes": [
+        {
+          "id": "freesound-397918",
+          "path": "assets/audio/playback/door-opening-freesound-397918.mp3",
+          "originalPath": "assets/audio/building/door-opening-freesound-397918.wav",
+          "creator": "nozefian",
+          "sourceUrl": "https://freesound.org/people/nozefian/sounds/397918/",
+          "license": "CC0-1.0",
+          "edits": "First 1.894 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "bigsoundbank-1270",
+          "path": "assets/audio/playback/door-opening-bigsoundbank-1270.mp3",
+          "originalPath": "assets/audio/building/door-opening-bigsoundbank-1270.wav",
+          "creator": "Joseph SARDIN",
+          "sourceUrl": "https://bigsoundbank.com/old-glass-door-s1270.html",
+          "license": "CC0-1.0",
+          "edits": "First 3 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-125958",
+          "path": "assets/audio/playback/door-opening-freesound-125958.mp3",
+          "originalPath": "assets/audio/building/door-opening-freesound-125958.wav",
+          "creator": "Ryding",
+          "sourceUrl": "https://freesound.org/people/Ryding/sounds/125958/",
+          "license": "CC0-1.0",
+          "edits": "First 2.87 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        }
+      ]
+    },
+    {
+      "id": "children_laughter",
+      "takes": [
+        {
+          "id": "freesound-43844",
+          "path": "assets/audio/playback/children-laughter-freesound-43844.mp3",
+          "originalPath": "assets/audio/building/children-laughter-freesound-43844.wav",
+          "creator": "KatHakaku",
+          "sourceUrl": "https://freesound.org/people/KatHakaku/sounds/43844/",
+          "license": "CC0-1.0",
+          "edits": "First 5 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-545873",
+          "path": "assets/audio/playback/children-laughter-freesound-545873.mp3",
+          "originalPath": "assets/audio/building/children-laughter-freesound-545873.wav",
+          "creator": "kvgarlic",
+          "sourceUrl": "https://freesound.org/people/kvgarlic/sounds/545873/",
+          "license": "CC0-1.0",
+          "edits": "First 5 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-752675",
+          "path": "assets/audio/playback/children-laughter-freesound-752675.mp3",
+          "originalPath": "assets/audio/building/children-laughter-freesound-752675.wav",
+          "creator": "Eightmate",
+          "sourceUrl": "https://freesound.org/people/Eightmate/sounds/752675/",
+          "license": "CC0-1.0",
+          "edits": "First 5 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        }
+      ]
+    },
+    {
+      "id": "page_turn",
+      "takes": [
+        {
+          "id": "freesound-840192",
+          "path": "assets/audio/playback/page-turn-freesound-840192.mp3",
+          "originalPath": "assets/audio/building/page-turn-freesound-840192.mp3",
+          "creator": "pierreluclandry",
+          "sourceUrl": "https://freesound.org/people/pierreluclandry/sounds/840192/",
+          "license": "CC0-1.0",
+          "edits": "First 2.368 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-749880",
+          "path": "assets/audio/playback/page-turn-freesound-749880.mp3",
+          "originalPath": "assets/audio/building/page-turn-freesound-749880.wav",
+          "creator": "Beussa",
+          "sourceUrl": "https://freesound.org/people/Beussa/sounds/749880/",
+          "license": "CC0-1.0",
+          "edits": "First 0.678 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-493667",
+          "path": "assets/audio/playback/page-turn-freesound-493667.mp3",
+          "originalPath": "assets/audio/building/page-turn-freesound-493667.wav",
+          "creator": "Squidocto",
+          "sourceUrl": "https://freesound.org/people/Squidocto/sounds/493667/",
+          "license": "CC0-1.0",
+          "edits": "First 3 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        }
+      ]
+    },
+    {
+      "id": "door_latch",
+      "takes": [
+        {
+          "id": "freesound-872999",
+          "path": "assets/audio/playback/door-latch-freesound-872999.mp3",
+          "originalPath": "assets/audio/building/door-latch-freesound-872999.wav",
+          "creator": "SignatureSoundsOrg",
+          "sourceUrl": "https://freesound.org/people/SignatureSoundsOrg/sounds/872999/",
+          "license": "CC0-1.0",
+          "edits": "First 0.966 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-866640",
+          "path": "assets/audio/playback/door-latch-freesound-866640.mp3",
+          "originalPath": "assets/audio/building/door-latch-freesound-866640.m4a",
+          "creator": "7empest",
+          "sourceUrl": "https://freesound.org/people/7empest/sounds/866640/",
+          "license": "CC0-1.0",
+          "edits": "First 3 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-330828",
+          "path": "assets/audio/playback/door-latch-freesound-330828.mp3",
+          "originalPath": "assets/audio/building/door-latch-freesound-330828.wav",
+          "creator": "MarcusGraham325",
+          "sourceUrl": "https://freesound.org/people/MarcusGraham325/sounds/330828/",
+          "license": "CC0-1.0",
+          "edits": "First 3 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        }
+      ]
+    },
+    {
+      "id": "door_chime",
+      "takes": [
+        {
+          "id": "freesound-494565",
+          "path": "assets/audio/playback/door-chime-freesound-494565.mp3",
+          "originalPath": "assets/audio/building/door-chime-freesound-494565.wav",
+          "creator": "775noise",
+          "sourceUrl": "https://freesound.org/people/775noise/sounds/494565/",
+          "license": "CC0-1.0",
+          "edits": "First 5 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-57743",
+          "path": "assets/audio/playback/door-chime-freesound-57743.mp3",
+          "originalPath": "assets/audio/building/door-chime-freesound-57743.wav",
+          "creator": "3bagbrew",
+          "sourceUrl": "https://freesound.org/people/3bagbrew/sounds/57743/",
+          "license": "CC0-1.0",
+          "edits": "First 5 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-506817",
+          "path": "assets/audio/playback/door-chime-freesound-506817.mp3",
+          "originalPath": "assets/audio/building/door-chime-freesound-506817.wav",
+          "creator": "BPlayers",
+          "sourceUrl": "https://freesound.org/people/BPlayers/sounds/506817/",
+          "license": "CC0-1.0",
+          "edits": "First 5 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        }
+      ]
+    },
+    {
+      "id": "household_murmur",
+      "takes": [
+        {
+          "id": "freesound-724979",
+          "path": "assets/audio/playback/household-murmur-freesound-724979.mp3",
+          "originalPath": "assets/audio/building/household-murmur-freesound-724979.wav",
+          "creator": "UnrealQW",
+          "sourceUrl": "https://freesound.org/people/UnrealQW/sounds/724979/",
+          "license": "CC0-1.0",
+          "edits": "First 6 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        },
+        {
+          "id": "freesound-475647",
+          "path": "assets/audio/playback/household-murmur-freesound-475647.mp3",
+          "originalPath": "assets/audio/building/household-murmur-freesound-475647.wav",
+          "creator": "o_ciz",
+          "sourceUrl": "https://freesound.org/people/o_ciz/sounds/475647/",
+          "license": "CC0-1.0",
+          "edits": "First 6 seconds with short edge fades. Encoded as MP3 at 32 kHz."
+        }
+      ]
+    }
+  ]
+}

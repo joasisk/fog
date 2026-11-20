@@ -18,15 +18,15 @@ const provisionalAudio: SoundAssets = {
   [SoundCue.PageTurn]: [take("page-turn")],
 };
 
-const manifests = import.meta.glob<Parameters<typeof localRecordings>[0]>("/assets/audio/manifest.json", {
+const manifests = import.meta.glob<Parameters<typeof localRecordings>[0]>("/assets/audio/playback/manifest.json", {
   eager: true, import: "default",
 });
-const urls = import.meta.glob<string>("/assets/audio/**/*.{wav,wave,mp3,ogg,oga,opus,flac,m4a,aac,aif,aiff,webm}", {
+const urls = import.meta.glob<string>("/assets/audio/playback/*.mp3", {
   eager: true, import: "default", query: "?url&no-inline",
 });
 
 export const pilotAudio = localRecordings(
-  manifests["/assets/audio/manifest.json"],
+  manifests["/assets/audio/playback/manifest.json"],
   (path) => urls[`/${path}`],
   provisionalAudio,
 );
