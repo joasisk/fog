@@ -277,6 +277,20 @@ test("continues after a failed take, retries a transient failure, and reports sk
   assert.equal(manifest.failed.length, 1);
 });
 
+test("reports takes needing replacement without downloading or publishing them", async () => {
+  const reason = "Exceeds the GitHub per-file limit.";
+  const fixture = await project([cue([take("/oversize.wav", {
+    availability: "missing", replacementRequired: true, replacementReason: reason,
+  })])]);
+  const result = await fixture.run();
+  assert.equal(result.status, 0);
+  assert.match(result.stdout, /Missing recordings that need replacement/);
+  assert.equal(requests.has("/oversize.wav"), false);
+  const manifest = await fixture.manifest();
+  assert.deepEqual(manifest.cues, [cue([])]);
+  assert.deepEqual(manifest.skipped.needsReplacement, [{ take: "street/wet_pavement_steps/01", reason }]);
+});
+
 test("rejects path traversal and symlinked asset directories", async () => {
   const fixture = await project([
     cue([take("/unsafe.wav")], { category: "../outside" }),

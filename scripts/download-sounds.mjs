@@ -511,7 +511,7 @@ async function main() {
   await checkDirectory(audioDirectory, !dryRun);
   const recorded = await readRecordedTakes(cataloguePath);
 
-  const skipped = { missingDownloadUrls: [], uncertainLicenses: [] };
+  const skipped = { missingDownloadUrls: [], uncertainLicenses: [], needsReplacement: [] };
   const failed = [];
   const counts = { downloaded: 0, reused: 0, skipped: 0, planned: 0, bytes: 0 };
   const planned = [];
@@ -520,6 +520,11 @@ async function main() {
     const { record, label } = take;
     if (take.duplicateConflict) {
       failed.push({ take: label, reason: "Conflicting catalogue entries for the same take ID" });
+      continue;
+    }
+    if (record.availability === "missing" && record.replacementRequired === true) {
+      skipped.needsReplacement.push({ take: label, reason: record.replacementReason ?? "Missing recording needs replacement" });
+      counts.skipped++;
       continue;
     }
     try {
@@ -574,6 +579,7 @@ async function main() {
   for (const [heading, entries] of [
     ["Missing or unusable direct download URLs", skipped.missingDownloadUrls],
     ["Uncertain or ineligible licenses", skipped.uncertainLicenses],
+    ["Missing recordings that need replacement", skipped.needsReplacement],
     ["Failed takes", failed],
   ]) {
     if (entries.length) console.log(heading);

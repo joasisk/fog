@@ -146,6 +146,9 @@
         },
         {
           "id": "freesound-399072",
+          "availability": "missing",
+          "replacementRequired": true,
+          "replacementReason": "GitHub rejected the 115.72 MB WAV because it exceeds the 100 MB per-file limit.",
           "cueId": "soft_rain",
           "title": "Rain_Loop.wav",
           "creator": "Snoopy20111",
@@ -3240,6 +3243,9 @@
       "takes": [
         {
           "id": "freesound-742477",
+          "availability": "missing",
+          "replacementRequired": true,
+          "replacementReason": "GitHub rejected the 116.76 MB WAV because it exceeds the 100 MB per-file limit.",
           "cueId": "library_murmur",
           "title": "Students at the Library, Whispering at Bibliothèque Nationale de France - Richelieu (Oval Room)",
           "creator": "alberto_cendra_woodman",
@@ -5183,6 +5189,9 @@
         },
         {
           "id": "freesound-843143",
+          "availability": "missing",
+          "replacementRequired": true,
+          "replacementReason": "GitHub rejected the 159.34 MB WAV because it exceeds the 100 MB per-file limit.",
           "cueId": "household_murmur",
           "title": "AMBHome_Muffled Murmurs Through The Wall With Footsteps In an Apartment_DASL SHORT",
           "creator": "barking_cloud",
