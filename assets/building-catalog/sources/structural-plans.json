@@ -1,0 +1,1042 @@
+{
+  "detached-house": [
+    {
+      "name": "Gabled cottage",
+      "width": 14,
+      "floors": 2,
+      "bays": 2,
+      "roof": "gable",
+      "entry": 0.6,
+      "volume": "right-low",
+      "feature": "porch"
+    },
+    {
+      "name": "Hipped garden house",
+      "width": 11.5,
+      "floors": 1,
+      "bays": 3,
+      "roof": "hipped",
+      "entry": 0.29,
+      "volume": "none",
+      "feature": "canopy"
+    },
+    {
+      "name": "Two-gable house",
+      "width": 16.5,
+      "floors": 2,
+      "bays": 3,
+      "roof": "double-gable",
+      "entry": 0.43,
+      "volume": "left-low",
+      "feature": "porch"
+    },
+    {
+      "name": "Low house with studio",
+      "width": 13,
+      "floors": 1,
+      "bays": 2,
+      "roof": "shed",
+      "entry": 0.68,
+      "volume": "right-tall",
+      "feature": "bay"
+    },
+    {
+      "name": "Attic house",
+      "width": 15.5,
+      "floors": 2,
+      "bays": 4,
+      "roof": "mansard",
+      "entry": 0.75,
+      "volume": "left-tall",
+      "feature": "dormer"
+    }
+  ],
+  "semi-detached-pair": [
+    {
+      "name": "Mirror gables",
+      "width": 18,
+      "floors": 2,
+      "bays": 4,
+      "roof": "double-gable",
+      "entry": 0.2,
+      "volume": "paired",
+      "feature": "porch"
+    },
+    {
+      "name": "Hipped pairs",
+      "width": 19.5,
+      "floors": 2,
+      "bays": 6,
+      "roof": "hipped",
+      "entry": 0.4,
+      "volume": "paired",
+      "feature": "canopy"
+    },
+    {
+      "name": "Stepped pair",
+      "width": 21,
+      "floors": 3,
+      "bays": 4,
+      "roof": "side-gable",
+      "entry": 0.17,
+      "volume": "paired-step",
+      "feature": "dormer"
+    },
+    {
+      "name": "Low asymmetric pair",
+      "width": 17.5,
+      "floors": 1,
+      "bays": 4,
+      "roof": "shed",
+      "entry": 0.3,
+      "volume": "paired-offset",
+      "feature": "bay"
+    },
+    {
+      "name": "Pair with back wing",
+      "width": 22,
+      "floors": 2,
+      "bays": 5,
+      "roof": "mansard",
+      "entry": 0.36,
+      "volume": "paired-wing",
+      "feature": "dormer"
+    }
+  ],
+  "terraced-house": [
+    {
+      "name": "Limestone dormer terrace",
+      "width": 9,
+      "floors": 3,
+      "bays": 2,
+      "roof": "side-gable",
+      "entry": 0.25,
+      "volume": "none",
+      "feature": "dormer"
+    },
+    {
+      "name": "Stepped gable terrace",
+      "width": 8,
+      "floors": 2,
+      "bays": 2,
+      "roof": "stepped",
+      "entry": 0.73,
+      "volume": "none",
+      "feature": "bay"
+    },
+    {
+      "name": "Three-bay parapet terrace",
+      "width": 10.8,
+      "floors": 3,
+      "bays": 3,
+      "roof": "parapet",
+      "entry": 0.49,
+      "volume": "center",
+      "feature": "canopy"
+    },
+    {
+      "name": "Lean-roof rowhouse",
+      "width": 8.7,
+      "floors": 2,
+      "bays": 1,
+      "roof": "shed",
+      "entry": 0.31,
+      "volume": "left-low",
+      "feature": "bay"
+    },
+    {
+      "name": "Tall mansard terrace",
+      "width": 10.1,
+      "floors": 4,
+      "bays": 2,
+      "roof": "mansard",
+      "entry": 0.77,
+      "volume": "right-tall",
+      "feature": "dormer"
+    }
+  ],
+  "flats": [
+    {
+      "name": "Three-storey walk-up",
+      "width": 13,
+      "floors": 3,
+      "bays": 3,
+      "roof": "hipped",
+      "entry": 0.51,
+      "volume": "none",
+      "feature": "stair"
+    },
+    {
+      "name": "Narrow stair block",
+      "width": 10.5,
+      "floors": 4,
+      "bays": 2,
+      "roof": "parapet",
+      "entry": 0.72,
+      "volume": "none",
+      "feature": "stair"
+    },
+    {
+      "name": "Twin-gable flats",
+      "width": 17.8,
+      "floors": 3,
+      "bays": 5,
+      "roof": "double-gable",
+      "entry": 0.28,
+      "volume": "left-tall",
+      "feature": "stair"
+    },
+    {
+      "name": "Corner maisonettes",
+      "width": 15.4,
+      "floors": 2,
+      "bays": 4,
+      "roof": "side-gable",
+      "entry": 0.64,
+      "volume": "right-low",
+      "feature": "bay"
+    },
+    {
+      "name": "Mansard apartment house",
+      "width": 19.2,
+      "floors": 4,
+      "bays": 6,
+      "roof": "mansard",
+      "entry": 0.43,
+      "volume": "center",
+      "feature": "stair"
+    }
+  ],
+  "shop-house": [
+    {
+      "name": "Three-bay shop house",
+      "width": 11.6,
+      "floors": 3,
+      "bays": 3,
+      "roof": "side-gable",
+      "entry": 0.72,
+      "volume": "none",
+      "feature": "dormer"
+    },
+    {
+      "name": "Corner timber shop house",
+      "width": 14.5,
+      "floors": 2,
+      "bays": 4,
+      "roof": "gable",
+      "entry": 0.42,
+      "volume": "left-low",
+      "feature": "canopy"
+    },
+    {
+      "name": "Tall stepped shop house",
+      "width": 10.8,
+      "floors": 4,
+      "bays": 2,
+      "roof": "stepped",
+      "entry": 0.3,
+      "volume": "none",
+      "feature": "tall-display"
+    },
+    {
+      "name": "Double shop house",
+      "width": 17.2,
+      "floors": 3,
+      "bays": 5,
+      "roof": "double-gable",
+      "entry": 0.5,
+      "volume": "right-tall",
+      "feature": "fascia"
+    },
+    {
+      "name": "Former merchant house",
+      "width": 14,
+      "floors": 2,
+      "bays": 3,
+      "roof": "mansard",
+      "entry": 0.67,
+      "volume": "center",
+      "feature": "dormer"
+    }
+  ],
+  "cafe": [
+    {
+      "name": "Slate-roof café",
+      "width": 12,
+      "floors": 3,
+      "bays": 3,
+      "roof": "side-gable",
+      "entry": 0.64,
+      "volume": "none",
+      "feature": "awning"
+    },
+    {
+      "name": "Low corner café",
+      "width": 9.8,
+      "floors": 2,
+      "bays": 2,
+      "roof": "gable",
+      "entry": 0.32,
+      "volume": "right-low",
+      "feature": "awning"
+    },
+    {
+      "name": "Tall café with recessed door",
+      "width": 11.3,
+      "floors": 4,
+      "bays": 2,
+      "roof": "stepped",
+      "entry": 0.76,
+      "volume": "center",
+      "feature": "awning"
+    },
+    {
+      "name": "Double-front café",
+      "width": 16.4,
+      "floors": 3,
+      "bays": 4,
+      "roof": "double-gable",
+      "entry": 0.48,
+      "volume": "left-tall",
+      "feature": "awning"
+    },
+    {
+      "name": "Garden café with upper rooms",
+      "width": 14.7,
+      "floors": 2,
+      "bays": 3,
+      "roof": "hipped",
+      "entry": 0.57,
+      "volume": "left-low",
+      "feature": "porch"
+    }
+  ],
+  "restaurant": [
+    {
+      "name": "Dining rooms under a hipped roof",
+      "width": 14,
+      "floors": 2,
+      "bays": 3,
+      "roof": "hipped",
+      "entry": 0.48,
+      "volume": "none",
+      "feature": "canopy"
+    },
+    {
+      "name": "Narrow dining house",
+      "width": 11,
+      "floors": 3,
+      "bays": 2,
+      "roof": "stepped",
+      "entry": 0.74,
+      "volume": "none",
+      "feature": "awning"
+    },
+    {
+      "name": "Two dining bays",
+      "width": 17,
+      "floors": 3,
+      "bays": 4,
+      "roof": "double-gable",
+      "entry": 0.38,
+      "volume": "right-low",
+      "feature": "awning"
+    },
+    {
+      "name": "Dining wing and rooms",
+      "width": 18.8,
+      "floors": 2,
+      "bays": 5,
+      "roof": "side-gable",
+      "entry": 0.34,
+      "volume": "left-tall",
+      "feature": "porch"
+    },
+    {
+      "name": "Mansard dining house",
+      "width": 13.8,
+      "floors": 4,
+      "bays": 3,
+      "roof": "mansard",
+      "entry": 0.61,
+      "volume": "center",
+      "feature": "canopy"
+    }
+  ],
+  "bookshop": [
+    {
+      "name": "Stepped-gable bookshop",
+      "width": 12,
+      "floors": 3,
+      "bays": 2,
+      "roof": "stepped",
+      "entry": 0.5,
+      "volume": "none",
+      "feature": "fascia"
+    },
+    {
+      "name": "Narrow sash bookshop",
+      "width": 9.6,
+      "floors": 2,
+      "bays": 2,
+      "roof": "gable",
+      "entry": 0.7,
+      "volume": "none",
+      "feature": "canopy"
+    },
+    {
+      "name": "Bookshop with two displays",
+      "width": 16,
+      "floors": 3,
+      "bays": 4,
+      "roof": "hipped",
+      "entry": 0.35,
+      "volume": "left-low",
+      "feature": "fascia"
+    },
+    {
+      "name": "Tall bookseller",
+      "width": 11.6,
+      "floors": 4,
+      "bays": 3,
+      "roof": "mansard",
+      "entry": 0.27,
+      "volume": "center",
+      "feature": "dormer"
+    },
+    {
+      "name": "Bookseller and side gallery",
+      "width": 17.8,
+      "floors": 2,
+      "bays": 5,
+      "roof": "double-gable",
+      "entry": 0.63,
+      "volume": "right-tall",
+      "feature": "fascia"
+    }
+  ],
+  "bakery": [
+    {
+      "name": "Baker’s gabled shop",
+      "width": 10.2,
+      "floors": 2,
+      "bays": 2,
+      "roof": "gable",
+      "entry": 0.42,
+      "volume": "none",
+      "feature": "canopy"
+    },
+    {
+      "name": "Village oven wing",
+      "width": 14.5,
+      "floors": 1,
+      "bays": 3,
+      "roof": "hipped",
+      "entry": 0.68,
+      "volume": "right-low",
+      "feature": "service"
+    },
+    {
+      "name": "Tall baking house",
+      "width": 10.6,
+      "floors": 3,
+      "bays": 3,
+      "roof": "stepped",
+      "entry": 0.28,
+      "volume": "left-low",
+      "feature": "awning"
+    },
+    {
+      "name": "Paired bakery bays",
+      "width": 16.2,
+      "floors": 2,
+      "bays": 4,
+      "roof": "double-gable",
+      "entry": 0.52,
+      "volume": "right-tall",
+      "feature": "service"
+    },
+    {
+      "name": "Bakehouse with service entry",
+      "width": 12.9,
+      "floors": 1,
+      "bays": 2,
+      "roof": "shed",
+      "entry": 0.34,
+      "volume": "left-tall",
+      "feature": "canopy"
+    }
+  ],
+  "grocer": [
+    {
+      "name": "Grocer with produce alcove",
+      "width": 12,
+      "floors": 2,
+      "bays": 3,
+      "roof": "side-gable",
+      "entry": 0.64,
+      "volume": "none",
+      "feature": "awning"
+    },
+    {
+      "name": "Low garden grocer",
+      "width": 10.8,
+      "floors": 1,
+      "bays": 2,
+      "roof": "hipped",
+      "entry": 0.35,
+      "volume": "left-low",
+      "feature": "alcove"
+    },
+    {
+      "name": "Corner grocer with flats",
+      "width": 16.8,
+      "floors": 3,
+      "bays": 4,
+      "roof": "double-gable",
+      "entry": 0.43,
+      "volume": "right-tall",
+      "feature": "awning"
+    },
+    {
+      "name": "Stepped-gable provisions shop",
+      "width": 11.4,
+      "floors": 3,
+      "bays": 2,
+      "roof": "stepped",
+      "entry": 0.67,
+      "volume": "none",
+      "feature": "alcove"
+    },
+    {
+      "name": "Wide village provisions store",
+      "width": 17.1,
+      "floors": 1,
+      "bays": 4,
+      "roof": "shed",
+      "entry": 0.53,
+      "volume": "both",
+      "feature": "canopy"
+    }
+  ],
+  "office": [
+    {
+      "name": "Regular three-bay office",
+      "width": 12,
+      "floors": 3,
+      "bays": 3,
+      "roof": "hipped",
+      "entry": 0.49,
+      "volume": "none",
+      "feature": "stair"
+    },
+    {
+      "name": "Narrow office and side stair",
+      "width": 9.8,
+      "floors": 2,
+      "bays": 2,
+      "roof": "gable",
+      "entry": 0.71,
+      "volume": "none",
+      "feature": "stair"
+    },
+    {
+      "name": "Parapet with offset stair",
+      "width": 14.5,
+      "floors": 4,
+      "bays": 4,
+      "roof": "parapet",
+      "entry": 0.28,
+      "volume": "left-tall",
+      "feature": "stair"
+    },
+    {
+      "name": "Two small office volumes",
+      "width": 17.4,
+      "floors": 3,
+      "bays": 5,
+      "roof": "double-gable",
+      "entry": 0.41,
+      "volume": "right-low",
+      "feature": "stair"
+    },
+    {
+      "name": "Attic offices",
+      "width": 13.3,
+      "floors": 2,
+      "bays": 3,
+      "roof": "mansard",
+      "entry": 0.66,
+      "volume": "center",
+      "feature": "dormer"
+    }
+  ],
+  "library": [
+    {
+      "name": "Hipped reading hall",
+      "width": 20,
+      "floors": 2,
+      "bays": 5,
+      "roof": "hipped",
+      "entry": 0.51,
+      "volume": "none",
+      "feature": "reading"
+    },
+    {
+      "name": "Gabled reading room",
+      "width": 17.5,
+      "floors": 1,
+      "bays": 3,
+      "roof": "gable",
+      "entry": 0.67,
+      "volume": "left-low",
+      "feature": "reading"
+    },
+    {
+      "name": "Library and side archive",
+      "width": 23.6,
+      "floors": 2,
+      "bays": 6,
+      "roof": "side-gable",
+      "entry": 0.29,
+      "volume": "right-tall",
+      "feature": "reading"
+    },
+    {
+      "name": "Parapet library",
+      "width": 19.2,
+      "floors": 3,
+      "bays": 4,
+      "roof": "parapet",
+      "entry": 0.36,
+      "volume": "center",
+      "feature": "stair"
+    },
+    {
+      "name": "Twin reading galleries",
+      "width": 25,
+      "floors": 1,
+      "bays": 5,
+      "roof": "double-gable",
+      "entry": 0.59,
+      "volume": "both",
+      "feature": "reading"
+    }
+  ],
+  "church": [
+    {
+      "name": "Central bell tower",
+      "width": 20,
+      "floors": 1,
+      "bays": 3,
+      "roof": "gable",
+      "entry": 0.51,
+      "volume": "center-tower",
+      "feature": "spire"
+    },
+    {
+      "name": "West bell tower",
+      "width": 18,
+      "floors": 1,
+      "bays": 4,
+      "roof": "side-gable",
+      "entry": 0.28,
+      "volume": "left-tower",
+      "feature": "hip-tower"
+    },
+    {
+      "name": "East tower and porch",
+      "width": 23,
+      "floors": 2,
+      "bays": 3,
+      "roof": "hipped",
+      "entry": 0.68,
+      "volume": "right-tower",
+      "feature": "dormer-tower"
+    },
+    {
+      "name": "Chapel with bell gable",
+      "width": 16.5,
+      "floors": 1,
+      "bays": 2,
+      "roof": "stepped",
+      "entry": 0.51,
+      "volume": "left-low",
+      "feature": "bell-gable"
+    },
+    {
+      "name": "Twin-tower church",
+      "width": 25,
+      "floors": 2,
+      "bays": 5,
+      "roof": "double-gable",
+      "entry": 0.42,
+      "volume": "twin-tower",
+      "feature": "spire"
+    }
+  ],
+  "school": [
+    {
+      "name": "Two-wing school",
+      "width": 30,
+      "floors": 2,
+      "bays": 7,
+      "roof": "hipped",
+      "entry": 0.5,
+      "volume": "both",
+      "feature": "classrooms"
+    },
+    {
+      "name": "Low village classrooms",
+      "width": 25,
+      "floors": 1,
+      "bays": 5,
+      "roof": "double-gable",
+      "entry": 0.35,
+      "volume": "left-low",
+      "feature": "classrooms"
+    },
+    {
+      "name": "School with tall entrance",
+      "width": 33,
+      "floors": 3,
+      "bays": 8,
+      "roof": "side-gable",
+      "entry": 0.64,
+      "volume": "center",
+      "feature": "classrooms"
+    },
+    {
+      "name": "Side-yard school",
+      "width": 28,
+      "floors": 2,
+      "bays": 6,
+      "roof": "gable",
+      "entry": 0.26,
+      "volume": "right-tall",
+      "feature": "classrooms"
+    },
+    {
+      "name": "Mansard school and annex",
+      "width": 35,
+      "floors": 3,
+      "bays": 9,
+      "roof": "mansard",
+      "entry": 0.44,
+      "volume": "left-tall",
+      "feature": "classrooms"
+    }
+  ],
+  "town-hall": [
+    {
+      "name": "Hipped clock hall",
+      "width": 20,
+      "floors": 3,
+      "bays": 5,
+      "roof": "hipped",
+      "entry": 0.51,
+      "volume": "center",
+      "feature": "clock"
+    },
+    {
+      "name": "Stepped civic hall",
+      "width": 17.5,
+      "floors": 2,
+      "bays": 3,
+      "roof": "stepped",
+      "entry": 0.33,
+      "volume": "none",
+      "feature": "clock"
+    },
+    {
+      "name": "Town hall with council wing",
+      "width": 24,
+      "floors": 3,
+      "bays": 6,
+      "roof": "double-gable",
+      "entry": 0.66,
+      "volume": "left-low",
+      "feature": "clock"
+    },
+    {
+      "name": "Pediment and side entrance",
+      "width": 21.8,
+      "floors": 2,
+      "bays": 4,
+      "roof": "gable",
+      "entry": 0.36,
+      "volume": "right-tall",
+      "feature": "clock"
+    },
+    {
+      "name": "Tall civic clock tower",
+      "width": 19.7,
+      "floors": 4,
+      "bays": 5,
+      "roof": "mansard",
+      "entry": 0.52,
+      "volume": "center-tower",
+      "feature": "clock"
+    }
+  ],
+  "clinic": [
+    {
+      "name": "Sheltered clinic entry",
+      "width": 13.8,
+      "floors": 2,
+      "bays": 3,
+      "roof": "hipped",
+      "entry": 0.51,
+      "volume": "none",
+      "feature": "canopy"
+    },
+    {
+      "name": "Low village clinic",
+      "width": 10.8,
+      "floors": 1,
+      "bays": 2,
+      "roof": "shed",
+      "entry": 0.32,
+      "volume": "left-low",
+      "feature": "waiting"
+    },
+    {
+      "name": "Clinic with stair bay",
+      "width": 16.1,
+      "floors": 3,
+      "bays": 4,
+      "roof": "parapet",
+      "entry": 0.67,
+      "volume": "center",
+      "feature": "stair"
+    },
+    {
+      "name": "Garden waiting-room wing",
+      "width": 18,
+      "floors": 1,
+      "bays": 4,
+      "roof": "double-gable",
+      "entry": 0.43,
+      "volume": "right-tall",
+      "feature": "waiting"
+    },
+    {
+      "name": "Clinic in a converted house",
+      "width": 13,
+      "floors": 3,
+      "bays": 2,
+      "roof": "gable",
+      "entry": 0.28,
+      "volume": "left-tall",
+      "feature": "porch"
+    }
+  ],
+  "guesthouse": [
+    {
+      "name": "Guesthouse with inset porch",
+      "width": 14.6,
+      "floors": 2,
+      "bays": 3,
+      "roof": "gable",
+      "entry": 0.49,
+      "volume": "none",
+      "feature": "porch"
+    },
+    {
+      "name": "Slate-roof guest rooms",
+      "width": 12.2,
+      "floors": 3,
+      "bays": 2,
+      "roof": "side-gable",
+      "entry": 0.69,
+      "volume": "left-low",
+      "feature": "dormer"
+    },
+    {
+      "name": "Inn with side wing",
+      "width": 19.3,
+      "floors": 2,
+      "bays": 5,
+      "roof": "double-gable",
+      "entry": 0.35,
+      "volume": "right-tall",
+      "feature": "porch"
+    },
+    {
+      "name": "Mansard inn",
+      "width": 16,
+      "floors": 4,
+      "bays": 4,
+      "roof": "mansard",
+      "entry": 0.57,
+      "volume": "center",
+      "feature": "dormer"
+    },
+    {
+      "name": "Low garden lodging",
+      "width": 15.5,
+      "floors": 1,
+      "bays": 4,
+      "roof": "hipped",
+      "entry": 0.27,
+      "volume": "both",
+      "feature": "canopy"
+    }
+  ],
+  "workshop": [
+    {
+      "name": "Gabled workroom",
+      "width": 12,
+      "floors": 1,
+      "bays": 2,
+      "roof": "gable",
+      "entry": 0.59,
+      "volume": "none",
+      "feature": "work-door"
+    },
+    {
+      "name": "Workshop and shed",
+      "width": 16.4,
+      "floors": 1,
+      "bays": 3,
+      "roof": "shed",
+      "entry": 0.39,
+      "volume": "right-low",
+      "feature": "work-door"
+    },
+    {
+      "name": "Tall stone workroom",
+      "width": 12.7,
+      "floors": 2,
+      "bays": 2,
+      "roof": "side-gable",
+      "entry": 0.36,
+      "volume": "left-tall",
+      "feature": "work-door"
+    },
+    {
+      "name": "Paired workshop volumes",
+      "width": 18.5,
+      "floors": 2,
+      "bays": 4,
+      "roof": "double-gable",
+      "entry": 0.62,
+      "volume": "right-tall",
+      "feature": "work-door"
+    },
+    {
+      "name": "Long carriage workshop",
+      "width": 15,
+      "floors": 1,
+      "bays": 4,
+      "roof": "hipped",
+      "entry": 0.48,
+      "volume": "both",
+      "feature": "work-door"
+    }
+  ],
+  "market-hall": [
+    {
+      "name": "Hipped market arcade",
+      "width": 24,
+      "floors": 1,
+      "bays": 5,
+      "roof": "hipped",
+      "entry": 0.49,
+      "volume": "none",
+      "feature": "arcade"
+    },
+    {
+      "name": "Long gabled market hall",
+      "width": 28,
+      "floors": 1,
+      "bays": 6,
+      "roof": "side-gable",
+      "entry": 0.22,
+      "volume": "left-low",
+      "feature": "arcade"
+    },
+    {
+      "name": "Stepped center market bay",
+      "width": 23,
+      "floors": 2,
+      "bays": 4,
+      "roof": "stepped",
+      "entry": 0.52,
+      "volume": "center",
+      "feature": "arcade"
+    },
+    {
+      "name": "Double-market shelter",
+      "width": 32,
+      "floors": 1,
+      "bays": 7,
+      "roof": "double-gable",
+      "entry": 0.39,
+      "volume": "right-tall",
+      "feature": "arcade"
+    },
+    {
+      "name": "Market hall with end entrance",
+      "width": 27,
+      "floors": 2,
+      "bays": 5,
+      "roof": "shed",
+      "entry": 0.72,
+      "volume": "left-tall",
+      "feature": "arcade"
+    }
+  ],
+  "park-pavilion": [
+    {
+      "name": "Low hipped shelter",
+      "width": 9,
+      "floors": 1,
+      "bays": 3,
+      "roof": "hipped",
+      "entry": 0.51,
+      "volume": "none",
+      "feature": "open"
+    },
+    {
+      "name": "Gabled two-bay pavilion",
+      "width": 8,
+      "floors": 1,
+      "bays": 2,
+      "roof": "gable",
+      "entry": 0.32,
+      "volume": "left-low",
+      "feature": "open"
+    },
+    {
+      "name": "Double-gable garden shelter",
+      "width": 12,
+      "floors": 1,
+      "bays": 4,
+      "roof": "double-gable",
+      "entry": 0.64,
+      "volume": "both",
+      "feature": "open"
+    },
+    {
+      "name": "Lean-roof band shelter",
+      "width": 10.6,
+      "floors": 1,
+      "bays": 4,
+      "roof": "shed",
+      "entry": 0.48,
+      "volume": "right-low",
+      "feature": "open"
+    },
+    {
+      "name": "Slate park shelter and alcove",
+      "width": 11.3,
+      "floors": 1,
+      "bays": 3,
+      "roof": "side-gable",
+      "entry": 0.73,
+      "volume": "right-tall",
+      "feature": "open"
+    }
+  ]
+}
