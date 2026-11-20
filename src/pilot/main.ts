@@ -1,6 +1,10 @@
 import "./style.css";
 import { SoundEngine } from "../audio/sound-engine.ts";
 import { UseKind } from "../model/places.ts";
+import { catalogUrls, loadPilotCatalog } from "./building-catalog.ts";
+import type { PilotCatalog } from "./building-catalog.ts";
+import { createBuildingArt } from "./building-art.ts";
+import type { BuildingArt } from "./building-art.ts";
 import { createRenderer } from "./render.ts";
 import { RegenerationScope } from "../model/regeneration.ts";
 import type { RegenerationTarget } from "../model/regeneration.ts";
@@ -19,6 +23,9 @@ const timings = {
 };
 const holdMs = 180;
 let scene = createPilot();
+let catalog: PilotCatalog | undefined;
+let art: BuildingArt | undefined;
+let openingCatalog = true;
 let listenerX = width / 2;
 const listener = () => ({ x: listenerX, y: streetY, depth: streetDepth });
 let engine: SoundEngine | undefined;
@@ -26,9 +33,25 @@ const mixVolumes = createMixer(document.querySelector<HTMLDialogElement>("#sound
   (category, volume) => engine?.setMixVolume(category, volume));
 let audioReady: Promise<void> | undefined;
 type Replacement = NonNullable<ReturnType<typeof regenerate>>;
-let transition: { replacement: Replacement; scope: RegenerationScope; started: number; ready: boolean; revealed?: number } | undefined;
+type Transition = { replacement: Replacement; scope: RegenerationScope; started: number; ready: boolean; failed?: boolean; revealed?: number };
+let transition: Transition | undefined;
 
-const draw = createRenderer(canvas);
+const draw = createRenderer(canvas, () => art);
+const assetUrl = catalogUrls(import.meta.env.BASE_URL, document.baseURI);
+void loadPilotCatalog(assetUrl).then(async (designs) => {
+  const opening = createPilot(undefined, designs);
+  const painter = createBuildingArt(designs, assetUrl);
+  await painter.preload(opening);
+  catalog = designs;
+  art = painter;
+  scene = opening;
+  if (soundButton.hidden) engine?.setSoundscape(scene.soundscape);
+}).catch((error: unknown) => {
+  console.error("Building catalog could not start", error);
+  status.textContent = "Building artwork could not load. Refresh the page to retry.";
+}).finally(() => {
+  openingCatalog = false;
+});
 const started = performance.now();
 const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
 
@@ -56,13 +79,26 @@ function startAudio() {
 }
 
 function changeScene(target: RegenerationTarget) {
-  if (transition) return;
+  if (transition || openingCatalog) return;
   const seed = crypto.getRandomValues(new Uint32Array(1))[0]!;
-  const replacement = regenerate(scene, target, seed);
+  let replacement: ReturnType<typeof regenerate>;
+  try {
+    replacement = regenerate(scene, target, seed, catalog);
+  } catch (error) {
+    console.error("Replacement geometry could not be resolved", error);
+    status.textContent = "The replacement does not fit. The current scene is still available.";
+    return;
+  }
   if (!replacement) return;
-  const pending = { scope: target.scope, replacement, started: performance.now(), ready: !engine };
+  const pending: Transition = { scope: target.scope, replacement, started: performance.now(), ready: false };
   transition = pending;
-  void engine?.preload(replacement.scene.soundscape).finally(() => {
+  void Promise.all([
+    art?.preload(replacement.scene),
+    engine?.preload(replacement.scene.soundscape),
+  ]).catch((error: unknown) => {
+    console.error("Replacement assets could not be prepared", error);
+    pending.failed = true;
+  }).finally(() => {
     pending.ready = true;
   });
   engine?.fadeTown(0, timings[target.scope].coverMs);
@@ -85,15 +121,16 @@ function animation(now: number) {
     } else {
       cover = smooth(elapsed / coverMs);
       if (elapsed >= coverMs + holdMs && transition.ready) {
-        scene = transition.replacement.scene;
+        if (!transition.failed) scene = transition.replacement.scene;
         transition.revealed = now;
         engine?.fadeTown(0, 0);
-        engine?.setSoundscape(scene.soundscape);
+        if (!transition.failed) engine?.setSoundscape(scene.soundscape);
         engine?.fadeTown(1, revealMs);
         const use = scene.town.buildings.find(({ siteId }) => siteId === shopSite)?.uses[0].kind;
         const name = use === UseKind.Bookshop ? "bookshop" : "café";
         canvas.setAttribute("aria-label", `Rainy town with a ${name}, houses and a park`);
-        status.textContent = transition.replacement.label;
+        status.textContent = transition.failed ?
+          "Replacement artwork could not load. The current scene is still available." : transition.replacement.label;
       }
     }
   }

@@ -11,6 +11,8 @@ import type { Scene } from "../model/scene.ts";
 import { EmitterMotionKind, EmitterPlacement, EmitterSourceKind, MixGroup, SoundCue } from "../model/sound.ts";
 import type { SoundEmitter } from "../model/sound.ts";
 
+import type { PilotCatalog } from "./building-catalog.ts";
+import { placeCatalogBuilding } from "./building-placement.ts";
 import { createResidential } from "./residential.ts";
 
 export const marketStreet = "street:market-lane";
@@ -34,8 +36,8 @@ export function seededRandom(seed: number) {
   };
 }
 
-function parcel(name: string, left: number, right: number, outerEdge: "start" | "end") {
-  const lot: Lot = { id: `lot:${name}`, frontageSectionId: frontage, interval: { start: left, end: right } };
+function parcel(name: string, left: number, right: number, outerEdge: "start" | "end", catalog: boolean) {
+  const lot: Lot = { id: `lot:${name}`, frontageSectionId: frontage, interval: { start: left - (catalog && outerEdge === "start" ? 16 : 0), end: right + (catalog && outerEdge === "end" ? 16 : 0) } };
   const footprint: Polygon<ScenePosition> = [
     point(left, 344, .5), point(right, 344, .5),
     point(right, foundationY, depth), point(left, foundationY, depth),
@@ -46,7 +48,7 @@ function parcel(name: string, left: number, right: number, outerEdge: "start" | 
     id: `site:${name}`,
     kind: SiteKind.Building,
     lotIds: [lot.id],
-    setback: streetY - foundationY,
+    setback: catalog ? 0 : streetY - foundationY,
     entrance: { position: point(right - 37, foundationY, depth), distanceAlongSegment: right - 37, distanceToStreet: streetY - foundationY },
     limits: {
       footprint, maxHeight: 222,
@@ -64,20 +66,22 @@ function silhouette(left: number, right: number, eave: number, peak: number): Po
   ];
 }
 
-export function createPilot(seed = 7231): Scene {
+export function createPilot(seed = 7231, catalog?: PilotCatalog): Scene {
   const random = seededRandom(seed);
   const seam = 598 + Math.round(random() * 24);
-  const shopWidth = 203 + Math.round(random() * 30);
-  const houseWidth = 135 + Math.round(random() * 25);
-  const shop = parcel("shop", seam - shopWidth, seam, "start");
-  const house = parcel("house", seam, seam + houseWidth, "end");
+  const shopVariation = random();
+  const shopWidth = catalog ? 106 + Math.round(shopVariation * 9) : 203 + Math.round(shopVariation * 30);
+  const houseVariation = random();
+  const houseWidth = catalog ? 92 + Math.round(houseVariation * 3) : 135 + Math.round(houseVariation * 25);
+  const shop = parcel("shop", seam - shopWidth, seam, "start", Boolean(catalog));
+  const house = parcel("house", seam, seam + houseWidth, "end", Boolean(catalog));
   const houseRoof = 171 + Math.round(random() * 30);
   const streetStart = point(0, streetY, streetDepth);
   const streetEnd = point(width, streetY, streetDepth);
   const treeX = 238 + Math.round(random() * 24);
   const hillHeight = 128 + Math.round(random() * 55);
   const curb = 378 + Math.round(random() * 10);
-  const residential = createResidential(random, streetEnd);
+  const residential = createResidential(random, streetEnd, Boolean(catalog));
 
   const buildings: [Building, Building] = [
     {
@@ -98,7 +102,7 @@ export function createPilot(seed = 7231): Scene {
       uses: [{ id: "use:house", kind: UseKind.House, floors: [{ level: 0 }, { level: 1 }], dwellingCount: 1 }],
     },
   ];
-  return {
+  const scene: Scene = {
     town: {
       kind: SettlementKind.Village,
       seed: String(seed),
@@ -152,6 +156,17 @@ export function createPilot(seed = 7231): Scene {
       houseEmitter(house.site, BuildingType.TerracedHouse), houseEmitter(residential.site, BuildingType.DetachedHouse),
       ...streetSounds(streetStart, streetEnd)] },
   };
+  if (!catalog) return scene;
+  const placements = [
+    [shop.site.id, BuildingType.Cafe],
+    [house.site.id, BuildingType.TerracedHouse],
+    [residential.site.id, BuildingType.DetachedHouse],
+  ] as const;
+  return placements.reduce((current, [id, type]) => {
+    const placed = placeCatalogBuilding(current, catalog, id, type, random);
+    if (!placed) throw Error(`No catalog design fits ${id}`);
+    return placed;
+  }, scene);
 }
 
 function shopEmitter(site: BuildingSite, kind: Shop): SoundEmitter {
@@ -168,9 +183,18 @@ function shopEmitter(site: BuildingSite, kind: Shop): SoundEmitter {
   };
 }
 
-export function replaceShop(scene: Scene, kind: Shop): Scene {
+export function replaceShop(scene: Scene, kind: Shop, catalog?: PilotCatalog, seed = Number(scene.town.seed)): Scene {
   const site = scene.town.sites.find((site): site is BuildingSite => site.id === shopSite && site.kind === SiteKind.Building);
   if (!site) return scene;
+  if (catalog) {
+    const placed = placeCatalogBuilding(scene, catalog, site.id,
+      kind === UseKind.Cafe ? BuildingType.Cafe : BuildingType.Bookshop, seededRandom(seed));
+    if (!placed) return scene;
+    const { profile } = shopEmitter(site, kind);
+    return { ...placed, soundscape: { ...placed.soundscape,
+      emitters: placed.soundscape.emitters.map((emitter) => emitter.id === "emitter:shop-door" ? { ...emitter, profile } : emitter),
+    } };
+  }
   return {
     ...scene,
     town: {

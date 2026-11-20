@@ -13,7 +13,7 @@ const frontage = "frontage:garden-lane";
 const gardenY = 322;
 const gardenStart = { x: 0, y: gardenY, depth: .62 };
 
-export function createResidential(random: () => number, junction: ScenePosition) {
+export function createResidential(random: () => number, junction: ScenePosition, catalog = false) {
   const bend = { x: 869, y: gardenY, depth: .62 };
   const street: Street = {
     id: gardenStreet, role: StreetRole.Residential, traffic: StreetTraffic.Local,
@@ -32,7 +32,8 @@ export function createResidential(random: () => number, junction: ScenePosition)
   };
 
   const left = 40 + Math.floor(random() * 37);
-  const right = left + 100 + Math.floor(random() * 36);
+  const variation = random();
+  const right = left + (catalog ? 117 + Math.floor(variation * 4) : 100 + Math.floor(variation * 36));
   const y = 302;
   const eave = 223 + Math.floor(random() * 18);
   const peak = eave - 29;

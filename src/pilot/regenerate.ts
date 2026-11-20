@@ -6,7 +6,11 @@ import type { RegenerationTarget } from "../model/regeneration.ts";
 import type { Scene } from "../model/scene.ts";
 import { EmitterSourceKind } from "../model/sound.ts";
 import type { SoundEmitter } from "../model/sound.ts";
-import { createPilot, replaceShop, shopSite, width } from "./scene.ts";
+import { createPilot, replaceShop, seededRandom, shopSite, width } from "./scene.ts";
+
+import type { PilotCatalog } from "./building-catalog.ts";
+import { placeCatalogBuilding } from "./building-placement.ts";
+import { BuildingType } from "../model/building-designs.ts";
 
 function contains(outline: readonly Point2D[], point: Point2D) {
   let inside = false;
@@ -145,15 +149,15 @@ function boundsOf(points: readonly Point2D[]): SceneBounds {
   return { min: { x: Math.min(...xs), y: Math.min(...ys) }, max: { x: Math.max(...xs), y: Math.max(...ys) } };
 }
 
-export function regenerate(scene: Scene, target: RegenerationTarget, seed: number) {
+export function regenerate(scene: Scene, target: RegenerationTarget, seed: number, catalog?: PilotCatalog) {
   if (target.scope === RegenerationScope.Town) {
-    return { scene: createPilot(seed), bounds: scene.town.bounds, label: "A new town emerges." };
+    return { scene: createPilot(seed, catalog), bounds: scene.town.bounds, label: "A new town emerges." };
   }
 
   if (target.scope === RegenerationScope.Street) {
     const current = scene.town.buildings.find(({ siteId }) => siteId === shopSite)?.uses[0].kind;
-    const generated = createPilot(seed);
-    const replacement = rebuildStreet(scene, current === UseKind.Bookshop ? replaceShop(generated, current) : generated, target.streetId);
+    const generated = createPilot(seed, catalog);
+    const replacement = rebuildStreet(scene, current === UseKind.Bookshop ? replaceShop(generated, current, catalog, seed) : generated, target.streetId);
     if (!replacement) return;
     const points = [scene, replacement].flatMap((item) => {
       const contents = streetContents(item, target.streetId)!;
@@ -168,8 +172,20 @@ export function regenerate(scene: Scene, target: RegenerationTarget, seed: numbe
   if (!building) return;
   if (target.siteId === shopSite) {
     const kind = building.uses[0].kind === UseKind.Cafe ? UseKind.Bookshop : UseKind.Cafe;
-    return { scene: replaceShop(scene, kind), bounds: boundsOf(building.silhouette),
+    const replacement = replaceShop(scene, kind, catalog, seed);
+    if (replacement === scene) return;
+    const next = replacement.town.buildings.find(({ siteId }) => siteId === shopSite)!;
+    return { scene: replacement, bounds: boundsOf([...building.silhouette, ...next.silhouette]),
       label: kind === UseKind.Cafe ? "The café is open." : "The bookshop is open." };
+  }
+
+  if (catalog) {
+    const type = building.position.depth > .5 ? BuildingType.DetachedHouse : BuildingType.TerracedHouse;
+    const replacement = placeCatalogBuilding(scene, catalog, building.siteId, type, seededRandom(seed), true);
+    if (!replacement) return;
+    const next = replacement.town.buildings.find(({ siteId }) => siteId === building.siteId)!;
+    return { scene: replacement, bounds: boundsOf([...building.silhouette, ...next.silhouette]),
+      label: "The house has changed." };
   }
 
   const peak = building.silhouette[2];

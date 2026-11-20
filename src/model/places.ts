@@ -104,6 +104,11 @@ export interface Building {
   readonly floorCount: number;
   readonly silhouette: Polygon;
   readonly uses: NonEmpty<BuildingUse>;
+  readonly entrances?: readonly { readonly id: string; readonly position: ScenePosition; readonly useId: UseId }[];
+  readonly appearance?: {
+    readonly facadeColor?: readonly [red: number, green: number, blue: number];
+    readonly decorations?: readonly string[];
+  };
   readonly eaveDripPositions?: readonly ScenePosition[];
 }
 

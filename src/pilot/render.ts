@@ -1,3 +1,4 @@
+import type { BuildingArt } from "./building-art.ts";
 import type { Point2D, SceneBounds } from "../model/geometry.ts";
 import type { Building } from "../model/places.ts";
 import { UseKind } from "../model/places.ts";
@@ -221,10 +222,9 @@ function landscape(ctx: Paint, scene: Scene) {
       ctx.fillRect(x + 13, y - 10, 3, 7);
     }
   }
-  for (const item of scene.town.buildings) building(ctx, item);
 }
 
-export function createRenderer(canvas: HTMLCanvasElement) {
+export function createRenderer(canvas: HTMLCanvasElement, getArt: () => BuildingArt | undefined) {
   const ctx = canvas.getContext("2d");
   const scenery = document.createElement("canvas");
   const foreground = document.createElement("canvas");
@@ -238,6 +238,8 @@ export function createRenderer(canvas: HTMLCanvasElement) {
   backgroundPaint.scale(2, 2);
   foregroundPaint.scale(2, 2);
   let renderedScene: Scene | undefined;
+  let buildings: readonly Building[] = [];
+  let banks: readonly Scene["weather"]["fogBanks"][number][] = [];
 
   return (scene: Scene, seconds: number, cover: number, bounds?: SceneBounds, wholeTown = false) => {
     if (renderedScene !== scene) {
@@ -246,6 +248,8 @@ export function createRenderer(canvas: HTMLCanvasElement) {
         foregroundPaint.clearRect(0, 0, width, height);
         tree(foregroundPaint, scene);
       }
+      buildings = [...scene.town.buildings].sort((a, b) => b.position.depth - a.position.depth);
+      banks = [...scene.weather.fogBanks].sort((a, b) => b.depth - a.depth);
       renderedScene = scene;
     }
     const resolution = Math.min(2, window.devicePixelRatio || 1);
@@ -257,14 +261,23 @@ export function createRenderer(canvas: HTMLCanvasElement) {
     }
     ctx.setTransform(screenWidth / width, 0, 0, screenHeight / height, 0, 0);
     ctx.drawImage(scenery, 0, 0, width, height);
-    for (const bank of scene.weather.fogBanks) {
+    const art = getArt();
+    let index = 0;
+    const drawBuilding = (item: Building) => {
+      if (!art?.draw(ctx, item, seconds, buildings)) building(ctx, item);
+    };
+    for (const bank of banks) {
+      while (index < buildings.length && buildings[index]!.position.depth >= bank.depth) {
+        drawBuilding(buildings[index++]!);
+      }
       ctx.globalAlpha = bank.opacity;
       const offset = Math.sin(seconds * bank.driftPerSecond.x / 500) * 105;
       const center = (bank.bounds.min.y + bank.bounds.max.y) / 2;
       wash(ctx, 295 + offset, center - 25, 415, 95, "#e6e8d8");
       wash(ctx, 720 + offset, center + 13, 400, 76, "#dfe3d7");
+      ctx.globalAlpha = 1;
     }
-    ctx.globalAlpha = 1;
+    while (index < buildings.length) drawBuilding(buildings[index++]!);
     if (wholeTown) ctx.drawImage(foreground, 0, 0, width, height);
     if (cover > 0 && bounds) {
       const halfWidth = (bounds.max.x - bounds.min.x) / 2;
