@@ -32,6 +32,10 @@ Route the continuous soft rain and the rest of the town ambience through separat
 
 Update the affected emitters while the fog hides the replacement and the town group is silent. Fade the resulting ambience back in as the fog clears, using the cursor's current listening position for every source.
 
+## Sound settings
+
+The collapsed Sound settings panel provides an Ambient sound level for rain and outdoor activity, plus one level for each building type. A building emitter declares its `buildingType` so the same cue can have different levels in different places. The browser remembers levels between visits. Volume changes apply to playing sounds and stay in effect through fog transitions.
+
 ## Browser integration
 
 `SoundEngine` in `src/audio/sound-engine.ts` takes an `AudioContext`, a CORS-accessible sound asset catalog, the logical scene width, and the initial listening position. Call `preload(soundscape)` to decode its catalog takes, then `setSoundscape(soundscape)` to install the emitters. Call `unlock()` directly from the first click or tap handler. Map horizontal pointer movement to the street in scene coordinates and pass it to `setListenerTarget(position)`. Call `update()` each animation frame.

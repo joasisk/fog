@@ -1,7 +1,10 @@
+import type { BuildingType } from "../model/building-designs.ts";
 import type { ScenePosition } from "../model/geometry.ts";
 import { EmitterMotionKind } from "../model/sound.ts";
 import type { SoundAssets, SoundCue, SoundEmitter, SoundEmitterId, Soundscape } from "../model/sound.ts";
 import { interpolatePosition, pathMotion, spatialMix } from "./spatial.ts";
+
+export type MixCategory = "ambient" | BuildingType;
 
 interface Voice {
   readonly source: AudioBufferSourceNode;
@@ -24,6 +27,7 @@ const listenerSmoothing = 0.12;
 const minimumEventGap = 0.5;
 
 export class SoundEngine {
+  private readonly mixVolumes = new Map<MixCategory, number>();
   private readonly rainBus: GainNode;
   private readonly townBus: GainNode;
   private readonly buffers = new Map<string, AudioBuffer>();
@@ -77,7 +81,9 @@ export class SoundEngine {
     for (const cue of cues) {
       for (const take of this.assets[cue] ?? []) urls.add(take.url);
     }
-    await Promise.all([...urls].map((url) => this.loadBuffer(url)));
+    await Promise.all([...urls].map((url) => this.loadBuffer(url).catch((error: unknown) => {
+      console.warn("Fog could not decode an audio take", url, error);
+    })));
   }
 
   /** Install the replacement while the town bus is silent during fog cover. */
@@ -104,8 +110,25 @@ export class SoundEngine {
         nextAt: now + this.eventGap(emitter),
       });
     }
-    this.rainBus.gain.setTargetAtTime(soundscape.rain.gain, now, parameterSmoothing);
+    this.updateRainGain(now);
     this.startRain();
+  }
+
+  setMixVolume(category: MixCategory, volume: number): void {
+    if (this.disposed || !Number.isFinite(volume)) return;
+    this.mixVolumes.set(category, Math.max(0, Math.min(1, volume)));
+    if (category === "ambient") this.updateRainGain(this.context.currentTime);
+  }
+
+  private updateRainGain(now: number): void {
+    if (!this.soundscape) return;
+    const volume = this.soundscape.rain.gain * this.mixVolume("ambient");
+    if (this.rain) this.rainBus.gain.setTargetAtTime(volume, now, parameterSmoothing);
+    else this.rainBus.gain.setValueAtTime(volume, now);
+  }
+
+  private mixVolume(category: MixCategory): number {
+    return this.mixVolumes.get(category) ?? 1;
   }
 
   setListenerTarget(position: ScenePosition): void {
@@ -141,7 +164,7 @@ export class SoundEngine {
       if (playback.voice) {
         const { startedAt, duration } = playback.voice;
         this.updateVoice(playback, playback.voice, (now - startedAt) / duration, now);
-      } else if (canStart && playback.nextAt <= now && (!due || playback.nextAt < due.nextAt)) {
+      } else if (canStart && this.mixVolume(playback.emitter.buildingType ?? "ambient") > 0 && playback.nextAt <= now && (!due || playback.nextAt < due.nextAt)) {
         due = playback;
       }
     }
@@ -214,6 +237,11 @@ export class SoundEngine {
     const source = this.context.createBufferSource();
     source.buffer = buffer;
     source.loop = true;
+    const loop = this.assets[this.soundscape.rain.cue]?.find(({ url }) => this.buffers.get(url) === buffer)?.loop;
+    if (loop && loop.end <= buffer.duration) {
+      source.loopStart = loop.start;
+      source.loopEnd = loop.end;
+    }
     source.connect(this.rainBus);
     source.start();
     this.rain = source;
@@ -257,7 +285,7 @@ export class SoundEngine {
 
   private updateVoice(playback: EmitterPlayback, voice: Voice, progress: number, now: number, initial = false): void {
     const mix = spatialMix(playback.positionAt(progress), this.listener, this.sceneWidth, playback.emitter.placement);
-    const gain = mix.gain * playback.emitter.profile.gain;
+    const gain = mix.gain * playback.emitter.profile.gain * this.mixVolume(playback.emitter.buildingType ?? "ambient");
     if (initial) {
       voice.gain.gain.setValueAtTime(gain, now);
       voice.pan.pan.setValueAtTime(mix.pan, now);

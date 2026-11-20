@@ -1,3 +1,4 @@
+import type { BuildingType } from "./building-designs.ts";
 import type { NonEmpty, NumberRange, Polyline, ScenePosition } from "./geometry.ts";
 import type { TreeId } from "./landscape.ts";
 import { StreetProfile } from "./network.ts";
@@ -29,6 +30,11 @@ export enum SoundCue {
   DoorstepFootsteps = "doorstep_footsteps",
   IndoorFootsteps = "indoor_footsteps",
   StairwellFootsteps = "stairwell_footsteps",
+  CafeChatter = "cafe_chatter",
+  RestaurantMurmur = "restaurant_murmur",
+  LibraryMurmur = "library_murmur",
+  HouseholdMurmur = "household_murmur",
+  HeavyEntranceDoor = "heavy_entrance_door",
   AdultVoices = "adult_voices",
   AdultLaughter = "adult_laughter",
   Movement = "movement",
@@ -154,6 +160,7 @@ export interface SoundEmitter {
   readonly id: SoundEmitterId;
   readonly group: MixGroup.Town;
   readonly source: EmitterSource;
+  readonly buildingType?: BuildingType;
   readonly placement: EmitterPlacement;
   readonly motion: EmitterMotion;
   readonly profile: SoundProfile;
@@ -179,6 +186,7 @@ interface SoundTakeMetadata {
   readonly url: string;
   readonly creator: string;
   readonly edits?: string;
+  readonly loop?: { readonly start: number; readonly end: number };
 }
 
 export type SoundTake = SoundTakeMetadata & (

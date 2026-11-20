@@ -1,3 +1,4 @@
+import { BuildingType } from "../model/building-designs.ts";
 import { AssetVariant } from "../model/assets.ts";
 import { DepthLayer } from "../model/geometry.ts";
 import type { Polygon, ScenePosition } from "../model/geometry.ts";
@@ -147,20 +148,23 @@ export function createPilot(seed = 7231): Scene {
       fogBanks: [{ bounds: { min: { x: -200, y: 180 }, max: { x: width + 200, y: 415 } },
         depth: .4, layer: DepthLayer.MiddleDistance, driftPerSecond: { x: 17, y: 0 }, opacity: .4 }],
     },
-    soundscape: { rain: { group: MixGroup.Rain, cue: SoundCue.SoftRain, gain: .55 }, emitters: [shopEmitter(shop.site, UseKind.Cafe), residential.emitter, ...streetSounds(streetStart, streetEnd)] },
+    soundscape: { rain: { group: MixGroup.Rain, cue: SoundCue.SoftRain, gain: .55 }, emitters: [shopEmitter(shop.site, UseKind.Cafe), residential.emitter,
+      houseEmitter(house.site, BuildingType.TerracedHouse), houseEmitter(residential.site, BuildingType.DetachedHouse),
+      ...streetSounds(streetStart, streetEnd)] },
   };
 }
 
 function shopEmitter(site: BuildingSite, kind: Shop): SoundEmitter {
   return {
     id: "emitter:shop-door",
+    buildingType: kind === UseKind.Cafe ? BuildingType.Cafe : BuildingType.Bookshop,
     group: MixGroup.Town,
     source: { kind: EmitterSourceKind.Use, useId: "use:shop" },
     placement: EmitterPlacement.Indoor,
     motion: { kind: EmitterMotionKind.Stationary, position: site.entrance.position },
     profile: kind === UseKind.Cafe
-      ? { cues: [SoundCue.AdultVoices, SoundCue.MilkSteamer], gapMs: { min: 1000, max: 2600 }, gain: .8 }
-      : { cues: [SoundCue.DoorChime, SoundCue.PageTurn], gapMs: { min: 1600, max: 3200 }, gain: .67 },
+      ? { cues: [SoundCue.CafeChatter, SoundCue.MilkSteamer], gapMs: { min: 1000, max: 2600 }, gain: .8 }
+      : { cues: [SoundCue.DoorChime, SoundCue.PageTurn, SoundCue.DoorOpening], gapMs: { min: 1600, max: 3200 }, gain: .67 },
   };
 }
 
@@ -179,6 +183,18 @@ export function replaceShop(scene: Scene, kind: Shop): Scene {
     },
     soundscape: { ...scene.soundscape, emitters: scene.soundscape.emitters.map((emitter) =>
       emitter.id === "emitter:shop-door" ? shopEmitter(site, kind) : emitter) },
+  };
+}
+
+function houseEmitter(site: BuildingSite, buildingType: BuildingType): SoundEmitter {
+  return {
+    id: `emitter:${site.id.slice("site:".length)}-door`,
+    buildingType,
+    group: MixGroup.Town,
+    source: { kind: EmitterSourceKind.Building, buildingId: `building:${site.id.slice("site:".length)}` },
+    placement: EmitterPlacement.Indoor,
+    motion: { kind: EmitterMotionKind.Stationary, position: site.entrance.position },
+    profile: { cues: [SoundCue.DoorLatch, SoundCue.DoorOpening, SoundCue.HouseholdMurmur], gapMs: { min: 19000, max: 38000 }, gain: .47 },
   };
 }
 

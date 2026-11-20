@@ -75,3 +75,49 @@ footer {
 
 footer p { margin: 0; }
 #status:empty { display: none; }
+
+#sound-mixer {
+  position: relative;
+  margin-left: auto;
+}
+
+#sound-mixer summary {
+  min-height: 44px;
+  align-content: center;
+  padding: 0 .4rem;
+  cursor: pointer;
+  color: #e5e4d6;
+}
+
+#sound-mixer summary:focus-visible, .mix-levels input:focus-visible {
+  outline: 2px solid #e8c186;
+  outline-offset: 3px;
+}
+
+.mix-levels {
+  position: absolute;
+  z-index: 1;
+  inset-inline-end: 0;
+  bottom: calc(100% + .25rem);
+  width: min(21rem, 100vw - 2rem);
+  max-height: min(22rem, 42svh);
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: .6rem .8rem;
+  background: #29332b;
+  color: #e5e4d6;
+  border: 1px solid #717b6d;
+  border-radius: .35rem;
+  box-shadow: 0 8px 28px #1016109c;
+}
+
+.mix-levels label {
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) minmax(3rem, 1fr) 3em;
+  align-items: center;
+  gap: .65rem;
+  min-height: 40px;
+}
+
+.mix-levels input { width: 100%; accent-color: #dfb981; }
+.mix-levels output { text-align: right; font-variant-numeric: tabular-nums; }

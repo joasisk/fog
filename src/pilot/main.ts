@@ -4,6 +4,7 @@ import { UseKind } from "../model/places.ts";
 import { createRenderer } from "./render.ts";
 import { RegenerationScope } from "../model/regeneration.ts";
 import type { RegenerationTarget } from "../model/regeneration.ts";
+import { createMixer } from "./mixer.ts";
 import { pilotAudio } from "./audio-assets.ts";
 import { hitTarget, regenerate } from "./regenerate.ts";
 import { createPilot, height, marketStreet, shopSite, streetDepth, streetY, width } from "./scene.ts";
@@ -21,6 +22,8 @@ let scene = createPilot();
 let listenerX = width / 2;
 const listener = () => ({ x: listenerX, y: streetY, depth: streetDepth });
 let engine: SoundEngine | undefined;
+const mixVolumes = createMixer(document.querySelector<HTMLDetailsElement>("#sound-mixer")!,
+  (category, volume) => engine?.setMixVolume(category, volume));
 let audioReady: Promise<void> | undefined;
 type Replacement = NonNullable<ReturnType<typeof regenerate>>;
 let transition: { replacement: Replacement; scope: RegenerationScope; started: number; ready: boolean; revealed?: number } | undefined;
@@ -33,6 +36,7 @@ function startAudio() {
   if (audioReady) return audioReady;
   try {
     const audio = engine ??= new SoundEngine(new AudioContext(), pilotAudio, width, listener());
+    for (const [category, volume] of mixVolumes) audio.setMixVolume(category, volume);
     // Resume synchronously from the gesture while asset decoding runs in parallel.
     const opening = scene;
     audioReady = Promise.all([audio.unlock(), audio.preload(opening.soundscape)])
@@ -58,9 +62,7 @@ function changeScene(target: RegenerationTarget) {
   if (!replacement) return;
   const pending = { scope: target.scope, replacement, started: performance.now(), ready: !engine };
   transition = pending;
-  void engine?.preload(replacement.scene.soundscape).catch(() => {
-    status.textContent = "Some shop sounds could not load.";
-  }).finally(() => {
+  void engine?.preload(replacement.scene.soundscape).finally(() => {
     pending.ready = true;
   });
   engine?.fadeTown(0, timings[target.scope].coverMs);
