@@ -22,7 +22,7 @@ let scene = createPilot();
 let listenerX = width / 2;
 const listener = () => ({ x: listenerX, y: streetY, depth: streetDepth });
 let engine: SoundEngine | undefined;
-const mixVolumes = createMixer(document.querySelector<HTMLDetailsElement>("#sound-mixer")!,
+const mixVolumes = createMixer(document.querySelector<HTMLDialogElement>("#sound-mixer")!,
   (category, volume) => engine?.setMixVolume(category, volume));
 let audioReady: Promise<void> | undefined;
 type Replacement = NonNullable<ReturnType<typeof regenerate>>;

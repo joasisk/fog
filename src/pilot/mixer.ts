@@ -13,7 +13,7 @@ function loadVolumes(): Record<string, unknown> {
   return {};
 }
 
-export function createMixer(panel: HTMLDetailsElement, onVolume: (category: MixCategory, volume: number) => void) {
+export function createMixer(panel: HTMLDialogElement, onVolume: (category: MixCategory, volume: number) => void) {
   const volumes = new Map<MixCategory, number>();
   const saved = loadVolumes();
   const list = panel.querySelector(".mix-levels")!;
@@ -58,11 +58,17 @@ export function createMixer(panel: HTMLDetailsElement, onVolume: (category: MixC
     return { type, name };
   }).sort((a, b) => a.name.localeCompare(b.name));
   for (const { type, name } of buildings) addControl(type, name);
-  panel.addEventListener("keydown", (event) => {
-    if (event.key !== "Escape" || !panel.open) return;
+  window.addEventListener("keydown", (event) => {
+    const isS = event.key.toLowerCase() === "s" || event.code === "KeyS";
+    if (!isS || !event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
     event.preventDefault();
-    panel.open = false;
-    panel.querySelector("summary")?.focus();
-  });
+    event.stopPropagation();
+    if (event.repeat) return;
+    if (panel.open) panel.close();
+    else {
+      panel.showModal();
+      panel.querySelector("input")?.focus();
+    }
+  }, { capture: true });
   return volumes;
 }

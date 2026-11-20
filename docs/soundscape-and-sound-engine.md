@@ -34,7 +34,7 @@ Update the affected emitters while the fog hides the replacement and the town gr
 
 ## Sound settings
 
-The collapsed Sound settings panel provides an Ambient sound level for rain and outdoor activity, plus one level for each building type. A building emitter declares its `buildingType` so the same cue can have different levels in different places. The browser remembers levels between visits. Volume changes apply to playing sounds and stay in effect through fog transitions.
+Press Alt+S to open Sound settings. Press Alt+S again or Escape to close it. The panel provides an Ambient sound level for rain and outdoor activity, plus one level for each building type. A building emitter declares its `buildingType` so the same cue can have different levels in different places. The browser remembers levels between visits. Volume changes apply to playing sounds and stay in effect through fog transitions.
 
 ## Browser integration
 
