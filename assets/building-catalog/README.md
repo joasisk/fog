@@ -2,6 +2,8 @@
 
 The guide's full building catalog includes **365 variants**, covering 20 types and five street profiles. Each of its 73 type and profile sets contains five structural designs. One hundred base plans use shared original watercolor materials and joinery. The four approved pilot buildings occupy their original variant IDs.
 
+For loading, site placement, and the Canvas 2D layer order, see the [building asset integration guide](../../docs/building-asset-integration.md).
+
 ## Load a building
 
 Open `catalog.json` to find a compatible type, profile, and variant. Each entry points to a `design.json`. Paths in every record are relative to this catalog directory. Scene units describe reference dimensions and supported frontage. Pixel coordinates start at the upper-left corner of the full frame.
