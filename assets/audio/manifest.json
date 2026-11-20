@@ -1,0 +1,2411 @@
+{
+  "version": 1,
+  "cues": [
+    {
+      "category": "environment",
+      "id": "soft_rain",
+      "takes": [
+        {
+          "id": "freesound-849800",
+          "path": "assets/audio/environment/soft-rain-freesound-849800.wav",
+          "sourceUrl": "https://freesound.org/people/myLoop/sounds/849800/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/849800/download/",
+          "creator": "myLoop",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 33644432,
+          "sha256": "909c8398273d1457916108a70a97bb2d5dacb6598f47f43dee18cc56a6ffcf41",
+          "duration": "1:27.605",
+          "durationSeconds": 87.605,
+          "channels": 2
+        },
+        {
+          "id": "freesound-399072",
+          "path": "assets/audio/environment/soft-rain-freesound-399072.wav",
+          "sourceUrl": "https://freesound.org/people/Snoopy20111/sounds/399072/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/399072/download/",
+          "creator": "Snoopy20111",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 121344736,
+          "sha256": "be597df487680fb88efb137702b549a09ad017bcb2a350d483f0e8c10ce25575",
+          "duration": "5:16.000",
+          "durationSeconds": 316,
+          "channels": 2
+        },
+        {
+          "id": "freesound-595717",
+          "path": "assets/audio/environment/soft-rain-freesound-595717.ogg",
+          "sourceUrl": "https://freesound.org/people/_lynks/sounds/595717/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/595717/download/",
+          "creator": "_lynks",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 429457,
+          "sha256": "786aa323e5cf57a9d39ee024d51a329009b29df0d0db47949fd8e87f05698ab2",
+          "duration": "0:22.506",
+          "durationSeconds": 22.506,
+          "channels": 2
+        },
+        {
+          "id": "freesound-167034",
+          "path": "assets/audio/environment/soft-rain-freesound-167034.wav",
+          "sourceUrl": "https://freesound.org/people/soundrecorder7/sounds/167034/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/167034/download/",
+          "creator": "soundrecorder7",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 4643726,
+          "sha256": "33429154b0bed03045b911bb3fbd2408f3c38e5d0e13105c7736a44e9657db61",
+          "duration": "0:26.319",
+          "durationSeconds": 26.319,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "environment",
+      "id": "rain_on_leaves",
+      "takes": [
+        {
+          "id": "freesound-584272",
+          "path": "assets/audio/environment/rain-on-leaves-freesound-584272.flac",
+          "sourceUrl": "https://freesound.org/people/SamsterBirdies/sounds/584272/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/584272/download/",
+          "creator": "SamsterBirdies",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 10815249,
+          "sha256": "5f97e7be962a18843e59f1547ac13012f576af43ea33dabd4eaf5a38a1cfea27",
+          "duration": "0:49.927",
+          "durationSeconds": 49.927,
+          "channels": 2
+        },
+        {
+          "id": "freesound-851873",
+          "path": "assets/audio/environment/rain-on-leaves-freesound-851873.wav",
+          "sourceUrl": "https://freesound.org/people/Valerej.aif/sounds/851873/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/851873/download/",
+          "creator": "Valerej.aif",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 5452440,
+          "sha256": "3cd18fa1210a149a7fc533110848158aa85da2ae1efba6d0c582ef22fafc7650",
+          "duration": "0:15.454",
+          "durationSeconds": 15.454,
+          "channels": 2
+        },
+        {
+          "id": "freesound-577303",
+          "path": "assets/audio/environment/rain-on-leaves-freesound-577303.wav",
+          "sourceUrl": "https://freesound.org/people/TRP/sounds/577303/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/577303/download/",
+          "creator": "TRP",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 15235220,
+          "sha256": "21986f2a987ce9141c30c06b09cac657e88f7b8a744af19fbdec897ec278a6af",
+          "duration": "0:52.899",
+          "durationSeconds": 52.899,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "environment",
+      "id": "eave_drips",
+      "takes": [
+        {
+          "id": "freesound-853565",
+          "path": "assets/audio/environment/eave-drips-freesound-853565.mp3",
+          "sourceUrl": "https://freesound.org/people/hoshisato/sounds/853565/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/853565/download/",
+          "creator": "hoshisato",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1232650,
+          "sha256": "9320cc3bce084fe53e465b88d4da7ca7baa87cd60617e98ed617feccf62ea4e4",
+          "duration": "0:30.768",
+          "durationSeconds": 30.768,
+          "channels": 1
+        },
+        {
+          "id": "freesound-434852",
+          "path": "assets/audio/environment/eave-drips-freesound-434852.wav",
+          "sourceUrl": "https://freesound.org/people/florianreichelt/sounds/434852/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/434852/download/",
+          "creator": "florianreichelt",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 56904334,
+          "sha256": "f6edab3aa23ba7f90654f7c2289730edcbbc7321ad3cfabc9c774ad01deedd56",
+          "duration": "1:38.790",
+          "durationSeconds": 98.78999999999999,
+          "channels": 2
+        },
+        {
+          "id": "freesound-539594",
+          "path": "assets/audio/environment/eave-drips-freesound-539594.wav",
+          "sourceUrl": "https://freesound.org/people/1888software/sounds/539594/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/539594/download/",
+          "creator": "1888software",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 4720114,
+          "sha256": "56a8091bca8bdb1b4740f4b8fb620e93d9452cd0e9019374b5855a01f059c481",
+          "duration": "0:26.755",
+          "durationSeconds": 26.755,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "environment",
+      "id": "gutter_trickle",
+      "takes": [
+        {
+          "id": "freesound-427602",
+          "path": "assets/audio/environment/gutter-trickle-freesound-427602.wav",
+          "sourceUrl": "https://freesound.org/people/michorvath/sounds/427602/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/427602/download/",
+          "creator": "michorvath",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1989116,
+          "sha256": "d00b94e109297b0c872054cd4a5478caf07ff49b31d9de5c849200609d23750c",
+          "duration": "0:22.520",
+          "durationSeconds": 22.52,
+          "channels": 1
+        },
+        {
+          "id": "freesound-180949",
+          "path": "assets/audio/environment/gutter-trickle-freesound-180949.aiff",
+          "sourceUrl": "https://freesound.org/people/jc144940/sounds/180949/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/180949/download/",
+          "creator": "jc144940",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1325272,
+          "sha256": "9cbc3147d29c959e9aac771f5e10278f99a8bc2a50ef23e804737fb9b3385b81",
+          "duration": "0:27.990",
+          "durationSeconds": 27.99,
+          "channels": 2
+        },
+        {
+          "id": "freesound-381419",
+          "path": "assets/audio/environment/gutter-trickle-freesound-381419.wav",
+          "sourceUrl": "https://freesound.org/people/clif_creates/sounds/381419/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/381419/download/",
+          "creator": "clif_creates",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 18899032,
+          "sha256": "f8e9fc5ffa4412655c43da49350011e0c3430c6a9250d84e8fffeec085816a64",
+          "duration": "1:05.617",
+          "durationSeconds": 65.617,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "environment",
+      "id": "puddle_drops",
+      "takes": [
+        {
+          "id": "freesound-725032",
+          "path": "assets/audio/environment/puddle-drops-freesound-725032.ogg",
+          "sourceUrl": "https://freesound.org/people/icsp/sounds/725032/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/725032/download/",
+          "creator": "icsp",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 6642,
+          "sha256": "a8759abf27967d91fddb70b6900b2d18923def57f34a76a506875ba441ba1295",
+          "duration": "0:00.539",
+          "durationSeconds": 0.539,
+          "channels": 1
+        },
+        {
+          "id": "freesound-843505",
+          "path": "assets/audio/environment/puddle-drops-freesound-843505.wav",
+          "sourceUrl": "https://freesound.org/people/vfrattaroli/sounds/843505/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/843505/download/",
+          "creator": "vfrattaroli",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 993230,
+          "sha256": "741186b547e620c0fa53ae4654cd0b0b938c80b4a30cdc7e6dee4b33ba09e05f",
+          "duration": "0:10.345",
+          "durationSeconds": 10.345,
+          "channels": 1
+        },
+        {
+          "id": "freesound-149237",
+          "path": "assets/audio/environment/puddle-drops-freesound-149237.wav",
+          "sourceUrl": "https://freesound.org/people/conleec/sounds/149237/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/149237/download/",
+          "creator": "conleec",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 11280394,
+          "sha256": "6baf2e725a66bbf2ce5ef34cbbf5b54a58e96c3226fdb156cf3dda7366ad0c9f",
+          "duration": "1:18.303",
+          "durationSeconds": 78.303,
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "category": "environment",
+      "id": "foliage_rustle",
+      "takes": [
+        {
+          "id": "freesound-718411",
+          "path": "assets/audio/environment/foliage-rustle-freesound-718411.wav",
+          "sourceUrl": "https://freesound.org/people/bruno.auzet/sounds/718411/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/718411/download/",
+          "creator": "bruno.auzet",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 64978260,
+          "sha256": "bd0fe11e682596b014a45e863f23d86b4c1120bee89ebc2cd37c0399bc4a2a87",
+          "duration": "3:45.616",
+          "durationSeconds": 225.61599999999999,
+          "channels": 2
+        },
+        {
+          "id": "freesound-751869",
+          "path": "assets/audio/environment/foliage-rustle-freesound-751869.wav",
+          "sourceUrl": "https://freesound.org/people/TimOut789/sounds/751869/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/751869/download/",
+          "creator": "TimOut789",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1064840,
+          "sha256": "5bc4835b784baabf0cf94d5642bccda3f1d248c61391151f9461f32d7b4b2c80",
+          "duration": "0:12.072",
+          "durationSeconds": 12.072,
+          "channels": 1
+        },
+        {
+          "id": "freesound-575380",
+          "path": "assets/audio/environment/foliage-rustle-freesound-575380.wav",
+          "sourceUrl": "https://freesound.org/people/Cinetony/sounds/575380/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/575380/download/",
+          "creator": "Cinetony",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 30528044,
+          "sha256": "c7b4dd9c48a33f469389c2aed67ac3b8e93aacbd83d413f43615f2f22379906b",
+          "duration": "1:46.000",
+          "durationSeconds": 106,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "environment",
+      "id": "distant_birds",
+      "takes": [
+        {
+          "id": "freesound-815833",
+          "path": "assets/audio/environment/distant-birds-freesound-815833.wav",
+          "sourceUrl": "https://freesound.org/people/TheKingOfGeeks360/sounds/815833/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/815833/download/",
+          "creator": "TheKingOfGeeks360",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 405582,
+          "sha256": "59af50b27220f4125b702d512d843f2481819d51c5b7a44aeb8ca2d7cf729f44",
+          "duration": "0:02.298",
+          "durationSeconds": 2.298,
+          "channels": 2
+        },
+        {
+          "id": "freesound-844621",
+          "path": "assets/audio/environment/distant-birds-freesound-844621.wav",
+          "sourceUrl": "https://freesound.org/people/EdEddnEddie/sounds/844621/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/844621/download/",
+          "creator": "EdEddnEddie",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2422432,
+          "sha256": "39680680978a3164bee3a3fae1cd6ac096f7083414b25c2b5e014606febb522e",
+          "duration": "0:06.308",
+          "durationSeconds": 6.308,
+          "channels": 2
+        },
+        {
+          "id": "freesound-841542",
+          "path": "assets/audio/environment/distant-birds-freesound-841542.wav",
+          "sourceUrl": "https://freesound.org/people/flumpytripod/sounds/841542/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/841542/download/",
+          "creator": "flumpytripod",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 3309646,
+          "sha256": "ce24fb870d6fecd5218a379763fead1a97bbb379271b1a01ecc6dd0a2a35c04e",
+          "duration": "0:17.237",
+          "durationSeconds": 17.237,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "street",
+      "id": "wet_pavement_footsteps",
+      "takes": [
+        {
+          "id": "freesound-539556",
+          "path": "assets/audio/street/wet-pavement-footsteps-freesound-539556.wav",
+          "sourceUrl": "https://freesound.org/people/Federico_Casazza/sounds/539556/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/539556/download/",
+          "creator": "Federico_Casazza",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 28147724,
+          "sha256": "36ce445824ab7b7eb7b5d0ed47a12c802174c955de0992bc0a6087bfd4d90308",
+          "duration": "1:46.378",
+          "durationSeconds": 106.378,
+          "channels": 2
+        },
+        {
+          "id": "freesound-215990",
+          "path": "assets/audio/street/wet-pavement-footsteps-freesound-215990.wav",
+          "sourceUrl": "https://freesound.org/people/bushi3593/sounds/215990/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/215990/download/",
+          "creator": "bushi3593",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2921294,
+          "sha256": "3f05ef552fc9301d5b1396ec73d4edeb030ec14e2934282056cb2416e0027b37",
+          "duration": "0:10.140",
+          "durationSeconds": 10.14,
+          "channels": 2
+        },
+        {
+          "id": "freesound-835102",
+          "path": "assets/audio/street/wet-pavement-footsteps-freesound-835102.wav",
+          "sourceUrl": "https://freesound.org/people/SpinOpel/sounds/835102/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/835102/download/",
+          "creator": "SpinOpel",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 597652,
+          "sha256": "52b50edec7f1c23ce2b2d8a125b643964ec0e332d4c45281c7c100a61f62b198",
+          "duration": "0:06.774",
+          "durationSeconds": 6.774,
+          "channels": 1
+        },
+        {
+          "id": "freesound-334457",
+          "path": "assets/audio/street/wet-pavement-footsteps-freesound-334457.mp3",
+          "sourceUrl": "https://freesound.org/people/evsecrets/sounds/334457/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/334457/download/",
+          "creator": "evsecrets",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1540287,
+          "sha256": "ad5b180970509fbf9d038c4d36cc031ab316c71eef7aa03958824abec2dd5c26",
+          "duration": "0:38.466",
+          "durationSeconds": 38.466,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "street",
+      "id": "passing_car",
+      "takes": [
+        {
+          "id": "freesound-839184",
+          "path": "assets/audio/street/passing-car-freesound-839184.wav",
+          "sourceUrl": "https://freesound.org/people/LuukasR/sounds/839184/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/839184/download/",
+          "creator": "LuukasR",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 441642,
+          "sha256": "1c32d2daedab5a643afef36c0a3b0451040a48e79be6503cad9ec8dcce3a108c",
+          "duration": "0:05.006",
+          "durationSeconds": 5.006,
+          "channels": 1
+        },
+        {
+          "id": "freesound-710671",
+          "path": "assets/audio/street/passing-car-freesound-710671.wav",
+          "sourceUrl": "https://freesound.org/people/Polystyreeni/sounds/710671/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/710671/download/",
+          "creator": "Polystyreeni",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 562700,
+          "sha256": "2e0e164da7e8430cf8b9f1714b9f4c7642b7dd75381af5401b70a4c6ebd5204a",
+          "duration": "0:06.379",
+          "durationSeconds": 6.379,
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "category": "street",
+      "id": "wet_stone_footsteps",
+      "takes": [
+        {
+          "id": "freesound-334519",
+          "path": "assets/audio/street/wet-stone-footsteps-freesound-334519.wav",
+          "sourceUrl": "https://freesound.org/people/cybergrrl/sounds/334519/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/334519/download/",
+          "creator": "cybergrrl",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2083640,
+          "sha256": "ba2799c1a394cf4f89382f5a7d28f44936b4f4e73eabd10f6d1599119760de40",
+          "duration": "0:23.621",
+          "durationSeconds": 23.621,
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "category": "street",
+      "id": "wet_gravel_footsteps",
+      "takes": [
+        {
+          "id": "freesound-828885",
+          "path": "assets/audio/street/wet-gravel-footsteps-freesound-828885.flac",
+          "sourceUrl": "https://freesound.org/people/hoshisato/sounds/828885/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/828885/download/",
+          "creator": "hoshisato",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1815498,
+          "sha256": "c33bdbe03013ddbea1a2c168da8b526c291c1707956b0e1e723b2b3c39b63f2e",
+          "duration": "0:22.731",
+          "durationSeconds": 22.731,
+          "channels": 2
+        },
+        {
+          "id": "freesound-149245",
+          "path": "assets/audio/street/wet-gravel-footsteps-freesound-149245.wav",
+          "sourceUrl": "https://freesound.org/people/conleec/sounds/149245/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/149245/download/",
+          "creator": "conleec",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 4601598,
+          "sha256": "15c9a4ffe2a3a02112c9443ae793a03af6231c3a91996c7c02e4922577cee797",
+          "duration": "0:31.924",
+          "durationSeconds": 31.924,
+          "channels": 1
+        },
+        {
+          "id": "freesound-398679",
+          "path": "assets/audio/street/wet-gravel-footsteps-freesound-398679.wav",
+          "sourceUrl": "https://freesound.org/people/Dominik_W/sounds/398679/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/398679/download/",
+          "creator": "Dominik_W",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 3440536,
+          "sha256": "5ef863566cef78b8867e4406777c4a3d355793bc84a20ead4389a076f3187776",
+          "duration": "0:19.500",
+          "durationSeconds": 19.5,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "street",
+      "id": "damp_leaf_footsteps",
+      "takes": [
+        {
+          "id": "freesound-718900",
+          "path": "assets/audio/street/damp-leaf-footsteps-freesound-718900.wav",
+          "sourceUrl": "https://freesound.org/people/madamdata/sounds/718900/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/718900/download/",
+          "creator": "madamdata",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 3121898,
+          "sha256": "12025aa9011a0eab93764bdd5b6c183b22cd676896e2f44c4648aaf335dbd460",
+          "duration": "0:10.839",
+          "durationSeconds": 10.839,
+          "channels": 2
+        },
+        {
+          "id": "freesound-455063",
+          "path": "assets/audio/street/damp-leaf-footsteps-freesound-455063.wav",
+          "sourceUrl": "https://freesound.org/people/audioninja001/sounds/455063/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/455063/download/",
+          "creator": "audioninja001",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 5865000,
+          "sha256": "11171176c0f7f6ca1adb575528ecc6c8aa6c69bffc428f892a97602e58fb5af4",
+          "duration": "0:33.247",
+          "durationSeconds": 33.247,
+          "channels": 2
+        },
+        {
+          "id": "freesound-657868",
+          "path": "assets/audio/street/damp-leaf-footsteps-freesound-657868.wav",
+          "sourceUrl": "https://freesound.org/people/biffa/sounds/657868/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/657868/download/",
+          "creator": "biffa",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2916844,
+          "sha256": "8d03f594ad0563bb1d4e06fe3922e11bb1dc9116382363a93f6205818e833911",
+          "duration": "0:15.152",
+          "durationSeconds": 15.152,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "street",
+      "id": "passing_bicycle",
+      "takes": [
+        {
+          "id": "freesound-826605",
+          "path": "assets/audio/street/passing-bicycle-freesound-826605.wav",
+          "sourceUrl": "https://freesound.org/people/submergent/sounds/826605/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/826605/download/",
+          "creator": "submergent",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1404386,
+          "sha256": "25676d17e33009f92224b388e6cd291d8d717a2d8ea7b81e59568170759d4a2e",
+          "duration": "0:04.844",
+          "durationSeconds": 4.844,
+          "channels": 2
+        },
+        {
+          "id": "freesound-276001",
+          "path": "assets/audio/street/passing-bicycle-freesound-276001.aiff",
+          "sourceUrl": "https://freesound.org/people/beskhu/sounds/276001/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/276001/download/",
+          "creator": "beskhu",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1807640,
+          "sha256": "1c51318c2eebc12e554071513b53f1bd7191e6a6a2fc55c74f8cb190a52028a4",
+          "duration": "0:10.224",
+          "durationSeconds": 10.224,
+          "channels": 2
+        },
+        {
+          "id": "freesound-829489",
+          "path": "assets/audio/street/passing-bicycle-freesound-829489.wav",
+          "sourceUrl": "https://freesound.org/people/hz37/sounds/829489/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/829489/download/",
+          "creator": "hz37",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 3304158,
+          "sha256": "4011eed214f631332dd25c2860f9bc661dacf8b374a20fbb43079dcd76c4998a",
+          "duration": "0:11.405",
+          "durationSeconds": 11.405,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "street",
+      "id": "passing_bus",
+      "takes": [
+        {
+          "id": "freesound-773801",
+          "path": "assets/audio/street/passing-bus-freesound-773801.wav",
+          "sourceUrl": "https://freesound.org/people/ArttuSal/sounds/773801/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/773801/download/",
+          "creator": "ArttuSal",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 313198,
+          "sha256": "c9700e7d4395341fece0337d93b83ef492304c5106f62008a4ca43c348e5f0b9",
+          "duration": "0:07.099",
+          "durationSeconds": 7.099,
+          "channels": 1
+        },
+        {
+          "id": "freesound-774785",
+          "path": "assets/audio/street/passing-bus-freesound-774785.wav",
+          "sourceUrl": "https://freesound.org/people/ottoan/sounds/774785/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/774785/download/",
+          "creator": "ottoan",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 571470,
+          "sha256": "622725275ff9cf21845f1509f54af11eef4685ef689601893e2be3f03f0bcf26",
+          "duration": "0:05.952",
+          "durationSeconds": 5.952,
+          "channels": 1
+        },
+        {
+          "id": "freesound-838943",
+          "path": "assets/audio/street/passing-bus-freesound-838943.m4a",
+          "sourceUrl": "https://freesound.org/people/VasiliiFeshchenko/sounds/838943/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/838943/download/",
+          "creator": "VasiliiFeshchenko",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 36707,
+          "sha256": "69977d0f69c07ac29cfdfa4514a23cded659c946158a85fb78920454ce728b3f",
+          "duration": "0:05.461",
+          "durationSeconds": 5.461,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "street",
+      "id": "passing_people",
+      "takes": [
+        {
+          "id": "freesound-845919",
+          "path": "assets/audio/street/passing-people-freesound-845919.mp3",
+          "sourceUrl": "https://freesound.org/people/nincamindza07/sounds/845919/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/845919/download/",
+          "creator": "nincamindza07",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 205696,
+          "sha256": "7678482ffc7a9b65f59755737354b363e5d78c0e5e33db2e51caa7b4ac0d9298",
+          "duration": "0:12.816",
+          "durationSeconds": 12.816,
+          "channels": 2
+        },
+        {
+          "id": "freesound-648209",
+          "path": "assets/audio/street/passing-people-freesound-648209.wav",
+          "sourceUrl": "https://freesound.org/people/SpyrosPolitis/sounds/648209/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/648209/download/",
+          "creator": "SpyrosPolitis",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 35346476,
+          "sha256": "5fcb4da786e5a2802af290a35cb1ce612e139d24cc5975c6c5dc0a2b89f44485",
+          "duration": "2:02.730",
+          "durationSeconds": 122.73,
+          "channels": 2
+        },
+        {
+          "id": "freesound-236946",
+          "path": "assets/audio/street/passing-people-freesound-236946.wav",
+          "sourceUrl": "https://freesound.org/people/Matmorfus/sounds/236946/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/236946/download/",
+          "creator": "Matmorfus",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 55175692,
+          "sha256": "9574c5b8f98b63025c612eeaf9860bd13c477365a55a5997d69b8664b2bb7262",
+          "duration": "3:11.328",
+          "durationSeconds": 191.328,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "cafe_chatter",
+      "takes": [
+        {
+          "id": "freesound-46310",
+          "path": "assets/audio/building/cafe-chatter-freesound-46310.wav",
+          "sourceUrl": "https://freesound.org/people/moxobna/sounds/46310/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/46310/download/",
+          "creator": "moxobna",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 33569034,
+          "sha256": "e705ccf9019d95ef043c08d1513664aed63b7e47b56c8e86c0d2fb04555807fa",
+          "duration": "6:20.600",
+          "durationSeconds": 380.6,
+          "channels": 1
+        },
+        {
+          "id": "freesound-437461",
+          "path": "assets/audio/building/cafe-chatter-freesound-437461.mp3",
+          "sourceUrl": "https://freesound.org/people/Anya_Media/sounds/437461/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/437461/download/",
+          "creator": "Anya_Media",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 4836573,
+          "sha256": "4ddaf5a94efbe95f6536492b67ae980a6b165b6fabfcb1cded00e619fd36d776",
+          "duration": "2:00.685",
+          "durationSeconds": 120.685,
+          "channels": 2
+        },
+        {
+          "id": "bigsoundbank-0480",
+          "path": "assets/audio/building/cafe-chatter-bigsoundbank-0480.wav",
+          "sourceUrl": "https://bigsoundbank.com/atmosphere-bar-2-s0480.html",
+          "downloadUrl": "https://bigsoundbank.com/UPLOAD/bwf-en/0480.wav",
+          "creator": "DavidGreck",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “CC0 (public domain): Free and royalty-free” and its FAQ permits edits, redistribution and commercial use.",
+          "bytes": 16586954,
+          "sha256": "bc66a41bf05e54b580e858b2689e425e88e863607ea6a3ea94a7216e82ca2d99",
+          "duration": "01:35",
+          "durationSeconds": 95,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "milk_steamer",
+      "takes": [
+        {
+          "id": "freesound-868480",
+          "path": "assets/audio/building/milk-steamer-freesound-868480.wav",
+          "sourceUrl": "https://freesound.org/people/sokworks/sounds/868480/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/868480/download/",
+          "creator": "sokworks",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 632056,
+          "sha256": "f8b4b795d812f7a8a36f4faf09447f32be1540fccde829856a78cade6324cba3",
+          "duration": "0:03.291",
+          "durationSeconds": 3.291,
+          "channels": 2
+        },
+        {
+          "id": "freesound-539317",
+          "path": "assets/audio/building/milk-steamer-freesound-539317.wav",
+          "sourceUrl": "https://freesound.org/people/RobinMetzler/sounds/539317/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/539317/download/",
+          "creator": "RobinMetzler",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 5083562,
+          "sha256": "3313d8644062daef6fa5cbd5908480272bd24f3c8458ae8af7a78291072d0ad4",
+          "duration": "0:17.651",
+          "durationSeconds": 17.651,
+          "channels": 2
+        },
+        {
+          "id": "freesound-79034",
+          "path": "assets/audio/building/milk-steamer-freesound-79034.wav",
+          "sourceUrl": "https://freesound.org/people/labailey/sounds/79034/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/79034/download/",
+          "creator": "labailey",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 5824904,
+          "sha256": "03594c41a5356f3b3a306419ab1c7c22a72c3c137f24afc0cd7c7cd4c194a22b",
+          "duration": "0:33.020",
+          "durationSeconds": 33.02,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "door_opening",
+      "takes": [
+        {
+          "id": "freesound-397918",
+          "path": "assets/audio/building/door-opening-freesound-397918.wav",
+          "sourceUrl": "https://freesound.org/people/nozefian/sounds/397918/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/397918/download/",
+          "creator": "nozefian",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 334446,
+          "sha256": "60e7510a3f517221a39e098d62adb06c0bd6e5ecdf54ae562831102cb74f37cd",
+          "duration": "0:01.894",
+          "durationSeconds": 1.894,
+          "channels": 2
+        },
+        {
+          "id": "bigsoundbank-1270",
+          "path": "assets/audio/building/door-opening-bigsoundbank-1270.wav",
+          "sourceUrl": "https://bigsoundbank.com/old-glass-door-s1270.html",
+          "downloadUrl": "https://bigsoundbank.com/UPLOAD/bwf-en/1270.wav",
+          "creator": "Joseph SARDIN",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “CC0 (public domain): Free and royalty-free” and its FAQ permits edits, redistribution and commercial use.",
+          "bytes": 899036,
+          "sha256": "0f9fc6d3dd3659e774af43fe0f22d2e2df5518982efeddf0c80747fe51df077f",
+          "duration": "00:07",
+          "durationSeconds": 7,
+          "channels": 1
+        },
+        {
+          "id": "freesound-125958",
+          "path": "assets/audio/building/door-opening-freesound-125958.wav",
+          "sourceUrl": "https://freesound.org/people/Ryding/sounds/125958/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/125958/download/",
+          "creator": "Ryding",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 551232,
+          "sha256": "e60536cb047047b4b218617b685ba885cc5a82f9fee27a1e332d687684375b29",
+          "duration": "0:02.870",
+          "durationSeconds": 2.87,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "children_laughter",
+      "takes": [
+        {
+          "id": "freesound-43844",
+          "path": "assets/audio/building/children-laughter-freesound-43844.wav",
+          "sourceUrl": "https://freesound.org/people/KatHakaku/sounds/43844/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/43844/download/",
+          "creator": "KatHakaku",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 3490860,
+          "sha256": "02b04bb01dbbb55aaf88cb45f1368aac60d8c2353ff6fde34a356304aea00af0",
+          "duration": "0:39.578",
+          "durationSeconds": 39.578,
+          "channels": 1
+        },
+        {
+          "id": "freesound-545873",
+          "path": "assets/audio/building/children-laughter-freesound-545873.wav",
+          "sourceUrl": "https://freesound.org/people/kvgarlic/sounds/545873/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/545873/download/",
+          "creator": "kvgarlic",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 82225608,
+          "sha256": "56308e6c956cfbf73921e02d9802ead9632b96c6a69f131a678a66636daa2f7a",
+          "duration": "7:46.115",
+          "durationSeconds": 466.115,
+          "channels": 2
+        },
+        {
+          "id": "freesound-752675",
+          "path": "assets/audio/building/children-laughter-freesound-752675.wav",
+          "sourceUrl": "https://freesound.org/people/Eightmate/sounds/752675/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/752675/download/",
+          "creator": "Eightmate",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 17370320,
+          "sha256": "b812b20f73b4efadd95e5466fe3c4f4eaf12329f139a4293238793a96dadf5d8",
+          "duration": "1:00.229",
+          "durationSeconds": 60.229,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "adult_laughter",
+      "takes": [
+        {
+          "id": "freesound-337795",
+          "path": "assets/audio/building/adult-laughter-freesound-337795.mp3",
+          "sourceUrl": "https://freesound.org/people/mrmunk/sounds/337795/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/337795/download/",
+          "creator": "mrmunk",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 165946,
+          "sha256": "08556a12ed3ca7858452dc36b1e1c78d1c673bfd18141aba397f0bfe448eae41",
+          "duration": "0:06.559",
+          "durationSeconds": 6.559,
+          "channels": 2
+        },
+        {
+          "id": "freesound-459455",
+          "path": "assets/audio/building/adult-laughter-freesound-459455.wav",
+          "sourceUrl": "https://freesound.org/people/jodybruchon/sounds/459455/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/459455/download/",
+          "creator": "jodybruchon",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 129070,
+          "sha256": "2e9658e1e8b810818907fbc3dc22cfeedfb0d4aaf02adb7821c900ff20b753b6",
+          "duration": "0:01.462",
+          "durationSeconds": 1.462,
+          "channels": 1
+        },
+        {
+          "id": "freesound-763961",
+          "path": "assets/audio/building/adult-laughter-freesound-763961.wav",
+          "sourceUrl": "https://freesound.org/people/ShangusBurger/sounds/763961/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/763961/download/",
+          "creator": "ShangusBurger",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 645592,
+          "sha256": "52e4aa55f26f94e45963e7a118dc946b8a5577d6c533ebd1e69f38df0df8c1c0",
+          "duration": "0:02.207",
+          "durationSeconds": 2.207,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "cup_and_saucer",
+      "takes": [
+        {
+          "id": "freesound-568757",
+          "path": "assets/audio/building/cup-and-saucer-freesound-568757.wav",
+          "sourceUrl": "https://freesound.org/people/bowlingballout/sounds/568757/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/568757/download/",
+          "creator": "bowlingballout",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 151222,
+          "sha256": "30f951b9ca8a47187840d78335d46f9dfc76c63819008e03e3f080ca41bfe676",
+          "duration": "0:00.390",
+          "durationSeconds": 0.39,
+          "channels": 2
+        },
+        {
+          "id": "freesound-764771",
+          "path": "assets/audio/building/cup-and-saucer-freesound-764771.wav",
+          "sourceUrl": "https://freesound.org/people/nikerk/sounds/764771/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/764771/download/",
+          "creator": "nikerk",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 332556,
+          "sha256": "ffd27ac0633c6f0bf3082d1a5322b7c55713f0108dfa053b4f419910cd4f9cd5",
+          "duration": "0:00.865",
+          "durationSeconds": 0.865,
+          "channels": 2
+        },
+        {
+          "id": "freesound-391497",
+          "path": "assets/audio/building/cup-and-saucer-freesound-391497.wav",
+          "sourceUrl": "https://freesound.org/people/megashroom/sounds/391497/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/391497/download/",
+          "creator": "megashroom",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 6343098,
+          "sha256": "af390cbe6f39248455239286d281792fd3f27f9e00d1fea23278caa303d215aa",
+          "duration": "0:22.000",
+          "durationSeconds": 22,
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "restaurant_murmur",
+      "takes": [
+        {
+          "id": "freesound-212093",
+          "path": "assets/audio/building/restaurant-murmur-freesound-212093.wav",
+          "sourceUrl": "https://freesound.org/people/conleec/sounds/212093/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/212093/download/",
+          "creator": "conleec",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 31642038,
+          "sha256": "9a273465cf85b8ae19d3c930f11be83795d8e86f38703d8ff1110585c1bb60c1",
+          "duration": "3:38.568",
+          "durationSeconds": 218.56799999999998,
+          "channels": 1
+        },
+        {
+          "id": "freesound-32261",
+          "path": "assets/audio/building/restaurant-murmur-freesound-32261.wav",
+          "sourceUrl": "https://freesound.org/people/moxobna/sounds/32261/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/32261/download/",
+          "creator": "moxobna",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 45613724,
+          "sha256": "41d8e1f0b6ae5948750d35ebf05b3384d7c78812efdcf0f28de6b9862fcf8c71",
+          "duration": "4:18.581",
+          "durationSeconds": 258.581,
+          "channels": 2
+        },
+        {
+          "id": "bigsoundbank-3542",
+          "path": "assets/audio/building/restaurant-murmur-bigsoundbank-3542.wav",
+          "sourceUrl": "https://bigsoundbank.com/small-restaurant-conversations-s3542.html",
+          "downloadUrl": "https://bigsoundbank.com/UPLOAD/bwf-en/3542.wav",
+          "creator": "Joseph SARDIN & Axeline T.",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “CC0 (public domain): Free and royalty-free” and its FAQ permits edits, redistribution and commercial use.",
+          "bytes": 47251448,
+          "sha256": "a01022645fae5c9bbdeb645e8fb56ef9278a4fb8f3a788eadcb561862eca0227",
+          "duration": "02:45",
+          "durationSeconds": 165,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "dish_clink",
+      "takes": [
+        {
+          "id": "bigsoundbank-1191",
+          "path": "assets/audio/building/dish-clink-bigsoundbank-1191.wav",
+          "sourceUrl": "https://bigsoundbank.com/cutlery-set-on-a-plate-s1191.html",
+          "downloadUrl": "https://bigsoundbank.com/UPLOAD/bwf-en/1191.wav",
+          "creator": "Joseph SARDIN",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “CC0 (public domain): Free and royalty-free” and its FAQ permits edits, redistribution and commercial use.",
+          "bytes": 1723132,
+          "sha256": "5e7828a87c198c469d232ce20b1d0d8bbfe9c645f2da2b499d2f7b624df69eed",
+          "duration": "00:18",
+          "durationSeconds": 18,
+          "channels": 1
+        },
+        {
+          "id": "freesound-193060",
+          "path": "assets/audio/building/dish-clink-freesound-193060.wav",
+          "sourceUrl": "https://freesound.org/people/Nomadyag/sounds/193060/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/193060/download/",
+          "creator": "Nomadyag",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 530576,
+          "sha256": "7c1b7761950d079127f36d71d82899a554223bdf5de48f27d8dfbd9bec6a4796",
+          "duration": "0:02.763",
+          "durationSeconds": 2.763,
+          "channels": 2
+        },
+        {
+          "id": "freesound-848942",
+          "path": "assets/audio/building/dish-clink-freesound-848942.wav",
+          "sourceUrl": "https://freesound.org/people/IENBA/sounds/848942/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/848942/download/",
+          "creator": "IENBA",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1168468,
+          "sha256": "741b955ba3c72b564f4b1bb2fd0da7865cee5696e4853d2f6801df4ea7b6e371",
+          "duration": "0:13.240",
+          "durationSeconds": 13.24,
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "chair_movement",
+      "takes": [
+        {
+          "id": "freesound-816504",
+          "path": "assets/audio/building/chair-movement-freesound-816504.wav",
+          "sourceUrl": "https://freesound.org/people/Alpaca_Audio/sounds/816504/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/816504/download/",
+          "creator": "Alpaca_Audio",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 391724,
+          "sha256": "346bad75284da61e704cf91f2fb325048aa97ccc7fe2032141acc04a9dd134ec",
+          "duration": "0:01.020",
+          "durationSeconds": 1.02,
+          "channels": 2
+        },
+        {
+          "id": "freesound-544656",
+          "path": "assets/audio/building/chair-movement-freesound-544656.wav",
+          "sourceUrl": "https://freesound.org/people/jeneveev/sounds/544656/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/544656/download/",
+          "creator": "jeneveev",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1059136,
+          "sha256": "ce77f7dfdaec96957c3737502e95a88fc872f0da402e13f76d16d6b3416ca728",
+          "duration": "0:04.000",
+          "durationSeconds": 4,
+          "channels": 2
+        },
+        {
+          "id": "freesound-488102",
+          "path": "assets/audio/building/chair-movement-freesound-488102.wav",
+          "sourceUrl": "https://freesound.org/people/soundsofscienceupf/sounds/488102/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/488102/download/",
+          "creator": "soundsofscienceupf",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1463152,
+          "sha256": "1d6d97f3091e61937750b3bc6c09f71ddb512ba6f29ec7cabc0603ab87857805",
+          "duration": "0:08.294",
+          "durationSeconds": 8.294,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "page_turn",
+      "takes": [
+        {
+          "id": "freesound-840192",
+          "path": "assets/audio/building/page-turn-freesound-840192.mp3",
+          "sourceUrl": "https://freesound.org/people/pierreluclandry/sounds/840192/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/840192/download/",
+          "creator": "pierreluclandry",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 29276,
+          "sha256": "66826b0a1463d28f1dabf98f590b9460566967f9f9cf5370c7ea4ce41e2e2aa0",
+          "duration": "0:02.368",
+          "durationSeconds": 2.368,
+          "channels": 1
+        },
+        {
+          "id": "freesound-749880",
+          "path": "assets/audio/building/page-turn-freesound-749880.wav",
+          "sourceUrl": "https://freesound.org/people/Beussa/sounds/749880/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/749880/download/",
+          "creator": "Beussa",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 239556,
+          "sha256": "be61659c0e0d5d36a7b343618c780b0596697690afe193f74fcdf94ef66975be",
+          "duration": "0:00.678",
+          "durationSeconds": 0.678,
+          "channels": 2
+        },
+        {
+          "id": "freesound-493667",
+          "path": "assets/audio/building/page-turn-freesound-493667.wav",
+          "sourceUrl": "https://freesound.org/people/Squidocto/sounds/493667/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/493667/download/",
+          "creator": "Squidocto",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 10582368,
+          "sha256": "45c914381fcd90cafbfa57ef2827dd84429ebbb0d4c9fc97833c4b1dcb364033",
+          "duration": "0:55.116",
+          "durationSeconds": 55.116,
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "library_murmur",
+      "takes": [
+        {
+          "id": "freesound-742477",
+          "path": "assets/audio/building/library-murmur-freesound-742477.wav",
+          "sourceUrl": "https://freesound.org/people/alberto_cendra_woodman/sounds/742477/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/742477/download/",
+          "creator": "alberto_cendra_woodman",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 122428260,
+          "sha256": "22b0e6da4dcbdfebdbc16fbb2013cc5bec9172f2bac5800a80813e59856eeff4",
+          "duration": "7:04.507",
+          "durationSeconds": 424.507,
+          "channels": 2
+        },
+        {
+          "id": "freesound-767305",
+          "path": "assets/audio/building/library-murmur-freesound-767305.wav",
+          "sourceUrl": "https://freesound.org/people/Hano_van_Dalen/sounds/767305/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/767305/download/",
+          "creator": "Hano_van_Dalen",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 34012374,
+          "sha256": "cddab08a4afb940a7a5ec8aed333e4baf5f6d6acb423382f58a46557b40fd312",
+          "duration": "2:08.539",
+          "durationSeconds": 128.539,
+          "channels": 2
+        },
+        {
+          "id": "freesound-613781",
+          "path": "assets/audio/building/library-murmur-freesound-613781.wav",
+          "sourceUrl": "https://freesound.org/people/xkeril/sounds/613781/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/613781/download/",
+          "creator": "xkeril",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 83244832,
+          "sha256": "07ff4d78e67be99bb5f6e78374bed0d902d27d368b9878657ea90f2c2c8bc94e",
+          "duration": "7:13.567",
+          "durationSeconds": 433.567,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "children_voices",
+      "takes": [
+        {
+          "id": "freesound-165529",
+          "path": "assets/audio/building/children-voices-freesound-165529.wav",
+          "sourceUrl": "https://freesound.org/people/Libra222/sounds/165529/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/165529/download/",
+          "creator": "Libra222",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 35758266,
+          "sha256": "f0616ea4ddf5fabbf03e93e2dc79f7cca28047218ad13a7f85fec6c73e7c1846",
+          "duration": "3:06.240",
+          "durationSeconds": 186.24,
+          "channels": 2
+        },
+        {
+          "id": "freesound-213350",
+          "path": "assets/audio/building/children-voices-freesound-213350.mp3",
+          "sourceUrl": "https://freesound.org/people/mycompasstv/sounds/213350/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/213350/download/",
+          "creator": "mycompasstv",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2020704,
+          "sha256": "efd9ef1548ac463eccdee7332a158faac5f665cf9f0c75d52760d4df01f96922",
+          "duration": "2:06.028",
+          "durationSeconds": 126.028,
+          "channels": 2
+        },
+        {
+          "id": "bigsoundbank-2746",
+          "path": "assets/audio/building/children-voices-bigsoundbank-2746.wav",
+          "sourceUrl": "https://bigsoundbank.com/recreation-kindergarten-7-s2746.html",
+          "downloadUrl": "https://bigsoundbank.com/UPLOAD/bwf-en/2746.wav",
+          "creator": "Joseph SARDIN",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “CC0 (public domain): Free and royalty-free” and its FAQ permits edits, redistribution and commercial use.",
+          "bytes": 20251428,
+          "sha256": "65c321db9071ab32051965382b91b95c7dbad91e2d3a7a3d55e8af0a4e4d041f",
+          "duration": "01:11",
+          "durationSeconds": 71,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "bell_toll",
+      "takes": [
+        {
+          "id": "bigsoundbank-3446",
+          "path": "assets/audio/building/bell-toll-bigsoundbank-3446.wav",
+          "sourceUrl": "https://bigsoundbank.com/bell-1-o-clock-s3446.html",
+          "downloadUrl": "https://bigsoundbank.com/UPLOAD/bwf-en/3446.wav",
+          "creator": "Joseph SARDIN & Axeline T.",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “CC0 (public domain): Free and royalty-free” and its FAQ permits edits, redistribution and commercial use.",
+          "bytes": 1062698,
+          "sha256": "f9f598a9236b709d4560cb9ce2067172a3eac8ec2189a26185c65d990251764a",
+          "duration": "00:08",
+          "durationSeconds": 8,
+          "channels": 1
+        },
+        {
+          "id": "freesound-805156",
+          "path": "assets/audio/building/bell-toll-freesound-805156.wav",
+          "sourceUrl": "https://freesound.org/people/mrspivey/sounds/805156/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/805156/download/",
+          "creator": "mrspivey",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2900408,
+          "sha256": "bf34602728beaae9b920cb324298fce198d4cafc4c3ccdef7599194050a5ec27",
+          "duration": "0:16.439",
+          "durationSeconds": 16.439,
+          "channels": 2
+        },
+        {
+          "id": "freesound-802078",
+          "path": "assets/audio/building/bell-toll-freesound-802078.wav",
+          "sourceUrl": "https://freesound.org/people/TuneSeeker/sounds/802078/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/802078/download/",
+          "creator": "TuneSeeker",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 4141588,
+          "sha256": "86ebfcf855166be03736eadbde13f0f0f12e177bbce691b350c38701ad13b2ad",
+          "duration": "0:14.375",
+          "durationSeconds": 14.375,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "choral_chant",
+      "takes": [
+        {
+          "id": "freesound-869831",
+          "path": "assets/audio/building/choral-chant-freesound-869831.wav",
+          "sourceUrl": "https://freesound.org/people/SignatureSoundsOrg/sounds/869831/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/869831/download/",
+          "creator": "SignatureSoundsOrg",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 4611928,
+          "sha256": "e42ca56fe4bb00f92b9d7f4c652da2d8e28d421c33bb435181e9e87e0d3459d3",
+          "duration": "0:12.009",
+          "durationSeconds": 12.009,
+          "channels": 2
+        },
+        {
+          "id": "freesound-48299",
+          "path": "assets/audio/building/choral-chant-freesound-48299.mp3",
+          "sourceUrl": "https://freesound.org/people/melarancida/sounds/48299/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/48299/download/",
+          "creator": "melarancida",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 5486132,
+          "sha256": "71bd512b0e65907ac3806218b6b9b242e94eacdcb08909b0e14e7869013d05be",
+          "duration": "2:51.430",
+          "durationSeconds": 171.43,
+          "channels": 2
+        },
+        {
+          "id": "bigsoundbank-2789",
+          "path": "assets/audio/building/choral-chant-bigsoundbank-2789.wav",
+          "sourceUrl": "https://bigsoundbank.com/mass-organ-and-singing-1-s2789.html",
+          "downloadUrl": "https://bigsoundbank.com/UPLOAD/bwf-en/2789.wav",
+          "creator": "Joseph SARDIN",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “CC0 (public domain): Free and royalty-free” and its FAQ permits edits, redistribution and commercial use.",
+          "bytes": 44311852,
+          "sha256": "72730dfecfeddaf9b60b750dec743b6942954bb39144c03a44cd1d5e28057e96",
+          "duration": "02:34",
+          "durationSeconds": 154,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "organ",
+      "takes": [
+        {
+          "id": "freesound-527206",
+          "path": "assets/audio/building/organ-freesound-527206.wav",
+          "sourceUrl": "https://freesound.org/people/Beetlemuse/sounds/527206/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/527206/download/",
+          "creator": "Beetlemuse",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 7560362,
+          "sha256": "eccbba0d38910eb8bf45f613ea7e9e35ad09cf7068fef6df7ac2f40d1530a4ac",
+          "duration": "0:42.858",
+          "durationSeconds": 42.858,
+          "channels": 2
+        },
+        {
+          "id": "freesound-442541",
+          "path": "assets/audio/building/organ-freesound-442541.wav",
+          "sourceUrl": "https://freesound.org/people/BonnyOrbit/sounds/442541/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/442541/download/",
+          "creator": "BonnyOrbit",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 17080072,
+          "sha256": "56d3c0716613de7b35bd879fb6cc9ea9c5c8815b279bf8e7ce7e9fe49755bd34",
+          "duration": "0:59.171",
+          "durationSeconds": 59.171,
+          "channels": 2
+        },
+        {
+          "id": "freesound-462340",
+          "path": "assets/audio/building/organ-freesound-462340.wav",
+          "sourceUrl": "https://freesound.org/people/Breviceps/sounds/462340/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/462340/download/",
+          "creator": "Breviceps",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 16819244,
+          "sha256": "922b54c8eda34289b1de7edc3a56788caf0c57f1b46b5d82d497935eb749a189",
+          "duration": "1:27.599",
+          "durationSeconds": 87.599,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "bus_brakes",
+      "takes": [
+        {
+          "id": "freesound-801435",
+          "path": "assets/audio/building/bus-brakes-freesound-801435.wav",
+          "sourceUrl": "https://freesound.org/people/okpato123/sounds/801435/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/801435/download/",
+          "creator": "okpato123",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 668994,
+          "sha256": "d59c09c75f78217cb51dca0d78a6175d79951b8e221499eb7d67cd5a06bc4ab8",
+          "duration": "0:02.303",
+          "durationSeconds": 2.303,
+          "channels": 2
+        },
+        {
+          "id": "freesound-263116",
+          "path": "assets/audio/building/bus-brakes-freesound-263116.wav",
+          "sourceUrl": "https://freesound.org/people/lauramellis/sounds/263116/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/263116/download/",
+          "creator": "lauramellis",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2119724,
+          "sha256": "880b07005381186e189e8b4a71b6467f43e590e3180a65ad47a0d50b31a0dc18",
+          "duration": "0:08.010",
+          "durationSeconds": 8.01,
+          "channels": 2
+        },
+        {
+          "id": "freesound-607820",
+          "path": "assets/audio/building/bus-brakes-freesound-607820.mp3",
+          "sourceUrl": "https://freesound.org/people/PostProdDog/sounds/607820/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/607820/download/",
+          "creator": "PostProdDog",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 592506,
+          "sha256": "54418cc4f7408211a5384d215cb0e2df5022226695aeae4d859ee3defdef0b4e",
+          "duration": "0:18.253",
+          "durationSeconds": 18.253,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "bus_door",
+      "takes": [
+        {
+          "id": "freesound-446458",
+          "path": "assets/audio/building/bus-door-freesound-446458.wav",
+          "sourceUrl": "https://freesound.org/people/UsuarioLeal/sounds/446458/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/446458/download/",
+          "creator": "UsuarioLeal",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 729584,
+          "sha256": "d878f8b365a7764e1bb5a36a9906e701bb301e9972a3ff70115473ed9538bc42",
+          "duration": "0:01.899",
+          "durationSeconds": 1.899,
+          "channels": 2
+        },
+        {
+          "id": "freesound-409230",
+          "path": "assets/audio/building/bus-door-freesound-409230.wav",
+          "sourceUrl": "https://freesound.org/people/mariana045/sounds/409230/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/409230/download/",
+          "creator": "mariana045",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1101804,
+          "sha256": "a0b3aa718a7ca2f1f35a4904631cea162ff7eb9629b4258850630fad68ab5d98",
+          "duration": "0:12.491",
+          "durationSeconds": 12.491,
+          "channels": 1
+        },
+        {
+          "id": "freesound-396811",
+          "path": "assets/audio/building/bus-door-freesound-396811.wav",
+          "sourceUrl": "https://freesound.org/people/Jedo/sounds/396811/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/396811/download/",
+          "creator": "Jedo",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 33408044,
+          "sha256": "86a0e582f68ec3dabbb8e36cdbe846205abafe861c9d9e6efb75c01fd97b505f",
+          "duration": "1:56.000",
+          "durationSeconds": 116,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "bus_idle",
+      "takes": [
+        {
+          "id": "freesound-715727",
+          "path": "assets/audio/building/bus-idle-freesound-715727.wav",
+          "sourceUrl": "https://freesound.org/people/ovpe100/sounds/715727/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/715727/download/",
+          "creator": "ovpe100",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 551016,
+          "sha256": "ba733b462143e343730cdb7a4717fc2462fa974c0bad53bc98993cfb2a7fbb02",
+          "duration": "0:05.738",
+          "durationSeconds": 5.738,
+          "channels": 1
+        },
+        {
+          "id": "freesound-662205",
+          "path": "assets/audio/building/bus-idle-freesound-662205.wav",
+          "sourceUrl": "https://freesound.org/people/aleksin/sounds/662205/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/662205/download/",
+          "creator": "aleksin",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 483406,
+          "sha256": "ff88b558843436844903342231b66b79c796dcc8ea393342c58c650b24f9519f",
+          "duration": "0:05.479",
+          "durationSeconds": 5.479,
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "bus_pull_away",
+      "takes": [
+        {
+          "id": "freesound-831721",
+          "path": "assets/audio/building/bus-pull-away-freesound-831721.wav",
+          "sourceUrl": "https://freesound.org/people/pnwheeler/sounds/831721/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/831721/download/",
+          "creator": "pnwheeler",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2800994,
+          "sha256": "a112bcb13921d4782dc16995c111618fdbc89041f70e7f72467ed729d0bb2dc0",
+          "duration": "0:15.876",
+          "durationSeconds": 15.876,
+          "channels": 2
+        },
+        {
+          "id": "freesound-768178",
+          "path": "assets/audio/building/bus-pull-away-freesound-768178.wav",
+          "sourceUrl": "https://freesound.org/people/MatiasNiemi/sounds/768178/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/768178/download/",
+          "creator": "MatiasNiemi",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 502072,
+          "sha256": "9c146449f8dc4eacdb65d6c4e5b5d153e7f7f6512fba4cf77aaaa4cca0c4fab4",
+          "duration": "0:05.226",
+          "durationSeconds": 5.226,
+          "channels": 1
+        },
+        {
+          "id": "freesound-369194",
+          "path": "assets/audio/building/bus-pull-away-freesound-369194.wav",
+          "sourceUrl": "https://freesound.org/people/cribbler/sounds/369194/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/369194/download/",
+          "creator": "cribbler",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 3461948,
+          "sha256": "be72e54d6e9ed434f2e1e2d7ac78892b894beede8a6e8570598008b903d72020",
+          "duration": "0:18.000",
+          "durationSeconds": 18,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "door_latch",
+      "takes": [
+        {
+          "id": "freesound-872999",
+          "path": "assets/audio/building/door-latch-freesound-872999.wav",
+          "sourceUrl": "https://freesound.org/people/SignatureSoundsOrg/sounds/872999/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/872999/download/",
+          "creator": "SignatureSoundsOrg",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 371146,
+          "sha256": "c3fb707c50e56860b20f9b9892e862899dd7a3363a5223e2bfc0125dd76d6e85",
+          "duration": "0:00.966",
+          "durationSeconds": 0.966,
+          "channels": 2
+        },
+        {
+          "id": "freesound-866640",
+          "path": "assets/audio/building/door-latch-freesound-866640.m4a",
+          "sourceUrl": "https://freesound.org/people/7empest/sounds/866640/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/866640/download/",
+          "creator": "7empest",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 163889,
+          "sha256": "1cd7bcaadc7c963bbf3936bafff1ef02d4e65db49386d891fc7a627804e95efb",
+          "duration": "0:08.085",
+          "durationSeconds": 8.085,
+          "channels": 1
+        },
+        {
+          "id": "freesound-330828",
+          "path": "assets/audio/building/door-latch-freesound-330828.wav",
+          "sourceUrl": "https://freesound.org/people/MarcusGraham325/sounds/330828/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/330828/download/",
+          "creator": "MarcusGraham325",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1463728,
+          "sha256": "b129dbcfb16ec40577d0eee8bc70fcf6df3ee7913efd4de4d0d9d958db77bb8e",
+          "duration": "0:05.529",
+          "durationSeconds": 5.529,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "door_chime",
+      "takes": [
+        {
+          "id": "freesound-494565",
+          "path": "assets/audio/building/door-chime-freesound-494565.wav",
+          "sourceUrl": "https://freesound.org/people/775noise/sounds/494565/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/494565/download/",
+          "creator": "775noise",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 684468,
+          "sha256": "96dab0535f108eb8e5598f93b069d742c1250f179b8ff86e0894356a0c322aac",
+          "duration": "0:07.759",
+          "durationSeconds": 7.759,
+          "channels": 1
+        },
+        {
+          "id": "freesound-57743",
+          "path": "assets/audio/building/door-chime-freesound-57743.wav",
+          "sourceUrl": "https://freesound.org/people/3bagbrew/sounds/57743/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/57743/download/",
+          "creator": "3bagbrew",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2116844,
+          "sha256": "5c79c7afa894f6a611e9c075c533a2f1939111452a5c087aeb9d79e5329f5bb9",
+          "duration": "0:08.000",
+          "durationSeconds": 8,
+          "channels": 2
+        },
+        {
+          "id": "freesound-506817",
+          "path": "assets/audio/building/door-chime-freesound-506817.wav",
+          "sourceUrl": "https://freesound.org/people/BPlayers/sounds/506817/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/506817/download/",
+          "creator": "BPlayers",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 479316,
+          "sha256": "5f674bbf22a0ed1866843d9a653fbd8d6d1d6ec1189b2ccc9543ef43d564c73a",
+          "duration": "0:05.433",
+          "durationSeconds": 5.433,
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "doorstep_footsteps",
+      "takes": [
+        {
+          "id": "freesound-868548",
+          "path": "assets/audio/building/doorstep-footsteps-freesound-868548.wav",
+          "sourceUrl": "https://freesound.org/people/SiriusS19YT/sounds/868548/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/868548/download/",
+          "creator": "SiriusS19YT",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1053362,
+          "sha256": "ef9117762221d2feb1fd803cfd1cb1cbe84213d385e2f27846c9f7c7537beeef",
+          "duration": "0:05.971",
+          "durationSeconds": 5.971,
+          "channels": 2
+        },
+        {
+          "id": "freesound-669081",
+          "path": "assets/audio/building/doorstep-footsteps-freesound-669081.wav",
+          "sourceUrl": "https://freesound.org/people/vestibule-door/sounds/669081/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/669081/download/",
+          "creator": "vestibule-door",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1771690,
+          "sha256": "20f270699f3db8bb65e375fb3104e4d91197eacc943c8525d5383a881a1775d2",
+          "duration": "0:13.390",
+          "durationSeconds": 13.39,
+          "channels": 1
+        },
+        {
+          "id": "freesound-368832",
+          "path": "assets/audio/building/doorstep-footsteps-freesound-368832.wav",
+          "sourceUrl": "https://freesound.org/people/georgisound/sounds/368832/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/368832/download/",
+          "creator": "georgisound",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 3853004,
+          "sha256": "ba4b2acc605dcbf9089d2631e5436a253757f9ea17ee0441cbe409096b4f8cf3",
+          "duration": "0:21.841",
+          "durationSeconds": 21.841,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "indoor_footsteps",
+      "takes": [
+        {
+          "id": "freesound-536770",
+          "path": "assets/audio/building/indoor-footsteps-freesound-536770.wav",
+          "sourceUrl": "https://freesound.org/people/doctorphil/sounds/536770/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/536770/download/",
+          "creator": "doctorphil",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 3803620,
+          "sha256": "6437da848a6dab452a46ffe2dc95dcb06891e303985c889b0d669f3023310edf",
+          "duration": "0:43.105",
+          "durationSeconds": 43.105,
+          "channels": 1
+        },
+        {
+          "id": "freesound-793360",
+          "path": "assets/audio/building/indoor-footsteps-freesound-793360.wav",
+          "sourceUrl": "https://freesound.org/people/Sadiquecat/sounds/793360/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/793360/download/",
+          "creator": "Sadiquecat",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 9883888,
+          "sha256": "c10c21b06ceb93527075dc4d27c5052515331a2cc4df9c833208b321ece37a18",
+          "duration": "0:17.158",
+          "durationSeconds": 17.158,
+          "channels": 2
+        },
+        {
+          "id": "freesound-119766",
+          "path": "assets/audio/building/indoor-footsteps-freesound-119766.wav",
+          "sourceUrl": "https://freesound.org/people/spenceomatic/sounds/119766/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/119766/download/",
+          "creator": "spenceomatic",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 7570564,
+          "sha256": "21034fd946259a39a24c85a8ee9eee7035d52126bb14e58eba1eba92a1df0057",
+          "duration": "0:26.282",
+          "durationSeconds": 26.282,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "stairwell_footsteps",
+      "takes": [
+        {
+          "id": "freesound-232977",
+          "path": "assets/audio/building/stairwell-footsteps-freesound-232977.wav",
+          "sourceUrl": "https://freesound.org/people/helenacm/sounds/232977/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/232977/download/",
+          "creator": "helenacm",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 728576,
+          "sha256": "319752d9dfc8d5604f55b2c043149783454c0da37b84120b80807d2337655132",
+          "duration": "0:04.129",
+          "durationSeconds": 4.129,
+          "channels": 2
+        },
+        {
+          "id": "freesound-846920",
+          "path": "assets/audio/building/stairwell-footsteps-freesound-846920.wav",
+          "sourceUrl": "https://freesound.org/people/onursamli/sounds/846920/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/846920/download/",
+          "creator": "onursamli",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 16139388,
+          "sha256": "5e1ddc127ce0df51467db7daf350765d954ea9f837f65a1d4d97a0119c39c206",
+          "duration": "1:00.992",
+          "durationSeconds": 60.992,
+          "channels": 2
+        },
+        {
+          "id": "freesound-842245",
+          "path": "assets/audio/building/stairwell-footsteps-freesound-842245.wav",
+          "sourceUrl": "https://freesound.org/people/bassimat/sounds/842245/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/842245/download/",
+          "creator": "bassimat",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 8367616,
+          "sha256": "364ff132565e3e08d7f35884b886959a24b7a03bc1cd2c6d15d28973587b9096",
+          "duration": "0:21.780",
+          "durationSeconds": 21.78,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "adult_voices",
+      "takes": [
+        {
+          "id": "freesound-653920",
+          "path": "assets/audio/building/adult-voices-freesound-653920.wav",
+          "sourceUrl": "https://freesound.org/people/IENBA/sounds/653920/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/653920/download/",
+          "creator": "IENBA",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 8076288,
+          "sha256": "9ca993264f990ef0b060a856f0e4f21c4e833485ea623b0b49589f8602254164",
+          "duration": "0:28.000",
+          "durationSeconds": 28,
+          "channels": 2
+        },
+        {
+          "id": "freesound-757318",
+          "path": "assets/audio/building/adult-voices-freesound-757318.wav",
+          "sourceUrl": "https://freesound.org/people/brunoboselli/sounds/757318/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/757318/download/",
+          "creator": "brunoboselli",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 9519022,
+          "sha256": "8f2abcb11b39ac648eb189754c96b006950cddcb54be79d24bfcb1c222463cd5",
+          "duration": "0:33.049",
+          "durationSeconds": 33.049,
+          "channels": 2
+        },
+        {
+          "id": "freesound-850562",
+          "path": "assets/audio/building/adult-voices-freesound-850562.wav",
+          "sourceUrl": "https://freesound.org/people/Mariayolanda511/sounds/850562/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/850562/download/",
+          "creator": "Mariayolanda511",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 8715488,
+          "sha256": "02647a93764c9e2e3e14532eb4a647d796fad3e8f1d3fdeb7b582f06e8a7ed70",
+          "duration": "1:00.523",
+          "durationSeconds": 60.523,
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "household_murmur",
+      "takes": [
+        {
+          "id": "freesound-724979",
+          "path": "assets/audio/building/household-murmur-freesound-724979.wav",
+          "sourceUrl": "https://freesound.org/people/UnrealQW/sounds/724979/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/724979/download/",
+          "creator": "UnrealQW",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 903338,
+          "sha256": "57d1b16aa783985c873baa6b0fe41cd3a99e4d262df78bbc949650e999ea969f",
+          "duration": "0:28.227",
+          "durationSeconds": 28.227,
+          "channels": 1
+        },
+        {
+          "id": "freesound-475647",
+          "path": "assets/audio/building/household-murmur-freesound-475647.wav",
+          "sourceUrl": "https://freesound.org/people/o_ciz/sounds/475647/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/475647/download/",
+          "creator": "o_ciz",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 44012272,
+          "sha256": "7fd2ed1dda4d593c3c7125c2995c124b7eca6416aa2277ee69180f317e7f0c79",
+          "duration": "2:32.819",
+          "durationSeconds": 152.81900000000002,
+          "channels": 2
+        },
+        {
+          "id": "freesound-843143",
+          "path": "assets/audio/building/household-murmur-freesound-843143.wav",
+          "sourceUrl": "https://freesound.org/people/barking_cloud/sounds/843143/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/843143/download/",
+          "creator": "barking_cloud",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 167080866,
+          "sha256": "17f4385135b90e79a48be8dbb6e4096d66985ace48465cdcece6e04dde11bc64",
+          "duration": "7:15.103",
+          "durationSeconds": 435.103,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "heavy_entrance_door",
+      "takes": [
+        {
+          "id": "freesound-392232",
+          "path": "assets/audio/building/heavy-entrance-door-freesound-392232.wav",
+          "sourceUrl": "https://freesound.org/people/gropkcor/sounds/392232/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/392232/download/",
+          "creator": "gropkcor",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1179732,
+          "sha256": "469eff70b8a1c4c7fa937f619341c5551fd5adfdf4f2d1a473d5eb103aac1416",
+          "duration": "0:04.458",
+          "durationSeconds": 4.458,
+          "channels": 2
+        },
+        {
+          "id": "freesound-850566",
+          "path": "assets/audio/building/heavy-entrance-door-freesound-850566.wav",
+          "sourceUrl": "https://freesound.org/people/Mariayolanda511/sounds/850566/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/850566/download/",
+          "creator": "Mariayolanda511",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 734868,
+          "sha256": "1877b5b1438d1937a88ad723355d15b16acdeebcbea53fc3e705c4f2be7d6cc9",
+          "duration": "0:05.102",
+          "durationSeconds": 5.102,
+          "channels": 1
+        },
+        {
+          "id": "freesound-402464",
+          "path": "assets/audio/building/heavy-entrance-door-freesound-402464.wav",
+          "sourceUrl": "https://freesound.org/people/LampEight/sounds/402464/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/402464/download/",
+          "creator": "LampEight",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2621848,
+          "sha256": "3bf1bef22ecc9951d4f6a5bb11ae1ffb03253653d31d10b9707813aee5013a9c",
+          "duration": "0:06.827",
+          "durationSeconds": 6.827,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "paper_bag_rustle",
+      "takes": [
+        {
+          "id": "freesound-716928",
+          "path": "assets/audio/building/paper-bag-rustle-freesound-716928.wav",
+          "sourceUrl": "https://freesound.org/people/vhschool2019/sounds/716928/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/716928/download/",
+          "creator": "vhschool2019",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 630060,
+          "sha256": "ac2709832e7cbf74cbf59517fd91626bbba8c0a6f067493f3135c080236e5801",
+          "duration": "0:02.374",
+          "durationSeconds": 2.374,
+          "channels": 2
+        },
+        {
+          "id": "freesound-545532",
+          "path": "assets/audio/building/paper-bag-rustle-freesound-545532.wav",
+          "sourceUrl": "https://freesound.org/people/rsellick/sounds/545532/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/545532/download/",
+          "creator": "rsellick",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 3570356,
+          "sha256": "3c467bca001d8a2135b8fe6037332539b3c0aafea996cdd4c41b86adb9f7b78b",
+          "duration": "0:20.197",
+          "durationSeconds": 20.197,
+          "channels": 2
+        },
+        {
+          "id": "freesound-362277",
+          "path": "assets/audio/building/paper-bag-rustle-freesound-362277.wav",
+          "sourceUrl": "https://freesound.org/people/peakSOULREAPER/sounds/362277/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/362277/download/",
+          "creator": "peakSOULREAPER",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2938720,
+          "sha256": "33d69d10ab96e724092b875b384d058719159fdf7bb3b697e6536079540c08f0",
+          "duration": "0:30.611",
+          "durationSeconds": 30.611,
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "tray_slide",
+      "takes": [
+        {
+          "id": "freesound-513031",
+          "path": "assets/audio/building/tray-slide-freesound-513031.wav",
+          "sourceUrl": "https://freesound.org/people/ingeverschatse/sounds/513031/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/513031/download/",
+          "creator": "ingeverschatse",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2695724,
+          "sha256": "ff6f478f4da4ea76fc24b2e6a8fc2bea79cdabd104a9a31a8ae8f0eaa3c9b69f",
+          "duration": "0:28.079",
+          "durationSeconds": 28.079,
+          "channels": 1
+        },
+        {
+          "id": "freesound-745877",
+          "path": "assets/audio/building/tray-slide-freesound-745877.flac",
+          "sourceUrl": "https://freesound.org/people/nicotep/sounds/745877/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/745877/download/",
+          "creator": "nicotep",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 10358933,
+          "sha256": "d7df96bdf58bda10ab2e958600dbe5e36a94ad4ad9a7bcf5bd46fa37f443f65c",
+          "duration": "1:54.933",
+          "durationSeconds": 114.93299999999999,
+          "channels": 2
+        },
+        {
+          "id": "freesound-851295",
+          "path": "assets/audio/building/tray-slide-freesound-851295.wav",
+          "sourceUrl": "https://freesound.org/people/RealSquink/sounds/851295/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/851295/download/",
+          "creator": "RealSquink",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 19418018,
+          "sha256": "93f7df5290ac66a0b10a647faf1c9f7045e2b321458716f76a1236cc99e52cf3",
+          "duration": "0:33.711",
+          "durationSeconds": 33.711,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "crate_set_down",
+      "takes": [
+        {
+          "id": "freesound-456977",
+          "path": "assets/audio/building/crate-set-down-freesound-456977.wav",
+          "sourceUrl": "https://freesound.org/people/1urker/sounds/456977/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/456977/download/",
+          "creator": "1urker",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2548840,
+          "sha256": "c55657d855de1af05e469d36f78df5d197cecb05f695b075847d26616bea713a",
+          "duration": "0:14.448",
+          "durationSeconds": 14.448,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "rolling_bag",
+      "takes": [
+        {
+          "id": "freesound-156210",
+          "path": "assets/audio/building/rolling-bag-freesound-156210.wav",
+          "sourceUrl": "https://freesound.org/people/Lau7/sounds/156210/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/156210/download/",
+          "creator": "Lau7",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 535180,
+          "sha256": "63f0fd9b0c00cab2c706ceb8f8fc23cb8dcfe31dbb4391e1512e540bb2fbbebd",
+          "duration": "0:03.033",
+          "durationSeconds": 3.033,
+          "channels": 2
+        },
+        {
+          "id": "freesound-427121",
+          "path": "assets/audio/building/rolling-bag-freesound-427121.wav",
+          "sourceUrl": "https://freesound.org/people/distressbear/sounds/427121/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/427121/download/",
+          "creator": "distressbear",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 23781450,
+          "sha256": "11fe857fe9b2c1a186c368ec5278c6361a1b79881ab4ab2a6e6502768b1c7f32",
+          "duration": "0:41.066",
+          "durationSeconds": 41.066,
+          "channels": 2
+        },
+        {
+          "id": "freesound-766006",
+          "path": "assets/audio/building/rolling-bag-freesound-766006.mp3",
+          "sourceUrl": "https://freesound.org/people/Elizabethmoimane/sounds/766006/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/766006/download/",
+          "creator": "Elizabethmoimane",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 4018676,
+          "sha256": "5583bc8962b43740ac58419232a098b87cc256b6762f30bb766d6dcd31c8722d",
+          "duration": "1:40.391",
+          "durationSeconds": 100.39099999999999,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "tool_tap",
+      "takes": [
+        {
+          "id": "freesound-427393",
+          "path": "assets/audio/building/tool-tap-freesound-427393.wav",
+          "sourceUrl": "https://freesound.org/people/zembacraftworks/sounds/427393/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/427393/download/",
+          "creator": "zembacraftworks",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 194774,
+          "sha256": "2392c16c9e3cedc1a8fc06695e0475500c203ad12032275b17d35eb8c93779b5",
+          "duration": "0:01.080",
+          "durationSeconds": 1.08,
+          "channels": 2
+        },
+        {
+          "id": "freesound-855309",
+          "path": "assets/audio/building/tool-tap-freesound-855309.wav",
+          "sourceUrl": "https://freesound.org/people/GammaGool/sounds/855309/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/855309/download/",
+          "creator": "GammaGool",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 732230,
+          "sha256": "7b31479ecdb222e95db0c0502db8d91ef9c5913080fa5a894ee9f9a6d5fda399",
+          "duration": "0:03.812",
+          "durationSeconds": 3.812,
+          "channels": 2
+        },
+        {
+          "id": "freesound-704935",
+          "path": "assets/audio/building/tool-tap-freesound-704935.mp3",
+          "sourceUrl": "https://freesound.org/people/AidanSounds/sounds/704935/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/704935/download/",
+          "creator": "AidanSounds",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 59136,
+          "sha256": "cf099677a0bad0a800de37012ae061e060f4d6d0c2ed8c454521e9b7a44fdcba",
+          "duration": "0:01.836",
+          "durationSeconds": 1.836,
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "tool_scrape",
+      "takes": [
+        {
+          "id": "freesound-847371",
+          "path": "assets/audio/building/tool-scrape-freesound-847371.wav",
+          "sourceUrl": "https://freesound.org/people/DeqstersLab/sounds/847371/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/847371/download/",
+          "creator": "DeqstersLab",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 6105702,
+          "sha256": "8d83d86a561f0ae5a32cc974f12df06ebf5fd24f1f73e7e01ccb22e334b8a167",
+          "duration": "1:35.400",
+          "durationSeconds": 95.4,
+          "channels": 1
+        },
+        {
+          "id": "freesound-847369",
+          "path": "assets/audio/building/tool-scrape-freesound-847369.wav",
+          "sourceUrl": "https://freesound.org/people/DeqstersLab/sounds/847369/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/847369/download/",
+          "creator": "DeqstersLab",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 3206522,
+          "sha256": "e8baed9004018a38d96652bcfe8b03f322038a839f4fa502fc147e36f7a9ca64",
+          "duration": "0:50.100",
+          "durationSeconds": 50.1,
+          "channels": 1
+        },
+        {
+          "id": "freesound-354109",
+          "path": "assets/audio/building/tool-scrape-freesound-354109.wav",
+          "sourceUrl": "https://freesound.org/people/This_Is_A_Hoax/sounds/354109/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/354109/download/",
+          "creator": "This_Is_A_Hoax",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 10926304,
+          "sha256": "3deea87ad3199004b39ee7f0d034bb93fae095c13f4a5c2aaa3ee03f932b0986",
+          "duration": "1:01.939",
+          "durationSeconds": 61.939,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "movement",
+      "takes": [
+        {
+          "id": "freesound-432429",
+          "path": "assets/audio/building/movement-freesound-432429.wav",
+          "sourceUrl": "https://freesound.org/people/WilliamJMeyer/sounds/432429/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/432429/download/",
+          "creator": "WilliamJMeyer",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 6592910,
+          "sha256": "780275f092bbb494af8d051ef54784d4adee57de7addcffe106e39ff689271cb",
+          "duration": "0:37.369",
+          "durationSeconds": 37.369,
+          "channels": 2
+        },
+        {
+          "id": "freesound-636866",
+          "path": "assets/audio/building/movement-freesound-636866.wav",
+          "sourceUrl": "https://freesound.org/people/Alex_hears_things/sounds/636866/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/636866/download/",
+          "creator": "Alex_hears_things",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 13083566,
+          "sha256": "0d1bcccdddb9e99736786b7e501ff7a71a394ba387d1700860e26b883220a69a",
+          "duration": "1:08.079",
+          "durationSeconds": 68.07900000000001,
+          "channels": 2
+        },
+        {
+          "id": "freesound-763456",
+          "path": "assets/audio/building/movement-freesound-763456.wav",
+          "sourceUrl": "https://freesound.org/people/FOSSarts/sounds/763456/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/763456/download/",
+          "creator": "FOSSarts",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2538496,
+          "sha256": "0c1cbb81515d00ade8c2ca0fd968b33ba2c444537ccc3ed8ebefa54475ea4ba2",
+          "duration": "0:03.262",
+          "durationSeconds": 3.262,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "box_set_down",
+      "takes": [
+        {
+          "id": "freesound-452568",
+          "path": "assets/audio/building/box-set-down-freesound-452568.wav",
+          "sourceUrl": "https://freesound.org/people/kyles/sounds/452568/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/452568/download/",
+          "creator": "kyles",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 4528682,
+          "sha256": "b64cfbe1dc8da7727d21f767c0eedb7deab19e0299d0f4baea28c7e30280bb01",
+          "duration": "0:30.947",
+          "durationSeconds": 30.947,
+          "channels": 1
+        },
+        {
+          "id": "freesound-451772",
+          "path": "assets/audio/building/box-set-down-freesound-451772.flac",
+          "sourceUrl": "https://freesound.org/people/kyles/sounds/451772/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/451772/download/",
+          "creator": "kyles",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 1238544,
+          "sha256": "01f594375bfc6d3abd0fad46732dd180f470564d9e2dfcfb12d119740ada71c2",
+          "duration": "0:15.384",
+          "durationSeconds": 15.384,
+          "channels": 1
+        },
+        {
+          "id": "freesound-465451",
+          "path": "assets/audio/building/box-set-down-freesound-465451.wav",
+          "sourceUrl": "https://freesound.org/people/ittou/sounds/465451/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/465451/download/",
+          "creator": "ittou",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 2685534,
+          "sha256": "6b0e2e0c85c530beecb87ebbc8d0bf27b0dc156c652125a1a0b8b1a23323b9ce",
+          "duration": "0:13.986",
+          "durationSeconds": 13.986,
+          "channels": 2
+        }
+      ]
+    },
+    {
+      "category": "building",
+      "id": "children_calls",
+      "takes": [
+        {
+          "id": "freesound-787590",
+          "path": "assets/audio/building/children-calls-freesound-787590.mp3",
+          "sourceUrl": "https://freesound.org/people/Elmer_Tom/sounds/787590/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/787590/download/",
+          "creator": "Elmer_Tom",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 657792,
+          "sha256": "5acbb176abdfe7a324f6de7db254f383dfa7daf2d5972e13c36dfcc7f6c68299",
+          "duration": "0:27.396",
+          "durationSeconds": 27.396,
+          "channels": 2
+        },
+        {
+          "id": "freesound-84359",
+          "path": "assets/audio/building/children-calls-freesound-84359.wav",
+          "sourceUrl": "https://freesound.org/people/cognito%20perceptu/sounds/84359/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/84359/download/",
+          "creator": "cognito perceptu",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 3895540,
+          "sha256": "cb386940f48f7b202d937fc21d9d3c1004ab8c98b8477f9ec81d7704861b9e2a",
+          "duration": "0:22.082",
+          "durationSeconds": 22.082,
+          "channels": 2
+        },
+        {
+          "id": "freesound-574858",
+          "path": "assets/audio/building/children-calls-freesound-574858.flac",
+          "sourceUrl": "https://freesound.org/people/TRP/sounds/574858/",
+          "downloadUrl": "https://freesound.org/apiv2/sounds/574858/download/",
+          "creator": "TRP",
+          "license": "CC0-1.0",
+          "licenseEvidence": "The recording page labels the file “Creative Commons 0” and permits copying, editing and distribution, including commercially.",
+          "bytes": 8747011,
+          "sha256": "55e2406257d38597ccbe82d99861ed101f3e601ed07ee8670812e6344525a02d",
+          "duration": "1:41.370",
+          "durationSeconds": 101.37,
+          "channels": 2
+        }
+      ]
+    }
+  ],
+  "skipped": {
+    "missingDownloadUrls": [],
+    "uncertainLicenses": []
+  },
+  "failed": [
+    {
+      "take": "street/passing_car/freesound-838723",
+      "reason": "Expected WAV audio"
+    },
+    {
+      "take": "building/bus_idle/freesound-454420",
+      "reason": "Expected WAV audio"
+    }
+  ]
+}
