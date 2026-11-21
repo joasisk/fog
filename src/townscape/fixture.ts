@@ -69,6 +69,7 @@ export interface RawFixture {
 }
 
 export interface Sprite {
+  id?: string;
   art: TownscapeAsset;
   anchor: PixelPoint;
   /** Display pixels per pixel in the untrimmed source. */
@@ -82,6 +83,10 @@ export interface Sprite {
 }
 
 interface Road {
+  id?: string;
+  grades?: readonly number[];
+  reveal?: number;
+  surface?: "paving" | "gravel";
   path: PixelPoint[];
   band: BandId;
   kind: RawFixture["edges"][number]["kind"];
@@ -94,6 +99,9 @@ interface Band {
   q: number;
   packets: { [key in Phase]: Sprite[] };
   roads: Road[];
+  terrain?: PixelPoint[][];
+  patches?: { id: string; outline: PixelPoint[]; color: string }[];
+  access?: Hillside["entrances"];
   mist?: { sheets: Sprite[]; seconds: number; drift: number };
 }
 
@@ -103,7 +111,9 @@ export interface Hillside {
   sky: URL;
   bands: Band[];
   roads: Road[];
-  entrances: { path: [PixelPoint, PixelPoint]; width: number }[];
+  entrances: { id?: string; path: readonly [PixelPoint, PixelPoint, ...PixelPoint[]]; width: number }[];
+  exclusions?: { id: string; outline: PixelPoint[] }[];
+  junctions?: { id: string; point: PixelPoint }[];
   slot: Sprite;
 }
 
@@ -151,7 +161,7 @@ function supportHeight(profile: PixelPoint[], x: number) {
   return Infinity;
 }
 
-function validateNeighbor(left: Sprite, right: Sprite, context: string) {
+export function validateNeighbor(left: Sprite, right: Sprite, context: string) {
   const a = left.art.wall_contacts?.right;
   const b = right.art.wall_contacts?.left;
   requireValue(a && b && a.profile === b.profile &&

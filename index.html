@@ -15,7 +15,23 @@
       <canvas id="scene" tabindex="0" role="group" aria-label="Rainy town with a café, houses and a park" aria-describedby="instructions"></canvas>
       <footer>
         <p id="instructions">Move or drag to listen. Select a building, road, or open sky to change it.</p>
-        <a href="./townscape.html">Hillside preview</a>
+        <nav aria-label="Fog scenes">
+          <a href="./">Market Lane</a>
+          <a href="?mode=foothill">Foothill town</a>
+          <a href="./townscape.html">Hillside preview</a>
+        </nav>
+        <fieldset id="foothill-controls" hidden>
+          <legend>Foothill review</legend>
+          <label>Resolution <select id="foothill-size"><option value="1920">1920 × 1080</option><option value="960">960 × 540</option></select></label>
+          <label>Overlay <select id="foothill-overlay">
+            <option value="">None</option><option value="terrain">Terrain</option><option value="exclusions">Exclusions</option>
+            <option value="grades">Road grade</option><option value="connectivity">Connectivity</option>
+          </select></label>
+          <label><input id="foothill-mist" type="checkbox" checked> Mist</label>
+          <button id="foothill-shop" type="button">Replace shop</button>
+          <button id="foothill-street" type="button">Replace shop street</button>
+          <button id="foothill-town" type="button">Replace town</button>
+        </fieldset>
         <p id="status" role="status"></p>
       </footer>
       <dialog id="sound-mixer" aria-labelledby="sound-mixer-title" aria-keyshortcuts="Alt+S">

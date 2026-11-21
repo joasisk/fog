@@ -117,3 +117,8 @@ footer a { color: inherit; text-underline-offset: .2em; }
 
 .mix-levels input { width: 100%; accent-color: #dfb981; }
 .mix-levels output { text-align: right; font-variant-numeric: tabular-nums; }
+
+footer nav { display: flex; flex-wrap: wrap; gap: .45rem 1rem; }
+#foothill-controls { width: 100%; border: 1px solid #717b6d; border-radius: .3rem; }
+#foothill-controls:not([hidden]) { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .8rem; }
+#foothill-controls select { font: inherit; padding: .3rem; }

@@ -9,6 +9,8 @@ export interface View {
   routes: boolean;
   alternate: boolean;
   seconds: number;
+  overlay?: "terrain" | "exclusions" | "grades" | "connectivity";
+  cover?: number;
 }
 
 interface Tile {
@@ -107,10 +109,12 @@ export async function prepareRenderer(canvas: HTMLCanvasElement, layout: Hillsid
     const image = await createImageBitmap(original, 0, top, w, bottom - top);
     return { image, top };
   };
-  const skyBottom = Math.ceil(layout.bands[0]!.terrainRange[1]) + 4;
+  const generated = layout.bands[0]!.terrain !== undefined;
+  const skyBottom = Math.min(h, Math.ceil(layout.bands[0]!.terrainRange[1]) + 4);
   const [sky, land] = await Promise.all([
     loadScenery(layout.sky, 0, skyBottom),
     Promise.all(layout.bands.map((band, i) => {
+      if (generated) return undefined;
       const next = layout.bands[i+1];
       const top = Math.max(0, Math.floor(band.terrainRange[0]) - 3);
       const bottom = next ? Math.ceil(next.terrainRange[1]) + 4 : h;
@@ -217,15 +221,15 @@ export async function prepareRenderer(canvas: HTMLCanvasElement, layout: Hillsid
   const display = context(canvas);
   const rain = paintRain();
   const pattern = c.createPattern(rain, "repeat")!;
-  const drawLane = (painter: CanvasRenderingContext2D, points: readonly PixelPoint[], q: number, wet: boolean) => {
+  const drawLane = (painter: CanvasRenderingContext2D, points: readonly PixelPoint[], q: number, wet: boolean, reveal = 7.8 * q, gravel = false) => {
     painter.lineCap = "round";
     painter.lineJoin = "round";
     tracing(painter, points);
-    painter.lineWidth = 9.4 * q;
+    painter.lineWidth = reveal + 1.6 * q;
     painter.strokeStyle = "#736959";
     painter.stroke();
-    painter.lineWidth = 7.8 * q;
-    painter.strokeStyle = wet ? "#a89e8b" : "#b5a283";
+    painter.lineWidth = reveal;
+    painter.strokeStyle = gravel ? "#95836b" : wet ? "#a89e8b" : "#b5a283";
     painter.stroke();
     painter.lineWidth = .87 * q;
     painter.strokeStyle = wet ? "#c8c2ad" : "#c6b398";
@@ -252,14 +256,18 @@ export async function prepareRenderer(canvas: HTMLCanvasElement, layout: Hillsid
   // Cache the ordered, static prefix of each band. Draw the shop and any later
   // packets in its band live so animation cannot move them behind the shop.
   const strips = layout.bands.map((band, index) => {
-    const backdrop = land[index]!;
+    const backdrop = land[index];
     const sprites = Object.values(band.packets).flat();
     const boundary = sprites.indexOf(layout.slot);
     const staticSprites = boundary === -1 ? sprites : sprites.slice(0, boundary);
     const live = boundary === -1 ? [] : sprites.slice(boundary);
-    const top = Math.max(0, Math.floor(Math.min(backdrop.top, ...staticSprites.map((sprite) =>
+    const terrainTop = band.terrain ? Math.min(...band.terrain[0]!.map(p => p[1]),
+      ...band.roads.flatMap(road => road.path.map(p => p[1]))) - 5 : backdrop!.top;
+    const top = Math.max(0, Math.floor(Math.min(terrainTop, ...staticSprites.map((sprite) =>
       sprite.anchor[1] + (sprite.art.trim_rect_px[1] - sprite.art.pivotPx[1]) * sprite.scale))) - 2);
-    const surface = makeSurface(w, backdrop.top + backdrop.image.height - top);
+    const bottom = backdrop ? backdrop.top + backdrop.image.height : band.id === "near" ? h :
+      Math.min(h, Math.ceil(Math.max(...band.terrain!.at(-1)!.map(p => p[1]))) + 2);
+    const surface = makeSurface(w, bottom - top);
     return { ...surface, top, band, backdrop, live };
   });
   let cachedWet: boolean | undefined;
@@ -269,10 +277,55 @@ export async function prepareRenderer(canvas: HTMLCanvasElement, layout: Hillsid
       painter.clearRect(0, 0, w, canvas.height);
       painter.save();
       painter.translate(0, -top);
-      painter.drawImage(backdrop.image, 0, backdrop.top);
+      if (backdrop) painter.drawImage(backdrop.image, 0, backdrop.top);
+      if (band.terrain) {
+        const colors = band.id === "near" ? ["#a3a080", "#878069"] :
+          band.id === "middle" ? ["#a3a186", "#929377"] : ["#a6aa92", "#929a83"];
+        const wash = painter.createLinearGradient(0, top, 0, top + canvas.height);
+        wash.addColorStop(0, colors[0]!);
+        wash.addColorStop(1, colors[1]!);
+        tracing(painter, [...band.terrain[0]!, [w, h], [0, h]]);
+        painter.fillStyle = wash;
+        painter.fill();
+        painter.save();
+        painter.clip();
+        let grain = 1337;
+        for (let i = 0; i < 4200; i++) {
+          grain = (Math.imul(grain, 1664525) + 1013904223) >>> 0;
+          const x = (grain & 0xffff) / 65536 * w;
+          const y = top + (grain >>> 16) / 65536 * canvas.height;
+          painter.fillStyle = i % 2 ? "#51543813" : "#efdfbb24";
+          painter.fillRect(x, y, 1 + i % 8, 1 + i % 3);
+        }
+        painter.restore();
+        for (const [index, profile] of band.terrain.entries()) {
+          tracing(painter, profile);
+          painter.lineWidth = index === 0 ? 2 : .8;
+          painter.strokeStyle = index === 0 ? "#c9c5a2aa" : index % 2 ? "#ded6b340" : "#55583c30";
+          painter.stroke();
+        }
+      }
+      for (const patch of band.patches ?? []) {
+        tracing(painter, patch.outline);
+        painter.fillStyle = patch.color;
+        painter.fill();
+      }
       for (const [pass, sprites] of Object.entries(band.packets)) {
         if (pass === "roads") {
-          for (const road of band.roads) if (road.kind === "lane") drawLane(painter, road.path, band.q, wet);
+          for (const road of band.roads) if (road.kind === "lane") drawLane(painter, road.path, band.q, wet, road.reveal, road.surface === "gravel");
+          painter.lineCap = "butt";
+          for (const access of band.access ?? []) {
+            tracing(painter, access.path);
+            painter.lineWidth = access.width;
+            painter.strokeStyle = "#a49c86";
+            painter.stroke();
+            for (const [x, y] of access.path.slice(1, -1)) {
+              tracing(painter, [[x - access.width / 2, y], [x + access.width / 2, y]]);
+              painter.lineWidth = .9;
+              painter.strokeStyle = "#827863";
+              painter.stroke();
+            }
+          }
         }
         for (const sprite of sprites) {
           if (sprite === layout.slot) break;
@@ -320,7 +373,34 @@ export async function prepareRenderer(canvas: HTMLCanvasElement, layout: Hillsid
       c.restore();
       samples += w * h;
     }
-    if (view.routes) {
+    if (view.overlay === "terrain" || view.overlay === "exclusions") {
+      const outlines = view.overlay === "terrain"
+        ? layout.bands.flatMap(b => [...b.terrain ?? [], ...b.patches?.filter(p => p.id.startsWith("building:"))
+          .map(p => [...p.outline, p.outline[0]!]) ?? []])
+        : layout.exclusions?.map(exclusion => exclusion.outline) ?? [];
+      c.lineWidth = 1.4;
+      c.strokeStyle = view.overlay === "terrain" ? "#eddfb7" : "#ad5251";
+      for (const path of outlines) {
+        tracing(c, path);
+        if (view.overlay === "exclusions") {
+          c.closePath();
+          c.fillStyle = "#b8555566";
+          c.fill();
+        }
+        c.stroke();
+      }
+    }
+    if (view.overlay === "grades") {
+      c.lineWidth = 3;
+      for (const road of layout.roads) {
+        road.grades?.forEach((grade, i) => {
+          c.strokeStyle = `hsl(${130 - grade * 14} 60% 55%)`;
+          tracing(c, road.path.slice(i * 4, i * 4 + 5));
+          c.stroke();
+        });
+      }
+    }
+    if (view.routes || view.overlay === "connectivity") {
       c.save();
       c.strokeStyle = "rgba(247, 222, 148, .88)";
       c.lineCap = "round";
@@ -332,14 +412,24 @@ export async function prepareRenderer(canvas: HTMLCanvasElement, layout: Hillsid
       c.strokeStyle = "#3b6056";
       for (const access of layout.entrances) {
         const q = access.width > 12 ? 2.3 : 1.8;
-        const end = access.path[1];
+        const end = access.path.at(-1)!;
         tracing(c, access.path);
         c.stroke();
         c.beginPath();
         c.arc(end[0], end[1], q, 0, 2 * Math.PI);
         c.stroke();
       }
+      c.fillStyle = "#704c35";
+      for (const { point: [x, y] } of layout.junctions ?? []) {
+        c.beginPath();
+        c.arc(x, y, 3.5, 0, 2 * Math.PI);
+        c.fill();
+      }
       c.restore();
+    }
+    if (view.cover) {
+      c.fillStyle = `rgba(218, 215, 202, ${view.cover})`;
+      c.fillRect(0, 0, w, h);
     }
     // Keep all contacts in the same 1920×1080 render before the final resample.
     display.imageSmoothingQuality = "high";
@@ -348,11 +438,44 @@ export async function prepareRenderer(canvas: HTMLCanvasElement, layout: Hillsid
   }
 
   const bytes = () => {
-    const rasters = [sky, ...land].reduce((total, { image }) => total + image.width * image.height * 4, 0);
+    const rasters = [sky, ...land.filter(item => item !== undefined)].reduce((total, { image }) => total + image.width * image.height * 4, 0);
     const staticStrips = strips.reduce((total, { canvas }) => total + canvas.width * canvas.height * 4, 0);
     const tiles = [...packed.values()].reduce((total, tile) => total + tile.rect[2] * tile.rect[3] * 4, 0);
     return rasters + staticStrips + tiles + 4 * (rain.width * rain.height + w * h + canvas.width * canvas.height);
   };
 
-  return { draw, bytes };
+  function pick([x, y]: PixelPoint) {
+    for (const band of [...layout.bands].reverse()) {
+      for (const sprite of [...Object.values(band.packets).flat()].reverse()) {
+        const art = sprite.art;
+        const ends = sprite.exposed?.flatMap(side => art.wall_contacts?.[side]?.exposed_end_layer ?? []) ?? [];
+        const tile = compose(art, sprite.layers ?? art.layer_order, false, false, ends);
+        const sx = Math.floor((x - sprite.anchor[0]) / (sprite.mirror ? -sprite.scale : sprite.scale) + art.pivotPx[0] - tile.rect[0]);
+        const sy = Math.floor((y - sprite.anchor[1]) / sprite.scale + art.pivotPx[1] - tile.rect[1]);
+        if (sx < 0 || sy < 0 || sx >= tile.rect[2] || sy >= tile.rect[3]) continue;
+        const alpha = (tile.image as HTMLCanvasElement).getContext("2d")!.getImageData(sx, sy, 1, 1).data[3]!;
+        if (alpha > 80) return { buildingId: sprite.id };
+      }
+      for (const road of band.roads) {
+        if (road.id && road.path.slice(1).some((b, i) => {
+          const a = road.path[i]!;
+          const dx = b[0] - a[0], dy = b[1] - a[1];
+          const t = Math.max(0, Math.min(1, ((x - a[0]) * dx + (y - a[1]) * dy) / (dx * dx + dy * dy)));
+          return Math.hypot(x - a[0] - t * dx, y - a[1] - t * dy) < Math.max(5, (road.reveal ?? 0) / 2);
+        })) return { roadId: road.id };
+      }
+      const ridge = band.terrain?.[0];
+      const right = ridge?.findIndex(([px]) => px > x) ?? -1;
+      if (ridge && right > 0) {
+        const [a, b] = [ridge[right - 1]!, ridge[right]!];
+        const boundary = a[1] + (b[1] - a[1]) * (x - a[0]) / (b[0] - a[0]);
+        if (y >= boundary) return {};
+      }
+    }
+  }
+
+  return { draw, bytes, pick, dispose: () => {
+    sky.image.close();
+    for (const backdrop of land) backdrop?.image.close();
+  } };
 }

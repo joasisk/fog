@@ -103,3 +103,11 @@ Use the `districts`, `parcels` and `massing` views to inspect the new passes. Th
 node --experimental-transform-types scripts/debug-world-geometry.mjs foothillTown massing > /tmp/foothill-massing.svg
 node --experimental-transform-types scripts/debug-world-geometry.mjs broadFoothillCity parcels > /tmp/city-parcels.svg
 ```
+
+## Milestone C pilot usage
+
+Open the pilot and choose **Foothill town**. Use `?mode=foothill&seed=7419` for the storefront with one shared wall and an exposed end, or `?mode=foothill&seed=7430` for the storefront with two shared walls. `?mode=foothill&seed=7431` opens the third review town. The seed is part of the relative URL, so these links work under a deployment subpath. **Market Lane** opens the original pilot and **Hillside preview** opens the fixed Batch 2 reference.
+
+Use the storefront, street and town buttons or click the exposed storefront, a visible lane or open sky. The storefront swap retains its threshold, foundation and wall contacts. The street swap replaces its surface and selects new compatible shell treatments along the selected edge on the retained graph. The town button cycles through the three review seeds. Each candidate is fitted and prepared before the fog covers the scene. The rain bed runs continuously when sound is enabled.
+
+Use the resolution, mist and overlay controls to compare the generated profiles, exclusions, road grades and walking connections with the fixed hillside. The pilot uses the accepted foothill terrain and layout, with three projected depth bands and Batch 2 art. The accepted foothill graph provides graded lanes between benches. Stair and bridge graph presets remain part of the later terrain coverage.
