@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Townscape Batch 1 calibration</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0 auto; max-width: 72rem; padding: 1.5rem; background: #dfd9c8; color: #303931; font: 1rem system-ui, sans-serif; }
+    h1, h2 { font-family: Georgia, serif; font-weight: normal; }
+    figure { margin: 1rem 0; }
+    img { display: block; width: 100%; height: auto; }
+    canvas { display: block; width: min(100%, 25rem); height: auto; background: #8c8d77; }
+    button { border: 1px solid #536054; color: inherit; background: #eee8d9; border-radius: .2rem; padding: .5rem .8rem; font: inherit; }
+  </style>
+</head>
+<body>
+  <h1>Townscape Batch 1 calibration</h1>
+  <button id="swap" type="button">Place bookshop in center</button>
+  <figure>
+    <img id="slope" src="preview/slope-cafe-960x540.png" alt="Café in the center of three joined storefronts on a rainy hillside" width="960" height="540">
+  </figure>
+  <h2>Café storefront</h2>
+  <canvas id="storefront" aria-label="Café interior motion behind two separate panes"></canvas>
+  <p><button id="motion" type="button" disabled>Pause motion</button></p>
+  <p id="status" role="status">Loading storefront layers…</p>
+  <script type="module" src="./calibration.js"></script>
+</body>
+</html>

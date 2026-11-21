@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "viewport_px": [1920, 1080],
+  "reduced_viewport_px": [960, 540],
+  "reference_frontage_px": 72,
+  "foundation_case": "terrace-center",
+  "swap_candidates": ["cafe", "bookshop"],
+  "entrance_route_px": [[677, 645], [677, 649]],
+  "placement": [
+    {"id": "rear-cottage-west", "asset": "cottage", "pivot_px": [293, 504], "scale": 0.64},
+    {"id": "rear-bookshop", "asset": "bookshop", "pivot_px": [340, 516], "scale": 0.64},
+    {"id": "rear-cafe", "asset": "cafe", "pivot_px": [386, 516], "scale": 0.64},
+    {"id": "rear-cottage-east", "asset": "cottage", "pivot_px": [447, 552], "scale": 0.64},
+    {"id": "shelf-west", "asset": "grass-soil", "pivot_px": [561, 663], "scale": 1},
+    {"id": "shelf-east", "asset": "grass-soil", "pivot_px": [705, 663], "scale": 0.43},
+    {"id": "terrace-center", "asset": "stepped-foundation", "pivot_px": [658, 645], "scale": 1},
+    {"id": "front-lane", "asset": "narrow-lane", "pivot_px": [586, 649], "scale": 1},
+    {"id": "left-neighbor", "asset": "bookshop", "pivot_px": [586, 645], "scale": 1},
+    {"id": "swap-slot", "asset": "cafe", "pivot_px": [658, 645], "scale": 1},
+    {"id": "right-neighbor", "asset": "cafe", "pivot_px": [730, 645], "scale": 1},
+    {"id": "lower-cottage", "asset": "cottage", "pivot_px": [1000, 711], "scale": 1},
+    {"id": "last-cottage", "asset": "cottage", "pivot_px": [1281, 802], "scale": 0.88}
+  ],
+  "reserved_envelopes": {
+    "attached": {"width_f": 1, "depth_f": 0.63, "max_height_f": 1.5, "contacts": ["left", "right"], "foundation": "level_plinth"},
+    "stepped": {"width_f": 1, "depth_f": 0.63, "max_height_f": 1.5, "contacts": ["left", "right"], "foundation": "stepped_plinth"},
+    "detached": {"width_f": 1.1, "depth_f": 0.65, "max_height_f": 1.5, "contacts": [], "foundation": "level_plinth"},
+    "civic": {"width_f": 2.4, "depth_f": 1.6, "contacts": [], "foundation": "level_plinth", "use": "school", "art_status": "reserved_for_batch_2"}
+  }
+}
