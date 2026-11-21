@@ -17,6 +17,8 @@ The [Town Soundscape Handoff v1](../Town-Soundscape-Handoff-v1/README.md) suppli
 | 3. Terrain and settlement coverage | Add banks, cliff faces, water and shoreline masks, bridge deck/support/rails, rural gates, farmhouse and outbuildings, far woods, and terrain returns as recipes need them. Add terrain-specific joins and left/right end cases. | Reuse the kit on a valley or gorge, an open contour lane, and a farmstead yard. Check clearance, exits and continuous ground support through connections. |
 | 4. Library expansion | Use the handoff's proposed 60-shell target and component counts after slice sign-off. Count distinct structural silhouettes. Expand roof/opening/material combinations, prop clusters, vegetation and mist as compatibility and reference coverage require. | Track completed assemblies, tested compatibility and art/texture budgets by family. Measure overdraw and memory before expanding the pack. |
 
+The [Batch 1 calibration](../assets/townscape/batch-01/README.md) records the shared shop frontage. The [Batch 2 vertical slice](../assets/townscape/batch-02/README.md) provides the 14-shell inventory and the three-band hillside review at both display sizes.
+
 The earlier [asset guide](asset-generation-guide.md) remains a reference for window animation, foliage and existing type/profile IDs. Use the handoff's modular shell counts as the production budget. Existing placeable designs can remain catalog entries. Review the [building integration](building-asset-integration.md) and the [environment](../assets/environment/README.md) and [surface](../assets/surfaces/README.md) pilots for reusable art and import conventions.
 
 ## Authoring and compositing

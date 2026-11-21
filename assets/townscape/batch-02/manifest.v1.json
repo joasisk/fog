@@ -1,0 +1,5266 @@
+{
+  "schema_version": 1,
+  "pack_version": "1.0.0",
+  "includes": [
+    "../batch-01/manifest.v1.json"
+  ],
+  "units": {
+    "world": "frontage_units",
+    "source_anchors": "normalized_uv_top_left_y_down",
+    "world_axes": {
+      "x": "along_panorama",
+      "d": "away_from_viewer",
+      "h": "up"
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "townscape.b02.sash",
+      "version": 1,
+      "family": "component",
+      "style_family": "opening_detail",
+      "tags": [
+        "component",
+        "opening_detail",
+        "component"
+      ],
+      "use_tags": [
+        "component"
+      ],
+      "source": "sources/sash.svg",
+      "reference_ids": [
+        "REF-T01"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        56,
+        74
+      ],
+      "pivot_uv": [
+        0.5,
+        0.7837837837837838
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 0.20833333333333334,
+      "world_height_f": 0.3194444444444444,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "accepts_sockets": [
+        "historic-sash"
+      ],
+      "excludes": [
+        "blocked_bay"
+      ],
+      "depth_f": 0,
+      "overlay_before": {
+        "light": "glass"
+      },
+      "semantic_tags": [
+        "window"
+      ],
+      "trim_rect_px": [
+        12,
+        12,
+        32,
+        46
+      ],
+      "files": {
+        "recess": "png/sash/recess.png",
+        "backing": "png/sash/backing.png",
+        "glass": "png/sash/glass.png",
+        "frame": "png/sash/frame.png",
+        "light": "png/sash/light.png",
+        "mask-aperture": "png/sash/mask-aperture.png"
+      },
+      "layer_order": [
+        "recess",
+        "backing",
+        "glass",
+        "frame"
+      ],
+      "states": [
+        "base",
+        "light"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.ribbon-window",
+      "version": 1,
+      "family": "component",
+      "style_family": "opening_detail",
+      "tags": [
+        "component",
+        "opening_detail",
+        "component"
+      ],
+      "use_tags": [
+        "component"
+      ],
+      "source": "sources/ribbon-window.svg",
+      "reference_ids": [
+        "REF-U03"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        80,
+        60
+      ],
+      "pivot_uv": [
+        0.5,
+        0.7666666666666667
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 0.3888888888888889,
+      "world_height_f": 0.2361111111111111,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "accepts_sockets": [
+        "modern-bay"
+      ],
+      "excludes": [
+        "blocked_bay"
+      ],
+      "depth_f": 0,
+      "overlay_before": {
+        "light": "glass"
+      },
+      "semantic_tags": [
+        "window"
+      ],
+      "trim_rect_px": [
+        10,
+        12,
+        60,
+        34
+      ],
+      "files": {
+        "recess": "png/ribbon-window/recess.png",
+        "backing": "png/ribbon-window/backing.png",
+        "glass": "png/ribbon-window/glass.png",
+        "frame": "png/ribbon-window/frame.png",
+        "light": "png/ribbon-window/light.png",
+        "mask-aperture": "png/ribbon-window/mask-aperture.png"
+      },
+      "layer_order": [
+        "recess",
+        "backing",
+        "glass",
+        "frame"
+      ],
+      "states": [
+        "base",
+        "light"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.panel-door",
+      "version": 1,
+      "family": "component",
+      "style_family": "opening_detail",
+      "tags": [
+        "component",
+        "opening_detail",
+        "component"
+      ],
+      "use_tags": [
+        "component"
+      ],
+      "source": "sources/panel-door.svg",
+      "reference_ids": [
+        "REF-T01"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        50,
+        78
+      ],
+      "pivot_uv": [
+        0.5,
+        0.8461538461538461
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 0.18055555555555555,
+      "world_height_f": 0.3472222222222222,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "accepts_sockets": [
+        "domestic-threshold"
+      ],
+      "excludes": [
+        "blocked_bay"
+      ],
+      "depth_f": 0,
+      "overlay_before": {},
+      "semantic_tags": [
+        "facade_detail"
+      ],
+      "trim_rect_px": [
+        10,
+        12,
+        30,
+        54
+      ],
+      "files": {
+        "recess": "png/panel-door/recess.png",
+        "panel": "png/panel-door/panel.png",
+        "frame": "png/panel-door/frame.png",
+        "mask-aperture": "png/panel-door/mask-aperture.png"
+      },
+      "layer_order": [
+        "recess",
+        "panel",
+        "frame"
+      ],
+      "states": [
+        "base"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.bakehouse-front",
+      "version": 1,
+      "family": "component",
+      "style_family": "opening_detail",
+      "tags": [
+        "component",
+        "opening_detail",
+        "component"
+      ],
+      "use_tags": [
+        "component"
+      ],
+      "source": "sources/bakehouse-front.svg",
+      "reference_ids": [
+        "REF-T01"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        152,
+        112
+      ],
+      "pivot_uv": [
+        0.5,
+        0.8928571428571429
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 0.8333333333333334,
+      "world_height_f": 0.5694444444444444,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "accepts_sockets": [
+        "historic-shop-bay"
+      ],
+      "excludes": [
+        "blocked_bay"
+      ],
+      "depth_f": 0,
+      "overlay_before": {
+        "light": "glass"
+      },
+      "semantic_tags": [
+        "facade_detail"
+      ],
+      "trim_rect_px": [
+        14,
+        26,
+        124,
+        74
+      ],
+      "files": {
+        "recess": "png/bakehouse-front/recess.png",
+        "backing": "png/bakehouse-front/backing.png",
+        "bread": "png/bakehouse-front/bread.png",
+        "glass": "png/bakehouse-front/glass.png",
+        "frame": "png/bakehouse-front/frame.png",
+        "light": "png/bakehouse-front/light.png",
+        "mask-aperture": "png/bakehouse-front/mask-aperture.png"
+      },
+      "layer_order": [
+        "recess",
+        "backing",
+        "bread",
+        "glass",
+        "frame"
+      ],
+      "states": [
+        "base",
+        "light"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.stone-sill",
+      "version": 1,
+      "family": "component",
+      "style_family": "opening_detail",
+      "tags": [
+        "component",
+        "opening_detail",
+        "component"
+      ],
+      "use_tags": [
+        "component"
+      ],
+      "source": "sources/stone-sill.svg",
+      "reference_ids": [
+        "REF-T01"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        58,
+        32
+      ],
+      "pivot_uv": [
+        0.5,
+        0.5625
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 0.25,
+      "world_height_f": 0.041666666666666664,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "accepts_sockets": [
+        "stone-sill"
+      ],
+      "excludes": [
+        "blocked_bay"
+      ],
+      "depth_f": 0,
+      "overlay_before": {},
+      "semantic_tags": [
+        "facade_detail"
+      ],
+      "trim_rect_px": [
+        10,
+        11,
+        38,
+        7
+      ],
+      "files": {
+        "stone": "png/stone-sill/stone.png"
+      },
+      "layer_order": [
+        "stone"
+      ],
+      "states": [
+        "base"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.gable-house",
+      "version": 1,
+      "family": "shell",
+      "style_family": "attached_historic",
+      "tags": [
+        "shell",
+        "attached_historic",
+        "house",
+        "attached",
+        "pitched"
+      ],
+      "use_tags": [
+        "house",
+        "attached",
+        "pitched"
+      ],
+      "source": "sources/gable-house.svg",
+      "reference_ids": [
+        "REF-T01",
+        "REF-L05"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        184,
+        276
+      ],
+      "pivot_uv": [
+        0.5,
+        0.9130434782608695
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 0.8333333333333334,
+      "world_height_f": 1.5,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "shell_group": "attached_historic",
+      "roof_profile": "pitched",
+      "wall_material": "plaster",
+      "ground_span_uv": [
+        [
+          0.17391304347826086,
+          0.9130434782608695
+        ],
+        [
+          0.8260869565217391,
+          0.9130434782608695
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth",
+        "stepped_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.6413043478260869,
+          0.9130434782608695
+        ],
+        "clearance_f": {
+          "width": 0.16666666666666666,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "wall_contacts": {
+        "left": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.17391304347826086,
+              0.38405797101449274
+            ],
+            [
+              0.17391304347826086,
+              0.9130434782608695
+            ]
+          ],
+          "exposed_end_layer": "end-left"
+        },
+        "right": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.8260869565217391,
+              0.38405797101449274
+            ],
+            [
+              0.8260869565217391,
+              0.9130434782608695
+            ]
+          ],
+          "exposed_end_layer": "end-right"
+        }
+      },
+      "sockets": {
+        "sash-1": {
+          "uv": [
+            0.5,
+            0.3695652173913043
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-2": {
+          "uv": [
+            0.31521739130434784,
+            0.5652173913043478
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-3": {
+          "uv": [
+            0.6521739130434783,
+            0.5652173913043478
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-4": {
+          "uv": [
+            0.33695652173913043,
+            0.8043478260869565
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "panel-door-5": {
+          "uv": [
+            0.6413043478260869,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "domestic-threshold"
+          ]
+        },
+        "stone-sill-6": {
+          "uv": [
+            0.5,
+            0.37681159420289856
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-7": {
+          "uv": [
+            0.31521739130434784,
+            0.572463768115942
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-8": {
+          "uv": [
+            0.6521739130434783,
+            0.572463768115942
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-9": {
+          "uv": [
+            0.33695652173913043,
+            0.8115942028985508
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "entrance": {
+          "uv": [
+            0.6413043478260869,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        }
+      },
+      "mounts": [
+        {
+          "socket": "sash-1",
+          "asset": "townscape.b02.sash",
+          "scale": 0.68,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-2",
+          "asset": "townscape.b02.sash",
+          "scale": 0.87,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-3",
+          "asset": "townscape.b02.sash",
+          "scale": 0.87,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-4",
+          "asset": "townscape.b02.sash",
+          "scale": 0.92,
+          "light_group": "ground"
+        },
+        {
+          "socket": "panel-door-5",
+          "asset": "townscape.b02.panel-door",
+          "scale": 1
+        },
+        {
+          "socket": "stone-sill-6",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.68
+        },
+        {
+          "socket": "stone-sill-7",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.87
+        },
+        {
+          "socket": "stone-sill-8",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.87
+        },
+        {
+          "socket": "stone-sill-9",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.92
+        }
+      ],
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.6594202898550725
+        ],
+        "sound_uv": [
+          0.6413043478260869,
+          0.7898550724637681
+        ]
+      },
+      "footprint_f": [
+        [
+          -0.4166666666666667,
+          0
+        ],
+        [
+          0.4166666666666667,
+          0
+        ],
+        [
+          0.4166666666666667,
+          0.63
+        ],
+        [
+          -0.4166666666666667,
+          0.63
+        ]
+      ],
+      "trim_rect_px": [
+        11,
+        36,
+        162,
+        223
+      ],
+      "files": {
+        "shadow": "png/gable-house/shadow.png",
+        "wall": "png/gable-house/wall.png",
+        "chimney": "png/gable-house/chimney.png",
+        "roof": "png/gable-house/roof.png",
+        "trim": "png/gable-house/trim.png",
+        "wet": "png/gable-house/wet.png",
+        "mask-wall": "png/gable-house/mask-wall.png",
+        "mask-occlusion": "png/gable-house/mask-occlusion.png",
+        "mask-entrance": "png/gable-house/mask-entrance.png",
+        "end-left": "png/gable-house/end-left.png",
+        "end-right": "png/gable-house/end-right.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "chimney",
+        "roof",
+        "trim"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.weavers-house",
+      "version": 1,
+      "family": "shell",
+      "style_family": "attached_historic",
+      "tags": [
+        "shell",
+        "attached_historic",
+        "house",
+        "attached",
+        "pitched"
+      ],
+      "use_tags": [
+        "house",
+        "attached",
+        "pitched"
+      ],
+      "source": "sources/weavers-house.svg",
+      "reference_ids": [
+        "REF-T01",
+        "REF-L05"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        228,
+        276
+      ],
+      "pivot_uv": [
+        0.5,
+        0.9130434782608695
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.1388888888888888,
+      "world_height_f": 1.4305555555555556,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "shell_group": "attached_historic",
+      "roof_profile": "pitched",
+      "wall_material": "timber",
+      "ground_span_uv": [
+        [
+          0.14035087719298245,
+          0.9130434782608695
+        ],
+        [
+          0.8596491228070176,
+          0.9130434782608695
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth",
+        "stepped_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.6491228070175439,
+          0.9130434782608695
+        ],
+        "clearance_f": {
+          "width": 0.16666666666666666,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "wall_contacts": {
+        "left": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.14035087719298245,
+              0.38405797101449274
+            ],
+            [
+              0.14035087719298245,
+              0.9130434782608695
+            ]
+          ],
+          "exposed_end_layer": "end-left"
+        },
+        "right": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.8596491228070176,
+              0.38405797101449274
+            ],
+            [
+              0.8596491228070176,
+              0.9130434782608695
+            ]
+          ],
+          "exposed_end_layer": "end-right"
+        }
+      },
+      "sockets": {
+        "sash-1": {
+          "uv": [
+            0.2719298245614035,
+            0.572463768115942
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-2": {
+          "uv": [
+            0.49122807017543857,
+            0.572463768115942
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-3": {
+          "uv": [
+            0.7192982456140351,
+            0.572463768115942
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-4": {
+          "uv": [
+            0.2719298245614035,
+            0.7898550724637681
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-5": {
+          "uv": [
+            0.4649122807017544,
+            0.7898550724637681
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "panel-door-6": {
+          "uv": [
+            0.6491228070175439,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "domestic-threshold"
+          ]
+        },
+        "stone-sill-7": {
+          "uv": [
+            0.2719298245614035,
+            0.5797101449275363
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-8": {
+          "uv": [
+            0.49122807017543857,
+            0.5797101449275363
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-9": {
+          "uv": [
+            0.7192982456140351,
+            0.5797101449275363
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-10": {
+          "uv": [
+            0.2719298245614035,
+            0.7971014492753623
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-11": {
+          "uv": [
+            0.4649122807017544,
+            0.7971014492753623
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "entrance": {
+          "uv": [
+            0.6491228070175439,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        }
+      },
+      "mounts": [
+        {
+          "socket": "sash-1",
+          "asset": "townscape.b02.sash",
+          "scale": 0.84,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-2",
+          "asset": "townscape.b02.sash",
+          "scale": 0.84,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-3",
+          "asset": "townscape.b02.sash",
+          "scale": 0.84,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-4",
+          "asset": "townscape.b02.sash",
+          "scale": 0.82,
+          "light_group": "ground"
+        },
+        {
+          "socket": "sash-5",
+          "asset": "townscape.b02.sash",
+          "scale": 0.82,
+          "light_group": "ground"
+        },
+        {
+          "socket": "panel-door-6",
+          "asset": "townscape.b02.panel-door",
+          "scale": 1
+        },
+        {
+          "socket": "stone-sill-7",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.84
+        },
+        {
+          "socket": "stone-sill-8",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.84
+        },
+        {
+          "socket": "stone-sill-9",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.84
+        },
+        {
+          "socket": "stone-sill-10",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.82
+        },
+        {
+          "socket": "stone-sill-11",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.82
+        }
+      ],
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.6594202898550725
+        ],
+        "sound_uv": [
+          0.6491228070175439,
+          0.7898550724637681
+        ]
+      },
+      "footprint_f": [
+        [
+          -0.5694444444444444,
+          0
+        ],
+        [
+          0.5694444444444444,
+          0
+        ],
+        [
+          0.5694444444444444,
+          0.63
+        ],
+        [
+          -0.5694444444444444,
+          0.63
+        ]
+      ],
+      "trim_rect_px": [
+        11,
+        43,
+        206,
+        216
+      ],
+      "files": {
+        "shadow": "png/weavers-house/shadow.png",
+        "wall": "png/weavers-house/wall.png",
+        "chimney": "png/weavers-house/chimney.png",
+        "roof": "png/weavers-house/roof.png",
+        "trim": "png/weavers-house/trim.png",
+        "wet": "png/weavers-house/wet.png",
+        "mask-wall": "png/weavers-house/mask-wall.png",
+        "mask-occlusion": "png/weavers-house/mask-occlusion.png",
+        "mask-entrance": "png/weavers-house/mask-entrance.png",
+        "end-left": "png/weavers-house/end-left.png",
+        "end-right": "png/weavers-house/end-right.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "chimney",
+        "roof",
+        "trim"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.corner-house",
+      "version": 1,
+      "family": "shell",
+      "style_family": "attached_historic",
+      "tags": [
+        "shell",
+        "attached_historic",
+        "house",
+        "attached",
+        "hipped"
+      ],
+      "use_tags": [
+        "house",
+        "attached",
+        "hipped"
+      ],
+      "source": "sources/corner-house.svg",
+      "reference_ids": [
+        "REF-T01",
+        "REF-L05"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        212,
+        276
+      ],
+      "pivot_uv": [
+        0.5,
+        0.9130434782608695
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.0277777777777777,
+      "world_height_f": 1.5,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "shell_group": "attached_historic",
+      "roof_profile": "hipped",
+      "wall_material": "plaster",
+      "ground_span_uv": [
+        [
+          0.1509433962264151,
+          0.9130434782608695
+        ],
+        [
+          0.8490566037735849,
+          0.9130434782608695
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth",
+        "stepped_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.3584905660377358,
+          0.9130434782608695
+        ],
+        "clearance_f": {
+          "width": 0.16666666666666666,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "wall_contacts": {
+        "left": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.1509433962264151,
+              0.38405797101449274
+            ],
+            [
+              0.1509433962264151,
+              0.9130434782608695
+            ]
+          ],
+          "exposed_end_layer": "end-left"
+        },
+        "right": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.8490566037735849,
+              0.38405797101449274
+            ],
+            [
+              0.8490566037735849,
+              0.9130434782608695
+            ]
+          ],
+          "exposed_end_layer": "end-right"
+        }
+      },
+      "sockets": {
+        "sash-1": {
+          "uv": [
+            0.3113207547169811,
+            0.5797101449275363
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-2": {
+          "uv": [
+            0.5094339622641509,
+            0.5797101449275363
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-3": {
+          "uv": [
+            0.6981132075471698,
+            0.5797101449275363
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-4": {
+          "uv": [
+            0.6415094339622641,
+            0.8043478260869565
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "panel-door-5": {
+          "uv": [
+            0.3584905660377358,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "domestic-threshold"
+          ]
+        },
+        "stone-sill-6": {
+          "uv": [
+            0.3113207547169811,
+            0.5869565217391305
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-7": {
+          "uv": [
+            0.5094339622641509,
+            0.5869565217391305
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-8": {
+          "uv": [
+            0.6981132075471698,
+            0.5869565217391305
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-9": {
+          "uv": [
+            0.6415094339622641,
+            0.8115942028985508
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "entrance": {
+          "uv": [
+            0.3584905660377358,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        }
+      },
+      "mounts": [
+        {
+          "socket": "sash-1",
+          "asset": "townscape.b02.sash",
+          "scale": 0.85,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-2",
+          "asset": "townscape.b02.sash",
+          "scale": 0.85,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-3",
+          "asset": "townscape.b02.sash",
+          "scale": 0.85,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-4",
+          "asset": "townscape.b02.sash",
+          "scale": 0.97,
+          "light_group": "ground"
+        },
+        {
+          "socket": "panel-door-5",
+          "asset": "townscape.b02.panel-door",
+          "scale": 1
+        },
+        {
+          "socket": "stone-sill-6",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.85
+        },
+        {
+          "socket": "stone-sill-7",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.85
+        },
+        {
+          "socket": "stone-sill-8",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.85
+        },
+        {
+          "socket": "stone-sill-9",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.97
+        }
+      ],
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.6594202898550725
+        ],
+        "sound_uv": [
+          0.3584905660377358,
+          0.7898550724637681
+        ]
+      },
+      "footprint_f": [
+        [
+          -0.5138888888888888,
+          0
+        ],
+        [
+          0.5138888888888888,
+          0
+        ],
+        [
+          0.5138888888888888,
+          0.63
+        ],
+        [
+          -0.5138888888888888,
+          0.63
+        ]
+      ],
+      "trim_rect_px": [
+        11,
+        35,
+        190,
+        224
+      ],
+      "files": {
+        "shadow": "png/corner-house/shadow.png",
+        "wall": "png/corner-house/wall.png",
+        "chimney": "png/corner-house/chimney.png",
+        "roof": "png/corner-house/roof.png",
+        "trim": "png/corner-house/trim.png",
+        "wet": "png/corner-house/wet.png",
+        "mask-wall": "png/corner-house/mask-wall.png",
+        "mask-occlusion": "png/corner-house/mask-occlusion.png",
+        "mask-entrance": "png/corner-house/mask-entrance.png",
+        "end-left": "png/corner-house/end-left.png",
+        "end-right": "png/corner-house/end-right.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "chimney",
+        "roof",
+        "trim"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.bakery",
+      "version": 1,
+      "family": "shell",
+      "style_family": "attached_historic",
+      "tags": [
+        "shell",
+        "attached_historic",
+        "bakery",
+        "attached",
+        "stepped-gable"
+      ],
+      "use_tags": [
+        "bakery",
+        "attached",
+        "stepped-gable"
+      ],
+      "source": "sources/bakery.svg",
+      "reference_ids": [
+        "REF-T01",
+        "REF-L05"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        200,
+        276
+      ],
+      "pivot_uv": [
+        0.5,
+        0.9130434782608695
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 0.9444444444444444,
+      "world_height_f": 1.4583333333333333,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "shell_group": "attached_historic",
+      "roof_profile": "stepped-gable",
+      "wall_material": "brick",
+      "ground_span_uv": [
+        [
+          0.16,
+          0.9130434782608695
+        ],
+        [
+          0.84,
+          0.9130434782608695
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth",
+        "stepped_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.74,
+          0.9130434782608695
+        ],
+        "clearance_f": {
+          "width": 0.16666666666666666,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "wall_contacts": {
+        "left": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.16,
+              0.38405797101449274
+            ],
+            [
+              0.16,
+              0.9130434782608695
+            ]
+          ],
+          "exposed_end_layer": "end-left"
+        },
+        "right": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.84,
+              0.38405797101449274
+            ],
+            [
+              0.84,
+              0.9130434782608695
+            ]
+          ],
+          "exposed_end_layer": "end-right"
+        }
+      },
+      "sockets": {
+        "sash-1": {
+          "uv": [
+            0.5,
+            0.35507246376811596
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-2": {
+          "uv": [
+            0.31,
+            0.5507246376811594
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-3": {
+          "uv": [
+            0.5,
+            0.5507246376811594
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-4": {
+          "uv": [
+            0.69,
+            0.5507246376811594
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "bakehouse-front-5": {
+          "uv": [
+            0.54,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "historic-shop-bay"
+          ]
+        },
+        "stone-sill-6": {
+          "uv": [
+            0.5,
+            0.36231884057971014
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-7": {
+          "uv": [
+            0.31,
+            0.5579710144927537
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-8": {
+          "uv": [
+            0.5,
+            0.5579710144927537
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-9": {
+          "uv": [
+            0.69,
+            0.5579710144927537
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "entrance": {
+          "uv": [
+            0.74,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        }
+      },
+      "mounts": [
+        {
+          "socket": "sash-1",
+          "asset": "townscape.b02.sash",
+          "scale": 0.6,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-2",
+          "asset": "townscape.b02.sash",
+          "scale": 0.71,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-3",
+          "asset": "townscape.b02.sash",
+          "scale": 0.71,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-4",
+          "asset": "townscape.b02.sash",
+          "scale": 0.71,
+          "light_group": "upper"
+        },
+        {
+          "socket": "bakehouse-front-5",
+          "asset": "townscape.b02.bakehouse-front",
+          "scale": 0.94,
+          "light_group": "ground"
+        },
+        {
+          "socket": "stone-sill-6",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.6
+        },
+        {
+          "socket": "stone-sill-7",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.71
+        },
+        {
+          "socket": "stone-sill-8",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.71
+        },
+        {
+          "socket": "stone-sill-9",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.71
+        }
+      ],
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.6594202898550725
+        ],
+        "sound_uv": [
+          0.74,
+          0.7898550724637681
+        ]
+      },
+      "footprint_f": [
+        [
+          -0.4722222222222222,
+          0
+        ],
+        [
+          0.4722222222222222,
+          0
+        ],
+        [
+          0.4722222222222222,
+          0.63
+        ],
+        [
+          -0.4722222222222222,
+          0.63
+        ]
+      ],
+      "trim_rect_px": [
+        11,
+        42,
+        178,
+        217
+      ],
+      "files": {
+        "shadow": "png/bakery/shadow.png",
+        "wall": "png/bakery/wall.png",
+        "roof": "png/bakery/roof.png",
+        "trim": "png/bakery/trim.png",
+        "wet": "png/bakery/wet.png",
+        "mask-wall": "png/bakery/mask-wall.png",
+        "mask-occlusion": "png/bakery/mask-occlusion.png",
+        "mask-entrance": "png/bakery/mask-entrance.png",
+        "end-left": "png/bakery/end-left.png",
+        "end-right": "png/bakery/end-right.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "roof",
+        "trim"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.garden-villa",
+      "version": 1,
+      "family": "shell",
+      "style_family": "detached",
+      "tags": [
+        "shell",
+        "detached",
+        "house",
+        "detached",
+        "hipped"
+      ],
+      "use_tags": [
+        "house",
+        "detached",
+        "hipped"
+      ],
+      "source": "sources/garden-villa.svg",
+      "reference_ids": [
+        "REF-S09",
+        "REF-L10"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        240,
+        276
+      ],
+      "pivot_uv": [
+        0.5,
+        0.9130434782608695
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.2222222222222223,
+      "world_height_f": 1.5,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "shell_group": "detached",
+      "roof_profile": "hipped",
+      "wall_material": "plaster",
+      "ground_span_uv": [
+        [
+          0.13333333333333333,
+          0.9130434782608695
+        ],
+        [
+          0.8666666666666667,
+          0.9130434782608695
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.5083333333333333,
+          0.9130434782608695
+        ],
+        "clearance_f": {
+          "width": 0.16666666666666666,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "wall_contacts": {},
+      "sockets": {
+        "sash-1": {
+          "uv": [
+            0.2833333333333333,
+            0.5579710144927537
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-2": {
+          "uv": [
+            0.5,
+            0.5579710144927537
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-3": {
+          "uv": [
+            0.725,
+            0.5579710144927537
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-4": {
+          "uv": [
+            0.26666666666666666,
+            0.7898550724637681
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-5": {
+          "uv": [
+            0.7333333333333333,
+            0.7898550724637681
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "panel-door-6": {
+          "uv": [
+            0.5083333333333333,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "domestic-threshold"
+          ]
+        },
+        "stone-sill-7": {
+          "uv": [
+            0.2833333333333333,
+            0.5652173913043478
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-8": {
+          "uv": [
+            0.5,
+            0.5652173913043478
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-9": {
+          "uv": [
+            0.725,
+            0.5652173913043478
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-10": {
+          "uv": [
+            0.26666666666666666,
+            0.7971014492753623
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-11": {
+          "uv": [
+            0.7333333333333333,
+            0.7971014492753623
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "entrance": {
+          "uv": [
+            0.5083333333333333,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        }
+      },
+      "mounts": [
+        {
+          "socket": "sash-1",
+          "asset": "townscape.b02.sash",
+          "scale": 0.92,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-2",
+          "asset": "townscape.b02.sash",
+          "scale": 0.92,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-3",
+          "asset": "townscape.b02.sash",
+          "scale": 0.92,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-4",
+          "asset": "townscape.b02.sash",
+          "scale": 1.0,
+          "light_group": "ground"
+        },
+        {
+          "socket": "sash-5",
+          "asset": "townscape.b02.sash",
+          "scale": 1.0,
+          "light_group": "ground"
+        },
+        {
+          "socket": "panel-door-6",
+          "asset": "townscape.b02.panel-door",
+          "scale": 1
+        },
+        {
+          "socket": "stone-sill-7",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.92
+        },
+        {
+          "socket": "stone-sill-8",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.92
+        },
+        {
+          "socket": "stone-sill-9",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.92
+        },
+        {
+          "socket": "stone-sill-10",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 1.0
+        },
+        {
+          "socket": "stone-sill-11",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 1.0
+        }
+      ],
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.6594202898550725
+        ],
+        "sound_uv": [
+          0.5083333333333333,
+          0.7898550724637681
+        ]
+      },
+      "footprint_f": [
+        [
+          -0.6111111111111112,
+          0
+        ],
+        [
+          0.6111111111111112,
+          0
+        ],
+        [
+          0.6111111111111112,
+          0.7
+        ],
+        [
+          -0.6111111111111112,
+          0.7
+        ]
+      ],
+      "trim_rect_px": [
+        26,
+        35,
+        188,
+        224
+      ],
+      "files": {
+        "shadow": "png/garden-villa/shadow.png",
+        "wall": "png/garden-villa/wall.png",
+        "chimney": "png/garden-villa/chimney.png",
+        "roof": "png/garden-villa/roof.png",
+        "trim": "png/garden-villa/trim.png",
+        "wet": "png/garden-villa/wet.png",
+        "mask-wall": "png/garden-villa/mask-wall.png",
+        "mask-occlusion": "png/garden-villa/mask-occlusion.png",
+        "mask-entrance": "png/garden-villa/mask-entrance.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "chimney",
+        "roof",
+        "trim"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.stone-cottage",
+      "version": 1,
+      "family": "shell",
+      "style_family": "detached",
+      "tags": [
+        "shell",
+        "detached",
+        "house",
+        "detached",
+        "catslide"
+      ],
+      "use_tags": [
+        "house",
+        "detached",
+        "catslide"
+      ],
+      "source": "sources/stone-cottage.svg",
+      "reference_ids": [
+        "REF-S09",
+        "REF-L10"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        180,
+        276
+      ],
+      "pivot_uv": [
+        0.5,
+        0.9130434782608695
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 0.8055555555555556,
+      "world_height_f": 1.2916666666666667,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "shell_group": "detached",
+      "roof_profile": "catslide",
+      "wall_material": "stone",
+      "ground_span_uv": [
+        [
+          0.17777777777777778,
+          0.9130434782608695
+        ],
+        [
+          0.8222222222222222,
+          0.9130434782608695
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.6555555555555556,
+          0.9130434782608695
+        ],
+        "clearance_f": {
+          "width": 0.16666666666666666,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "wall_contacts": {},
+      "sockets": {
+        "sash-1": {
+          "uv": [
+            0.3888888888888889,
+            0.5289855072463768
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-2": {
+          "uv": [
+            0.34444444444444444,
+            0.7971014492753623
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-3": {
+          "uv": [
+            0.5222222222222223,
+            0.7971014492753623
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "panel-door-4": {
+          "uv": [
+            0.6555555555555556,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "domestic-threshold"
+          ]
+        },
+        "stone-sill-5": {
+          "uv": [
+            0.3888888888888889,
+            0.5362318840579711
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-6": {
+          "uv": [
+            0.34444444444444444,
+            0.8043478260869565
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-7": {
+          "uv": [
+            0.5222222222222223,
+            0.8043478260869565
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "entrance": {
+          "uv": [
+            0.6555555555555556,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        }
+      },
+      "mounts": [
+        {
+          "socket": "sash-1",
+          "asset": "townscape.b02.sash",
+          "scale": 0.6,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-2",
+          "asset": "townscape.b02.sash",
+          "scale": 0.66,
+          "light_group": "ground"
+        },
+        {
+          "socket": "sash-3",
+          "asset": "townscape.b02.sash",
+          "scale": 0.66,
+          "light_group": "ground"
+        },
+        {
+          "socket": "panel-door-4",
+          "asset": "townscape.b02.panel-door",
+          "scale": 1
+        },
+        {
+          "socket": "stone-sill-5",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.6
+        },
+        {
+          "socket": "stone-sill-6",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.66
+        },
+        {
+          "socket": "stone-sill-7",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.66
+        }
+      ],
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.6594202898550725
+        ],
+        "sound_uv": [
+          0.6555555555555556,
+          0.7898550724637681
+        ]
+      },
+      "footprint_f": [
+        [
+          -0.4027777777777778,
+          0
+        ],
+        [
+          0.4027777777777778,
+          0
+        ],
+        [
+          0.4027777777777778,
+          0.7
+        ],
+        [
+          -0.4027777777777778,
+          0.7
+        ]
+      ],
+      "trim_rect_px": [
+        24,
+        66,
+        132,
+        193
+      ],
+      "files": {
+        "shadow": "png/stone-cottage/shadow.png",
+        "wall": "png/stone-cottage/wall.png",
+        "chimney": "png/stone-cottage/chimney.png",
+        "roof": "png/stone-cottage/roof.png",
+        "trim": "png/stone-cottage/trim.png",
+        "wet": "png/stone-cottage/wet.png",
+        "mask-wall": "png/stone-cottage/mask-wall.png",
+        "mask-occlusion": "png/stone-cottage/mask-occlusion.png",
+        "mask-entrance": "png/stone-cottage/mask-entrance.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "chimney",
+        "roof",
+        "trim"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.brick-infill",
+      "version": 1,
+      "family": "shell",
+      "style_family": "modern",
+      "tags": [
+        "shell",
+        "modern",
+        "flats",
+        "attached",
+        "low"
+      ],
+      "use_tags": [
+        "flats",
+        "attached",
+        "low"
+      ],
+      "source": "sources/brick-infill.svg",
+      "reference_ids": [
+        "REF-U03",
+        "REF-T03"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        232,
+        276
+      ],
+      "pivot_uv": [
+        0.5,
+        0.9130434782608695
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.1666666666666667,
+      "world_height_f": 1.1944444444444444,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "shell_group": "modern",
+      "roof_profile": "low",
+      "wall_material": "brick",
+      "ground_span_uv": [
+        [
+          0.13793103448275862,
+          0.9130434782608695
+        ],
+        [
+          0.8620689655172413,
+          0.9130434782608695
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth",
+        "stepped_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.7241379310344828,
+          0.9130434782608695
+        ],
+        "clearance_f": {
+          "width": 0.16666666666666666,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "wall_contacts": {
+        "left": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.13793103448275862,
+              0.38405797101449274
+            ],
+            [
+              0.13793103448275862,
+              0.9130434782608695
+            ]
+          ],
+          "exposed_end_layer": "end-left"
+        },
+        "right": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.8620689655172413,
+              0.38405797101449274
+            ],
+            [
+              0.8620689655172413,
+              0.9130434782608695
+            ]
+          ],
+          "exposed_end_layer": "end-right"
+        }
+      },
+      "sockets": {
+        "ribbon-window-1": {
+          "uv": [
+            0.3275862068965517,
+            0.5579710144927537
+          ],
+          "accepts": [
+            "modern-bay"
+          ]
+        },
+        "ribbon-window-2": {
+          "uv": [
+            0.6551724137931034,
+            0.5579710144927537
+          ],
+          "accepts": [
+            "modern-bay"
+          ]
+        },
+        "ribbon-window-3": {
+          "uv": [
+            0.31896551724137934,
+            0.7681159420289855
+          ],
+          "accepts": [
+            "modern-bay"
+          ]
+        },
+        "ribbon-window-4": {
+          "uv": [
+            0.5344827586206896,
+            0.7681159420289855
+          ],
+          "accepts": [
+            "modern-bay"
+          ]
+        },
+        "panel-door-5": {
+          "uv": [
+            0.7241379310344828,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "domestic-threshold"
+          ]
+        },
+        "entrance": {
+          "uv": [
+            0.7241379310344828,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        }
+      },
+      "mounts": [
+        {
+          "socket": "ribbon-window-1",
+          "asset": "townscape.b02.ribbon-window",
+          "scale": 1,
+          "light_group": "upper"
+        },
+        {
+          "socket": "ribbon-window-2",
+          "asset": "townscape.b02.ribbon-window",
+          "scale": 1,
+          "light_group": "upper"
+        },
+        {
+          "socket": "ribbon-window-3",
+          "asset": "townscape.b02.ribbon-window",
+          "scale": 0.72,
+          "light_group": "ground"
+        },
+        {
+          "socket": "ribbon-window-4",
+          "asset": "townscape.b02.ribbon-window",
+          "scale": 0.72,
+          "light_group": "ground"
+        },
+        {
+          "socket": "panel-door-5",
+          "asset": "townscape.b02.panel-door",
+          "scale": 1
+        }
+      ],
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.6594202898550725
+        ],
+        "sound_uv": [
+          0.7241379310344828,
+          0.7898550724637681
+        ]
+      },
+      "footprint_f": [
+        [
+          -0.5833333333333334,
+          0
+        ],
+        [
+          0.5833333333333334,
+          0
+        ],
+        [
+          0.5833333333333334,
+          0.63
+        ],
+        [
+          -0.5833333333333334,
+          0.63
+        ]
+      ],
+      "trim_rect_px": [
+        11,
+        80,
+        210,
+        179
+      ],
+      "files": {
+        "shadow": "png/brick-infill/shadow.png",
+        "wall": "png/brick-infill/wall.png",
+        "roof": "png/brick-infill/roof.png",
+        "trim": "png/brick-infill/trim.png",
+        "wet": "png/brick-infill/wet.png",
+        "mask-wall": "png/brick-infill/mask-wall.png",
+        "mask-occlusion": "png/brick-infill/mask-occlusion.png",
+        "mask-entrance": "png/brick-infill/mask-entrance.png",
+        "end-left": "png/brick-infill/end-left.png",
+        "end-right": "png/brick-infill/end-right.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "roof",
+        "trim"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.garden-walkup",
+      "version": 1,
+      "family": "shell",
+      "style_family": "modern",
+      "tags": [
+        "shell",
+        "modern",
+        "flats",
+        "detached",
+        "low-pitch"
+      ],
+      "use_tags": [
+        "flats",
+        "detached",
+        "low-pitch"
+      ],
+      "source": "sources/garden-walkup.svg",
+      "reference_ids": [
+        "REF-U03",
+        "REF-T03"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        248,
+        276
+      ],
+      "pivot_uv": [
+        0.5,
+        0.9130434782608695
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.2777777777777777,
+      "world_height_f": 1.25,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "shell_group": "modern",
+      "roof_profile": "low-pitch",
+      "wall_material": "plaster",
+      "ground_span_uv": [
+        [
+          0.12903225806451613,
+          0.9130434782608695
+        ],
+        [
+          0.8709677419354839,
+          0.9130434782608695
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.532258064516129,
+          0.9130434782608695
+        ],
+        "clearance_f": {
+          "width": 0.16666666666666666,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "wall_contacts": {},
+      "sockets": {
+        "ribbon-window-1": {
+          "uv": [
+            0.28225806451612906,
+            0.5652173913043478
+          ],
+          "accepts": [
+            "modern-bay"
+          ]
+        },
+        "ribbon-window-2": {
+          "uv": [
+            0.717741935483871,
+            0.5652173913043478
+          ],
+          "accepts": [
+            "modern-bay"
+          ]
+        },
+        "ribbon-window-3": {
+          "uv": [
+            0.2661290322580645,
+            0.7898550724637681
+          ],
+          "accepts": [
+            "modern-bay"
+          ]
+        },
+        "ribbon-window-4": {
+          "uv": [
+            0.7338709677419355,
+            0.7898550724637681
+          ],
+          "accepts": [
+            "modern-bay"
+          ]
+        },
+        "panel-door-5": {
+          "uv": [
+            0.532258064516129,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "domestic-threshold"
+          ]
+        },
+        "entrance": {
+          "uv": [
+            0.532258064516129,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        }
+      },
+      "mounts": [
+        {
+          "socket": "ribbon-window-1",
+          "asset": "townscape.b02.ribbon-window",
+          "scale": 1,
+          "light_group": "upper"
+        },
+        {
+          "socket": "ribbon-window-2",
+          "asset": "townscape.b02.ribbon-window",
+          "scale": 1,
+          "light_group": "upper"
+        },
+        {
+          "socket": "ribbon-window-3",
+          "asset": "townscape.b02.ribbon-window",
+          "scale": 0.92,
+          "light_group": "ground"
+        },
+        {
+          "socket": "ribbon-window-4",
+          "asset": "townscape.b02.ribbon-window",
+          "scale": 0.92,
+          "light_group": "ground"
+        },
+        {
+          "socket": "panel-door-5",
+          "asset": "townscape.b02.panel-door",
+          "scale": 1
+        }
+      ],
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.6594202898550725
+        ],
+        "sound_uv": [
+          0.532258064516129,
+          0.7898550724637681
+        ]
+      },
+      "footprint_f": [
+        [
+          -0.6388888888888888,
+          0
+        ],
+        [
+          0.6388888888888888,
+          0
+        ],
+        [
+          0.6388888888888888,
+          1.1
+        ],
+        [
+          -0.6388888888888888,
+          1.1
+        ]
+      ],
+      "trim_rect_px": [
+        26,
+        72,
+        196,
+        187
+      ],
+      "files": {
+        "shadow": "png/garden-walkup/shadow.png",
+        "wall": "png/garden-walkup/wall.png",
+        "roof": "png/garden-walkup/roof.png",
+        "trim": "png/garden-walkup/trim.png",
+        "wet": "png/garden-walkup/wet.png",
+        "mask-wall": "png/garden-walkup/mask-wall.png",
+        "mask-occlusion": "png/garden-walkup/mask-occlusion.png",
+        "mask-entrance": "png/garden-walkup/mask-entrance.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "roof",
+        "trim"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.barn",
+      "version": 1,
+      "family": "shell",
+      "style_family": "barn",
+      "tags": [
+        "shell",
+        "barn",
+        "farm",
+        "detached",
+        "pitched"
+      ],
+      "use_tags": [
+        "farm",
+        "detached",
+        "pitched"
+      ],
+      "source": "sources/barn.svg",
+      "reference_ids": [
+        "REF-S09",
+        "REF-L10"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        264,
+        276
+      ],
+      "pivot_uv": [
+        0.5,
+        0.9130434782608695
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.3888888888888888,
+      "world_height_f": 1.3888888888888888,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "shell_group": "barn",
+      "roof_profile": "pitched",
+      "wall_material": "boards",
+      "ground_span_uv": [
+        [
+          0.12121212121212122,
+          0.9130434782608695
+        ],
+        [
+          0.8787878787878788,
+          0.9130434782608695
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.5,
+          0.9130434782608695
+        ],
+        "clearance_f": {
+          "width": 0.16666666666666666,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "wall_contacts": {},
+      "sockets": {
+        "sash-1": {
+          "uv": [
+            0.25,
+            0.6666666666666666
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-2": {
+          "uv": [
+            0.75,
+            0.6666666666666666
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "stone-sill-3": {
+          "uv": [
+            0.25,
+            0.6739130434782609
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-4": {
+          "uv": [
+            0.75,
+            0.6739130434782609
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "entrance": {
+          "uv": [
+            0.5,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        }
+      },
+      "mounts": [
+        {
+          "socket": "sash-1",
+          "asset": "townscape.b02.sash",
+          "scale": 0.65,
+          "light_group": "ground"
+        },
+        {
+          "socket": "sash-2",
+          "asset": "townscape.b02.sash",
+          "scale": 0.65,
+          "light_group": "ground"
+        },
+        {
+          "socket": "stone-sill-3",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.65
+        },
+        {
+          "socket": "stone-sill-4",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.65
+        }
+      ],
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.6594202898550725
+        ],
+        "sound_uv": [
+          0.5,
+          0.7898550724637681
+        ]
+      },
+      "footprint_f": [
+        [
+          -0.6944444444444444,
+          0
+        ],
+        [
+          0.6944444444444444,
+          0
+        ],
+        [
+          0.6944444444444444,
+          1.1
+        ],
+        [
+          -0.6944444444444444,
+          1.1
+        ]
+      ],
+      "trim_rect_px": [
+        24,
+        52,
+        216,
+        207
+      ],
+      "files": {
+        "shadow": "png/barn/shadow.png",
+        "wall": "png/barn/wall.png",
+        "roof": "png/barn/roof.png",
+        "trim": "png/barn/trim.png",
+        "wet": "png/barn/wet.png",
+        "mask-wall": "png/barn/mask-wall.png",
+        "mask-occlusion": "png/barn/mask-occlusion.png",
+        "mask-entrance": "png/barn/mask-entrance.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "roof",
+        "trim"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.school",
+      "version": 1,
+      "family": "shell",
+      "style_family": "school",
+      "tags": [
+        "shell",
+        "school",
+        "school",
+        "detached",
+        "pitched"
+      ],
+      "use_tags": [
+        "school",
+        "detached",
+        "pitched"
+      ],
+      "source": "sources/school.svg",
+      "reference_ids": [
+        "REF-T01",
+        "REF-L05"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        360,
+        330
+      ],
+      "pivot_uv": [
+        0.5,
+        0.9272727272727272
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 2.0555555555555554,
+      "world_height_f": 1.9166666666666667,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "shell_group": "school",
+      "roof_profile": "pitched",
+      "wall_material": "plaster",
+      "ground_span_uv": [
+        [
+          0.08888888888888889,
+          0.9272727272727272
+        ],
+        [
+          0.9111111111111111,
+          0.9272727272727272
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.5,
+          0.9272727272727272
+        ],
+        "clearance_f": {
+          "width": 0.25,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "wall_contacts": {},
+      "sockets": {
+        "sash-1": {
+          "uv": [
+            0.17777777777777778,
+            0.6787878787878788
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-2": {
+          "uv": [
+            0.3277777777777778,
+            0.6787878787878788
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-3": {
+          "uv": [
+            0.6722222222222223,
+            0.6787878787878788
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-4": {
+          "uv": [
+            0.8222222222222222,
+            0.6787878787878788
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-5": {
+          "uv": [
+            0.17222222222222222,
+            0.8484848484848485
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-6": {
+          "uv": [
+            0.32222222222222224,
+            0.8484848484848485
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-7": {
+          "uv": [
+            0.6722222222222223,
+            0.8484848484848485
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-8": {
+          "uv": [
+            0.8222222222222222,
+            0.8484848484848485
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "panel-door-9": {
+          "uv": [
+            0.5,
+            0.9272727272727272
+          ],
+          "accepts": [
+            "domestic-threshold"
+          ]
+        },
+        "stone-sill-10": {
+          "uv": [
+            0.17777777777777778,
+            0.6848484848484848
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-11": {
+          "uv": [
+            0.3277777777777778,
+            0.6848484848484848
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-12": {
+          "uv": [
+            0.6722222222222223,
+            0.6848484848484848
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-13": {
+          "uv": [
+            0.8222222222222222,
+            0.6848484848484848
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-14": {
+          "uv": [
+            0.17222222222222222,
+            0.8545454545454545
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-15": {
+          "uv": [
+            0.32222222222222224,
+            0.8545454545454545
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-16": {
+          "uv": [
+            0.6722222222222223,
+            0.8545454545454545
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-17": {
+          "uv": [
+            0.8222222222222222,
+            0.8545454545454545
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "entrance": {
+          "uv": [
+            0.5,
+            0.9272727272727272
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        }
+      },
+      "mounts": [
+        {
+          "socket": "sash-1",
+          "asset": "townscape.b02.sash",
+          "scale": 1.09,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-2",
+          "asset": "townscape.b02.sash",
+          "scale": 1.09,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-3",
+          "asset": "townscape.b02.sash",
+          "scale": 1.09,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-4",
+          "asset": "townscape.b02.sash",
+          "scale": 1.09,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-5",
+          "asset": "townscape.b02.sash",
+          "scale": 0.92,
+          "light_group": "ground"
+        },
+        {
+          "socket": "sash-6",
+          "asset": "townscape.b02.sash",
+          "scale": 0.92,
+          "light_group": "ground"
+        },
+        {
+          "socket": "sash-7",
+          "asset": "townscape.b02.sash",
+          "scale": 0.92,
+          "light_group": "ground"
+        },
+        {
+          "socket": "sash-8",
+          "asset": "townscape.b02.sash",
+          "scale": 0.92,
+          "light_group": "ground"
+        },
+        {
+          "socket": "panel-door-9",
+          "asset": "townscape.b02.panel-door",
+          "scale": 1.15
+        },
+        {
+          "socket": "stone-sill-10",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 1.09
+        },
+        {
+          "socket": "stone-sill-11",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 1.09
+        },
+        {
+          "socket": "stone-sill-12",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 1.09
+        },
+        {
+          "socket": "stone-sill-13",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 1.09
+        },
+        {
+          "socket": "stone-sill-14",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.92
+        },
+        {
+          "socket": "stone-sill-15",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.92
+        },
+        {
+          "socket": "stone-sill-16",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.92
+        },
+        {
+          "socket": "stone-sill-17",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.92
+        }
+      ],
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.7151515151515152
+        ],
+        "sound_uv": [
+          0.5,
+          0.8242424242424242
+        ]
+      },
+      "footprint_f": [
+        [
+          -1.0277777777777777,
+          0
+        ],
+        [
+          1.0277777777777777,
+          0
+        ],
+        [
+          1.0277777777777777,
+          1.1
+        ],
+        [
+          -1.0277777777777777,
+          1.1
+        ]
+      ],
+      "trim_rect_px": [
+        26,
+        30,
+        308,
+        283
+      ],
+      "files": {
+        "shadow": "png/school/shadow.png",
+        "wall": "png/school/wall.png",
+        "roof": "png/school/roof.png",
+        "trim": "png/school/trim.png",
+        "wet": "png/school/wet.png",
+        "mask-wall": "png/school/mask-wall.png",
+        "mask-occlusion": "png/school/mask-occlusion.png",
+        "mask-entrance": "png/school/mask-entrance.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "roof",
+        "trim"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.inn",
+      "version": 1,
+      "family": "shell",
+      "style_family": "inn",
+      "tags": [
+        "shell",
+        "inn",
+        "inn",
+        "detached",
+        "cross-gable"
+      ],
+      "use_tags": [
+        "inn",
+        "detached",
+        "cross-gable"
+      ],
+      "source": "sources/inn.svg",
+      "reference_ids": [
+        "REF-T01",
+        "REF-L05"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        264,
+        276
+      ],
+      "pivot_uv": [
+        0.5,
+        0.9130434782608695
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.3888888888888888,
+      "world_height_f": 1.5555555555555556,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "shell_group": "inn",
+      "roof_profile": "cross-gable",
+      "wall_material": "timber",
+      "ground_span_uv": [
+        [
+          0.12121212121212122,
+          0.9130434782608695
+        ],
+        [
+          0.8787878787878788,
+          0.9130434782608695
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.49242424242424243,
+          0.9130434782608695
+        ],
+        "clearance_f": {
+          "width": 0.16666666666666666,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "wall_contacts": {},
+      "sockets": {
+        "sash-1": {
+          "uv": [
+            0.30303030303030304,
+            0.5652173913043478
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-2": {
+          "uv": [
+            0.5378787878787878,
+            0.5652173913043478
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-3": {
+          "uv": [
+            0.7121212121212122,
+            0.5652173913043478
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-4": {
+          "uv": [
+            0.2727272727272727,
+            0.7898550724637681
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "sash-5": {
+          "uv": [
+            0.7121212121212122,
+            0.7898550724637681
+          ],
+          "accepts": [
+            "historic-sash"
+          ]
+        },
+        "panel-door-6": {
+          "uv": [
+            0.49242424242424243,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "domestic-threshold"
+          ]
+        },
+        "stone-sill-7": {
+          "uv": [
+            0.30303030303030304,
+            0.572463768115942
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-8": {
+          "uv": [
+            0.5378787878787878,
+            0.572463768115942
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-9": {
+          "uv": [
+            0.7121212121212122,
+            0.572463768115942
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-10": {
+          "uv": [
+            0.2727272727272727,
+            0.7971014492753623
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "stone-sill-11": {
+          "uv": [
+            0.7121212121212122,
+            0.7971014492753623
+          ],
+          "accepts": [
+            "stone-sill"
+          ]
+        },
+        "entrance": {
+          "uv": [
+            0.49242424242424243,
+            0.9130434782608695
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        }
+      },
+      "mounts": [
+        {
+          "socket": "sash-1",
+          "asset": "townscape.b02.sash",
+          "scale": 0.83,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-2",
+          "asset": "townscape.b02.sash",
+          "scale": 0.83,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-3",
+          "asset": "townscape.b02.sash",
+          "scale": 0.83,
+          "light_group": "upper"
+        },
+        {
+          "socket": "sash-4",
+          "asset": "townscape.b02.sash",
+          "scale": 1.16,
+          "light_group": "ground"
+        },
+        {
+          "socket": "sash-5",
+          "asset": "townscape.b02.sash",
+          "scale": 1.16,
+          "light_group": "ground"
+        },
+        {
+          "socket": "panel-door-6",
+          "asset": "townscape.b02.panel-door",
+          "scale": 1
+        },
+        {
+          "socket": "stone-sill-7",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.83
+        },
+        {
+          "socket": "stone-sill-8",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.83
+        },
+        {
+          "socket": "stone-sill-9",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 0.83
+        },
+        {
+          "socket": "stone-sill-10",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 1.16
+        },
+        {
+          "socket": "stone-sill-11",
+          "asset": "townscape.b02.stone-sill",
+          "scale": 1.16
+        }
+      ],
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.6594202898550725
+        ],
+        "sound_uv": [
+          0.49242424242424243,
+          0.7898550724637681
+        ]
+      },
+      "footprint_f": [
+        [
+          -0.6944444444444444,
+          0
+        ],
+        [
+          0.6944444444444444,
+          0
+        ],
+        [
+          0.6944444444444444,
+          1.1
+        ],
+        [
+          -0.6944444444444444,
+          1.1
+        ]
+      ],
+      "trim_rect_px": [
+        24,
+        27,
+        216,
+        232
+      ],
+      "files": {
+        "shadow": "png/inn/shadow.png",
+        "wall": "png/inn/wall.png",
+        "chimney": "png/inn/chimney.png",
+        "roof": "png/inn/roof.png",
+        "trim": "png/inn/trim.png",
+        "wet": "png/inn/wet.png",
+        "mask-wall": "png/inn/mask-wall.png",
+        "mask-occlusion": "png/inn/mask-occlusion.png",
+        "mask-entrance": "png/inn/mask-entrance.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "chimney",
+        "roof",
+        "trim"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.lane-bend",
+      "version": 1,
+      "family": "street",
+      "style_family": "wet_gravel",
+      "tags": [
+        "street",
+        "wet_gravel",
+        "street"
+      ],
+      "use_tags": [
+        "street"
+      ],
+      "source": "sources/lane-bend.svg",
+      "reference_ids": [
+        "REF-L05",
+        "REF-L10"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        240,
+        100
+      ],
+      "pivot_uv": [
+        0.1,
+        0.32
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.3333333333333333,
+      "world_height_f": 0.1111111111111111,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "allowed_slope_deg": [
+        -14,
+        14
+      ],
+      "joins": {
+        "start": {
+          "uv": [
+            0.1,
+            0.32
+          ],
+          "profile": "gravel-lane-8"
+        },
+        "end": {
+          "uv": [
+            0.9,
+            0.68
+          ],
+          "profile": "gravel-lane-8"
+        }
+      },
+      "support_modes": [
+        "level_shelf",
+        "contour"
+      ],
+      "centerline_uv": [
+        [
+          0.1,
+          0.32
+        ],
+        [
+          0.31666666666666665,
+          0.32
+        ],
+        [
+          0.5,
+          0.42
+        ],
+        [
+          0.6666666666666666,
+          0.6
+        ],
+        [
+          0.8,
+          0.68
+        ],
+        [
+          0.9,
+          0.68
+        ]
+      ],
+      "footprint_f": [
+        [
+          -0.6666666666666666,
+          0
+        ],
+        [
+          0.6666666666666666,
+          0
+        ],
+        [
+          0.6666666666666666,
+          0.5
+        ],
+        [
+          -0.6666666666666666,
+          0.5
+        ]
+      ],
+      "trim_rect_px": [
+        24,
+        24,
+        192,
+        54
+      ],
+      "files": {
+        "paving": "png/lane-bend/paving.png",
+        "wet": "png/lane-bend/wet.png",
+        "mask-coverage": "png/lane-bend/mask-coverage.png",
+        "mask-wetness": "png/lane-bend/mask-wetness.png"
+      },
+      "layer_order": [
+        "paving"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.lane-junction",
+      "version": 1,
+      "family": "street",
+      "style_family": "wet_gravel",
+      "tags": [
+        "street",
+        "wet_gravel",
+        "street"
+      ],
+      "use_tags": [
+        "street"
+      ],
+      "source": "sources/lane-junction.svg",
+      "reference_ids": [
+        "REF-L05",
+        "REF-L10"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        248,
+        110
+      ],
+      "pivot_uv": [
+        0.0967741935483871,
+        0.3090909090909091
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.3888888888888888,
+      "world_height_f": 0.1111111111111111,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "allowed_slope_deg": [
+        -8,
+        8
+      ],
+      "joins": {
+        "start": {
+          "uv": [
+            0.0967741935483871,
+            0.3090909090909091
+          ],
+          "profile": "gravel-lane-8"
+        },
+        "end": {
+          "uv": [
+            0.9032258064516129,
+            0.3090909090909091
+          ],
+          "profile": "gravel-lane-8"
+        },
+        "branch": {
+          "uv": [
+            0.5725806451612904,
+            0.7636363636363637
+          ],
+          "profile": "gravel-lane-8"
+        }
+      },
+      "support_modes": [
+        "level_shelf",
+        "contour"
+      ],
+      "centerline_uv": [
+        [
+          0.0967741935483871,
+          0.3090909090909091
+        ],
+        [
+          0.5,
+          0.3090909090909091
+        ],
+        [
+          0.6451612903225806,
+          0.3090909090909091
+        ],
+        [
+          0.9032258064516129,
+          0.3090909090909091
+        ]
+      ],
+      "footprint_f": [
+        [
+          -0.6944444444444444,
+          0
+        ],
+        [
+          0.6944444444444444,
+          0
+        ],
+        [
+          0.6944444444444444,
+          0.5
+        ],
+        [
+          -0.6944444444444444,
+          0.5
+        ]
+      ],
+      "trim_rect_px": [
+        24,
+        26,
+        200,
+        60
+      ],
+      "files": {
+        "paving": "png/lane-junction/paving.png",
+        "wet": "png/lane-junction/wet.png",
+        "mask-coverage": "png/lane-junction/mask-coverage.png",
+        "mask-wetness": "png/lane-junction/mask-wetness.png"
+      },
+      "layer_order": [
+        "paving"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.stair",
+      "version": 1,
+      "family": "street",
+      "style_family": "fieldstone_steps",
+      "tags": [
+        "street",
+        "fieldstone_steps",
+        "street"
+      ],
+      "use_tags": [
+        "street"
+      ],
+      "source": "sources/stair.svg",
+      "reference_ids": [
+        "REF-L05",
+        "REF-L10"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        208,
+        176
+      ],
+      "pivot_uv": [
+        0.11538461538461539,
+        0.13636363636363635
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.1111111111111112,
+      "world_height_f": 0.8333333333333334,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": true,
+      "allowed_slope_deg": [
+        20,
+        42
+      ],
+      "support_modes": [
+        "stepped_cut"
+      ],
+      "joins": {
+        "upper": {
+          "uv": [
+            0.11538461538461539,
+            0.13636363636363635
+          ],
+          "profile": "gravel-lane-8"
+        },
+        "lower": {
+          "uv": [
+            0.8846153846153846,
+            0.8181818181818182
+          ],
+          "profile": "gravel-lane-8"
+        }
+      },
+      "centerline_uv": [
+        [
+          0.11538461538461539,
+          0.13636363636363635
+        ],
+        [
+          0.21153846153846154,
+          0.13636363636363635
+        ],
+        [
+          0.8173076923076923,
+          0.8181818181818182
+        ],
+        [
+          0.8846153846153846,
+          0.8181818181818182
+        ]
+      ],
+      "landings_uv": [
+        [
+          [
+            0.0673076923076923,
+            0.09090909090909091
+          ],
+          [
+            0.21153846153846154,
+            0.18181818181818182
+          ]
+        ],
+        [
+          [
+            0.7884615384615384,
+            0.7727272727272727
+          ],
+          [
+            0.9326923076923077,
+            0.8636363636363636
+          ]
+        ]
+      ],
+      "footprint_f": [
+        [
+          -0.5555555555555556,
+          0
+        ],
+        [
+          0.5555555555555556,
+          0
+        ],
+        [
+          0.5555555555555556,
+          0.44
+        ],
+        [
+          -0.5555555555555556,
+          0.44
+        ]
+      ],
+      "trim_rect_px": [
+        14,
+        15,
+        180,
+        139
+      ],
+      "files": {
+        "stone": "png/stair/stone.png",
+        "wet": "png/stair/wet.png",
+        "mask-coverage": "png/stair/mask-coverage.png",
+        "mask-wetness": "png/stair/mask-wetness.png"
+      },
+      "layer_order": [
+        "stone"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.level-plinth",
+      "version": 1,
+      "family": "foundation",
+      "style_family": "fieldstone",
+      "tags": [
+        "foundation",
+        "fieldstone",
+        "foundation"
+      ],
+      "use_tags": [
+        "foundation"
+      ],
+      "source": "sources/level-plinth.svg",
+      "reference_ids": [
+        "REF-L05",
+        "REF-L10"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        192,
+        88
+      ],
+      "pivot_uv": [
+        0.5,
+        0.2727272727272727
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.0,
+      "world_height_f": 0.3055555555555556,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "compatible_footprint_f": [
+        1,
+        0.63
+      ],
+      "supported_mode": "level_plinth",
+      "top_span_uv": [
+        [
+          0.125,
+          0.2727272727272727
+        ],
+        [
+          0.875,
+          0.2727272727272727
+        ]
+      ],
+      "terrain_steps_uv": [
+        [
+          [
+            0.125,
+            0.5454545454545454
+          ],
+          [
+            0.875,
+            0.5454545454545454
+          ]
+        ]
+      ],
+      "footprint_f": [
+        [
+          -0.5,
+          0
+        ],
+        [
+          0.5,
+          0
+        ],
+        [
+          0.5,
+          0.63
+        ],
+        [
+          -0.5,
+          0.63
+        ]
+      ],
+      "trim_rect_px": [
+        24,
+        24,
+        144,
+        24
+      ],
+      "files": {
+        "stone": "png/level-plinth/stone.png",
+        "wet": "png/level-plinth/wet.png",
+        "mask-support": "png/level-plinth/mask-support.png"
+      },
+      "layer_order": [
+        "stone"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.rising-plinth",
+      "version": 1,
+      "family": "foundation",
+      "style_family": "fieldstone",
+      "tags": [
+        "foundation",
+        "fieldstone",
+        "foundation"
+      ],
+      "use_tags": [
+        "foundation"
+      ],
+      "source": "sources/rising-plinth.svg",
+      "reference_ids": [
+        "REF-L05",
+        "REF-L10"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        192,
+        88
+      ],
+      "pivot_uv": [
+        0.5,
+        0.2727272727272727
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.0,
+      "world_height_f": 0.3055555555555556,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "compatible_footprint_f": [
+        1,
+        0.63
+      ],
+      "supported_mode": "stepped_plinth",
+      "top_span_uv": [
+        [
+          0.125,
+          0.2727272727272727
+        ],
+        [
+          0.875,
+          0.2727272727272727
+        ]
+      ],
+      "terrain_steps_uv": [
+        [
+          [
+            0.125,
+            0.7727272727272727
+          ],
+          [
+            0.375,
+            0.7727272727272727
+          ]
+        ],
+        [
+          [
+            0.375,
+            0.6590909090909091
+          ],
+          [
+            0.625,
+            0.6590909090909091
+          ]
+        ],
+        [
+          [
+            0.625,
+            0.5454545454545454
+          ],
+          [
+            0.875,
+            0.5454545454545454
+          ]
+        ]
+      ],
+      "footprint_f": [
+        [
+          -0.5,
+          0
+        ],
+        [
+          0.5,
+          0
+        ],
+        [
+          0.5,
+          0.63
+        ],
+        [
+          -0.5,
+          0.63
+        ]
+      ],
+      "trim_rect_px": [
+        24,
+        24,
+        144,
+        44
+      ],
+      "files": {
+        "stone": "png/rising-plinth/stone.png",
+        "wet": "png/rising-plinth/wet.png",
+        "mask-support": "png/rising-plinth/mask-support.png"
+      },
+      "layer_order": [
+        "stone"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.park-ground",
+      "version": 1,
+      "family": "ground",
+      "style_family": "parcel_surface",
+      "tags": [
+        "ground",
+        "parcel_surface",
+        "park"
+      ],
+      "use_tags": [
+        "park"
+      ],
+      "source": "sources/park-ground.svg",
+      "reference_ids": [
+        "REF-T03",
+        "REF-S09"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        320,
+        130
+      ],
+      "pivot_uv": [
+        0.49375,
+        0.6923076923076923
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 2.0,
+      "world_height_f": 0.4861111111111111,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "support_modes": [
+        "level_shelf"
+      ],
+      "joins": {
+        "entry": {
+          "uv": [
+            0.49375,
+            0.6923076923076923
+          ],
+          "profile": "pedestrian-access"
+        }
+      },
+      "sockets": {
+        "entry": {
+          "uv": [
+            0.49375,
+            0.6923076923076923
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        },
+        "furniture": {
+          "uv": [
+            0.32,
+            0.5384615384615384
+          ],
+          "accepts": [
+            "ground_prop"
+          ]
+        }
+      },
+      "entrance": {
+        "threshold_uv": [
+          0.49375,
+          0.6923076923076923
+        ],
+        "clearance_f": {
+          "width": 0.31,
+          "depth": 0.4
+        },
+        "approach": "front"
+      },
+      "footprint_f": [
+        [
+          -1.0,
+          0
+        ],
+        [
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          0.85
+        ],
+        [
+          -1.0,
+          0.85
+        ]
+      ],
+      "trim_rect_px": [
+        16,
+        24,
+        286,
+        82
+      ],
+      "files": {
+        "surface": "png/park-ground/surface.png",
+        "near-edge": "png/park-ground/near-edge.png",
+        "wet": "png/park-ground/wet.png",
+        "mask-support": "png/park-ground/mask-support.png",
+        "mask-wetness": "png/park-ground/mask-wetness.png"
+      },
+      "layer_order": [
+        "surface",
+        "near-edge"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.play-yard",
+      "version": 1,
+      "family": "ground",
+      "style_family": "parcel_surface",
+      "tags": [
+        "ground",
+        "parcel_surface",
+        "playground"
+      ],
+      "use_tags": [
+        "playground"
+      ],
+      "source": "sources/play-yard.svg",
+      "reference_ids": [
+        "REF-T01",
+        "REF-S05"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        288,
+        122
+      ],
+      "pivot_uv": [
+        0.5,
+        0.6885245901639344
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.75,
+      "world_height_f": 0.4722222222222222,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "support_modes": [
+        "level_shelf"
+      ],
+      "joins": {
+        "entry": {
+          "uv": [
+            0.5,
+            0.6885245901639344
+          ],
+          "profile": "pedestrian-access"
+        }
+      },
+      "sockets": {
+        "entry": {
+          "uv": [
+            0.5,
+            0.6885245901639344
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        },
+        "furniture": {
+          "uv": [
+            0.32,
+            0.5737704918032787
+          ],
+          "accepts": [
+            "ground_prop"
+          ]
+        }
+      },
+      "entrance": {
+        "threshold_uv": [
+          0.5,
+          0.6885245901639344
+        ],
+        "clearance_f": {
+          "width": 0.31,
+          "depth": 0.4
+        },
+        "approach": "front"
+      },
+      "footprint_f": [
+        [
+          -0.875,
+          0
+        ],
+        [
+          0.875,
+          0
+        ],
+        [
+          0.875,
+          0.85
+        ],
+        [
+          -0.875,
+          0.85
+        ]
+      ],
+      "trim_rect_px": [
+        18,
+        24,
+        252,
+        78
+      ],
+      "files": {
+        "surface": "png/play-yard/surface.png",
+        "near-edge": "png/play-yard/near-edge.png",
+        "wet": "png/play-yard/wet.png",
+        "mask-support": "png/play-yard/mask-support.png",
+        "mask-wetness": "png/play-yard/mask-wetness.png"
+      },
+      "layer_order": [
+        "surface",
+        "near-edge"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.plaza-paving",
+      "version": 1,
+      "family": "ground",
+      "style_family": "parcel_surface",
+      "tags": [
+        "ground",
+        "parcel_surface",
+        "plaza"
+      ],
+      "use_tags": [
+        "plaza"
+      ],
+      "source": "sources/plaza-paving.svg",
+      "reference_ids": [
+        "REF-T01",
+        "REF-S05"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        254,
+        120
+      ],
+      "pivot_uv": [
+        0.49606299212598426,
+        0.2833333333333333
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.5555555555555556,
+      "world_height_f": 0.4722222222222222,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "support_modes": [
+        "level_shelf"
+      ],
+      "joins": {
+        "entry": {
+          "uv": [
+            0.49606299212598426,
+            0.2833333333333333
+          ],
+          "profile": "pedestrian-access"
+        }
+      },
+      "sockets": {
+        "entry": {
+          "uv": [
+            0.49606299212598426,
+            0.2833333333333333
+          ],
+          "accepts": [
+            "access_path"
+          ]
+        },
+        "furniture": {
+          "uv": [
+            0.32,
+            0.5833333333333334
+          ],
+          "accepts": [
+            "ground_prop"
+          ]
+        }
+      },
+      "entrance": {
+        "threshold_uv": [
+          0.49606299212598426,
+          0.2833333333333333
+        ],
+        "clearance_f": {
+          "width": 0.31,
+          "depth": 0.4
+        },
+        "approach": "front"
+      },
+      "footprint_f": [
+        [
+          -0.7777777777777778,
+          0
+        ],
+        [
+          0.7777777777777778,
+          0
+        ],
+        [
+          0.7777777777777778,
+          0.85
+        ],
+        [
+          -0.7777777777777778,
+          0.85
+        ]
+      ],
+      "trim_rect_px": [
+        16,
+        28,
+        222,
+        70
+      ],
+      "files": {
+        "surface": "png/plaza-paving/surface.png",
+        "near-edge": "png/plaza-paving/near-edge.png",
+        "wet": "png/plaza-paving/wet.png",
+        "mask-support": "png/plaza-paving/mask-support.png",
+        "mask-wetness": "png/plaza-paving/mask-wetness.png"
+      },
+      "layer_order": [
+        "surface",
+        "near-edge"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.orchard-soil",
+      "version": 1,
+      "family": "ground",
+      "style_family": "agricultural",
+      "tags": [
+        "ground",
+        "agricultural",
+        "orchard"
+      ],
+      "use_tags": [
+        "orchard"
+      ],
+      "source": "sources/orchard-soil.svg",
+      "reference_ids": [
+        "REF-T03",
+        "REF-S09"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        486,
+        136
+      ],
+      "pivot_uv": [
+        0.49382716049382713,
+        0.5
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 3.138888888888889,
+      "world_height_f": 0.5833333333333334,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "support_modes": [
+        "contour",
+        "level_shelf"
+      ],
+      "allowed_slope_deg": [
+        -8,
+        8
+      ],
+      "joins": {
+        "start": {
+          "uv": [
+            0.05761316872427984,
+            0.36764705882352944
+          ],
+          "profile": "field-edge"
+        },
+        "end": {
+          "uv": [
+            0.9382716049382716,
+            0.5882352941176471
+          ],
+          "profile": "field-edge"
+        }
+      },
+      "footprint_f": [
+        [
+          -1.5694444444444444,
+          0
+        ],
+        [
+          1.5694444444444444,
+          0
+        ],
+        [
+          1.5694444444444444,
+          1.15
+        ],
+        [
+          -1.5694444444444444,
+          1.15
+        ]
+      ],
+      "trim_rect_px": [
+        16,
+        29,
+        452,
+        83
+      ],
+      "files": {
+        "surface": "png/orchard-soil/surface.png",
+        "mask-support": "png/orchard-soil/mask-support.png"
+      },
+      "layer_order": [
+        "surface"
+      ],
+      "states": [
+        "base"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.field-stubble",
+      "version": 1,
+      "family": "ground",
+      "style_family": "agricultural",
+      "tags": [
+        "ground",
+        "agricultural",
+        "field"
+      ],
+      "use_tags": [
+        "field"
+      ],
+      "source": "sources/field-stubble.svg",
+      "reference_ids": [
+        "REF-T03",
+        "REF-S09"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        486,
+        136
+      ],
+      "pivot_uv": [
+        0.49382716049382713,
+        0.5
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 3.138888888888889,
+      "world_height_f": 0.5833333333333334,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "support_modes": [
+        "contour",
+        "level_shelf"
+      ],
+      "allowed_slope_deg": [
+        -8,
+        8
+      ],
+      "joins": {
+        "start": {
+          "uv": [
+            0.05761316872427984,
+            0.36764705882352944
+          ],
+          "profile": "field-edge"
+        },
+        "end": {
+          "uv": [
+            0.9382716049382716,
+            0.5882352941176471
+          ],
+          "profile": "field-edge"
+        }
+      },
+      "footprint_f": [
+        [
+          -1.5694444444444444,
+          0
+        ],
+        [
+          1.5694444444444444,
+          0
+        ],
+        [
+          1.5694444444444444,
+          1.15
+        ],
+        [
+          -1.5694444444444444,
+          1.15
+        ]
+      ],
+      "trim_rect_px": [
+        16,
+        29,
+        452,
+        83
+      ],
+      "files": {
+        "surface": "png/field-stubble/surface.png",
+        "mask-support": "png/field-stubble/mask-support.png"
+      },
+      "layer_order": [
+        "surface"
+      ],
+      "states": [
+        "base"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.bench",
+      "version": 1,
+      "family": "prop",
+      "style_family": "park_furniture",
+      "tags": [
+        "prop",
+        "park_furniture",
+        "prop"
+      ],
+      "use_tags": [
+        "prop"
+      ],
+      "source": "sources/bench.svg",
+      "reference_ids": [
+        "REF-T03",
+        "REF-S09"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        100,
+        76
+      ],
+      "pivot_uv": [
+        0.5,
+        0.8157894736842105
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 0.5277777777777778,
+      "world_height_f": 0.25,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "accepts_sockets": [
+        "ground_prop"
+      ],
+      "excludes": [
+        "entrance_corridor"
+      ],
+      "footprint_f": [
+        [
+          -0.2638888888888889,
+          0
+        ],
+        [
+          0.2638888888888889,
+          0
+        ],
+        [
+          0.2638888888888889,
+          0.22
+        ],
+        [
+          -0.2638888888888889,
+          0.22
+        ]
+      ],
+      "trim_rect_px": [
+        10,
+        26,
+        80,
+        40
+      ],
+      "files": {
+        "shadow": "png/bench/shadow.png",
+        "iron": "png/bench/iron.png",
+        "wood": "png/bench/wood.png",
+        "mask-occlusion": "png/bench/mask-occlusion.png"
+      },
+      "layer_order": [
+        "shadow",
+        "iron",
+        "wood"
+      ],
+      "states": [
+        "base"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.well",
+      "version": 1,
+      "family": "prop",
+      "style_family": "plaza_stone",
+      "tags": [
+        "prop",
+        "plaza_stone",
+        "prop"
+      ],
+      "use_tags": [
+        "prop"
+      ],
+      "source": "sources/well.svg",
+      "reference_ids": [
+        "REF-T01",
+        "REF-S05"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        88,
+        94
+      ],
+      "pivot_uv": [
+        0.5,
+        0.8085106382978723
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 0.4444444444444444,
+      "world_height_f": 0.4583333333333333,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "accepts_sockets": [
+        "ground_prop"
+      ],
+      "excludes": [
+        "entrance_corridor"
+      ],
+      "footprint_f": [
+        [
+          -0.2222222222222222,
+          0
+        ],
+        [
+          0.2222222222222222,
+          0
+        ],
+        [
+          0.2222222222222222,
+          0.32
+        ],
+        [
+          -0.2222222222222222,
+          0.32
+        ]
+      ],
+      "trim_rect_px": [
+        12,
+        10,
+        64,
+        71
+      ],
+      "files": {
+        "shadow": "png/well/shadow.png",
+        "timber": "png/well/timber.png",
+        "stone": "png/well/stone.png",
+        "mask-occlusion": "png/well/mask-occlusion.png"
+      },
+      "layer_order": [
+        "shadow",
+        "timber",
+        "stone"
+      ],
+      "states": [
+        "base"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.swing-and-slide",
+      "version": 1,
+      "family": "prop",
+      "style_family": "yard_equipment",
+      "tags": [
+        "prop",
+        "yard_equipment",
+        "prop"
+      ],
+      "use_tags": [
+        "prop"
+      ],
+      "source": "sources/swing-and-slide.svg",
+      "reference_ids": [
+        "REF-T01",
+        "REF-S05"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        180,
+        130
+      ],
+      "pivot_uv": [
+        0.5,
+        0.8307692307692308
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.0416666666666667,
+      "world_height_f": 0.5972222222222222,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "accepts_sockets": [
+        "ground_prop"
+      ],
+      "excludes": [
+        "school_access",
+        "entrance_corridor"
+      ],
+      "clearances_f": {
+        "left": 0.14,
+        "right": 0.17,
+        "front": 0.28
+      },
+      "footprint_f": [
+        [
+          -0.5208333333333334,
+          0
+        ],
+        [
+          0.5208333333333334,
+          0
+        ],
+        [
+          0.5208333333333334,
+          0.46
+        ],
+        [
+          -0.5208333333333334,
+          0.46
+        ]
+      ],
+      "trim_rect_px": [
+        14,
+        22,
+        152,
+        92
+      ],
+      "files": {
+        "shadow": "png/swing-and-slide/shadow.png",
+        "rear-supports": "png/swing-and-slide/rear-supports.png",
+        "seats": "png/swing-and-slide/seats.png",
+        "front-slide": "png/swing-and-slide/front-slide.png",
+        "mask-occlusion": "png/swing-and-slide/mask-occlusion.png"
+      },
+      "layer_order": [
+        "shadow",
+        "rear-supports",
+        "seats",
+        "front-slide"
+      ],
+      "states": [
+        "base"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.yard-fence",
+      "version": 1,
+      "family": "boundary",
+      "style_family": "painted_wood",
+      "tags": [
+        "boundary",
+        "painted_wood",
+        "boundary"
+      ],
+      "use_tags": [
+        "boundary"
+      ],
+      "source": "sources/yard-fence.svg",
+      "reference_ids": [
+        "REF-T01",
+        "REF-S05"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        254,
+        56
+      ],
+      "pivot_uv": [
+        0.49606299212598426,
+        0.75
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.5694444444444444,
+      "world_height_f": 0.18055555555555555,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "accepts_sockets": [
+        "lot_edge"
+      ],
+      "excludes": [
+        "school_access"
+      ],
+      "joins": {
+        "gate": {
+          "uv": [
+            0.49606299212598426,
+            0.75
+          ],
+          "profile": "yard-edge"
+        },
+        "left": {
+          "uv": [
+            0.05511811023622047,
+            0.75
+          ],
+          "profile": "yard-edge"
+        },
+        "right": {
+          "uv": [
+            0.9448818897637795,
+            0.75
+          ],
+          "profile": "yard-edge"
+        }
+      },
+      "clearance_f": {
+        "gate_width": 0.3333333333333333
+      },
+      "footprint_f": [
+        [
+          -0.7847222222222222,
+          0
+        ],
+        [
+          0.7847222222222222,
+          0
+        ],
+        [
+          0.7847222222222222,
+          0.1
+        ],
+        [
+          -0.7847222222222222,
+          0.1
+        ]
+      ],
+      "trim_rect_px": [
+        12,
+        20,
+        228,
+        26
+      ],
+      "files": {
+        "rails": "png/yard-fence/rails.png",
+        "mask-occlusion": "png/yard-fence/mask-occlusion.png"
+      },
+      "layer_order": [
+        "rails"
+      ],
+      "states": [
+        "base"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.autumn-tree",
+      "version": 1,
+      "family": "plant",
+      "style_family": "deciduous",
+      "tags": [
+        "plant",
+        "deciduous",
+        "deciduous",
+        "split_tall"
+      ],
+      "use_tags": [
+        "deciduous",
+        "split_tall"
+      ],
+      "source": "sources/autumn-tree.svg",
+      "reference_ids": [
+        "REF-T03",
+        "REF-S09"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        270,
+        302
+      ],
+      "pivot_uv": [
+        0.5037037037037037,
+        0.9006622516556292
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.5694444444444444,
+      "world_height_f": 1.7777777777777777,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": true,
+      "depth_parts": {
+        "rear": [
+          "crown-rear"
+        ],
+        "front": [
+          "trunk",
+          "crown-front"
+        ]
+      },
+      "accepts_sockets": [
+        "planting"
+      ],
+      "excludes": [
+        "entrance_corridor"
+      ],
+      "footprint_f": [
+        [
+          -0.7847222222222222,
+          0
+        ],
+        [
+          0.7847222222222222,
+          0
+        ],
+        [
+          0.7847222222222222,
+          0.49
+        ],
+        [
+          -0.7847222222222222,
+          0.49
+        ]
+      ],
+      "trim_rect_px": [
+        24,
+        22,
+        224,
+        250
+      ],
+      "files": {
+        "crown-rear": "png/autumn-tree/crown-rear.png",
+        "trunk": "png/autumn-tree/trunk.png",
+        "crown-front": "png/autumn-tree/crown-front.png",
+        "mask-rear-canopy": "png/autumn-tree/mask-rear-canopy.png",
+        "mask-trunk": "png/autumn-tree/mask-trunk.png",
+        "mask-front-canopy": "png/autumn-tree/mask-front-canopy.png"
+      },
+      "layer_order": [
+        "crown-rear",
+        "trunk",
+        "crown-front"
+      ],
+      "states": [
+        "base"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.rowan",
+      "version": 1,
+      "family": "plant",
+      "style_family": "deciduous",
+      "tags": [
+        "plant",
+        "deciduous",
+        "deciduous",
+        "orchard"
+      ],
+      "use_tags": [
+        "deciduous",
+        "orchard"
+      ],
+      "source": "sources/rowan.svg",
+      "reference_ids": [
+        "REF-T03",
+        "REF-S09"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        200,
+        220
+      ],
+      "pivot_uv": [
+        0.49,
+        0.8909090909090909
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 1.1666666666666667,
+      "world_height_f": 1.1944444444444444,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": true,
+      "accepts_sockets": [
+        "planting"
+      ],
+      "excludes": [
+        "entrance_corridor"
+      ],
+      "footprint_f": [
+        [
+          -0.5833333333333334,
+          0
+        ],
+        [
+          0.5833333333333334,
+          0
+        ],
+        [
+          0.5833333333333334,
+          0.32
+        ],
+        [
+          -0.5833333333333334,
+          0.32
+        ]
+      ],
+      "trim_rect_px": [
+        22,
+        23,
+        165,
+        174
+      ],
+      "files": {
+        "boughs": "png/rowan/boughs.png",
+        "leaves": "png/rowan/leaves.png",
+        "mask-occlusion": "png/rowan/mask-occlusion.png"
+      },
+      "layer_order": [
+        "boughs",
+        "leaves"
+      ],
+      "states": [
+        "base"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.fir",
+      "version": 1,
+      "family": "plant",
+      "style_family": "conifer",
+      "tags": [
+        "plant",
+        "conifer",
+        "conifer"
+      ],
+      "use_tags": [
+        "conifer"
+      ],
+      "source": "sources/fir.svg",
+      "reference_ids": [
+        "REF-L05",
+        "REF-L10"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        158,
+        234
+      ],
+      "pivot_uv": [
+        0.4936708860759494,
+        0.905982905982906
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 0.875,
+      "world_height_f": 1.375,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": true,
+      "accepts_sockets": [
+        "planting"
+      ],
+      "excludes": [
+        "entrance_corridor"
+      ],
+      "footprint_f": [
+        [
+          -0.4375,
+          0
+        ],
+        [
+          0.4375,
+          0
+        ],
+        [
+          0.4375,
+          0.42
+        ],
+        [
+          -0.4375,
+          0.42
+        ]
+      ],
+      "trim_rect_px": [
+        18,
+        14,
+        122,
+        198
+      ],
+      "files": {
+        "bark": "png/fir/bark.png",
+        "needle-wash": "png/fir/needle-wash.png",
+        "needle-boughs": "png/fir/needle-boughs.png",
+        "mask-occlusion": "png/fir/mask-occlusion.png"
+      },
+      "layer_order": [
+        "bark",
+        "needle-wash",
+        "needle-boughs"
+      ],
+      "states": [
+        "base"
+      ]
+    },
+    {
+      "asset_id": "townscape.b02.valley-mist",
+      "version": 1,
+      "family": "mist",
+      "style_family": "shallow_wisp",
+      "tags": [
+        "mist",
+        "shallow_wisp",
+        "mist"
+      ],
+      "use_tags": [
+        "mist"
+      ],
+      "source": "sources/valley-mist.svg",
+      "reference_ids": [
+        "REF-L05",
+        "REF-L10"
+      ],
+      "provenance": "original / CC0-1.0",
+      "source_dimensions_px": [
+        1308,
+        296
+      ],
+      "pivot_uv": [
+        0.5,
+        0.4864864864864865
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "world_width_f": 8.75,
+      "world_height_f": 1.7638888888888888,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "distribution": {
+        "tile_axes": [],
+        "repeat": "nonperiodic-overlap",
+        "drift_axis": "x",
+        "transparent_padding_px_min": 12,
+        "band_gaps": [
+          "middle-to-near"
+        ],
+        "opacity_range": [
+          0.07,
+          0.18
+        ],
+        "density": "mask-density",
+        "falloff": "mask-falloff",
+        "noise": "mask-noise"
+      },
+      "trim_rect_px": [
+        16,
+        16,
+        1276,
+        264
+      ],
+      "files": {
+        "mist": "png/valley-mist/mist.png",
+        "mask-density": "png/valley-mist/mask-density.png",
+        "mask-falloff": "png/valley-mist/mask-falloff.png",
+        "mask-noise": "png/valley-mist/mask-noise.png"
+      },
+      "layer_order": [
+        "mist"
+      ],
+      "states": [
+        "base"
+      ]
+    }
+  ]
+}

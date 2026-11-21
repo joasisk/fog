@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="152" height="112" viewBox="0 0 76 56">
+<g id="recess" inkscape:groupmode="layer" inkscape:label="recess">
+<path d="M8 17H68V49H8Z" fill="#635348" stroke="none" stroke-width="0.6" opacity="1"/><rect x="7" y="13" width="62" height="4" fill="#80645a" opacity="1"/>
+</g>
+<g id="backing" inkscape:groupmode="layer" inkscape:label="backing">
+<path d="M12 21H40V36H12Z M42 21H48V36H42Z M53 22H65V39H53Z" fill="#807460" stroke="none" stroke-width="0.6" opacity="1"/><path d="M13 33h34v1.2H13zM13 27h34v1H13z" fill="#bba183" stroke="none" stroke-width="0.6" opacity="1"/>
+</g>
+<g id="bread" inkscape:groupmode="layer" inkscape:label="bread">
+<ellipse cx="16" cy="26" rx="2.2" ry="1.4" fill="#bc9970" opacity="0.68"/><ellipse cx="22" cy="26" rx="2.2" ry="1.4" fill="#bc9970" opacity="0.68"/><ellipse cx="28" cy="26" rx="2.2" ry="1.4" fill="#bc9970" opacity="0.68"/><ellipse cx="34" cy="26" rx="2.2" ry="1.4" fill="#bc9970" opacity="0.68"/><ellipse cx="40" cy="26" rx="2.2" ry="1.4" fill="#bc9970" opacity="0.68"/><ellipse cx="46" cy="26" rx="2.2" ry="1.4" fill="#bc9970" opacity="0.68"/><ellipse cx="16" cy="32" rx="2.2" ry="1.4" fill="#bc9970" opacity="0.68"/><ellipse cx="22" cy="32" rx="2.2" ry="1.4" fill="#bc9970" opacity="0.68"/><ellipse cx="28" cy="32" rx="2.2" ry="1.4" fill="#bc9970" opacity="0.68"/><ellipse cx="34" cy="32" rx="2.2" ry="1.4" fill="#bc9970" opacity="0.68"/><ellipse cx="40" cy="32" rx="2.2" ry="1.4" fill="#bc9970" opacity="0.68"/><ellipse cx="46" cy="32" rx="2.2" ry="1.4" fill="#bc9970" opacity="0.68"/>
+</g>
+<g id="glass" inkscape:groupmode="layer" inkscape:label="glass">
+<path d="M13 23h10L13 33zM34 22h5l-8 8h-4zM54 23h8l-8 9z" fill="#dbd0b2" stroke="none" stroke-width="0.6" opacity="0.26"/>
+</g>
+<g id="frame" inkscape:groupmode="layer" inkscape:label="frame">
+<path d="M11 20H49V37H11ZM31 21v15M52 21H66V49H52ZM53 39h12M10 48h39M8 17h60" fill="none" stroke="#bd9f82" stroke-width="1.4" opacity="1"/><rect x="13" y="39" width="34" height="5" fill="#7b6454" opacity="1"/><text x="38" y="16" text-anchor="middle" font-family="DejaVu Sans" font-weight="bold" font-size="3.4" letter-spacing="0.8" fill="#efe0bc">BAKERY</text>
+</g>
+<g id="light" inkscape:groupmode="layer" inkscape:label="light" style="display:none">
+<path d="M12 21H40V36H12Z M42 21H48V36H42Z M53 22H65V39H53Z" fill="#ebbf76" stroke="none" stroke-width="0.6" opacity="0.51"/>
+</g>
+<g id="mask-aperture" inkscape:groupmode="layer" inkscape:label="mask-aperture" style="display:none">
+<path d="M12 21H40V36H12Z M42 21H48V36H42Z M53 22H65V39H53Z" fill="white" stroke="none" stroke-width="0.6" opacity="1"/>
+</g>
+</svg>

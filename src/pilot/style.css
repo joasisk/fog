@@ -54,7 +54,7 @@ button {
 }
 
 button:hover { background: #414f42; }
-button:focus-visible, canvas:focus-visible { outline: 2px solid #e8c186; outline-offset: 4px; }
+button:focus-visible, canvas:focus-visible, footer a:focus-visible { outline: 2px solid #e8c186; outline-offset: 4px; }
 
 canvas {
   display: block;
@@ -74,6 +74,7 @@ footer {
 }
 
 footer p { margin: 0; }
+footer a { color: inherit; text-underline-offset: .2em; }
 #status:empty { display: none; }
 
 #sound-mixer {

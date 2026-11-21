@@ -4,6 +4,9 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   base: "./",
+  build: {
+    rollupOptions: { input: { pilot: resolve("index.html"), hillside: resolve("townscape.html") } },
+  },
   plugins: [{
     name: "fog-building-catalog",
     apply: "build",
@@ -18,6 +21,21 @@ export default defineConfig({
             !/\.(?!png$|json$)[^/]+$/.test(name);
         },
       });
+    },
+  }, {
+    name: "fog-townscape",
+    apply: "build",
+    async writeBundle({ dir }) {
+      for (const batch of ["batch-01", "batch-02"]) {
+        const source = resolve("assets/townscape", batch);
+        await cp(source, resolve(dir ?? "dist", "assets/townscape", batch), {
+          recursive: true,
+          filter(path) {
+            const name = relative(source, path);
+            return !name || name === "manifest.v1.json" || name === "hillside.v1.json" || /^png(\/|$)/.test(name);
+          },
+        });
+      }
     },
   }],
 });
