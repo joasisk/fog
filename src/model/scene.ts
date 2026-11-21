@@ -7,6 +7,10 @@ import type { Soundscape } from "./sound.ts";
 export enum SettlementKind {
   Village = "village",
   Town = "town",
+  City = "city",
+  Hamlet = "hamlet",
+  FarmLane = "farm-lane",
+  Farmstead = "farmstead",
 }
 
 export type GenerationSeed = string;

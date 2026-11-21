@@ -63,3 +63,18 @@ Normalize authoring UVs against the untrimmed frame at import, converting to the
 | D. Expanded coverage | Add terrain presets and review a multi-level crossing from REF-L01/L06, dense infill from REF-U03, and rural scale from REF-S09/L10. Measure generation time, texture use and overdraw on representative devices before tuning counts. |
 
 Run `npm test` and `npm run build` for implementation changes, plus a browser pass for scene entry points, asset loading and regeneration. Regression tests should cover seed stability, explicit crossing semantics, feasible tier selection, local failure, graph reachability, supported footprints and fog-safe replacements.
+
+## Milestone A usage
+
+Import `generateWorldGeometry` and the fixed `GEOMETRY_CASES` from [src/generation/index.ts](../src/generation/index.ts). A successful v1 snapshot has a sampled terrain, selected tier, preliminary terrain capacity, capacity measured on the accepted roads, and the world-space graph. Use stable junction and segment IDs to attach districts and frontage allocations in later passes. Counts are fixture-based estimates until parcels are laid out. Set `requestedTier` for a specific tier and `allowSmallerTier` to opt into fallback. Rejections include stage-specific shortfalls and retain the terrain for inspection.
+
+Both fixed cases use supported ground lanes with sampled grades up to 8°. The foothill town supports three routing benches connected by cross-depth links. The contour farm lane follows a single shelf. Their crossing lists are empty. Bridge and stair routing will be exercised by the later crossing presets.
+
+The [geometry fixtures](../src/generation/fixtures.ts) follow the v1 handoff conventions for footprint dimensions, source frames, and entrance UVs. These entries carry geometry metadata while production art is authored.
+
+Use Node to render any of the deterministic SVG views. The available cases are `foothillTown` and `contourFarmLane`. The views are `terrain`, `exclusions`, `grades`, and `connectivity`.
+
+```sh
+node --experimental-transform-types scripts/debug-world-geometry.mjs foothillTown connectivity > /tmp/foothill-roads.svg
+node --experimental-transform-types scripts/debug-world-geometry.mjs contourFarmLane terrain > /tmp/contour-terrain.svg
+```
