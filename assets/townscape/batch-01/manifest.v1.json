@@ -1,0 +1,988 @@
+{
+  "schema_version": 1,
+  "pack_version": "1.0.0",
+  "units": {
+    "world": "frontage_units",
+    "source_anchors": "normalized_uv_top_left_y_down",
+    "world_axes": {
+      "x": "along_panorama",
+      "d": "away_from_viewer",
+      "h": "up"
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "townscape.b01.cafe",
+      "version": 1,
+      "family": "shell",
+      "style_family": "historic_plaster",
+      "use_tags": [
+        "cafe"
+      ],
+      "tags": [
+        "shell",
+        "historic_plaster",
+        "cafe",
+        "attached",
+        "two_storey"
+      ],
+      "reference_ids": [
+        "REF-L05",
+        "REF-T01"
+      ],
+      "source": "sources/cafe.svg",
+      "provenance": "original / CC0-1.0",
+      "world_width_f": 1.0,
+      "world_height_f": 1.4583333333333333,
+      "footprint_f": [
+        [
+          -0.5,
+          0
+        ],
+        [
+          0.5,
+          0
+        ],
+        [
+          0.5,
+          0.63
+        ],
+        [
+          -0.5,
+          0.63
+        ]
+      ],
+      "source_dimensions_px": [
+        192,
+        256
+      ],
+      "trim_rect_px": [
+        20,
+        22,
+        152,
+        220
+      ],
+      "pivot_uv": [
+        0.5,
+        0.90625
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "files": {
+        "shadow": "png/cafe/shadow.png",
+        "wall": "png/cafe/wall.png",
+        "roof": "png/cafe/roof.png",
+        "openings": "png/cafe/openings.png",
+        "shop-surround": "png/cafe/shop-surround.png",
+        "room-backing": "png/cafe/room-backing.png",
+        "motion-00": "png/cafe/motion-00.png",
+        "motion-01": "png/cafe/motion-01.png",
+        "motion-02": "png/cafe/motion-02.png",
+        "motion-03": "png/cafe/motion-03.png",
+        "motion-04": "png/cafe/motion-04.png",
+        "motion-05": "png/cafe/motion-05.png",
+        "motion-06": "png/cafe/motion-06.png",
+        "motion-07": "png/cafe/motion-07.png",
+        "glass-1": "png/cafe/glass-1.png",
+        "glass-2": "png/cafe/glass-2.png",
+        "frame": "png/cafe/frame.png",
+        "unlit": "png/cafe/unlit.png",
+        "mask-pane-1": "png/cafe/mask-pane-1.png",
+        "mask-pane-2": "png/cafe/mask-pane-2.png",
+        "mask-entrance": "png/cafe/mask-entrance.png",
+        "wet": "png/cafe/wet.png",
+        "mask-wall": "png/cafe/mask-wall.png",
+        "mask-occlusion": "png/cafe/mask-occlusion.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "roof",
+        "openings",
+        "shop-surround",
+        "room-backing",
+        "motion-00",
+        "glass-1",
+        "glass-2",
+        "frame"
+      ],
+      "states": [
+        "base",
+        "wet",
+        "unlit"
+      ],
+      "ground_span_uv": [
+        [
+          0.125,
+          0.90625
+        ],
+        [
+          0.875,
+          0.90625
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth",
+        "stepped_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.6979166666666666,
+          0.90625
+        ],
+        "clearance_f": {
+          "width": 0.16666666666666666,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "sockets": {
+        "entrance": {
+          "uv": [
+            0.6979166666666666,
+            0.90625
+          ],
+          "accepts": [
+            "shop_door"
+          ]
+        },
+        "storefront": {
+          "uv": [
+            0.5,
+            0.5390625
+          ],
+          "accepts": [
+            "shopfront-b01-64"
+          ],
+          "excludes": [
+            "domestic_door"
+          ]
+        }
+      },
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.6015625
+        ],
+        "sound_uv": [
+          0.3645833333333333,
+          0.7109375
+        ]
+      },
+      "wall_contacts": {
+        "left": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.125,
+              0.3359375
+            ],
+            [
+              0.125,
+              0.90625
+            ]
+          ]
+        },
+        "right": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.875,
+              0.3359375
+            ],
+            [
+              0.875,
+              0.90625
+            ]
+          ]
+        }
+      },
+      "rooms": [
+        {
+          "room_id": "front-room",
+          "backing": "room-backing",
+          "frame": "frame",
+          "pane_order": [
+            "left",
+            "right"
+          ],
+          "panes": {
+            "left": {
+              "glass": "glass-1",
+              "clip_mask": "mask-pane-1",
+              "bounds_uv": [
+                0.19791666666666666,
+                0.6015625,
+                0.16666666666666666,
+                0.1796875
+              ]
+            },
+            "right": {
+              "glass": "glass-2",
+              "clip_mask": "mask-pane-2",
+              "bounds_uv": [
+                0.375,
+                0.6015625,
+                0.16666666666666666,
+                0.1796875
+              ]
+            }
+          },
+          "motion": {
+            "frames": [
+              "motion-00",
+              "motion-01",
+              "motion-02",
+              "motion-03",
+              "motion-04",
+              "motion-05",
+              "motion-06",
+              "motion-07"
+            ],
+            "frame_duration_ms": 200,
+            "loop": true
+          },
+          "unlit_overlay": "unlit",
+          "unlit_before": "glass-1"
+        }
+      ]
+    },
+    {
+      "asset_id": "townscape.b01.bookshop",
+      "version": 1,
+      "family": "shell",
+      "style_family": "historic_plaster",
+      "use_tags": [
+        "bookshop"
+      ],
+      "tags": [
+        "shell",
+        "historic_plaster",
+        "bookshop",
+        "attached",
+        "two_storey"
+      ],
+      "reference_ids": [
+        "REF-L05",
+        "REF-U03"
+      ],
+      "source": "sources/bookshop.svg",
+      "provenance": "original / CC0-1.0",
+      "world_width_f": 1.0,
+      "world_height_f": 1.4166666666666667,
+      "footprint_f": [
+        [
+          -0.5,
+          0
+        ],
+        [
+          0.5,
+          0
+        ],
+        [
+          0.5,
+          0.63
+        ],
+        [
+          -0.5,
+          0.63
+        ]
+      ],
+      "source_dimensions_px": [
+        192,
+        256
+      ],
+      "trim_rect_px": [
+        20,
+        28,
+        152,
+        214
+      ],
+      "pivot_uv": [
+        0.5,
+        0.90625
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "files": {
+        "shadow": "png/bookshop/shadow.png",
+        "wall": "png/bookshop/wall.png",
+        "roof": "png/bookshop/roof.png",
+        "openings": "png/bookshop/openings.png",
+        "shop-surround": "png/bookshop/shop-surround.png",
+        "room-backing": "png/bookshop/room-backing.png",
+        "glass-1": "png/bookshop/glass-1.png",
+        "glass-2": "png/bookshop/glass-2.png",
+        "frame": "png/bookshop/frame.png",
+        "unlit": "png/bookshop/unlit.png",
+        "mask-pane-1": "png/bookshop/mask-pane-1.png",
+        "mask-pane-2": "png/bookshop/mask-pane-2.png",
+        "mask-entrance": "png/bookshop/mask-entrance.png",
+        "wet": "png/bookshop/wet.png",
+        "mask-wall": "png/bookshop/mask-wall.png",
+        "mask-occlusion": "png/bookshop/mask-occlusion.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "roof",
+        "openings",
+        "shop-surround",
+        "room-backing",
+        "glass-1",
+        "glass-2",
+        "frame"
+      ],
+      "states": [
+        "base",
+        "wet",
+        "unlit"
+      ],
+      "ground_span_uv": [
+        [
+          0.125,
+          0.90625
+        ],
+        [
+          0.875,
+          0.90625
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth",
+        "stepped_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.6979166666666666,
+          0.90625
+        ],
+        "clearance_f": {
+          "width": 0.16666666666666666,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "sockets": {
+        "entrance": {
+          "uv": [
+            0.6979166666666666,
+            0.90625
+          ],
+          "accepts": [
+            "shop_door"
+          ]
+        },
+        "storefront": {
+          "uv": [
+            0.5,
+            0.5390625
+          ],
+          "accepts": [
+            "shopfront-b01-64"
+          ],
+          "excludes": [
+            "domestic_door"
+          ]
+        }
+      },
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.6015625
+        ],
+        "sound_uv": [
+          0.3645833333333333,
+          0.7109375
+        ]
+      },
+      "wall_contacts": {
+        "left": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.125,
+              0.3359375
+            ],
+            [
+              0.125,
+              0.90625
+            ]
+          ]
+        },
+        "right": {
+          "profile": "historic-shared-73",
+          "span_uv": [
+            [
+              0.875,
+              0.3359375
+            ],
+            [
+              0.875,
+              0.90625
+            ]
+          ]
+        }
+      },
+      "rooms": [
+        {
+          "room_id": "front-room",
+          "backing": "room-backing",
+          "frame": "frame",
+          "pane_order": [
+            "left",
+            "right"
+          ],
+          "panes": {
+            "left": {
+              "glass": "glass-1",
+              "clip_mask": "mask-pane-1",
+              "bounds_uv": [
+                0.19791666666666666,
+                0.6015625,
+                0.16666666666666666,
+                0.1796875
+              ]
+            },
+            "right": {
+              "glass": "glass-2",
+              "clip_mask": "mask-pane-2",
+              "bounds_uv": [
+                0.375,
+                0.6015625,
+                0.16666666666666666,
+                0.1796875
+              ]
+            }
+          },
+          "motion": null,
+          "unlit_overlay": "unlit",
+          "unlit_before": "glass-1"
+        }
+      ]
+    },
+    {
+      "asset_id": "townscape.b01.cottage",
+      "version": 1,
+      "family": "shell",
+      "style_family": "detached_plaster",
+      "use_tags": [
+        "residential"
+      ],
+      "tags": [
+        "shell",
+        "detached_plaster",
+        "residential",
+        "detached",
+        "two_storey"
+      ],
+      "reference_ids": [
+        "REF-S09",
+        "REF-L10"
+      ],
+      "source": "sources/cottage.svg",
+      "provenance": "original / CC0-1.0",
+      "world_width_f": 0.9583333333333334,
+      "world_height_f": 1.4166666666666667,
+      "footprint_f": [
+        [
+          -0.4861111111111111,
+          0
+        ],
+        [
+          0.4722222222222222,
+          0
+        ],
+        [
+          0.4722222222222222,
+          0.57
+        ],
+        [
+          -0.4861111111111111,
+          0.57
+        ]
+      ],
+      "source_dimensions_px": [
+        192,
+        256
+      ],
+      "trim_rect_px": [
+        16,
+        28,
+        160,
+        214
+      ],
+      "pivot_uv": [
+        0.5,
+        0.90625
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "files": {
+        "shadow": "png/cottage/shadow.png",
+        "wall": "png/cottage/wall.png",
+        "roof": "png/cottage/roof.png",
+        "openings": "png/cottage/openings.png",
+        "mask-entrance": "png/cottage/mask-entrance.png",
+        "wet": "png/cottage/wet.png",
+        "mask-wall": "png/cottage/mask-wall.png",
+        "mask-occlusion": "png/cottage/mask-occlusion.png"
+      },
+      "layer_order": [
+        "shadow",
+        "wall",
+        "roof",
+        "openings"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ],
+      "ground_span_uv": [
+        [
+          0.13541666666666666,
+          0.90625
+        ],
+        [
+          0.8541666666666666,
+          0.90625
+        ]
+      ],
+      "foundation_modes": [
+        "level_plinth"
+      ],
+      "entrance": {
+        "threshold_uv": [
+          0.5,
+          0.90625
+        ],
+        "clearance_f": {
+          "width": 0.16666666666666666,
+          "depth": 0.22
+        },
+        "approach": "front",
+        "mask": "mask-entrance"
+      },
+      "sockets": {
+        "entrance": {
+          "uv": [
+            0.5,
+            0.90625
+          ],
+          "accepts": [
+            "domestic_door"
+          ]
+        }
+      },
+      "semantic_anchors": {
+        "pick_uv": [
+          0.5,
+          0.6015625
+        ],
+        "sound_uv": [
+          0.5,
+          0.7109375
+        ]
+      },
+      "wall_contacts": {}
+    },
+    {
+      "asset_id": "townscape.b01.grass-soil",
+      "version": 1,
+      "family": "ground",
+      "style_family": "autumn_grass",
+      "use_tags": [
+        "support"
+      ],
+      "tags": [
+        "ground",
+        "autumn_grass",
+        "support"
+      ],
+      "reference_ids": [
+        "REF-L05",
+        "REF-S09"
+      ],
+      "source": "sources/grass-soil.svg",
+      "provenance": "original / CC0-1.0",
+      "world_width_f": 2.0,
+      "world_height_f": 0.4861111111111111,
+      "footprint_f": [
+        [
+          0,
+          0
+        ],
+        [
+          2.0,
+          0
+        ],
+        [
+          2.0,
+          0.44
+        ],
+        [
+          0,
+          0.44
+        ]
+      ],
+      "source_dimensions_px": [
+        320,
+        124
+      ],
+      "trim_rect_px": [
+        15,
+        36,
+        290,
+        74
+      ],
+      "pivot_uv": [
+        0.05,
+        0.2903225806451613
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "files": {
+        "soil": "png/grass-soil/soil.png",
+        "grass": "png/grass-soil/grass.png",
+        "front-lip": "png/grass-soil/front-lip.png",
+        "mask-support": "png/grass-soil/mask-support.png",
+        "mask-front-lip": "png/grass-soil/mask-front-lip.png"
+      },
+      "layer_order": [
+        "soil",
+        "grass",
+        "front-lip"
+      ],
+      "states": [
+        "base"
+      ],
+      "joins": {
+        "start": {
+          "profile": "grass-shelf-18",
+          "uv": [
+            0.05,
+            0.2903225806451613
+          ]
+        },
+        "end": {
+          "profile": "grass-shelf-18",
+          "uv": [
+            0.95,
+            0.2903225806451613
+          ]
+        }
+      },
+      "allowed_slope_deg": [
+        -8,
+        8
+      ],
+      "support_modes": [
+        "level_shelf",
+        "contour"
+      ]
+    },
+    {
+      "asset_id": "townscape.b01.narrow-lane",
+      "version": 1,
+      "family": "street",
+      "style_family": "wet_gravel",
+      "use_tags": [
+        "walking_lane"
+      ],
+      "tags": [
+        "street",
+        "wet_gravel",
+        "walking_lane"
+      ],
+      "reference_ids": [
+        "REF-S09",
+        "REF-L10"
+      ],
+      "source": "sources/narrow-lane.svg",
+      "provenance": "original / CC0-1.0",
+      "world_width_f": 2.0,
+      "world_height_f": 0.1111111111111111,
+      "footprint_f": [
+        [
+          0,
+          0
+        ],
+        [
+          2.0,
+          0
+        ],
+        [
+          2.0,
+          0.5
+        ],
+        [
+          0,
+          0.5
+        ]
+      ],
+      "source_dimensions_px": [
+        320,
+        76
+      ],
+      "trim_rect_px": [
+        15,
+        33,
+        290,
+        20
+      ],
+      "pivot_uv": [
+        0.05,
+        0.5526315789473685
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "files": {
+        "paving": "png/narrow-lane/paving.png",
+        "wet": "png/narrow-lane/wet.png",
+        "mask-coverage": "png/narrow-lane/mask-coverage.png",
+        "mask-wetness": "png/narrow-lane/mask-wetness.png"
+      },
+      "layer_order": [
+        "paving"
+      ],
+      "states": [
+        "base",
+        "wet"
+      ],
+      "joins": {
+        "start": {
+          "profile": "gravel-lane-8",
+          "uv": [
+            0.05,
+            0.5526315789473685
+          ]
+        },
+        "end": {
+          "profile": "gravel-lane-8",
+          "uv": [
+            0.95,
+            0.5526315789473685
+          ]
+        }
+      },
+      "allowed_slope_deg": [
+        -8,
+        8
+      ],
+      "support_modes": [
+        "level_shelf",
+        "contour"
+      ]
+    },
+    {
+      "asset_id": "townscape.b01.stepped-foundation",
+      "version": 1,
+      "family": "foundation",
+      "style_family": "fieldstone",
+      "use_tags": [
+        "support"
+      ],
+      "tags": [
+        "foundation",
+        "fieldstone",
+        "support"
+      ],
+      "reference_ids": [
+        "REF-L05"
+      ],
+      "source": "sources/stepped-foundation.svg",
+      "provenance": "original / CC0-1.0",
+      "world_width_f": 1.0,
+      "world_height_f": 0.3055555555555556,
+      "footprint_f": [
+        [
+          -0.5,
+          0
+        ],
+        [
+          0.5,
+          0
+        ],
+        [
+          0.5,
+          0.63
+        ],
+        [
+          -0.5,
+          0.63
+        ]
+      ],
+      "source_dimensions_px": [
+        192,
+        88
+      ],
+      "trim_rect_px": [
+        24,
+        20,
+        144,
+        44
+      ],
+      "pivot_uv": [
+        0.5,
+        0.22727272727272727
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "files": {
+        "masonry": "png/stepped-foundation/masonry.png",
+        "mask-support": "png/stepped-foundation/mask-support.png"
+      },
+      "layer_order": [
+        "masonry"
+      ],
+      "states": [
+        "base"
+      ],
+      "compatible_footprint_f": [
+        1,
+        0.63
+      ],
+      "supported_mode": "stepped_plinth",
+      "top_span_uv": [
+        [
+          0.125,
+          0.22727272727272727
+        ],
+        [
+          0.875,
+          0.22727272727272727
+        ]
+      ],
+      "terrain_steps_uv": [
+        [
+          [
+            0.125,
+            0.5
+          ],
+          [
+            0.3854166666666667,
+            0.5
+          ]
+        ],
+        [
+          [
+            0.3854166666666667,
+            0.6136363636363636
+          ],
+          [
+            0.6354166666666666,
+            0.6136363636363636
+          ]
+        ],
+        [
+          [
+            0.6354166666666666,
+            0.7272727272727273
+          ],
+          [
+            0.875,
+            0.7272727272727273
+          ]
+        ]
+      ]
+    },
+    {
+      "asset_id": "townscape.b01.mist-sheet",
+      "version": 1,
+      "family": "weather",
+      "style_family": "rolling_mist",
+      "use_tags": [
+        "band_gap"
+      ],
+      "tags": [
+        "weather",
+        "rolling_mist",
+        "band_gap"
+      ],
+      "reference_ids": [
+        "REF-L05",
+        "REF-L10"
+      ],
+      "source": "sources/mist-sheet.svg",
+      "provenance": "original / CC0-1.0",
+      "world_width_f": 6.916666666666667,
+      "world_height_f": 1.3611111111111112,
+      "footprint_f": null,
+      "source_dimensions_px": [
+        1024,
+        220
+      ],
+      "trim_rect_px": [
+        16,
+        12,
+        992,
+        196
+      ],
+      "pivot_uv": [
+        0.5,
+        0.5
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "alpha": "straight",
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "can_mirror": false,
+      "files": {
+        "mist": "png/mist-sheet/mist.png",
+        "mask-density": "png/mist-sheet/mask-density.png",
+        "mask-falloff": "png/mist-sheet/mask-falloff.png",
+        "mask-noise": "png/mist-sheet/mask-noise.png"
+      },
+      "layer_order": [
+        "mist"
+      ],
+      "states": [
+        "base"
+      ],
+      "distribution": {
+        "tile_axes": [],
+        "repeat": "nonperiodic-overlap",
+        "drift_axis": "x",
+        "transparent_padding_px_min": 12,
+        "band_gaps": [
+          "far-to-middle",
+          "middle-to-near"
+        ],
+        "opacity_range": [
+          0.12,
+          0.45
+        ],
+        "density": "mask-density",
+        "falloff": "mask-falloff",
+        "noise": "mask-noise"
+      }
+    }
+  ]
+}
