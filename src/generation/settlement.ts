@@ -1,7 +1,7 @@
 import type { GenerationSeed, SettlementKind } from "../model/scene.ts";
 import { GEOMETRY_FIXTURES } from "./fixtures.ts";
 import { fixtureDepths, frontageSupport, roadSides, routingNeighbors } from "./routing.ts";
-import { sampleAt, seedFraction } from "./terrain.ts";
+import { benchDepthAt, sampleAt, seedFraction } from "./terrain.ts";
 import type { Terrain } from "./terrain.ts";
 
 export type SettlementTier = `${SettlementKind}`;
@@ -60,8 +60,9 @@ export function estimateCapacity(terrain: Terrain, analysis: TerrainAnalysis, ti
       let residential = 0;
       let civic = 0;
       for (let x = bench.minX; x <= bench.maxX; x += terrain.step) {
-        const a = sampleAt(terrain, { x, d: bench.depth });
-        const b = x < bench.maxX ? sampleAt(terrain, { x: x + terrain.step, d: bench.depth }) : undefined;
+        const nextX = x + terrain.step;
+        const a = sampleAt(terrain, { x, d: benchDepthAt(bench, x) });
+        const b = x < bench.maxX ? sampleAt(terrain, { x: nextX, d: benchDepthAt(bench, nextX) }) : undefined;
         const usable = a && b && analysis.reachable.has(a.id) && analysis.neighbors[a.id]!.includes(b.id);
         if (usable && frontageSupport(terrain, a, b, side, residentialDepth(tier))) {
           residential += terrain.step;

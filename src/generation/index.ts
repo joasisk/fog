@@ -58,6 +58,6 @@ export function generateWorldGeometry(recipe: WorldRecipe): WorldGeometry {
 }
 
 export { renderGeometryDebug } from "./debug.ts";
-export { GEOMETRY_FIXTURES } from "./fixtures.ts";
+export { GEOMETRY_FIXTURE_MANIFEST, GEOMETRY_FIXTURES } from "./fixtures.ts";
 export { reachableRoadNodes } from "./roads.ts";
 export { heightAt, sampleAt } from "./terrain.ts";

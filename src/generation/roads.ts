@@ -1,9 +1,9 @@
 import type { JunctionId, StreetSegmentId } from "../model/network.ts";
-import { fixtureDepths, frontageSupport, gradeBetween, ROAD_WIDTH, roadSides } from "./routing.ts";
+import { fixtureDepths, frontageSupport, MAX_LANE_GRADE_DEGREES, peakTerrainGrade, ROAD_WIDTH, roadSides } from "./routing.ts";
 import type { RoadSide } from "./routing.ts";
 import { capacityShortfalls, CIVIC_SPAN, residentialDepth, residentialPitch, TIERS } from "./settlement.ts";
 import type { Capacity, SettlementTier, TerrainAnalysis } from "./settlement.ts";
-import { heightAt, seedFraction } from "./terrain.ts";
+import { benchDepthAt, heightAt, seedFraction } from "./terrain.ts";
 import type { Terrain, WorldPosition } from "./terrain.ts";
 
 export interface RoadNode {
@@ -70,11 +70,11 @@ function route(terrain: Terrain, analysis: TerrainAnalysis, start: number, targe
     const a = terrain.samples[current]!;
     for (const next of analysis.neighbors[current]!) {
       const b = terrain.samples[next]!;
-      if (bench && Math.abs(b.d - bench.depth) > 1.5) continue;
-      const grade = gradeBetween(a, b) / 8;
+      const offBench = bench ? Math.abs(b.d - benchDepthAt(bench, b.x)) : 0;
+      if (offBench > 1.5) continue;
+      const grade = peakTerrainGrade(terrain, a, b) / MAX_LANE_GRADE_DEGREES;
       const earthwork = (a.slopeDegrees + b.slopeDegrees) / 28;
-      const offBench = bench ? Math.abs(b.d - bench.depth) * 0.6 : 0;
-      const distance = cost + Math.hypot(a.x - b.x, a.d - b.d) * (1 + 2 * grade ** 2 + earthwork + offBench);
+      const distance = cost + Math.hypot(a.x - b.x, a.d - b.d) * (1 + 2 * grade ** 2 + earthwork + 0.6 * offBench);
       if (distance >= (distances.get(next) ?? Infinity)) continue;
       distances.set(next, distance);
       previous.set(next, current);
@@ -110,7 +110,7 @@ export function buildRoadGraph(terrain: Terrain, analysis: TerrainAnalysis, tier
   const opposite = terrain.approaches.find(({ sampleId }) => sampleId !== start && analysis.reachable.has(sampleId));
   const stubX = terrain.samples[start]!.x + (first.side === "west" ? 7 : -7);
   const targets = opposite && tier !== "farmstead" ? [opposite.sampleId]
-    : terrain.samples.filter((sample) => sample.x === stubX && Math.abs(sample.d - primary.depth) <= 0.5
+    : terrain.samples.filter((sample) => sample.x === stubX && Math.abs(sample.d - benchDepthAt(primary, stubX)) <= 0.5
       && analysis.reachable.has(sample.id)).map(({ id }) => id);
   if (!targets.length) return { shortfalls: ["No reachable spine destination."] };
   const spine = route(terrain, analysis, start, new Set(targets), primary);
@@ -135,10 +135,12 @@ export function buildRoadGraph(terrain: Terrain, analysis: TerrainAnalysis, tier
   for (const [index, bench] of terrain.benches.slice(1, TIERS[tier].bands).entries()) {
     // Try the full bench first, then a shorter local route if an endpoint is unsupported.
     for (const inset of [0, 2, 4]) {
-      const endpoints = [bench.minX + inset, bench.maxX - inset].map((x) =>
-        terrain.samples.filter((sample) => sample.x === x && Math.abs(sample.d - bench.depth) <= 0.5
+      const endpoints = [bench.minX + inset, bench.maxX - inset].map((x) => {
+        const depth = benchDepthAt(bench, x);
+        return terrain.samples.filter((sample) => sample.x === x && Math.abs(sample.d - depth) <= 0.5
           && analysis.reachable.has(sample.id))
-          .sort((a, b) => Math.abs(a.d - bench.depth) - Math.abs(b.d - bench.depth) || a.id - b.id)[0]);
+          .sort((a, b) => Math.abs(a.d - depth) - Math.abs(b.d - depth) || a.id - b.id)[0];
+      });
       const [west, east] = endpoints;
       if (!west || !east || west.x >= east.x) continue;
       const branch = route(terrain, analysis, west.id, new Set([east.id]), bench);
@@ -198,18 +200,15 @@ export function buildRoadGraph(terrain: Terrain, analysis: TerrainAnalysis, tier
         const a = centerline[i - 1]!;
         const b = centerline[i]!;
         let previous: WorldPosition = a;
-        let peakGrade = 0;
         for (const t of [0.25, 0.5, 0.75, 1]) {
           const x = a.x + (b.x - a.x) * t;
           const d = a.d + (b.d - a.d) * t;
           const point = { x, d, h: heightAt(terrain, { x, d })! };
           distance += Math.hypot(point.x - previous.x, point.d - previous.d, point.h - previous.h);
-          const grade = gradeBetween(previous, point);
-          if (Math.abs(grade) > Math.abs(peakGrade)) peakGrade = grade;
           previous = point;
         }
         distances.push(distance);
-        gradesDegrees.push(peakGrade);
+        gradesDegrees.push(peakTerrainGrade(terrain, a, b));
       }
       const frontage: FrontageSpan[] = [];
       if (link.route !== "connector") {
@@ -221,7 +220,7 @@ export function buildRoadGraph(terrain: Terrain, analysis: TerrainAnalysis, tier
               const a = centerline[i]!;
               const b = centerline[i + 1];
               const bench = terrain.benches[link.band]!;
-              if (b && b.x > a.x && Math.abs((a.d + b.d) / 2 - bench.depth) <= 1
+              if (b && b.x > a.x && Math.abs((a.d + b.d) / 2 - benchDepthAt(bench, (a.x + b.x) / 2)) <= 1
                 && frontageSupport(terrain, a, b, side, depth)) continue;
               const startDistance = Math.max(0.4, distances[startIndex]!);
               const end = Math.min(distance - 0.4, distances[i]!);

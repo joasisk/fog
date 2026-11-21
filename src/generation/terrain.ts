@@ -12,6 +12,24 @@ export interface TerrainSample extends WorldPosition {
   readonly buildable: boolean;
 }
 
+export interface TerrainBench {
+  readonly minX: number;
+  readonly maxX: number;
+  readonly depth: number;
+  /** Shelf depth in F at evenly spaced x samples, including both ends. */
+  readonly centerDepths?: readonly number[];
+}
+
+export function benchDepthAt(bench: TerrainBench, x: number): number {
+  if (!bench.centerDepths) return bench.depth;
+  const last = bench.centerDepths.length - 1;
+  const t = Math.max(0, Math.min(1, (x - bench.minX) / (bench.maxX - bench.minX))) * last;
+  const index = Math.floor(t);
+  const a = bench.centerDepths[index]!;
+  const b = bench.centerDepths[Math.min(index + 1, last)]!;
+  return a + (b - a) * (t - index);
+}
+
 export interface Terrain {
   readonly preset: TerrainPreset;
   readonly domain: { readonly minX: number; readonly maxX: number; readonly maxDepth: number };
@@ -27,13 +45,14 @@ export interface Terrain {
   readonly crossings: readonly { readonly id: string; readonly from: number; readonly to: number;
     readonly kind: "bridge" }[];
   /** Terrain-derived route preferences. Depth is resolved on the common height surface. */
-  readonly benches: readonly { readonly depth: number; readonly minX: number; readonly maxX: number }[];
+  readonly benches: readonly TerrainBench[];
 }
 
 export function seedFraction(seed: GenerationSeed, stage: string): number {
   let hash = 2166136261;
-  for (const character of JSON.stringify([seed, stage])) {
-    hash = Math.imul(hash ^ character.charCodeAt(0), 16777619);
+  const key = JSON.stringify([seed, stage]);
+  for (let i = 0; i < key.length; i++) {
+    hash = Math.imul(hash ^ key.charCodeAt(i), 16777619);
   }
   hash = Math.imul(hash ^ (hash >>> 16), 0x85ebca6b);
   return ((hash ^ (hash >>> 13)) >>> 0) / 4294967296;
@@ -53,9 +72,9 @@ export function generateTerrain(seed: GenerationSeed, preset: TerrainPreset): Te
   const phase = seedFraction(seed, "terrain:long-profile") * Math.PI * 2;
   const detail = seedFraction(seed, "terrain:short-profile") * Math.PI * 2;
   const rural = preset === "contour";
+  const bendAt = (x: number) => (rural ? 0.75 : 0.3) * Math.sin(x / 6 + phase);
   const height = (x: number, d: number) => {
-    const bend = (rural ? 0.75 : 0.3) * Math.sin(x / 6 + phase);
-    const depth = d - bend;
+    const depth = d - bendAt(x);
     const rolling = 0.37 * Math.sin(x / 6 + phase) + 0.1 * Math.sin(x / 2.6 + detail + d / 9);
     if (rural) {
       return rolling + 0.04 * depth + 2.2 * smoothstep((depth - 1) / 4)
@@ -111,9 +130,15 @@ export function generateTerrain(seed: GenerationSeed, preset: TerrainPreset): Te
     buildableRegions.push({ area, sampleIds });
   }
 
-  const approachDepth = rural ? 6.5 : 2.5;
+  const bench = (depth: number, minX: number, maxX: number): TerrainBench => ({
+    depth, minX, maxX,
+    centerDepths: Array.from({ length: (maxX - minX) / step + 1 }, (_, i) => depth + bendAt(minX + i * step)),
+  });
+  const primary = bench(rural ? 6.5 : 2.5, domain.minX, domain.maxX);
+  const benches = rural ? [primary] : [primary, bench(6, -12, 12), bench(11, -10, 10)];
   const approaches = (["west", "east"] as const).flatMap((side) => {
     const x = side === "west" ? domain.minX : domain.maxX;
+    const approachDepth = benchDepthAt(primary, x);
     const candidate = samples.filter((sample) => sample.x === x && sample.buildable &&
       Math.abs(sample.d - approachDepth) <= 1.5)
       .sort((a, b) => Math.abs(a.d - approachDepth) + a.slopeDegrees / 8
@@ -125,12 +150,7 @@ export function generateTerrain(seed: GenerationSeed, preset: TerrainPreset): Te
   const depths = rural ? [1, 4, 6.5, 9, 12] : [0, 2.5, 4.5, 6, 9, 11.5];
   return {
     preset, domain, step, columns, rows, samples, exclusions, buildableRegions, approaches,
-    crossings: [],
-    benches: rural ? [{ depth: 6.5, minX: -15, maxX: 15 }] : [
-      { depth: 2.5, minX: -15, maxX: 15 },
-      { depth: 6, minX: -12, maxX: 12 },
-      { depth: 11, minX: -10, maxX: 10 },
-    ],
+    crossings: [], benches,
     profiles: depths.map((d) => {
       const start = Math.round(d / step) * columns;
       return { d, fillBase, surface: samples.slice(start, start + columns) };

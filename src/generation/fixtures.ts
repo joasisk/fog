@@ -37,3 +37,9 @@ export const GEOMETRY_FIXTURES = {
       [], ["level_plinth"]),
   },
 } as const;
+
+/** The handoff exchanges an ordered asset list. Geometry uses the same entries by envelope name. */
+export const GEOMETRY_FIXTURE_MANIFEST = {
+  ...GEOMETRY_FIXTURES,
+  assets: Object.values(GEOMETRY_FIXTURES.assets),
+} as const;

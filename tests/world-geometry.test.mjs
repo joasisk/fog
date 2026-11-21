@@ -1,14 +1,17 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 import {
   GEOMETRY_CASES,
+  GEOMETRY_FIXTURE_MANIFEST,
+  GEOMETRY_FIXTURES,
   generateWorldGeometry,
   heightAt,
   reachableRoadNodes,
   renderGeometryDebug,
   sampleAt,
 } from "../src/generation/index.ts";
-import { MAX_LANE_GRADE_DEGREES, gradeBetween } from "../src/generation/routing.ts";
+import { MAX_LANE_GRADE_DEGREES, gradeBetween, peakTerrainGrade, routingNeighbors } from "../src/generation/routing.ts";
 import { capacityShortfalls } from "../src/generation/settlement.ts";
 
 for (const [name, recipe] of Object.entries(GEOMETRY_CASES)) {
@@ -105,4 +108,69 @@ test("automatic tier selection chooses a seeded feasible graph", () => {
   assert.equal(world.ok, true);
   assert.deepEqual(capacityShortfalls(world.roadCapacity, world.tier), []);
   assert.deepEqual(world, generateWorldGeometry(recipe));
+});
+
+test("the farm lane tracks the buildable shelf as it bends across the panorama", () => {
+  const paths = ["9106", "23"].map((seed) => {
+    const world = generateWorldGeometry({ ...GEOMETRY_CASES.contourFarmLane, seed });
+    assert.equal(world.ok, true);
+    const { columns, rows, samples, step, domain } = world.terrain;
+    const line = world.roads.edges[0].centerline;
+    for (const { x, d } of line) {
+      const col = Math.round((x - domain.minX) / step);
+      let near = Math.round(d / step);
+      let far = near;
+      assert.ok(samples[near * columns + col].buildable);
+      while (near > 0 && samples[(near - 1) * columns + col].buildable) near--;
+      while (far + 1 < rows && samples[(far + 1) * columns + col].buildable) far++;
+      assert.ok(Math.abs(d - (near + far) / 2 * step) <= step);
+    }
+    assert.ok(new Set(line.map(({ d }) => d)).size > 1);
+    return line.map(({ x, d }) => [x, d]);
+  });
+  assert.notDeepEqual(paths[0], paths[1]);
+});
+
+test("the lane grade limit holds between elevation samples on a diagonal", () => {
+  // The interior cell rises as h(t) = 0.104 t² along the diagonal.
+  const samples = Array.from({ length: 16 }, (_, id) => ({
+    id, x: id % 4, d: Math.floor(id / 4), h: id === 10 ? 0.104 : 0, slopeDegrees: 6, exclusion: null,
+  }));
+  const terrain = { columns: 4, rows: 4, step: 1, domain: { minX: 0, maxX: 3, maxDepth: 3 }, samples };
+  const a = samples[5], b = samples[10];
+  const expected = Math.atan(2 * b.h / Math.SQRT2) * 180 / Math.PI;
+  assert.ok(gradeBetween(a, b) < MAX_LANE_GRADE_DEGREES && expected > MAX_LANE_GRADE_DEGREES);
+  assert.ok(Math.abs(peakTerrainGrade(terrain, a, b) - expected) < 1e-10);
+  assert.ok(Math.abs(peakTerrainGrade(terrain, b, a) + expected) < 1e-10);
+  assert.ok(!routingNeighbors(terrain, a.id).includes(b.id));
+  assert.ok(!routingNeighbors(terrain, b.id).includes(a.id));
+});
+
+test("supplementary Unicode characters contribute their full value to the terrain seed", () => {
+  const recipe = GEOMETRY_CASES.foothillTown;
+  const sunrise = generateWorldGeometry({ ...recipe, seed: "🌄" });
+  const horizon = generateWorldGeometry({ ...recipe, seed: "🌅" });
+  assert.notDeepEqual(sunrise.terrain.profiles, horizon.terrain.profiles);
+});
+
+test("the four geometry envelopes serialize in the shared v1 authoring format", () => {
+  const source = new URL("../Town-Soundscape-Handoff-v1/examples/asset-manifest.example.json", import.meta.url);
+  const example = JSON.parse(readFileSync(source, "utf8"));
+  const manifest = JSON.parse(JSON.stringify(GEOMETRY_FIXTURE_MANIFEST));
+  assert.equal(manifest.schema_version, example.schema_version);
+  assert.deepEqual(manifest.units, example.units);
+  const { attached, detached, stepped, civic } = GEOMETRY_FIXTURES.assets;
+  assert.deepEqual(manifest.assets, [attached, detached, stepped, civic]);
+  assert.equal(new Set(manifest.assets.map(({ asset_id }) => asset_id)).size, 4);
+  for (const asset of manifest.assets) {
+    const xs = asset.footprint_f.map(([x]) => x);
+    assert.equal(Math.max(...xs) - Math.min(...xs), asset.world_width_f);
+    const [width, height] = asset.source_dimensions_px;
+    const [x, y, w, h] = asset.trim_rect_px;
+    assert.ok(x >= 0 && y >= 0 && w > 0 && h > 0 && x + w <= width && y + h <= height);
+    for (const [u, v] of [asset.pivot_uv, asset.sockets.entrance.uv]) {
+      assert.ok(u >= 0 && u <= 1 && v >= 0 && v <= 1);
+    }
+    assert.ok(asset.sockets.entrance.accepts.length > 0 && asset.foundation_modes.length > 0);
+  }
 });

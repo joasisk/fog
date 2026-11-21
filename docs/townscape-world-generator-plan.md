@@ -68,9 +68,9 @@ Run `npm test` and `npm run build` for implementation changes, plus a browser pa
 
 Import `generateWorldGeometry` and the fixed `GEOMETRY_CASES` from [src/generation/index.ts](../src/generation/index.ts). A successful v1 snapshot has a sampled terrain, selected tier, preliminary terrain capacity, capacity measured on the accepted roads, and the world-space graph. Use stable junction and segment IDs to attach districts and frontage allocations in later passes. Counts are fixture-based estimates until parcels are laid out. Set `requestedTier` for a specific tier and `allowSmallerTier` to opt into fallback. Rejections include stage-specific shortfalls and retain the terrain for inspection.
 
-Both fixed cases use supported ground lanes with sampled grades up to 8°. The foothill town supports three routing benches connected by cross-depth links. The contour farm lane follows a single shelf. Their crossing lists are empty. Bridge and stair routing will be exercised by the later crossing presets.
+Both fixed cases use supported ground lanes with grades up to 8°. Routing and the grade view use the steepest slope along each grid link on the interpolated terrain. The foothill town supports three routing benches connected by cross-depth links. The contour farm lane follows the seeded bend of a single shelf between its two exits. Their crossing lists are empty. Bridge and stair routing will be exercised by the later crossing presets.
 
-The [geometry fixtures](../src/generation/fixtures.ts) follow the v1 handoff conventions for footprint dimensions, source frames, and entrance UVs. These entries carry geometry metadata while production art is authored.
+The geometry and art tools can use the same four fixture entries. Geometry looks them up by envelope name in `GEOMETRY_FIXTURES.assets`. Serialize `GEOMETRY_FIXTURE_MANIFEST` for the handoff's v1 asset-list format, including footprint dimensions, source frames, and entrance UVs. [Geometry fixtures](../src/generation/fixtures.ts)
 
 Use Node to render any of the deterministic SVG views. The available cases are `foothillTown` and `contourFarmLane`. The views are `terrain`, `exclusions`, `grades`, and `connectivity`.
 
