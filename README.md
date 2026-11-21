@@ -16,6 +16,8 @@ Vite ships the compact prototype recordings in `assets/audio/playback/`. To rege
 
 - [Development plan](docs/development-plan.md)
 - [Building asset integration](docs/building-asset-integration.md)
+- [Townscape asset production plan](docs/townscape-asset-production-plan.md)
+- [Townscape world generator plan](docs/townscape-world-generator-plan.md)
 - [Agent development guidelines](AGENTS.md)
 
 ## Design documents

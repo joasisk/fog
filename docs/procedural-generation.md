@@ -2,6 +2,8 @@
 
 The generator creates a complete town on load. Each town needs a coherent layout at the scale of the whole settlement and enough variation in terrain, frontage, building use, and vegetation to give it a character of its own.
 
+The [townscape world generator plan](townscape-world-generator-plan.md) governs the new implementation. It specifies terrain first, followed by settlement size, roads, districts and parcels, then buildings. The outline below describes the earlier prototype design.
+
 ## Lay out the town
 
 1. **Shape the terrain.** Choose the size of the settlement, the profile of the hills, and ground suitable for streets and buildings. Use the slopes and hollows to guide where the town gathers and where trees fill the gaps.
