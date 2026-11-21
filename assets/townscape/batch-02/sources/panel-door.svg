@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="50" height="78" viewBox="0 0 25 39">
+<g id="recess" inkscape:groupmode="layer" inkscape:label="recess">
+<path d="M5 33V14q0-8 7.5-8t7.5 8v19Z" fill="#70665a" stroke="none" stroke-width="0.6" opacity="1"/>
+</g>
+<g id="panel" inkscape:groupmode="layer" inkscape:label="panel">
+<path d="M6 32V14Q6 8 12.5 8Q19 8 19 14V32Z" fill="#657264" stroke="none" stroke-width="0.6" opacity="1"/><path d="M8 29V19h9v10zM8 16v-3q4.5-5 9 0v3z" fill="#899284" stroke="none" stroke-width="0.6" opacity="1"/>
+</g>
+<g id="frame" inkscape:groupmode="layer" inkscape:label="frame">
+<path d="M7 32V14q0-7 5.5-7t5.5 7v18M5 32.5h15" fill="none" stroke="#b8a58a" stroke-width="0.8" opacity="1"/><ellipse cx="15.8" cy="23" rx="0.75" ry="0.75" fill="#cfb683" opacity="0.86"/>
+</g>
+<g id="mask-aperture" inkscape:groupmode="layer" inkscape:label="mask-aperture" style="display:none">
+<path d="M6 32V14Q6 8 12.5 8Q19 8 19 14V32Z" fill="white" stroke="none" stroke-width="0.6" opacity="1"/>
+</g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="180" height="130" viewBox="0 0 90 65">
+<g id="shadow" inkscape:groupmode="layer" inkscape:label="shadow">
+<ellipse cx="46" cy="55" rx="33" ry="2" fill="#665749" opacity="0.22"/>
+</g>
+<g id="rear-supports" inkscape:groupmode="layer" inkscape:label="rear-supports">
+<path d="M8 51L18 12H54L65 51M53 12l-8 39M19 12l9 39M63 54V21h9v27" fill="none" stroke="#795c4b" stroke-width="1.9" opacity="0.95"/>
+</g>
+<g id="seats" inkscape:groupmode="layer" inkscape:label="seats">
+<path d="M29 15v28m11-28v28M26 43h7m3 0h8" fill="none" stroke="#6c6650" stroke-width="1.25" opacity="0.92"/>
+</g>
+<g id="front-slide" inkscape:groupmode="layer" inkscape:label="front-slide">
+<path d="M70 24Q71 44 83 51L80 55Q66 46 66 24Z" fill="#ad7955" stroke="none" stroke-width="0.6" opacity="1"/><path d="M67 25q.8 17 13 28" fill="none" stroke="#e3af75" stroke-width="1.4" opacity="0.83"/>
+</g>
+<g id="mask-occlusion" inkscape:groupmode="layer" inkscape:label="mask-occlusion" style="display:none">
+<path d="M8 51L18 12H54L65 51M53 12l-8 39M19 12l9 39M63 54V21h9v27" fill="none" stroke="white" stroke-width="1.9" opacity="1"/><path d="M70 24Q71 44 83 51L80 55Q66 46 66 24Z" fill="white" stroke="none" stroke-width="0.6" opacity="1"/><path d="M29 15v28m11-28v28M26 43h7m3 0h8" fill="none" stroke="white" stroke-width="1.25" opacity="1"/>
+</g>
+</svg>

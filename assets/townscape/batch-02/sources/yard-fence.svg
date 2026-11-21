@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="254" height="56" viewBox="0 0 127 28">
+<g id="rails" inkscape:groupmode="layer" inkscape:label="rails">
+<path d="M7 12H51M75 12h45M7 17H51M75 17h45" fill="none" stroke="#776e58" stroke-width="1" opacity="0.88"/><path d="M7 10v12M13 10v12M19 10v12M25 10v12M31 10v12M37 10v12M43 10v12M49 10v12M51 11v12M75 11v12M81 11v12M87 11v12M93 11v12M99 11v12M105 11v12M111 11v12M117 11v12" fill="none" stroke="#a29a7a" stroke-width="1.5" opacity="1"/>
+</g>
+<g id="mask-occlusion" inkscape:groupmode="layer" inkscape:label="mask-occlusion" style="display:none">
+<path d="M7 12H51M75 12h45M7 17H51M75 17h45" fill="none" stroke="white" stroke-width="1" opacity="1"/><path d="M7 10v12M13 10v12M19 10v12M25 10v12M31 10v12M37 10v12M43 10v12M49 10v12M51 11v12M75 11v12M81 11v12M87 11v12M93 11v12M99 11v12M105 11v12M111 11v12M117 11v12" fill="none" stroke="white" stroke-width="1.5" opacity="1"/>
+</g>
+</svg>

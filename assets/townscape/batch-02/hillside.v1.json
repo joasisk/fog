@@ -1,0 +1,1890 @@
+{
+  "schema_version": 1,
+  "units": "virtual_pixels",
+  "reference_frontage_px": 72,
+  "viewport_px": [
+    1920,
+    1080
+  ],
+  "reduced_viewport_px": [
+    960,
+    540
+  ],
+  "seed": 32651,
+  "backdrop": {
+    "sky": "png/landscape/sky.png",
+    "far": "png/landscape/far.png",
+    "middle": "png/landscape/middle.png",
+    "near": "png/landscape/near.png"
+  },
+  "bands": [
+    {
+      "id": "far",
+      "scale": 0.53,
+      "support_profile_px": [
+        [
+          0,
+          474
+        ],
+        [
+          86,
+          481
+        ],
+        [
+          100,
+          486
+        ],
+        [
+          345,
+          486
+        ],
+        [
+          411,
+          496
+        ],
+        [
+          465,
+          514
+        ],
+        [
+          491.2,
+          524.4
+        ],
+        [
+          552,
+          529
+        ],
+        [
+          680,
+          524
+        ],
+        [
+          750,
+          545
+        ],
+        [
+          838,
+          547
+        ],
+        [
+          918,
+          560
+        ],
+        [
+          1050,
+          575
+        ],
+        [
+          1180,
+          591
+        ],
+        [
+          1322,
+          591
+        ],
+        [
+          1450,
+          606
+        ],
+        [
+          1660,
+          622
+        ],
+        [
+          1920,
+          633
+        ]
+      ],
+      "shelves": {
+        "far-core": {
+          "left": 95,
+          "right": 345,
+          "baseline": 492
+        },
+        "far-garden": {
+          "left": 554,
+          "right": 638,
+          "baseline": 534
+        },
+        "far-shelf": {
+          "left": 762,
+          "right": 824,
+          "baseline": 553
+        },
+        "far-farm": {
+          "left": 1152,
+          "right": 1260,
+          "baseline": 596
+        }
+      }
+    },
+    {
+      "id": "middle",
+      "scale": 0.76,
+      "support_profile_px": [
+        [
+          0,
+          578
+        ],
+        [
+          116,
+          571
+        ],
+        [
+          196,
+          557
+        ],
+        [
+          225,
+          563
+        ],
+        [
+          458,
+          563
+        ],
+        [
+          508,
+          565
+        ],
+        [
+          552,
+          569
+        ],
+        [
+          590,
+          589
+        ],
+        [
+          620,
+          615
+        ],
+        [
+          935,
+          611
+        ],
+        [
+          1060,
+          616
+        ],
+        [
+          1170,
+          614
+        ],
+        [
+          1216,
+          638
+        ],
+        [
+          1322,
+          651
+        ],
+        [
+          1440,
+          655
+        ],
+        [
+          1625,
+          677
+        ],
+        [
+          1780,
+          681
+        ],
+        [
+          1920,
+          701
+        ]
+      ],
+      "shelves": {
+        "mid-core": {
+          "left": 225,
+          "right": 458,
+          "baseline": 570
+        },
+        "school": {
+          "left": 738,
+          "right": 893,
+          "baseline": 617
+        },
+        "walkup": {
+          "left": 1094,
+          "right": 1180,
+          "baseline": 617
+        },
+        "mid-house": {
+          "left": 1281,
+          "right": 1362,
+          "baseline": 653
+        }
+      }
+    },
+    {
+      "id": "near",
+      "scale": 1,
+      "support_profile_px": [
+        [
+          0,
+          715
+        ],
+        [
+          103,
+          717
+        ],
+        [
+          133,
+          722
+        ],
+        [
+          237,
+          723
+        ],
+        [
+          279,
+          731
+        ],
+        [
+          746,
+          730
+        ],
+        [
+          843,
+          730
+        ],
+        [
+          900,
+          734
+        ],
+        [
+          953,
+          741
+        ],
+        [
+          996,
+          751
+        ],
+        [
+          1066,
+          748
+        ],
+        [
+          1130,
+          754
+        ],
+        [
+          1202,
+          777
+        ],
+        [
+          1344,
+          783
+        ],
+        [
+          1454,
+          798
+        ],
+        [
+          1630,
+          807
+        ],
+        [
+          1786,
+          825
+        ],
+        [
+          1920,
+          845
+        ]
+      ],
+      "shelves": {
+        "inn": {
+          "left": 132,
+          "right": 238,
+          "baseline": 729
+        },
+        "near-core": {
+          "left": 295,
+          "right": 743,
+          "baseline": 737
+        },
+        "near-cottage": {
+          "left": 1254,
+          "right": 1337,
+          "baseline": 790
+        }
+      }
+    }
+  ],
+  "nodes": {
+    "far-west": {
+      "band": "far",
+      "px": [
+        0,
+        498
+      ]
+    },
+    "far-core": {
+      "band": "far",
+      "px": [
+        352,
+        497
+      ]
+    },
+    "upper-step": {
+      "band": "far",
+      "px": [
+        491.2,
+        529.4
+      ]
+    },
+    "far-garden": {
+      "band": "far",
+      "px": [
+        645,
+        539
+      ]
+    },
+    "far-east": {
+      "band": "far",
+      "px": [
+        1920,
+        645
+      ]
+    },
+    "middle-west": {
+      "band": "middle",
+      "px": [
+        0,
+        603
+      ]
+    },
+    "upper-landing": {
+      "band": "middle",
+      "px": [
+        552,
+        575
+      ]
+    },
+    "school-turn": {
+      "band": "middle",
+      "px": [
+        620,
+        622
+      ]
+    },
+    "stair-upper": {
+      "band": "middle",
+      "px": [
+        1060,
+        622
+      ]
+    },
+    "middle-east": {
+      "band": "middle",
+      "px": [
+        1920,
+        706
+      ]
+    },
+    "stair-turn": {
+      "band": "near",
+      "px": [
+        980,
+        682
+      ]
+    },
+    "stair-lower": {
+      "band": "near",
+      "px": [
+        900,
+        742
+      ]
+    },
+    "near-west": {
+      "band": "near",
+      "px": [
+        0,
+        742
+      ]
+    },
+    "plaza-junction": {
+      "band": "near",
+      "px": [
+        839,
+        742
+      ]
+    },
+    "plaza": {
+      "band": "near",
+      "px": [
+        839,
+        767
+      ]
+    },
+    "lane-bend-end": {
+      "band": "near",
+      "px": [
+        996,
+        760
+      ]
+    },
+    "near-east": {
+      "band": "near",
+      "px": [
+        1920,
+        853
+      ]
+    }
+  },
+  "edges": [
+    {
+      "id": "far-west-lane",
+      "kind": "lane",
+      "band": "far",
+      "from_id": "far-west",
+      "to_id": "far-core",
+      "via_px": [
+        [
+          94,
+          497
+        ]
+      ]
+    },
+    {
+      "id": "far-curve",
+      "kind": "lane",
+      "band": "far",
+      "from_id": "far-core",
+      "to_id": "upper-step",
+      "via_px": [
+        [
+          393,
+          509
+        ],
+        [
+          441,
+          519
+        ]
+      ]
+    },
+    {
+      "id": "far-gardens",
+      "kind": "lane",
+      "band": "far",
+      "from_id": "upper-step",
+      "to_id": "far-garden",
+      "via_px": [
+        [
+          557,
+          539
+        ]
+      ]
+    },
+    {
+      "id": "farm-contour",
+      "kind": "lane",
+      "band": "far",
+      "from_id": "far-garden",
+      "to_id": "far-east",
+      "via_px": [
+        [
+          710,
+          539
+        ],
+        [
+          764,
+          558
+        ],
+        [
+          828,
+          558
+        ],
+        [
+          1020,
+          583
+        ],
+        [
+          1145,
+          601
+        ],
+        [
+          1286,
+          601
+        ],
+        [
+          1450,
+          618
+        ],
+        [
+          1740,
+          639
+        ]
+      ]
+    },
+    {
+      "id": "middle-high",
+      "kind": "lane",
+      "band": "middle",
+      "from_id": "middle-west",
+      "to_id": "upper-landing",
+      "via_px": [
+        [
+          126,
+          593
+        ],
+        [
+          224,
+          575
+        ]
+      ]
+    },
+    {
+      "id": "middle-curve",
+      "kind": "lane",
+      "band": "middle",
+      "from_id": "upper-landing",
+      "to_id": "school-turn",
+      "via_px": [
+        [
+          580,
+          586
+        ],
+        [
+          603,
+          607
+        ]
+      ]
+    },
+    {
+      "id": "school-lane",
+      "kind": "lane",
+      "band": "middle",
+      "from_id": "school-turn",
+      "to_id": "stair-upper",
+      "via_px": []
+    },
+    {
+      "id": "gardens-lane",
+      "kind": "lane",
+      "band": "middle",
+      "from_id": "stair-upper",
+      "to_id": "middle-east",
+      "via_px": [
+        [
+          1158,
+          622
+        ],
+        [
+          1211,
+          640
+        ],
+        [
+          1285,
+          658
+        ],
+        [
+          1355,
+          658
+        ],
+        [
+          1594,
+          688
+        ],
+        [
+          1778,
+          691
+        ]
+      ]
+    },
+    {
+      "id": "main-lane",
+      "kind": "lane",
+      "band": "near",
+      "from_id": "near-west",
+      "to_id": "plaza-junction",
+      "via_px": [
+        [
+          125,
+          734
+        ],
+        [
+          241,
+          734
+        ],
+        [
+          272,
+          742
+        ],
+        [
+          769,
+          742
+        ]
+      ]
+    },
+    {
+      "id": "front-lane",
+      "kind": "lane",
+      "band": "near",
+      "from_id": "plaza-junction",
+      "to_id": "stair-lower",
+      "via_px": []
+    },
+    {
+      "id": "plaza-spur",
+      "kind": "lane",
+      "band": "near",
+      "from_id": "plaza-junction",
+      "to_id": "plaza",
+      "via_px": []
+    },
+    {
+      "id": "front-bend",
+      "kind": "lane",
+      "band": "near",
+      "from_id": "stair-lower",
+      "to_id": "lane-bend-end",
+      "via_px": [
+        [
+          926,
+          742
+        ],
+        [
+          948,
+          747
+        ],
+        [
+          968,
+          756
+        ],
+        [
+          984,
+          760
+        ]
+      ]
+    },
+    {
+      "id": "meadow-lane",
+      "kind": "lane",
+      "band": "near",
+      "from_id": "lane-bend-end",
+      "to_id": "near-east",
+      "via_px": [
+        [
+          1120,
+          760
+        ],
+        [
+          1200,
+          788
+        ],
+        [
+          1256,
+          795
+        ],
+        [
+          1334,
+          795
+        ],
+        [
+          1452,
+          812
+        ],
+        [
+          1634,
+          826
+        ],
+        [
+          1825,
+          841
+        ]
+      ]
+    },
+    {
+      "id": "upper-stair",
+      "kind": "stairs",
+      "band": "middle",
+      "from_id": "upper-step",
+      "to_id": "upper-landing",
+      "asset": "townscape.b02.stair",
+      "pivot_px": [
+        491.2,
+        529.4
+      ],
+      "scale": 0.76,
+      "mirror": false
+    },
+    {
+      "id": "lower-stair-upper-flight",
+      "kind": "stairs",
+      "band": "near",
+      "from_id": "stair-upper",
+      "to_id": "stair-turn",
+      "asset": "townscape.b02.stair",
+      "pivot_px": [
+        1060,
+        622
+      ],
+      "scale": 1,
+      "mirror": true
+    },
+    {
+      "id": "lower-stair-lower-flight",
+      "kind": "stairs",
+      "band": "near",
+      "from_id": "stair-turn",
+      "to_id": "stair-lower",
+      "asset": "townscape.b02.stair",
+      "pivot_px": [
+        980,
+        682
+      ],
+      "scale": 1,
+      "mirror": true
+    }
+  ],
+  "buildings": [
+    {
+      "id": "far-corner-house",
+      "asset": "townscape.b02.corner-house",
+      "band": "far",
+      "shelf": "far-core",
+      "left_px": 105,
+      "route": "far-west-lane",
+      "exposed": [
+        "left"
+      ]
+    },
+    {
+      "id": "far-gable-house",
+      "asset": "townscape.b02.gable-house",
+      "band": "far",
+      "shelf": "far-core",
+      "left_px": 144.22,
+      "route": "far-west-lane",
+      "exposed": []
+    },
+    {
+      "id": "far-weavers-house",
+      "asset": "townscape.b02.weavers-house",
+      "band": "far",
+      "shelf": "far-core",
+      "left_px": 176.02,
+      "route": "far-west-lane",
+      "exposed": []
+    },
+    {
+      "id": "far-cafe",
+      "asset": "townscape.b01.cafe",
+      "band": "far",
+      "shelf": "far-core",
+      "left_px": 219.48,
+      "route": "far-west-lane",
+      "exposed": [],
+      "foundation": "townscape.b02.level-plinth"
+    },
+    {
+      "id": "far-brick-infill",
+      "asset": "townscape.b02.brick-infill",
+      "band": "far",
+      "shelf": "far-core",
+      "left_px": 257.64,
+      "route": "far-west-lane",
+      "exposed": []
+    },
+    {
+      "id": "far-bakery",
+      "asset": "townscape.b02.bakery",
+      "band": "far",
+      "shelf": "far-core",
+      "left_px": 302.16,
+      "route": "far-west-lane",
+      "exposed": [
+        "right"
+      ]
+    },
+    {
+      "id": "far-garden-villa",
+      "asset": "townscape.b02.garden-villa",
+      "band": "far",
+      "shelf": "far-garden",
+      "left_px": 562,
+      "route": "far-gardens"
+    },
+    {
+      "id": "far-stone-cottage",
+      "asset": "townscape.b02.stone-cottage",
+      "band": "far",
+      "shelf": "far-shelf",
+      "left_px": 775,
+      "route": "farm-contour"
+    },
+    {
+      "id": "far-barn",
+      "asset": "townscape.b02.barn",
+      "band": "far",
+      "shelf": "far-farm",
+      "left_px": 1184,
+      "route": "farm-contour"
+    },
+    {
+      "id": "middle-corner-house",
+      "asset": "townscape.b02.corner-house",
+      "band": "middle",
+      "shelf": "mid-core",
+      "left_px": 230,
+      "route": "middle-high",
+      "exposed": [
+        "left"
+      ]
+    },
+    {
+      "id": "middle-weavers-house",
+      "asset": "townscape.b02.weavers-house",
+      "band": "middle",
+      "shelf": "mid-core",
+      "left_px": 286.24,
+      "route": "middle-high",
+      "exposed": []
+    },
+    {
+      "id": "middle-bookshop",
+      "asset": "townscape.b01.bookshop",
+      "band": "middle",
+      "shelf": "mid-core",
+      "left_px": 348.56,
+      "route": "middle-high",
+      "exposed": [],
+      "foundation": "townscape.b02.rising-plinth",
+      "lights": true
+    },
+    {
+      "id": "middle-gable-house",
+      "asset": "townscape.b02.gable-house",
+      "band": "middle",
+      "shelf": "mid-core",
+      "left_px": 403.28,
+      "route": "middle-high",
+      "exposed": [
+        "right"
+      ]
+    },
+    {
+      "id": "middle-school",
+      "asset": "townscape.b02.school",
+      "band": "middle",
+      "shelf": "school",
+      "left_px": 763,
+      "route": "school-lane",
+      "lights": true
+    },
+    {
+      "id": "middle-garden-walkup",
+      "asset": "townscape.b02.garden-walkup",
+      "band": "middle",
+      "shelf": "walkup",
+      "left_px": 1103,
+      "route": "gardens-lane"
+    },
+    {
+      "id": "middle-garden-villa",
+      "asset": "townscape.b02.garden-villa",
+      "band": "middle",
+      "shelf": "mid-house",
+      "left_px": 1290,
+      "route": "gardens-lane"
+    },
+    {
+      "id": "near-inn",
+      "asset": "townscape.b02.inn",
+      "band": "near",
+      "shelf": "inn",
+      "left_px": 136,
+      "route": "main-lane",
+      "lights": true
+    },
+    {
+      "id": "near-corner-house",
+      "asset": "townscape.b02.corner-house",
+      "band": "near",
+      "shelf": "near-core",
+      "left_px": 299,
+      "route": "main-lane",
+      "exposed": [
+        "left"
+      ]
+    },
+    {
+      "id": "near-gable-house",
+      "asset": "townscape.b02.gable-house",
+      "band": "near",
+      "shelf": "near-core",
+      "left_px": 373,
+      "route": "main-lane",
+      "exposed": []
+    },
+    {
+      "id": "shop-slot",
+      "asset": "townscape.b01.cafe",
+      "band": "near",
+      "shelf": "near-core",
+      "left_px": 433,
+      "route": "main-lane",
+      "exposed": [],
+      "lights": true,
+      "foundation": "townscape.b01.stepped-foundation",
+      "alternates": [
+        "townscape.b01.bookshop"
+      ]
+    },
+    {
+      "id": "near-brick-infill",
+      "asset": "townscape.b02.brick-infill",
+      "band": "near",
+      "shelf": "near-core",
+      "left_px": 505,
+      "route": "main-lane",
+      "exposed": []
+    },
+    {
+      "id": "near-weavers-house",
+      "asset": "townscape.b02.weavers-house",
+      "band": "near",
+      "shelf": "near-core",
+      "left_px": 589,
+      "route": "main-lane",
+      "exposed": []
+    },
+    {
+      "id": "near-bakery",
+      "asset": "townscape.b02.bakery",
+      "band": "near",
+      "shelf": "near-core",
+      "left_px": 671,
+      "route": "main-lane",
+      "exposed": [
+        "right"
+      ],
+      "lights": true
+    },
+    {
+      "id": "near-cottage",
+      "asset": "townscape.b01.cottage",
+      "band": "near",
+      "shelf": "near-cottage",
+      "left_px": 1265,
+      "route": "meadow-lane"
+    }
+  ],
+  "items": [
+    {
+      "band": "far",
+      "phase": "ground",
+      "asset": "townscape.b02.orchard-soil",
+      "pivot_px": [
+        670,
+        543
+      ],
+      "scale": 0.73
+    },
+    {
+      "band": "far",
+      "phase": "ground",
+      "asset": "townscape.b02.field-stubble",
+      "pivot_px": [
+        1084,
+        603
+      ],
+      "scale": 0.9
+    },
+    {
+      "band": "far",
+      "phase": "ground",
+      "asset": "townscape.b02.orchard-soil",
+      "pivot_px": [
+        1198,
+        622
+      ],
+      "scale": 0.9
+    },
+    {
+      "band": "middle",
+      "phase": "ground",
+      "asset": "townscape.b02.play-yard",
+      "pivot_px": [
+        958,
+        622
+      ],
+      "id": "play-yard",
+      "route": "school-lane",
+      "scale": 0.9
+    },
+    {
+      "band": "middle",
+      "phase": "ground",
+      "asset": "townscape.b02.orchard-soil",
+      "pivot_px": [
+        1296,
+        668
+      ],
+      "scale": 0.85
+    },
+    {
+      "band": "near",
+      "phase": "ground",
+      "asset": "townscape.b02.park-ground",
+      "pivot_px": [
+        1045,
+        760
+      ],
+      "id": "park-ground",
+      "route": "meadow-lane"
+    },
+    {
+      "band": "near",
+      "phase": "ground",
+      "asset": "townscape.b02.plaza-paving",
+      "pivot_px": [
+        839,
+        767
+      ],
+      "id": "plaza-paving",
+      "route": "plaza-spur"
+    },
+    {
+      "band": "near",
+      "phase": "ground",
+      "asset": "townscape.b02.orchard-soil",
+      "pivot_px": [
+        1342,
+        820
+      ]
+    },
+    {
+      "band": "near",
+      "phase": "ground",
+      "asset": "townscape.b02.field-stubble",
+      "pivot_px": [
+        1556,
+        851
+      ],
+      "scale": 1.15
+    },
+    {
+      "band": "near",
+      "phase": "ground",
+      "asset": "townscape.b02.field-stubble",
+      "pivot_px": [
+        1580,
+        919
+      ],
+      "scale": 1.55
+    },
+    {
+      "band": "near",
+      "phase": "ground",
+      "asset": "townscape.b01.grass-soil",
+      "pivot_px": [
+        536,
+        751
+      ]
+    },
+    {
+      "band": "near",
+      "phase": "ground",
+      "asset": "townscape.b01.grass-soil",
+      "pivot_px": [
+        299,
+        740
+      ],
+      "layers": [
+        "soil",
+        "grass"
+      ]
+    },
+    {
+      "band": "near",
+      "phase": "roads",
+      "asset": "townscape.b01.narrow-lane",
+      "pivot_px": [
+        423,
+        742
+      ],
+      "route": "main-lane"
+    },
+    {
+      "band": "near",
+      "phase": "roads",
+      "asset": "townscape.b02.lane-junction",
+      "pivot_px": [
+        780,
+        742
+      ],
+      "route": "main-lane",
+      "branch_node": "plaza",
+      "branch_route": "plaza-spur"
+    },
+    {
+      "band": "near",
+      "phase": "roads",
+      "asset": "townscape.b02.lane-bend",
+      "pivot_px": [
+        900,
+        742
+      ],
+      "route": "front-bend",
+      "start_node": "stair-lower",
+      "end_node": "lane-bend-end"
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        45,
+        489
+      ],
+      "scale": 0.54,
+      "mirror": true
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        72,
+        491
+      ],
+      "scale": 0.82,
+      "mirror": false
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        89,
+        495
+      ],
+      "scale": 0.638,
+      "mirror": true
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        358,
+        500
+      ],
+      "scale": 0.66,
+      "mirror": false
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        405,
+        511
+      ],
+      "scale": 0.605,
+      "mirror": true
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        453,
+        524
+      ],
+      "scale": 0.65,
+      "mirror": false
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        520,
+        534
+      ],
+      "scale": 0.76,
+      "mirror": true
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        563,
+        535
+      ],
+      "scale": 0.638,
+      "mirror": false
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        637,
+        540
+      ],
+      "scale": 0.51,
+      "mirror": true
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        676,
+        544
+      ],
+      "scale": 0.726,
+      "mirror": false
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        705,
+        547
+      ],
+      "scale": 0.4,
+      "mirror": true
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        822,
+        557
+      ],
+      "scale": 0.561,
+      "mirror": false
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        863,
+        570
+      ],
+      "scale": 0.76,
+      "mirror": true
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        902,
+        581
+      ],
+      "scale": 0.59,
+      "mirror": false
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        969,
+        588
+      ],
+      "scale": 0.5,
+      "mirror": true
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        1058,
+        605
+      ],
+      "scale": 0.66,
+      "mirror": false
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        1260,
+        610
+      ],
+      "scale": 1.1,
+      "mirror": true
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        1326,
+        608
+      ],
+      "scale": 0.748,
+      "mirror": false
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        1389,
+        622
+      ],
+      "scale": 0.7,
+      "mirror": true
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        1422,
+        617
+      ],
+      "scale": 0.64,
+      "mirror": false
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        1453,
+        625
+      ],
+      "scale": 1,
+      "mirror": true
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        1484,
+        627
+      ],
+      "scale": 0.78,
+      "mirror": false
+    },
+    {
+      "band": "far",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        1731,
+        637
+      ],
+      "scale": 0.7,
+      "mirror": true
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        70,
+        601
+      ],
+      "scale": 0.82,
+      "mirror": true
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        119,
+        593
+      ],
+      "scale": 0.836,
+      "mirror": false
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        170,
+        584
+      ],
+      "scale": 0.93,
+      "mirror": true
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        204,
+        579
+      ],
+      "scale": 0.616,
+      "mirror": false
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        467,
+        578
+      ],
+      "scale": 0.8,
+      "mirror": true
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        579,
+        595
+      ],
+      "scale": 0.93,
+      "mirror": false
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        659,
+        625
+      ],
+      "scale": 0.715,
+      "mirror": true
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        697,
+        625
+      ],
+      "scale": 0.95,
+      "mirror": false
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        737,
+        623
+      ],
+      "scale": 0.67,
+      "mirror": true
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        994,
+        630
+      ],
+      "scale": 0.8,
+      "mirror": false
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        1026,
+        623
+      ],
+      "scale": 0.583,
+      "mirror": true
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        1173,
+        631
+      ],
+      "scale": 0.9,
+      "mirror": false
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        1232,
+        655
+      ],
+      "scale": 0.63,
+      "mirror": true
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        1271,
+        662
+      ],
+      "scale": 0.781,
+      "mirror": false
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        1388,
+        669
+      ],
+      "scale": 0.75,
+      "mirror": true
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        1608,
+        695
+      ],
+      "scale": 0.84,
+      "mirror": false
+    },
+    {
+      "band": "middle",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        1751,
+        703
+      ],
+      "scale": 0.93,
+      "mirror": true
+    },
+    {
+      "band": "near",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        28,
+        742
+      ],
+      "scale": 0.9,
+      "mirror": true
+    },
+    {
+      "band": "near",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        60,
+        732
+      ],
+      "scale": 1.16,
+      "mirror": false
+    },
+    {
+      "band": "near",
+      "phase": "rear",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        103,
+        734
+      ],
+      "scale": 0.84,
+      "mirror": true
+    },
+    {
+      "band": "near",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        255,
+        741
+      ],
+      "scale": 0.682,
+      "mirror": false
+    },
+    {
+      "band": "near",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        756,
+        741
+      ],
+      "scale": 0.616,
+      "mirror": true
+    },
+    {
+      "band": "near",
+      "phase": "rear",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        1020,
+        744
+      ],
+      "scale": 0.67,
+      "mirror": false
+    },
+    {
+      "band": "near",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        1138,
+        779
+      ],
+      "scale": 0.93,
+      "mirror": true
+    },
+    {
+      "band": "near",
+      "phase": "rear",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        1191,
+        791
+      ],
+      "scale": 0.65,
+      "mirror": false
+    },
+    {
+      "band": "near",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        1335,
+        797
+      ],
+      "scale": 0.594,
+      "mirror": true
+    },
+    {
+      "band": "near",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        1410,
+        813
+      ],
+      "scale": 0.86,
+      "mirror": false
+    },
+    {
+      "band": "near",
+      "phase": "rear",
+      "asset": "townscape.b02.fir",
+      "pivot_px": [
+        1474,
+        827
+      ],
+      "scale": 0.63,
+      "mirror": true
+    },
+    {
+      "band": "near",
+      "phase": "rear",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        1626,
+        849
+      ],
+      "scale": 1.03,
+      "mirror": false
+    },
+    {
+      "band": "near",
+      "phase": "rear",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        1830,
+        889
+      ],
+      "scale": 1.54,
+      "mirror": true
+    },
+    {
+      "band": "middle",
+      "phase": "props",
+      "asset": "townscape.b02.swing-and-slide",
+      "pivot_px": [
+        924,
+        616
+      ],
+      "scale": 0.6,
+      "parcel": "play-yard"
+    },
+    {
+      "band": "middle",
+      "phase": "props",
+      "asset": "townscape.b02.yard-fence",
+      "pivot_px": [
+        958,
+        624
+      ],
+      "scale": 0.86,
+      "parcel": "play-yard"
+    },
+    {
+      "band": "near",
+      "phase": "props",
+      "asset": "townscape.b02.well",
+      "pivot_px": [
+        870,
+        788
+      ],
+      "parcel": "plaza-paving"
+    },
+    {
+      "band": "near",
+      "phase": "props",
+      "asset": "townscape.b02.bench",
+      "pivot_px": [
+        1011,
+        754
+      ],
+      "scale": 0.83,
+      "parcel": "park-ground"
+    },
+    {
+      "band": "near",
+      "phase": "props",
+      "asset": "townscape.b02.bench",
+      "pivot_px": [
+        1075,
+        756
+      ],
+      "scale": 0.83,
+      "parcel": "park-ground"
+    },
+    {
+      "band": "near",
+      "phase": "lip",
+      "asset": "townscape.b01.grass-soil",
+      "pivot_px": [
+        595,
+        766
+      ],
+      "layers": [
+        "front-lip"
+      ]
+    },
+    {
+      "band": "near",
+      "phase": "lip",
+      "asset": "townscape.b02.autumn-tree",
+      "pivot_px": [
+        1120,
+        779
+      ],
+      "id": "overlook-oak",
+      "scale": 1.1,
+      "split_from": "middle"
+    },
+    {
+      "band": "near",
+      "phase": "lip",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        120,
+        973
+      ],
+      "scale": 1.33,
+      "mirror": true
+    },
+    {
+      "band": "near",
+      "phase": "lip",
+      "asset": "townscape.b02.rowan",
+      "pivot_px": [
+        1910,
+        1012
+      ],
+      "scale": 1.69
+    }
+  ],
+  "mist": [
+    {
+      "after": "far",
+      "duration_s": 135,
+      "offset_px": 67,
+      "sheets": [
+        {
+          "asset": "townscape.b01.mist-sheet",
+          "pivot_px": [
+            363,
+            520
+          ],
+          "scale": 1.27,
+          "opacity": 0.67
+        },
+        {
+          "asset": "townscape.b01.mist-sheet",
+          "pivot_px": [
+            1047,
+            544
+          ],
+          "scale": 1.85,
+          "opacity": 0.67
+        },
+        {
+          "asset": "townscape.b01.mist-sheet",
+          "pivot_px": [
+            1600,
+            609
+          ],
+          "scale": 1.48,
+          "opacity": 0.74
+        }
+      ]
+    },
+    {
+      "after": "middle",
+      "duration_s": 173,
+      "offset_px": 83,
+      "sheets": [
+        {
+          "asset": "townscape.b02.valley-mist",
+          "pivot_px": [
+            291,
+            617
+          ],
+          "scale": 1.18,
+          "opacity": 0.67
+        },
+        {
+          "asset": "townscape.b02.valley-mist",
+          "pivot_px": [
+            992,
+            627
+          ],
+          "scale": 1.13,
+          "opacity": 0.71
+        },
+        {
+          "asset": "townscape.b02.valley-mist",
+          "pivot_px": [
+            1593,
+            720
+          ],
+          "scale": 1.45,
+          "opacity": 0.74
+        }
+      ]
+    }
+  ]
+}

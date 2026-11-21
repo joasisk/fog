@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="88" height="94" viewBox="0 0 44 47">
+<g id="shadow" inkscape:groupmode="layer" inkscape:label="shadow">
+<ellipse cx="22" cy="38" rx="16" ry="2.2" fill="#544f41" opacity="0.3"/>
+</g>
+<g id="timber" inkscape:groupmode="layer" inkscape:label="timber">
+<path d="M10 28V11H13V28ZM30 28V11H33V28ZM6 15L22 5 38 15 36 18 22 11 8 18Z" fill="#756756" stroke="none" stroke-width="0.6" opacity="1"/><path d="M22 12v14m-5-10 5-4 5 5" fill="none" stroke="#655544" stroke-width="0.6" opacity="1"/>
+</g>
+<g id="stone" inkscape:groupmode="layer" inkscape:label="stone">
+<path d="M7 23Q21 18 37 23V34Q25 42 7 34Z" fill="#998775" stroke="none" stroke-width="0.6" opacity="1"/><defs><clipPath id="clip-stone"><path d="M7 23Q21 18 37 23V34Q25 42 7 34Z" fill="white" stroke="none" stroke-width="0.6" opacity="1"/></clipPath></defs><g clip-path="url(#clip-stone)"><ellipse cx="20.43" cy="29.42" rx="0.92" ry="0.57" fill="#675d4d" opacity="0.134"/>
+<ellipse cx="27.74" cy="36.40" rx="1.06" ry="0.24" fill="#675d4d" opacity="0.228"/>
+<ellipse cx="30.24" cy="26.67" rx="0.94" ry="0.52" fill="#675d4d" opacity="0.116"/>
+<ellipse cx="6.88" cy="38.59" rx="0.78" ry="0.34" fill="#c7af93" opacity="0.092"/>
+<ellipse cx="34.07" cy="27.14" rx="1.21" ry="0.32" fill="#675d4d" opacity="0.073"/>
+<ellipse cx="37.79" cy="34.12" rx="0.24" ry="0.08" fill="#c7af93" opacity="0.080"/>
+<ellipse cx="32.03" cy="24.03" rx="0.50" ry="0.23" fill="#c7af93" opacity="0.181"/>
+<ellipse cx="20.92" cy="26.96" rx="0.88" ry="0.59" fill="#675d4d" opacity="0.177"/>
+<ellipse cx="28.62" cy="35.50" rx="1.20" ry="0.85" fill="#675d4d" opacity="0.120"/>
+<ellipse cx="22.87" cy="35.20" rx="1.16" ry="0.57" fill="#675d4d" opacity="0.072"/>
+<ellipse cx="14.66" cy="34.55" rx="0.36" ry="0.12" fill="#675d4d" opacity="0.155"/>
+<ellipse cx="21.71" cy="24.08" rx="0.45" ry="0.32" fill="#675d4d" opacity="0.211"/>
+<ellipse cx="17.18" cy="26.81" rx="2.65" ry="0.48" fill="#675d4d" opacity="0.126"/>
+<ellipse cx="25.73" cy="28.26" rx="0.82" ry="0.52" fill="#c7af93" opacity="0.224"/>
+<ellipse cx="6.92" cy="30.56" rx="1.16" ry="0.58" fill="#c7af93" opacity="0.130"/>
+<ellipse cx="37.73" cy="25.21" rx="0.74" ry="0.45" fill="#c7af93" opacity="0.142"/>
+<ellipse cx="31.30" cy="33.06" rx="0.97" ry="0.64" fill="#675d4d" opacity="0.202"/>
+<ellipse cx="37.55" cy="23.40" rx="0.33" ry="0.10" fill="#675d4d" opacity="0.153"/>
+<ellipse cx="21.95" cy="25.16" rx="1.19" ry="0.30" fill="#c7af93" opacity="0.129"/>
+<ellipse cx="33.43" cy="36.83" rx="0.40" ry="0.07" fill="#675d4d" opacity="0.219"/>
+<ellipse cx="32.16" cy="33.47" rx="0.47" ry="0.35" fill="#675d4d" opacity="0.093"/>
+<ellipse cx="36.40" cy="31.24" rx="0.65" ry="0.13" fill="#c7af93" opacity="0.136"/>
+<ellipse cx="15.81" cy="24.68" rx="0.58" ry="0.37" fill="#675d4d" opacity="0.100"/>
+<ellipse cx="22.50" cy="22.39" rx="0.96" ry="0.45" fill="#675d4d" opacity="0.199"/>
+<ellipse cx="16.75" cy="30.84" rx="0.98" ry="0.59" fill="#c7af93" opacity="0.089"/>
+<ellipse cx="25.22" cy="25.43" rx="1.15" ry="0.77" fill="#c7af93" opacity="0.160"/>
+<ellipse cx="15.42" cy="33.93" rx="1.24" ry="0.36" fill="#c7af93" opacity="0.136"/>
+<ellipse cx="35.68" cy="36.02" rx="0.67" ry="0.43" fill="#675d4d" opacity="0.104"/>
+<ellipse cx="26.49" cy="29.53" rx="1.09" ry="0.81" fill="#675d4d" opacity="0.217"/>
+<ellipse cx="9.98" cy="24.60" rx="0.74" ry="0.28" fill="#c7af93" opacity="0.101"/>
+<ellipse cx="36.51" cy="36.16" rx="0.92" ry="0.32" fill="#c7af93" opacity="0.096"/>
+<ellipse cx="30.62" cy="26.26" rx="0.30" ry="0.16" fill="#675d4d" opacity="0.073"/>
+<ellipse cx="12.89" cy="25.85" rx="1.09" ry="0.48" fill="#c7af93" opacity="0.155"/>
+<ellipse cx="15.50" cy="22.75" rx="1.22" ry="0.60" fill="#c7af93" opacity="0.138"/>
+<ellipse cx="30.09" cy="32.83" rx="1.01" ry="0.56" fill="#c7af93" opacity="0.173"/>
+<ellipse cx="7.50" cy="28.30" rx="0.21" ry="0.07" fill="#c7af93" opacity="0.088"/>
+<ellipse cx="35.92" cy="28.18" rx="3.98" ry="2.97" fill="#675d4d" opacity="0.124"/>
+<ellipse cx="35.30" cy="36.53" rx="0.27" ry="0.07" fill="#675d4d" opacity="0.085"/>
+<ellipse cx="33.97" cy="26.91" rx="1.21" ry="0.83" fill="#c7af93" opacity="0.227"/>
+<ellipse cx="37.85" cy="23.96" rx="0.69" ry="0.36" fill="#c7af93" opacity="0.222"/>
+<ellipse cx="26.42" cy="31.60" rx="1.14" ry="0.84" fill="#675d4d" opacity="0.084"/>
+<ellipse cx="28.52" cy="23.69" rx="0.96" ry="0.28" fill="#675d4d" opacity="0.071"/>
+<ellipse cx="21.75" cy="27.49" rx="0.50" ry="0.37" fill="#c7af93" opacity="0.194"/>
+<ellipse cx="21.92" cy="27.49" rx="0.50" ry="0.10" fill="#c7af93" opacity="0.119"/>
+<ellipse cx="19.55" cy="24.78" rx="0.54" ry="0.15" fill="#675d4d" opacity="0.237"/>
+<ellipse cx="29.32" cy="28.19" rx="0.62" ry="0.42" fill="#c7af93" opacity="0.125"/>
+<ellipse cx="19.49" cy="30.25" rx="1.03" ry="0.30" fill="#675d4d" opacity="0.153"/>
+<ellipse cx="19.43" cy="33.76" rx="1.01" ry="0.56" fill="#c7af93" opacity="0.111"/>
+<ellipse cx="19.54" cy="24.65" rx="1.89" ry="1.37" fill="#c7af93" opacity="0.081"/>
+<ellipse cx="37.14" cy="35.73" rx="1.14" ry="0.58" fill="#675d4d" opacity="0.155"/>
+<ellipse cx="25.40" cy="33.73" rx="0.33" ry="0.20" fill="#c7af93" opacity="0.150"/>
+<ellipse cx="37.48" cy="37.29" rx="0.27" ry="0.16" fill="#675d4d" opacity="0.221"/>
+<ellipse cx="34.16" cy="24.47" rx="0.42" ry="0.13" fill="#675d4d" opacity="0.184"/>
+<ellipse cx="12.92" cy="38.12" rx="0.98" ry="0.73" fill="#675d4d" opacity="0.127"/>
+<ellipse cx="11.85" cy="23.27" rx="0.58" ry="0.37" fill="#c7af93" opacity="0.134"/>
+<ellipse cx="18.99" cy="34.90" rx="0.28" ry="0.10" fill="#675d4d" opacity="0.148"/>
+<ellipse cx="6.84" cy="36.10" rx="1.21" ry="0.25" fill="#c7af93" opacity="0.144"/>
+<ellipse cx="32.29" cy="30.11" rx="0.33" ry="0.25" fill="#675d4d" opacity="0.109"/>
+<ellipse cx="21.07" cy="30.24" rx="0.71" ry="0.38" fill="#c7af93" opacity="0.175"/>
+<ellipse cx="8.16" cy="25.67" rx="0.44" ry="0.25" fill="#c7af93" opacity="0.231"/>
+<ellipse cx="13.69" cy="30.99" rx="5.03" ry="3.58" fill="#c7af93" opacity="0.085"/>
+<ellipse cx="15.86" cy="22.08" rx="0.53" ry="0.23" fill="#675d4d" opacity="0.208"/>
+<ellipse cx="10.82" cy="32.66" rx="0.21" ry="0.07" fill="#675d4d" opacity="0.184"/>
+<ellipse cx="22.86" cy="35.85" rx="0.52" ry="0.23" fill="#675d4d" opacity="0.131"/>
+<ellipse cx="20.86" cy="35.60" rx="0.90" ry="0.51" fill="#c7af93" opacity="0.113"/>
+<ellipse cx="34.41" cy="38.74" rx="0.22" ry="0.12" fill="#675d4d" opacity="0.172"/>
+<ellipse cx="32.36" cy="25.84" rx="1.17" ry="0.60" fill="#675d4d" opacity="0.148"/>
+<ellipse cx="36.42" cy="32.53" rx="1.07" ry="0.70" fill="#675d4d" opacity="0.176"/>
+<ellipse cx="29.12" cy="28.05" rx="0.18" ry="0.04" fill="#675d4d" opacity="0.109"/>
+<ellipse cx="14.83" cy="28.15" rx="1.18" ry="0.62" fill="#675d4d" opacity="0.131"/>
+<ellipse cx="35.21" cy="26.42" rx="0.91" ry="0.57" fill="#c7af93" opacity="0.187"/>
+<ellipse cx="19.60" cy="28.47" rx="0.65" ry="0.42" fill="#c7af93" opacity="0.217"/>
+<ellipse cx="34.12" cy="25.31" rx="1.37" ry="0.91" fill="#c7af93" opacity="0.108"/>
+<ellipse cx="22.91" cy="36.01" rx="0.69" ry="0.13" fill="#675d4d" opacity="0.123"/>
+<ellipse cx="13.76" cy="37.30" rx="0.82" ry="0.46" fill="#675d4d" opacity="0.155"/>
+<ellipse cx="7.16" cy="23.53" rx="1.12" ry="0.42" fill="#c7af93" opacity="0.166"/>
+<ellipse cx="25.11" cy="33.21" rx="0.44" ry="0.11" fill="#c7af93" opacity="0.073"/>
+<ellipse cx="30.20" cy="25.82" rx="0.62" ry="0.45" fill="#675d4d" opacity="0.237"/>
+<ellipse cx="30.19" cy="23.86" rx="1.03" ry="0.28" fill="#c7af93" opacity="0.222"/>
+<ellipse cx="12.79" cy="30.47" rx="0.58" ry="0.12" fill="#c7af93" opacity="0.231"/>
+<ellipse cx="25.40" cy="32.03" rx="0.58" ry="0.26" fill="#675d4d" opacity="0.127"/>
+<ellipse cx="8.70" cy="29.38" rx="1.09" ry="0.36" fill="#c7af93" opacity="0.120"/>
+<ellipse cx="16.96" cy="37.24" rx="0.88" ry="0.51" fill="#675d4d" opacity="0.208"/>
+<ellipse cx="22.42" cy="24.63" rx="0.78" ry="0.24" fill="#c7af93" opacity="0.209"/>
+<ellipse cx="30.97" cy="38.32" rx="3.95" ry="2.52" fill="#c7af93" opacity="0.097"/>
+<ellipse cx="34.28" cy="33.74" rx="0.58" ry="0.33" fill="#675d4d" opacity="0.140"/>
+<ellipse cx="31.07" cy="23.00" rx="0.51" ry="0.31" fill="#c7af93" opacity="0.168"/>
+<ellipse cx="14.94" cy="25.24" rx="1.20" ry="0.55" fill="#c7af93" opacity="0.116"/>
+<ellipse cx="36.97" cy="31.76" rx="0.56" ry="0.19" fill="#675d4d" opacity="0.205"/>
+<ellipse cx="32.88" cy="28.07" rx="0.26" ry="0.09" fill="#c7af93" opacity="0.145"/>
+<ellipse cx="17.01" cy="26.43" rx="1.10" ry="0.43" fill="#675d4d" opacity="0.114"/>
+<ellipse cx="13.94" cy="27.81" rx="1.01" ry="0.64" fill="#675d4d" opacity="0.145"/>
+<ellipse cx="16.52" cy="37.48" rx="1.03" ry="0.60" fill="#675d4d" opacity="0.222"/>
+<ellipse cx="37.56" cy="35.23" rx="1.19" ry="0.29" fill="#c7af93" opacity="0.131"/>
+<ellipse cx="32.24" cy="34.51" rx="0.50" ry="0.32" fill="#c7af93" opacity="0.203"/>
+<ellipse cx="20.50" cy="35.07" rx="1.03" ry="0.30" fill="#c7af93" opacity="0.202"/>
+<ellipse cx="13.76" cy="27.81" rx="3.13" ry="1.41" fill="#c7af93" opacity="0.087"/>
+<ellipse cx="12.50" cy="38.24" rx="0.94" ry="0.37" fill="#c7af93" opacity="0.122"/>
+<ellipse cx="23.95" cy="26.95" rx="0.60" ry="0.28" fill="#c7af93" opacity="0.136"/>
+<ellipse cx="20.79" cy="22.68" rx="1.11" ry="0.78" fill="#c7af93" opacity="0.119"/>
+<ellipse cx="26.75" cy="37.76" rx="1.02" ry="0.52" fill="#c7af93" opacity="0.083"/>
+<ellipse cx="20.87" cy="36.86" rx="0.42" ry="0.08" fill="#675d4d" opacity="0.218"/>
+<ellipse cx="36.89" cy="35.14" rx="1.07" ry="0.75" fill="#c7af93" opacity="0.172"/>
+<ellipse cx="32.76" cy="33.94" rx="0.60" ry="0.36" fill="#675d4d" opacity="0.201"/>
+<ellipse cx="33.23" cy="33.07" rx="0.56" ry="0.30" fill="#c7af93" opacity="0.172"/>
+<ellipse cx="8.91" cy="25.45" rx="1.14" ry="0.84" fill="#c7af93" opacity="0.092"/>
+<ellipse cx="24.18" cy="33.09" rx="0.88" ry="0.43" fill="#675d4d" opacity="0.238"/>
+<ellipse cx="29.76" cy="26.17" rx="0.95" ry="0.23" fill="#675d4d" opacity="0.084"/>
+<ellipse cx="23.13" cy="28.75" rx="2.55" ry="1.14" fill="#c7af93" opacity="0.128"/>
+<ellipse cx="18.36" cy="23.32" rx="0.69" ry="0.20" fill="#675d4d" opacity="0.130"/>
+<ellipse cx="21.30" cy="25.27" rx="0.46" ry="0.10" fill="#675d4d" opacity="0.132"/>
+<ellipse cx="15.98" cy="25.44" rx="0.93" ry="0.30" fill="#675d4d" opacity="0.203"/>
+<ellipse cx="17.66" cy="27.61" rx="0.34" ry="0.16" fill="#675d4d" opacity="0.082"/>
+<ellipse cx="15.64" cy="32.05" rx="1.24" ry="0.58" fill="#675d4d" opacity="0.121"/>
+<ellipse cx="8.43" cy="33.51" rx="0.95" ry="0.69" fill="#c7af93" opacity="0.179"/>
+<ellipse cx="24.92" cy="33.54" rx="0.95" ry="0.24" fill="#675d4d" opacity="0.133"/>
+<ellipse cx="33.25" cy="32.79" rx="0.31" ry="0.14" fill="#c7af93" opacity="0.201"/>
+<ellipse cx="28.76" cy="29.44" rx="0.35" ry="0.15" fill="#675d4d" opacity="0.091"/>
+<ellipse cx="21.34" cy="28.98" rx="0.35" ry="0.25" fill="#c7af93" opacity="0.186"/>
+<ellipse cx="25.70" cy="29.88" rx="0.95" ry="0.71" fill="#c7af93" opacity="0.158"/>
+<ellipse cx="22.37" cy="27.77" rx="4.11" ry="1.98" fill="#675d4d" opacity="0.075"/>
+<ellipse cx="7.11" cy="22.17" rx="0.25" ry="0.15" fill="#c7af93" opacity="0.159"/>
+<ellipse cx="7.25" cy="30.70" rx="0.58" ry="0.37" fill="#c7af93" opacity="0.131"/>
+<ellipse cx="12.66" cy="25.33" rx="0.50" ry="0.12" fill="#c7af93" opacity="0.141"/>
+<ellipse cx="8.62" cy="31.22" rx="0.62" ry="0.19" fill="#c7af93" opacity="0.116"/>
+<ellipse cx="13.21" cy="29.34" rx="1.06" ry="0.27" fill="#c7af93" opacity="0.215"/>
+<ellipse cx="18.25" cy="31.49" rx="0.66" ry="0.23" fill="#c7af93" opacity="0.152"/>
+<ellipse cx="16.99" cy="31.49" rx="0.84" ry="0.57" fill="#675d4d" opacity="0.218"/>
+<ellipse cx="18.02" cy="30.18" rx="0.66" ry="0.15" fill="#c7af93" opacity="0.098"/>
+<ellipse cx="29.29" cy="22.91" rx="0.91" ry="0.44" fill="#675d4d" opacity="0.107"/>
+<ellipse cx="13.11" cy="22.26" rx="0.62" ry="0.38" fill="#c7af93" opacity="0.232"/>
+<ellipse cx="10.04" cy="23.11" rx="0.62" ry="0.38" fill="#c7af93" opacity="0.215"/>
+<ellipse cx="34.50" cy="30.11" rx="1.86" ry="0.95" fill="#675d4d" opacity="0.075"/>
+<ellipse cx="33.37" cy="32.35" rx="0.41" ry="0.08" fill="#675d4d" opacity="0.208"/>
+<ellipse cx="24.97" cy="27.32" rx="0.66" ry="0.37" fill="#c7af93" opacity="0.143"/>
+<ellipse cx="31.96" cy="22.55" rx="1.11" ry="0.44" fill="#675d4d" opacity="0.090"/>
+<ellipse cx="31.29" cy="31.29" rx="0.69" ry="0.19" fill="#c7af93" opacity="0.216"/>
+<ellipse cx="30.75" cy="33.72" rx="1.04" ry="0.57" fill="#c7af93" opacity="0.079"/>
+<ellipse cx="17.41" cy="33.88" rx="0.67" ry="0.28" fill="#675d4d" opacity="0.229"/>
+<ellipse cx="20.51" cy="31.80" rx="0.64" ry="0.42" fill="#675d4d" opacity="0.192"/>
+<ellipse cx="7.58" cy="32.16" rx="0.57" ry="0.11" fill="#c7af93" opacity="0.219"/>
+<ellipse cx="31.95" cy="25.38" rx="0.55" ry="0.17" fill="#675d4d" opacity="0.105"/>
+<ellipse cx="20.39" cy="25.79" rx="0.75" ry="0.40" fill="#675d4d" opacity="0.144"/>
+<ellipse cx="11.17" cy="38.49" rx="1.16" ry="0.87" fill="#675d4d" opacity="0.198"/>
+<ellipse cx="13.13" cy="30.56" rx="3.65" ry="2.67" fill="#675d4d" opacity="0.117"/>
+<ellipse cx="28.93" cy="31.42" rx="0.69" ry="0.48" fill="#c7af93" opacity="0.170"/>
+<ellipse cx="32.98" cy="32.42" rx="0.25" ry="0.14" fill="#c7af93" opacity="0.218"/>
+<ellipse cx="35.54" cy="31.35" rx="0.27" ry="0.05" fill="#675d4d" opacity="0.208"/>
+<ellipse cx="12.91" cy="29.17" rx="0.47" ry="0.19" fill="#c7af93" opacity="0.233"/>
+<ellipse cx="6.74" cy="33.50" rx="0.64" ry="0.35" fill="#675d4d" opacity="0.113"/></g><defs><clipPath id="clip-stone-joints"><path d="M7 23Q21 18 37 23V34Q25 42 7 34Z" fill="white" stroke="none" stroke-width="0.6" opacity="1"/></clipPath></defs><g clip-path="url(#clip-stone-joints)"><path d="M7 25Q22.0 25.58 37 25" fill="none" stroke="#685e50" stroke-width="0.43" opacity="0.42"/>
+<path d="M7.03 25l-0.62 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M12.32 25l-0.31 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M19.68 25l0.69 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M24.73 25l-0.09 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M30.92 25l0.68 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M7 29Q22.0 28.91 37 29" fill="none" stroke="#685e50" stroke-width="0.43" opacity="0.42"/>
+<path d="M3.66 29l0.00 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M9.11 29l0.02 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M15.33 29l0.52 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M21.89 29l0.73 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M27.86 29l-0.37 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M34.89 29l0.60 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M7 33Q22.0 32.20 37 33" fill="none" stroke="#685e50" stroke-width="0.43" opacity="0.42"/>
+<path d="M7.87 33l0.58 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M13.77 33l0.11 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M19.43 33l0.35 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M24.70 33l-0.77 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M31.34 33l0.73 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M7 37Q22.0 36.37 37 37" fill="none" stroke="#685e50" stroke-width="0.43" opacity="0.42"/>
+<path d="M4.35 37l-0.01 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M9.81 37l0.32 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M16.18 37l0.45 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M21.87 37l-0.06 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M28.22 37l-0.43 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/>
+<path d="M34.75 37l-0.71 4" fill="none" stroke="#685e50" stroke-width="0.42" opacity="0.42"/></g><ellipse cx="22" cy="24" rx="13.5" ry="3" fill="#696a58" opacity="0.86"/>
+</g>
+<g id="mask-occlusion" inkscape:groupmode="layer" inkscape:label="mask-occlusion" style="display:none">
+<path d="M7 23Q21 18 37 23V34Q25 42 7 34Z" fill="white" stroke="none" stroke-width="0.6" opacity="1"/><path d="M10 28V11H13V28ZM30 28V11H33V28ZM6 15L22 5 38 15 36 18 22 11 8 18Z" fill="white" stroke="none" stroke-width="0.6" opacity="1"/>
+</g>
+</svg>

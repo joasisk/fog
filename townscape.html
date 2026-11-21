@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hillside town · Fog</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Hillside town</h1>
+        <a href="./">Fog pilot</a>
+      </header>
+      <figure>
+        <canvas id="hillside" width="1920" height="1080" role="img"
+          aria-label="A rainy hillside town with three terraced streets, a school, a park and a small plaza"></canvas>
+      </figure>
+      <fieldset id="controls" aria-label="Hillside preview controls" disabled>
+        <label><input type="checkbox" id="wet" checked> Wet</label>
+        <label><input type="checkbox" id="mist" checked> Mist</label>
+        <label><input type="checkbox" id="motion" checked> Motion</label>
+        <label><input type="checkbox" id="routes"> Routes</label>
+        <label>Render size <select id="size">
+          <option value="1920">1920 × 1080</option>
+          <option value="960">960 × 540</option>
+        </select></label>
+        <button type="button" id="swap">Place bookshop</button>
+      </fieldset>
+      <p id="load-status" role="status">Loading the hillside…</p>
+    </main>
+    <script type="module" src="/src/townscape/main.ts"></script>
+  </body>
+</html>
