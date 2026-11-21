@@ -72,9 +72,34 @@ Both fixed cases use supported ground lanes with grades up to 8°. Routing and t
 
 The geometry and art tools can use the same four fixture entries. Geometry looks them up by envelope name in `GEOMETRY_FIXTURES.assets`. Serialize `GEOMETRY_FIXTURE_MANIFEST` for the handoff's v1 asset-list format, including footprint dimensions, source frames, and entrance UVs. [Geometry fixtures](../src/generation/fixtures.ts)
 
-Use Node to render any of the deterministic SVG views. The available cases are `foothillTown` and `contourFarmLane`. The views are `terrain`, `exclusions`, `grades`, and `connectivity`.
+Use Node to render any of the deterministic SVG views. The initial geometry cases are `foothillTown` and `contourFarmLane`. The geometry views are `terrain`, `exclusions`, `grades`, and `connectivity`.
 
 ```sh
 node --experimental-transform-types scripts/debug-world-geometry.mjs foothillTown connectivity > /tmp/foothill-roads.svg
 node --experimental-transform-types scripts/debug-world-geometry.mjs contourFarmLane terrain > /tmp/contour-terrain.svg
+```
+
+## Milestone B usage
+
+`generateWorldLayout(recipe)` runs the geometry and settlement passes and returns a versioned snapshot. On success, `layout` contains the primary and secondary centers, district sections, frontage intervals, lots, grouped sites, fixture buildings and service assignments. To work directly on an accepted or deserialized geometry snapshot, call `layoutOnRoads(world)`. Both entry points use world-space F and walking distances measured from each edge's `from` junction. [Generator entry points](../src/generation/index.ts)
+
+Centers occupy supported public frontage. The historic quarter grows through adjoining sections of the accepted walking graph. A section has a street profile and architectural era, while each lot records its own use. The optional `morphology` setting accepts `transition`, `compact`, `garden` or `rural`. The three-band town defaults to a left-to-right transition. Occupancy, lot width and eligibility for shared walls use the same lateral density field in every band.
+
+The parcel pass reserves the square or working yard, service sites and linked playground before allocating housing frontage. Each straight frontage run ends at a bend or junction clearance. Lots and their envelopes must fit on buildable terrain and clear paving and other lots. The massing pass fits the Batch 1 shells and reserved envelopes, records the door's road address, and extends plinths from ground support to a level floor. Buildings record reciprocal shared walls only where the built edges coincide. [Batch 1 calibration](../assets/townscape/batch-01/calibration.v1.json) · [Shell manifest](../assets/townscape/batch-01/manifest.v1.json)
+
+The slice counts one household per fixture home. Villages reserve a park and a stop on the through route. Towns also reserve a school with an adjoining playground. Cities reserve two sets of services and a secondary square. The initial door-to-gate walking limits are 48 F for villages and towns and 56 F for cities. Each facility serves up to 40, 85 or 180 households respectively. Sites outside service coverage can become planted lots. If the supported building count, service capacity or required reservations fall short, the layout stage returns a diagnostic. Explicit tier fallback reuses the terrain.
+
+| Fixed case | Lots | Buildings | Inhabited bands |
+| --- | ---: | ---: | ---: |
+| Foothill town, seed 7419 | 67 | 40 | 3 |
+| Contour farm lane, seed 9106 | 16 | 5 | 1 |
+| Broad foothill city, seed 1609 | 250 | 218 | 6 |
+
+The broad foothills preset provides six benches for the city check and connects branches at two locations to form blocks. Terrain selection is independent of tier selection.
+
+Use the `districts`, `parcels` and `massing` views to inspect the new passes. The massing diagram draws every band at the same lateral scale. In the fixed town, the front band has seven buildings left of world x = 0 and four to its right. The rear band has fifteen and two. Shared-wall buildings decrease from five to two in front and from fifteen to zero in back. This reproduces the shift from rows to detached homes and open land visible in the foothill and garden-home references. [REF-T01](../Town-Soundscape-Handoff-v1/images/current/REF-T01_town-across-the-foothills.png) · [REF-T03](../Town-Soundscape-Handoff-v1/images/current/REF-T03_old-core-to-newer-garden-homes.png)
+
+```sh
+node --experimental-transform-types scripts/debug-world-geometry.mjs foothillTown massing > /tmp/foothill-massing.svg
+node --experimental-transform-types scripts/debug-world-geometry.mjs broadFoothillCity parcels > /tmp/city-parcels.svg
 ```

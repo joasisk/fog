@@ -3,8 +3,9 @@ import { fixtureDepths, frontageSupport, MAX_LANE_GRADE_DEGREES, peakTerrainGrad
 import type { RoadSide } from "./routing.ts";
 import { capacityShortfalls, CIVIC_SPAN, residentialDepth, residentialPitch, TIERS } from "./settlement.ts";
 import type { Capacity, SettlementTier, TerrainAnalysis } from "./settlement.ts";
-import { benchDepthAt, heightAt, seedFraction } from "./terrain.ts";
+import { benchDepthAt, seedFraction } from "./terrain.ts";
 import type { Terrain, WorldPosition } from "./terrain.ts";
+import { surveyCenterline } from "./walking.ts";
 
 export interface RoadNode {
   readonly id: JunctionId;
@@ -149,8 +150,11 @@ export function buildRoadGraph(terrain: Terrain, analysis: TerrainAnalysis, tier
       const landing = branch[Math.floor(branch.length * fraction)]!;
       const connector = route(terrain, analysis, landing, occupied);
       if (!connector.length) continue;
+      const otherLanding = branch[Math.floor(branch.length * (fraction < 0.5 ? 0.84 : 0.16))]!;
+      const second = tier === "city" ? route(terrain, analysis, otherLanding, occupied) : [];
       addPath(branch, "branch", index + 1);
       addPath(connector, "connector", index + 1);
+      addPath(second, "connector", index + 1);
       break;
     }
   }
@@ -193,23 +197,9 @@ export function buildRoadGraph(terrain: Terrain, analysis: TerrainAnalysis, tier
       }
       if (terrain.samples[from]!.x > terrain.samples[current]!.x) ids.reverse();
       const centerline = ids.map((id) => terrain.samples[id]!);
-      const distances = [0];
-      const gradesDegrees: number[] = [];
-      let distance = 0;
-      for (let i = 1; i < centerline.length; i++) {
-        const a = centerline[i - 1]!;
-        const b = centerline[i]!;
-        let previous: WorldPosition = a;
-        for (const t of [0.25, 0.5, 0.75, 1]) {
-          const x = a.x + (b.x - a.x) * t;
-          const d = a.d + (b.d - a.d) * t;
-          const point = { x, d, h: heightAt(terrain, { x, d })! };
-          distance += Math.hypot(point.x - previous.x, point.d - previous.d, point.h - previous.h);
-          previous = point;
-        }
-        distances.push(distance);
-        gradesDegrees.push(peakTerrainGrade(terrain, a, b));
-      }
+      const { distances } = surveyCenterline(terrain, centerline);
+      const distance = distances.at(-1)!;
+      const gradesDegrees = centerline.slice(1).map((point, i) => peakTerrainGrade(terrain, centerline[i]!, point));
       const frontage: FrontageSpan[] = [];
       if (link.route !== "connector") {
         for (const side of roadSides) {

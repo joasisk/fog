@@ -1,6 +1,6 @@
 import type { GenerationSeed } from "../model/scene.ts";
 
-export type TerrainPreset = "foothills" | "contour";
+export type TerrainPreset = "foothills" | "contour" | "broad-foothills";
 export type ExclusionKind = "water" | "cliff" | "saturated";
 
 export interface WorldPoint { readonly x: number; readonly d: number }
@@ -66,7 +66,8 @@ const smoothstep = (t: number) => {
 
 export function generateTerrain(seed: GenerationSeed, preset: TerrainPreset): Terrain {
   const step = 0.5;
-  const domain = { minX: -15, maxX: 15, maxDepth: 13 };
+  const broad = preset === "broad-foothills";
+  const domain = { minX: -15, maxX: 15, maxDepth: broad ? 27 : 13 };
   const columns = (domain.maxX - domain.minX) / step + 1;
   const rows = domain.maxDepth / step + 1;
   const phase = seedFraction(seed, "terrain:long-profile") * Math.PI * 2;
@@ -80,7 +81,9 @@ export function generateTerrain(seed: GenerationSeed, preset: TerrainPreset): Te
       return rolling + 0.04 * depth + 2.2 * smoothstep((depth - 1) / 4)
         + 2.8 * smoothstep((depth - 8.5) / 4);
     }
-    return rolling + 0.025 * depth + 0.3 * smoothstep((depth - 3) / 2.8)
+    const upperBenches = broad ? 0.3 * (smoothstep((depth - 12) / 3) + smoothstep((depth - 16.5) / 3)
+      + smoothstep((depth - 21) / 3)) : 0;
+    return rolling + upperBenches + 0.025 * depth + 0.3 * smoothstep((depth - 3) / 2.8)
       + 0.33 * smoothstep((depth - 7.3) / 3) - 0.75 * (1 - smoothstep(depth / 2));
   };
   const samples = Array.from({ length: rows * columns }, (_, id): TerrainSample => {
@@ -135,7 +138,8 @@ export function generateTerrain(seed: GenerationSeed, preset: TerrainPreset): Te
     centerDepths: Array.from({ length: (maxX - minX) / step + 1 }, (_, i) => depth + bendAt(minX + i * step)),
   });
   const primary = bench(rural ? 6.5 : 2.5, domain.minX, domain.maxX);
-  const benches = rural ? [primary] : [primary, bench(6, -12, 12), bench(11, -10, 10)];
+  const benches = broad ? [primary, ...[6, 11, 15.5, 20, 24.5].map((d) => bench(d, -14.5, 14.5))]
+    : rural ? [primary] : [primary, bench(6, -12, 12), bench(11, -10, 10)];
   const approaches = (["west", "east"] as const).flatMap((side) => {
     const x = side === "west" ? domain.minX : domain.maxX;
     const approachDepth = benchDepthAt(primary, x);
@@ -147,7 +151,7 @@ export function generateTerrain(seed: GenerationSeed, preset: TerrainPreset): Te
   });
 
   const fillBase = Math.min(...samples.map(({ h }) => h)) - 1.5;
-  const depths = rural ? [1, 4, 6.5, 9, 12] : [0, 2.5, 4.5, 6, 9, 11.5];
+  const depths = broad ? benches.map(({ depth }) => depth) : rural ? [1, 4, 6.5, 9, 12] : [0, 2.5, 4.5, 6, 9, 11.5];
   return {
     preset, domain, step, columns, rows, samples, exclusions, buildableRegions, approaches,
     crossings: [], benches,
