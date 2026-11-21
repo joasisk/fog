@@ -1,0 +1,40 @@
+budget_section,asset_family,proposed_count,coverage_notes,status
+Building library and variation budget,Attached historic townhouses,12,"Different widths, gables, eaves and end-wall conditions; include corners.",Proposed starting budget; validate in vertical slice
+Building library and variation budget,Detached historic houses and villas,8,"Different footprints, roof types, entrances and garden-facing sides.",Proposed starting budget; validate in vertical slice
+Building library and variation budget,Vernacular cottages,8,"Low plaster, stone and timber forms with regional consistency.",Proposed starting budget; validate in vertical slice
+Building library and variation budget,Later residential buildings,8,"Villas, postwar walk-ups and modest pitched-roof apartment houses.",Proposed starting budget; validate in vertical slice
+Building library and variation budget,Contemporary buildings,8,"Flat or low roofs, brick/render/timber, balcony and opening rhythms.",Proposed starting budget; validate in vertical slice
+Building library and variation budget,Farmhouses and outbuildings,8,"Farmhouse, barns, sheds and covered working spaces with distinct silhouettes.",Proposed starting budget; validate in vertical slice
+Building library and variation budget,Civic and service anchors,8,"Church, town hall, school, library, inn, bakery corner, market shelter and community center.",Proposed starting budget; validate in vertical slice
+Building library and variation budget,Total,60,"A shell includes a coherent silhouette and usable floor/opening layout, with its required masks and anchors.",Proposed starting budget; validate in vertical slice
+Reusable architectural components,Wall materials,12,"Plaster, stone, brick and timber families with subtle, tileable pigment variation.",Proposed starting budget; validate in vertical slice
+Reusable architectural components,Roof designs and materials,20,"8 tiled pitched, 6 slate pitched, 4 hipped/clipped and 2 flat-roof treatments; compatible ends and ridges.",Proposed starting budget; validate in vertical slice
+Reusable architectural components,Window designs,16,"Historic small-pane, taller town, civic, rural and broad modern openings.",Proposed starting budget; validate in vertical slice
+Reusable architectural components,Door designs,8,"Domestic, shop, civic and farm thresholds, with open/closed or light states where useful.",Proposed starting budget; validate in vertical slice
+Reusable architectural components,Shopfront templates,8,"Cafe, restaurant, bakery, general shop and restrained modern glass frontages.",Proposed starting budget; validate in vertical slice
+Reusable architectural components,Dormers / chimney sets,8 / 8,Compatible with roof pitch and material; provide junction or flashing masks.,Proposed starting budget; validate in vertical slice
+Reusable architectural components,Trim / balcony sets,12 / 8,"Sills, cornices, stone or timber trims, wrought iron and modern balcony families.",Proposed starting budget; validate in vertical slice
+Reusable architectural components,Awnings / sign mounts,8 / 8,"Grouped shapes and materials, plus editable lettering or symbols.",Proposed starting budget; validate in vertical slice
+Reusable architectural components,Weathering / climbing growth,12 / 12,"Masked rain stains, chipped pigment, moss and separate ivy or vine silhouettes.",Proposed starting budget; validate in vertical slice
+Streets and public-lot assets,Lane surfaces,12,"4 cobble, 4 gravel, 4 dirt; separate painted edges, wetness and junction coverage.",Proposed starting budget; validate in vertical slice
+Streets and public-lot assets,Joins and turning pieces,12,"T and Y junctions, bends, dead ends and narrowing transitions.",Proposed starting budget; validate in vertical slice
+Streets and public-lot assets,Stair assemblies,8,"Short and long flights, landings and sloped side-wall solutions.",Proposed starting budget; validate in vertical slice
+Streets and public-lot assets,Bridge assemblies,6,"Small stone and timber crossings; split deck, supports and rear/front rails.",Proposed starting budget; validate in vertical slice
+Streets and public-lot assets,Park lots,6,"Small planted ground variants with gate, paths, bench positions and canopy clearances.",Proposed starting budget; validate in vertical slice
+Streets and public-lot assets,Playground lots,4,"Ground patch and fence variants; compatible swing, slide and seesaw pieces.",Proposed starting budget; validate in vertical slice
+Streets and public-lot assets,Plaza lots,6,"Bounded paving layouts with well, tree, fountain or market focus; clear approach.",Proposed starting budget; validate in vertical slice
+Streets and public-lot assets,Furniture and frontage props,24,"Benches, lamps, bins, bollards, tables, chairs, menu boards, pots and utility items.",Proposed starting budget; validate in vertical slice
+Streets and public-lot assets,Boundary sets,16,"6 low walls, 6 fences, 4 hedges; corners, end posts, gates and sloped steps.",Proposed starting budget; validate in vertical slice
+Landscape and water asset library,Terrain profile treatments,12,"Brush/edge families for gentle, rolling, convex, concave, shelf and steep land; pair with filled support geometry.",Proposed starting budget; validate in vertical slice
+Landscape and water asset library,Grass / soil materials,8 / 6,Tileable low-contrast pigment with patch masks and edge breakup.,Proposed starting budget; validate in vertical slice
+Landscape and water asset library,Rock and cliff faces,12,"Different cut heights, exposed seams, protrusions and vegetation pockets.",Proposed starting budget; validate in vertical slice
+Landscape and water asset library,Water and bank treatments,8 / 8,"Stream, river, lake, sea and marsh variations; far/near banks, shoreline feather and ripple overlays.",Proposed starting budget; validate in vertical slice
+Landscape and water asset library,Field parcels,8,"Harvested, furrowed, meadow, vegetable and orchard bases with boundaries.",Proposed starting budget; validate in vertical slice
+Landscape and water asset library,Deciduous / conifer trees,12 / 8,"Distinct silhouettes, scale classes and separated canopy/trunk pieces when needed.",Proposed starting budget; validate in vertical slice
+Landscape and water asset library,Fruit trees / shrubs,6 / 12,"Orchard families and grouped shrubs, including sparse forms.",Proposed starting budget; validate in vertical slice
+Landscape and water asset library,Ground-cover clusters,16,"Reeds, grass, fallen leaves, moss and restrained flowers.",Proposed starting budget; validate in vertical slice
+Landscape and water asset library,Far woodland strips,8,Seam-compatible crown rhythms and soft depth masks.,Proposed starting budget; validate in vertical slice
+Rolling mist,Broad mist sheets,8,Separate editable density or mask assets,Proposed starting budget; validate in vertical slice
+Rolling mist,Thin mist wisps,4,Separate editable density or mask assets,Proposed starting budget; validate in vertical slice
+Rolling mist,Mist falloff masks,4,Separate editable density or mask assets,Proposed starting budget; validate in vertical slice
+Rolling mist,Low-frequency noise fields,2,Separate editable density or mask assets,Proposed starting budget; validate in vertical slice

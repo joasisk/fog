@@ -1,0 +1,120 @@
+{
+  "_note": "Documentation example only. Production sprite and mask paths are illustrative and are not supplied by this concept-image package.",
+  "schema_version": 1,
+  "units": {
+    "world": "frontage_units",
+    "source_anchors": "normalized_uv_top_left_y_down",
+    "world_axes": {
+      "x": "along_panorama",
+      "d": "away_from_viewer",
+      "h": "up"
+    }
+  },
+  "assets": [
+    {
+      "asset_id": "bld_hist_attached_03",
+      "version": 1,
+      "style_family": "historic_plaster",
+      "tags": [
+        "attached",
+        "two_storey",
+        "shopfront_compatible"
+      ],
+      "world_width_f": 0.9,
+      "world_height_f": 1.45,
+      "footprint_f": [
+        [
+          -0.45,
+          0
+        ],
+        [
+          0.45,
+          0
+        ],
+        [
+          0.45,
+          0.6
+        ],
+        [
+          -0.45,
+          0.6
+        ]
+      ],
+      "source_dimensions_px": [
+        192,
+        224
+      ],
+      "pivot_uv": [
+        0.5,
+        0.9642857
+      ],
+      "trim_rect_px": [
+        31,
+        8,
+        130,
+        208
+      ],
+      "reference_frontage_px": 72,
+      "authored_scale": 2,
+      "alpha": "straight",
+      "can_mirror": false,
+      "color_space": "srgb",
+      "mask_color_space": "linear",
+      "files": {
+        "color": "production/bld_hist_attached_03_color_v01.png",
+        "wall_mask": "production/bld_hist_attached_03_wall_mask_v01.png",
+        "growth_mask": "production/bld_hist_attached_03_growth_mask_v01.png",
+        "occlusion_mask": "production/bld_hist_attached_03_occlusion_mask_v01.png"
+      },
+      "sockets": {
+        "entrance": {
+          "uv": [
+            0.45,
+            0.91
+          ],
+          "accepts": [
+            "domestic_door",
+            "shop_door"
+          ]
+        },
+        "sign": {
+          "uv": [
+            0.25,
+            0.7
+          ],
+          "accepts": [
+            "hanging_sign"
+          ]
+        },
+        "roof_joint": {
+          "uv": [
+            0.74,
+            0.13
+          ],
+          "accepts": [
+            "tile_chimney"
+          ]
+        }
+      },
+      "compatible_roof": [
+        "steep_tile"
+      ],
+      "foundation_modes": [
+        "level_plinth",
+        "stepped_plinth"
+      ],
+      "states": [
+        "dry",
+        "wet",
+        "windows_lit"
+      ],
+      "semantic_tags": [
+        "residential",
+        "potential_shop"
+      ],
+      "required_clearance": [
+        "entrance_corridor"
+      ]
+    }
+  ]
+}

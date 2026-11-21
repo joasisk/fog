@@ -1,0 +1,110 @@
+{
+  "_note": "Proposed renderer-independent recipe example. Validate controls and values in the first implemented slice.",
+  "schema_version": 1,
+  "recipe_id": "transition_foothill_01",
+  "reference_ids": [
+    "REF-T01",
+    "REF-T03",
+    "REF-L05"
+  ],
+  "seed": 7419,
+  "viewport": [
+    1920,
+    1080
+  ],
+  "frontage_px": 72,
+  "coordinates": {
+    "world_units": "frontage_units",
+    "height_axis": "positive_up",
+    "density_t": "normalize world_x across world_x_bounds_f"
+  },
+  "world_x_bounds_f": [
+    -14,
+    16
+  ],
+  "terrain": {
+    "preset": "foothill_steps",
+    "terrain_seed": 1421,
+    "cliffs_and_water_are_exclusions": true
+  },
+  "depth": {
+    "scales": [
+      1,
+      0.88,
+      0.76,
+      0.64,
+      0.53,
+      0.43
+    ],
+    "band_baselines_px": [
+      1000,
+      855,
+      715,
+      590,
+      490,
+      405
+    ]
+  },
+  "density": {
+    "axis": "world_x",
+    "core": 0.85,
+    "edge": 0.08,
+    "taper_start": 0.25,
+    "taper_end": 0.9,
+    "field": "smoothstep_falloff",
+    "applies_to_all_depth_bands": true
+  },
+  "districts": [
+    {
+      "district_id": "core",
+      "style_weights": {
+        "historic_plaster": 0.85,
+        "modern_brick": 0.15
+      }
+    },
+    {
+      "district_id": "garden_streets",
+      "style_weights": {
+        "historic_detached": 0.35,
+        "modern_residential": 0.65
+      }
+    }
+  ],
+  "minimum_public_lots": {
+    "park": 1,
+    "playground": 1,
+    "plaza": 1
+  },
+  "generation": {
+    "independent_seed_streams": [
+      "terrain",
+      "graph",
+      "lots",
+      "shells",
+      "materials",
+      "decorations",
+      "weather"
+    ],
+    "bounded_local_retries": 8
+  },
+  "weather": {
+    "seed": 9462,
+    "time_origin_seconds": 0,
+    "preview_time_seconds": 30,
+    "rain_strength": 0.35,
+    "mist_enabled": true,
+    "mist_gap_strengths": [
+      0.12,
+      0.1,
+      0.08
+    ],
+    "mist_drift_virtual_px_per_second": 1.2,
+    "mist_pooling_bias": 0.6,
+    "mist_feather_f": 0.6
+  },
+  "interaction": {
+    "stable_object_ids": true,
+    "hit_regions": "separate_from_final_color",
+    "hidden_object_policy": "do_not_steal_visible_foreground_focus"
+  }
+}
